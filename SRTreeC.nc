@@ -1193,6 +1193,7 @@ implementation
 	}
 
 	event void AggMinAMSend.sendDone(message_t* msg, error_t err){
+		dbg("Min","Inside the AggMinAMSend.sendDone() \n");
 		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
 		setMinSendBusy(FALSE);
 		if(!(call AggMinSendQueue.empty())){
