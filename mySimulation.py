@@ -28,7 +28,7 @@ t.addChannel("Results",f)
 t.addChannel("Sample",f)
 #t.addChannel("PacketQueueC",f)
 
-for i in range(0,10):
+for i in range(0,nodeCount):
 	m=t.getNode(i)
 	m.bootAtTime(10*t.ticksPerSecond() + i)
 
