@@ -664,6 +664,10 @@ implementation
 			//setLostRoutingSendTask(TRUE);
 			return;
 		}
+		if (curdepth >= 0) {
+			dbg("Epoch","Start epoch timer for node %d \n", TOS_NODE_ID);
+			call EpochTimer.startPeriodicAt(EPOCH_PERIOD_MILLI - (curdepth*WINDOW_MILLI),EPOCH_PERIOD_MILLI);
+		}
 		
 		radioRoutingSendPkt = call RoutingSendQueue.dequeue();
 		
