@@ -661,7 +661,7 @@ implementation
 			printf(	"sendRoutingTask(): RoutingSendBusy= TRUE!!!\n");
 			printfflush();
 			#endif
-			setLostRoutingSendTask(TRUE);
+			//setLostRoutingSendTask(TRUE);
 			return;
 		}
 		
@@ -1094,6 +1094,7 @@ implementation
 	//ADDED
 	event void EpochTimer.fired(){
 		message_t tmp;
+		uint16_t temp;
 		error_t enqueueDone;
 		AggregationMin* msgMin;
 		AggregationSUM* msgSum;
@@ -1156,6 +1157,7 @@ implementation
 	}
 
 	task void sendAggMinTask(){
+		message_t radioAggMinSendPkt;
 		uint8_t mlen;
 		uint16_t mdest;
 		error_t sendDone;
