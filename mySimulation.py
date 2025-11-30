@@ -30,7 +30,7 @@ t.addChannel("Sample",f)
 
 for i in range(0,nodeCount):
 	m=t.getNode(i)
-	m.bootAtTime(1*t.ticksPerSecond() + i)
+	m.bootAtTime(10*t.ticksPerSecond() + i)
 
 
 topo = open(topologyFile, "r")
