@@ -233,7 +233,10 @@ implementation
 		setSerialBusy(FALSE);
 		#endif
 		roundCounter =0;
-		
+		agg_count=0;
+		agg_sum=0;
+		agg_min=0xFFFF;
+		sample=0;
 		if(TOS_NODE_ID==0){
 			#ifdef SERIAL_EN
 			call SerialControl.start();
