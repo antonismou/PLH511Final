@@ -73,6 +73,7 @@ implementation{
 	//SRTreeC.NotifyReceiveQueue->NotifyReceiveQueueC;
 	
 	//ADDED
+	SRTreeC.AggMinAMSend -> ActiveMessageC;
 	SRTreeC.Random->RandomC;
 	SRTreeC.AggMinPacket->AggMinSenderC.Packet;
     SRTreeC.AggMinAMPacket->AggMinSenderC.AMPacket;
@@ -81,6 +82,6 @@ implementation{
     SRTreeC.AggMinSendQueue->AggMinSendQueueC;
     SRTreeC.AggMinReceiveQueue->AggMinReceiveQueueC;
     SRTreeC.EpochTimer->EpochTimerC;
-	SRTreeC.AggMinAMSend -> ActiveMessageC;
+	
 	//END ADDED
 }
