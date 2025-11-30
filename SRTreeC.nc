@@ -1173,6 +1173,7 @@ implementation
 		}
 		if(MinSendBusy){
 			dbg("Min","SendAggMinTask(): MinSendBusy= TRUE!!!\n");
+			post sendAggMinTask();
 			return;
 		}
 		radioAggMinSendPkt = call AggMinSendQueue.dequeue();
@@ -1184,7 +1185,7 @@ implementation
 		}
 		
 		sendDone = call AggMinAMSend.send(mdest, &radioAggMinSendPkt, mlen);
-		if(sendDone==SUCCESS){
+		if(sendDone == SUCCESS ){
 			dbg("Min","SendAggMinTask(): Send returned success!!!\n");
 			setMinSendBusy(TRUE);
 		}else{
