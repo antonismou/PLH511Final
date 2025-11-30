@@ -1116,6 +1116,8 @@ implementation
 			sample = (sample * ((call Random.rand16() % 40) + 80)) / 100; // * 0.8 to 1.2
 			if(sample > 60){
 				sample = 60;
+			}else if(sample < 1){
+				sample = 1;
 			}
 		}
 		dbg("Sample","New sample = %u \n", sample);
