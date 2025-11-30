@@ -4,6 +4,13 @@ from TOSSIM import *
 import sys ,os
 import random
 
+if(len(sys.argv)!=3):
+	print "Usage: python mySimulation.py <topology file> <nodes count>"
+	sys.exit(1)
+
+topologyFile=sys.argv[1]
+nodeCount=int(sys.argv[2])
+
 t=Tossim([])
 f=sys.stdout #open('./logfile.txt','w')
 SIM_END_TIME= 1000 * t.ticksPerSecond()
@@ -23,7 +30,7 @@ for i in range(0,10):
 	m.bootAtTime(10*t.ticksPerSecond() + i)
 
 
-topo = open("topology.txt", "r")
+topo = open(topologyFile, "r")
 
 if topo is None:
 	print "Topology file not opened!!! \n"
@@ -46,10 +53,10 @@ for line in  lines:
 	str1=line.strip()
 	if str1:
 		val=int(str1)
-		for i in range(0,10):
+		for i in range(0,nodeCount):
 			t.getNode(i).addNoiseTraceReading(val)
 noiseF.close()
-for i in range(0,10):
+for i in range(0,nodeCount):
 	t.getNode(i).createNoiseModel()
 	
 ok=False
