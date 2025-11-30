@@ -3,6 +3,7 @@
 configuration SRTreeAppC @safe() { }
 implementation{
 	components SRTreeC;
+	components RandomC;
 
 #if defined(DELUGE) //defined(DELUGE_BASESTATION) || defined(DELUGE_LIGHT_BASESTATION)
 	components DelugeC;
@@ -20,17 +21,24 @@ implementation{
 	
 	components new AMSenderC(AM_ROUTINGMSG) as RoutingSenderC;
 	components new AMReceiverC(AM_ROUTINGMSG) as RoutingReceiverC;
-	components new AMSenderC(AM_NOTIFYPARENTMSG) as NotifySenderC;
-	components new AMReceiverC(AM_NOTIFYPARENTMSG) as NotifyReceiverC;
+	//components new AMSenderC(AM_NOTIFYPARENTMSG) as NotifySenderC;
+	//components new AMReceiverC(AM_NOTIFYPARENTMSG) as NotifyReceiverC;
 #ifdef SERIAL_EN
 	components new SerialAMSenderC(AM_NOTIFYPARENTMSG);
 	components new SerialAMReceiverC(AM_NOTIFYPARENTMSG);
 #endif
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as RoutingSendQueueC;
 	components new PacketQueueC(RECEIVER_QUEUE_SIZE) as RoutingReceiveQueueC;
-	components new PacketQueueC(SENDER_QUEUE_SIZE) as NotifySendQueueC;
-	components new PacketQueueC(RECEIVER_QUEUE_SIZE) as NotifyReceiveQueueC;
-	
+	//components new PacketQueueC(SENDER_QUEUE_SIZE) as NotifySendQueueC;
+	//components new PacketQueueC(RECEIVER_QUEUE_SIZE) as NotifyReceiveQueueC;
+	//ADDED
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as AggMinSendQueueC;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as AggMinReceiveQueueC;
+    components new AMSenderC(AGGREGATION_TYPE_MIN) as AggMinSenderC;
+    components new AMReceiverC(AGGREGATION_TYPE_MIN) as AggMinReceiverC;
+
+    components new TimerMilliC() as EpochTimerC;
+	//END ADDED
 	SRTreeC.Boot->MainC.Boot;
 	
 	SRTreeC.RadioControl -> ActiveMessageC;
@@ -46,12 +54,12 @@ implementation{
 	SRTreeC.RoutingAMPacket->RoutingSenderC.AMPacket;
 	SRTreeC.RoutingAMSend->RoutingSenderC.AMSend;
 	SRTreeC.RoutingReceive->RoutingReceiverC.Receive;
-	
+/* no tag
 	SRTreeC.NotifyPacket->NotifySenderC.Packet;
 	SRTreeC.NotifyAMPacket->NotifySenderC.AMPacket;
 	SRTreeC.NotifyAMSend->NotifySenderC.AMSend;
 	SRTreeC.NotifyReceive->NotifyReceiverC.Receive;
-	
+*/
 #ifdef SERIAL_EN	
 	SRTreeC.SerialReceive->SerialAMReceiverC.Receive;
 	SRTreeC.SerialAMSend->SerialAMSenderC.AMSend;
@@ -61,7 +69,17 @@ implementation{
 #endif
 	SRTreeC.RoutingSendQueue->RoutingSendQueueC;
 	SRTreeC.RoutingReceiveQueue->RoutingReceiveQueueC;
-	SRTreeC.NotifySendQueue->NotifySendQueueC;
-	SRTreeC.NotifyReceiveQueue->NotifyReceiveQueueC;
+	//SRTreeC.NotifySendQueue->NotifySendQueueC;
+	//SRTreeC.NotifyReceiveQueue->NotifyReceiveQueueC;
 	
+	//ADDED
+	SRTreeC.Random->RandomC;
+	SRTreeC.AggMinPacket->AggMinSenderC.Packet;
+    SRTreeC.AggMinAMPacket->AggMinSenderC.AMPacket;
+    SRTreeC.AggMinAMSend->AggMinSenderC.AMSend;
+    SRTreeC.AggMinReceive->AggMinReceiverC.Receive;
+    SRTreeC.AggMinSendQueue->AggMinSendQueueC;
+    SRTreeC.AggMinReceiveQueue->AggMinReceiveQueueC;
+    SRTreeC.EpochTimer->EpochTimerC;
+	//END ADDED
 }
