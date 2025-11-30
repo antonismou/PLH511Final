@@ -69,7 +69,7 @@ h=True
 while(h):
 	try:
 		h=t.runNextEvent()
-		#print h
+		print h
 	except:
 		print sys.exc_info()
 		e.print_stack_trace()
