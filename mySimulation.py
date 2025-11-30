@@ -23,6 +23,8 @@ t.addChannel("printTopology",f)
 t.addChannel("Radio",f)
 #t.addChannel("Serial",f)
 t.addChannel("SRTreeC",f)
+t.addChannel("Min",f)
+t.addChannel("Results",f)
 #t.addChannel("PacketQueueC",f)
 
 for i in range(0,10):
