@@ -81,5 +81,6 @@ implementation{
     SRTreeC.AggMinSendQueue->AggMinSendQueueC;
     SRTreeC.AggMinReceiveQueue->AggMinReceiveQueueC;
     SRTreeC.EpochTimer->EpochTimerC;
+	SRTreeC.AggMinAMSend.sendDone -> SRTreeC.AggMinSendDone.sendDone;
 	//END ADDED
 }
