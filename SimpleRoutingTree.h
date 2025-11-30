@@ -1,13 +1,6 @@
 #ifndef SIMPLEROUTINGTREE_H
 #define SIMPLEROUTINGTREE_H
 
-//moved here from SRTreeC.nc
-task void sendRoutingTask();
-task void receiveRoutingTask();
-//no tag
-//task void sendNotifyTask();
-//task void receiveNotifyTask();
-
 enum{
 	SENDER_QUEUE_SIZE=5,
 	RECEIVER_QUEUE_SIZE=3,

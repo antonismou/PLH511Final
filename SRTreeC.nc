@@ -100,6 +100,13 @@ implementation
 	uint32_t agg_sum;
 	uint16_t agg_count;
 	//END ADDED
+
+	task void sendRoutingTask();
+	task void receiveRoutingTask();
+	//no tag
+	//task void sendNotifyTask();
+	//task void receiveNotifyTask();
+
 	/* no tag
 		void setLostRoutingSendTask(bool state){
 			atomic{
