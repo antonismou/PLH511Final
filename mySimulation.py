@@ -72,7 +72,7 @@ while(h):
 		#print h
 	except:
 		print sys.exc_info()
-#		e.print_stack_trace()
+		e.print_stack_trace()
 
 	if (t.time()>= SIM_END_TIME):
 		h=False
