@@ -1161,6 +1161,9 @@ implementation
 		}else if(aggType==AGGREGATION_TYPE_AVG){
 			// similar for AVG
 		}
+		agg_count=0;
+		agg_sum=0;
+		agg_min=0xFFFF;
 	}
 
 	task void sendAggMinTask(){
