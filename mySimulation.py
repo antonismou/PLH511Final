@@ -2,7 +2,6 @@
 
 from TOSSIM import *
 import sys ,os
-import traceback
 import random
 
 if(len(sys.argv)!=3):
@@ -31,7 +30,7 @@ t.addChannel("Sample",f)
 
 for i in range(0,nodeCount):
 	m=t.getNode(i)
-	m.bootAtTime(10*t.ticksPerSecond() + i)
+	m.bootAtTime(1*t.ticksPerSecond() + i)
 
 
 topo = open(topologyFile, "r")
@@ -71,15 +70,14 @@ while(h):
 	try:
 		h=t.runNextEvent()
 		#print h
-	except Exception as e:
+	except:
 		print sys.exc_info()
-		traceback.print_exc()
+		e.print_stack_trace()
 
 	if (t.time()>= SIM_END_TIME):
 		h=False
 	if(h<=0):
 		ok=False
-		break
 
 print "Node 0 connected with node 1" , r.connected(0,1) , r.connected(1,0)
 print "Node 0 connected with node 2" , r.connected(0,2) , r.connected(2,0)
