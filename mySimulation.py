@@ -69,8 +69,8 @@ h=True
 while(h):
 	try:
 		h=t.runNextEvent()
-		print h
-	except:
+		#print h
+	except Exception as e:
 		print sys.exc_info()
 		e.print_stack_trace()
 
