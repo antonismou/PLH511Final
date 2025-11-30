@@ -99,14 +99,35 @@ implementation
 	uint16_t agg_min;
 	uint32_t agg_sum;
 	uint16_t agg_count;
+	bool AvgSendBusy=FALSE;	
+	bool MinSendBusy=FALSE;	
+	bool SumSendBusy=FALSE;
 	//END ADDED
 
 	task void sendRoutingTask();
 	task void receiveRoutingTask();
+	task void sendAggMinTask();
+	task void receiveAggMinTask();
 	//no tag
 	//task void sendNotifyTask();
 	//task void receiveNotifyTask();
+	void setAvgSendBusy(bool state){
+		atomic{
+		AvgSendBusy = state;
+		}
+	}
 
+	void setMinSendBusy(bool state){
+		atomic{
+		MinSendBusy = state;
+		}
+	}
+
+	void setSumSendBusy(bool state){
+		atomic{
+		SumSendBusy = state;
+		}
+	}
 	/* no tag
 		void setLostRoutingSendTask(bool state){
 			atomic{
@@ -204,6 +225,9 @@ implementation
 		call RadioControl.start();
 		
 		setRoutingSendBusy(FALSE);
+		setAvgSendBusy(FALSE);
+		setMinSendBusy(FALSE);
+		setSumSendBusy(FALSE);
 		//setNotifySendBusy(FALSE); no tag
 		#ifdef SERIAL_EN
 		setSerialBusy(FALSE);
@@ -216,6 +240,7 @@ implementation
 			#endif
 			curdepth=0;
 			parentID=0;
+			epochCounter=0;
 			dbg("Boot", "curdepth = %d  ,  parentID= %d \n", curdepth , parentID);
 			#ifdef PRINTFDBG_MODE
 			printf("Booted NodeID= %d : curdepth= %d , parentID= %d \n", TOS_NODE_ID ,curdepth , parentID);
@@ -1066,4 +1091,156 @@ implementation
 	}
 */
 	
+	//ADDED
+	event void EpochTimer.fired(){
+		message_t tmp;
+		error_t enqueueDone;
+		AggregationMin* msgMin;
+		AggregationSUM* msgSum;
+		AggregationAVG* msgAvg;
+
+		dbg("Epoch","EpochTimer fired! \n");
+
+		epochCounter+=1;
+		if(epochCounter==1){
+			sample = (call Random.rand16() % 60) + 1; // random sample between 1 and 60
+		}else{
+			sample = (sample * ((call Random.rand16() % 40) + 80)) / 100; // * 0.8 to 1.2
+			if(sample > 60){
+				sample = 60;
+			}
+		}
+		dbg("Sample","New sample = %u \n", sample);
+		if(aggType==AGGREGATION_TYPE_MIN){
+			if(sample < agg_min){
+				temp = sample;
+				agg_min = sample;
+			}else{
+				temp = agg_min;
+			}
+			if(TOS_NODE_ID==0){
+				dbg("Results","AGG RESULT epoch=%u MIN=%u \n", epochCounter, agg_min);
+			}else{
+				if(call AggMinSendQueue.full()){
+					dbg("Min","AggMinSendQueue is FULL!!! \n");
+					return;
+				}
+				msgMin = (AggregationMin*) (call AggMinPacket.getPayload(&tmp, sizeof(AggregationMin)));
+				if(msgMin==NULL){
+					dbg("Min","EpochTimer.fired(): No valid payload... \n");
+					return;
+				}
+				atomic{
+				msgMin->senderID = TOS_NODE_ID;
+				msgMin->minVal = agg_min;
+				msgMin->epoch = epochCounter;
+				}
+				dbg("Min","NodeID= %d : AggregationMin value= %u \n", TOS_NODE_ID, agg_min);
+				call AggMinAMPacket.setDestination(&tmp, parentID);
+				call AggMinPacket.setPayloadLength(&tmp, sizeof(AggregationMin));
+				enqueueDone = call AggMinSendQueue.enqueue(tmp);
+
+				if(enqueueDone==SUCCESS){
+					if(call AggMinSendQueue.size()==1){
+						dbg("Min","SendAggMinTask() posted!!\n");
+						post sendAggMinTask();
+					}
+					dbg("Min","AggregationMin enqueued successfully in SendingQueue!!!\n");
+				}
+			}//if for TOS_NODE_ID==0	
+		}else if(aggType==AGGREGATION_TYPE_SUM){
+			// similar for SUM
+		}else if(aggType==AGGREGATION_TYPE_AVG){
+			// similar for AVG
+		}
+	}
+
+	task void sendAggMinTask(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+
+		dbg("Min","SendAggMinTask(): Starting....\n");
+		if(call AggMinSendQueue.empty()){
+			dbg("Min","SendAggMinTask(): Q is empty!\n");
+			return;
+		}
+		if(MinSendBusy){
+			dbg("Min","SendAggMinTask(): MinSendBusy= TRUE!!!\n");
+			return;
+		}
+		radioAggMinSendPkt = call AggMinSendQueue.dequeue();
+		mlen = call AggMinPacket.payloadLength(&radioAggMinSendPkt);
+		mdest = call AggMinAMPacket.destination(&radioAggMinSendPkt);
+		if(mlen!=sizeof(AggregationMin)){
+			dbg("Min","\t\t SendAggMinTask(): Unknown message!!!\n");
+			return;
+		}
+		
+		sendDone = call AggMinAMSend.send(mdest, &radioAggMinSendPkt, mlen);
+		if(sendDone==SUCCESS){
+			dbg("Min","SendAggMinTask(): Send returned success!!!\n");
+			setMinSendBusy(TRUE);
+		}else{
+			dbg("Min","send failed!!!\n");
+		}
+	}
+
+	event void AggMinAMSend.sendDone(message_t* msg, error_t err){
+		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setMinSendBusy(FALSE);
+		if(!(call AggMinSendQueue.empty())){
+			post sendAggMinTask();
+		}
+	}
+
+	event message_t* AggMinReceive.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggMinAMPacket.source(msg);
+		dbg("Min","### AggMinReceive.receive() start ##### \n");
+		dbg("Min","Something received!!!  from %u  %u \n",((AggregationMin*) payload)->senderID ,  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call AggMinReceiveQueue.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Min","posting receiveAggMinTask()!!!! \n");
+			post receiveAggMinTask();
+		}else{
+			dbg("Min","AggMinMsg enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
+	task void receiveAggMinTask(){
+		uint8_t len;
+		uint16_t msource;
+		message_t radioAggMinRecPkt;
+		AggregationMin* mpkt;
+
+		dbg("Min","ReceiveAggMinTask():received msg...\n");
+		radioAggMinRecPkt = call AggMinReceiveQueue.dequeue();
+		len = call AggMinPacket.payloadLength(&radioAggMinRecPkt);
+		dbg("Min","ReceiveAggMinTask(): len=%u \n",len);
+		if(len == sizeof(AggregationMin)){
+			dbg("Min","receiveAggMinTask():senderID= %d , minVal= %u , epoch= %u \n", mpkt->senderID , mpkt->minVal, mpkt->epoch);
+			msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
+			mpkt = (AggregationMin*) (call AggMinPacket.getPayload(&radioAggMinRecPkt,len));
+			if(mpkt==NULL){
+				dbg("Min","receiveAggMinTask(): No valid payload... \n");
+				return;
+			}
+			if(mpkt->epoch != epochCounter){
+				dbg("Min","receiveAggMinTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
+				return;
+			}else if(mpkt->minVal < agg_min){
+				agg_min = mpkt->minVal;
+				dbg("Min","NodeID= %d : New agg_min = %u \n", TOS_NODE_ID, agg_min);
+			}
+		}
+	}
 }
