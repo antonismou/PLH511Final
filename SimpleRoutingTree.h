@@ -1,6 +1,12 @@
 #ifndef SIMPLEROUTINGTREE_H
 #define SIMPLEROUTINGTREE_H
 
+//moved here from SRTreeC.nc
+task void sendRoutingTask();
+task void receiveRoutingTask();
+//no tag
+//task void sendNotifyTask();
+//task void receiveNotifyTask();
 
 enum{
 	SENDER_QUEUE_SIZE=5,
@@ -24,12 +30,7 @@ enum{
 /*uint16_t AM_ROUTINGMSG=AM_SIMPLEROUTINGTREEMSG;
 uint16_t AM_NOTIFYPARENTMSG=AM_SIMPLEROUTINGTREEMSG;
 */
-//moved here from SRTreeC.nc
-task void sendRoutingTask();
-task void receiveRoutingTask();
-//no tag
-//task void sendNotifyTask();
-//task void receiveNotifyTask();
+
 //ADDED
 typedef nx_struct AggregationMin {
 	nx_uint16_t epoch;      // epoch number
