@@ -2,6 +2,7 @@
 
 from TOSSIM import *
 import sys ,os
+import traceback
 import random
 
 if(len(sys.argv)!=3):
