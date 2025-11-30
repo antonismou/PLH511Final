@@ -48,7 +48,7 @@ implementation{
 	SRTreeC.Led1Timer-> Led1TimerC;
 	SRTreeC.Led2Timer-> Led2TimerC;
 	SRTreeC.RoutingMsgTimer->RoutingMsgTimerC;
-	SRTreeC.LostTaskTimer->LostTaskTimerC;
+	//SRTreeC.LostTaskTimer->LostTaskTimerC;
 	
 	SRTreeC.RoutingPacket->RoutingSenderC.Packet;
 	SRTreeC.RoutingAMPacket->RoutingSenderC.AMPacket;
