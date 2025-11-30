@@ -79,6 +79,7 @@ while(h):
 		h=False
 	if(h<=0):
 		ok=False
+		break
 
 print "Node 0 connected with node 1" , r.connected(0,1) , r.connected(1,0)
 print "Node 0 connected with node 2" , r.connected(0,2) , r.connected(2,0)
