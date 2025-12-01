@@ -74,6 +74,7 @@ implementation
 	
 	message_t radioRoutingSendPkt;
 	//message_t radioNotifySendPkt; no tag
+	message_t radioAggMinSendPkt;
 	
 	message_t serialPkt;
 	//message_t serialRecPkt;
@@ -1161,7 +1162,7 @@ implementation
 	}
 
 	task void sendAggMinTask(){
-		message_t radioAggMinSendPkt;
+		
 		uint8_t mlen;
 		uint16_t mdest;
 		error_t sendDone;
