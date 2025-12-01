@@ -81,6 +81,21 @@ implementation{
     SRTreeC.AggMinReceive->AggMinReceiverC.Receive;
     SRTreeC.AggMinSendQueue->AggMinSendQueueC;
     SRTreeC.AggMinReceiveQueue->AggMinReceiveQueueC;
+
+	SRTreeC.AggAvgPacket->AggAvgSenderC.Packet;
+    SRTreeC.AggAvgAMPacket->AggAvgSenderC.AMPacket;
+    SRTreeC.AggAvgAMSend->AggAvgSenderC.AMSend;
+    SRTreeC.AggAvgReceive->AggAvgReceiverC.Receive;
+    SRTreeC.AggAvgSendQueue->AggAvgSendQueueC;
+    SRTreeC.AggAvgReceiveQueue->AggAvgReceiveQueueC;
+
+	SRTreeC.AggSumPacket->AggSumSenderC.Packet;
+    SRTreeC.AggSumAMPacket->AggSumSenderC.AMPacket;
+    SRTreeC.AggSumAMSend->AggSumSenderC.AMSend;
+    SRTreeC.AggSumReceive->AggSumReceiverC.Receive;
+    SRTreeC.AggSumSendQueue->AggSumSendQueueC;
+    SRTreeC.AggSumReceiveQueue->AggSumReceiveQueueC;
+
     SRTreeC.EpochTimer->EpochTimerC;
 
 	SRTreeC.Seed->RandomMlcgC.SeedInit;
