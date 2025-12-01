@@ -25,9 +25,10 @@ t.addChannel("Radio",f)
 t.addChannel("SRTreeC",f)
 t.addChannel("Min",f)
 t.addChannel("Results",f)
+t.addChannel("Sample",f)
 #t.addChannel("PacketQueueC",f)
 
-for i in range(0,10):
+for i in range(0,nodeCount):
 	m=t.getNode(i)
 	m.bootAtTime(10*t.ticksPerSecond() + i)
 
@@ -71,7 +72,7 @@ while(h):
 		#print h
 	except:
 		print sys.exc_info()
-#		e.print_stack_trace()
+		e.print_stack_trace()
 
 	if (t.time()>= SIM_END_TIME):
 		h=False

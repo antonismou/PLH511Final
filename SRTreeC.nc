@@ -234,7 +234,10 @@ implementation
 		setSerialBusy(FALSE);
 		#endif
 		roundCounter =0;
-		
+		agg_count=0;
+		agg_sum=0;
+		agg_min=0xFFFF;
+		sample=0;
 		if(TOS_NODE_ID==0){
 			#ifdef SERIAL_EN
 			call SerialControl.start();
@@ -1114,6 +1117,8 @@ implementation
 			sample = (sample * ((call Random.rand16() % 40) + 80)) / 100; // * 0.8 to 1.2
 			if(sample > 60){
 				sample = 60;
+			}else if(sample < 1){
+				sample = 1;
 			}
 		}
 		dbg("Sample","New sample = %u \n", sample);
@@ -1124,6 +1129,7 @@ implementation
 			}else{
 				temp = agg_min;
 			}
+			dbg("Sample","NodeID= %d : AggregationMin sample= %u , agg_min= %u \n", TOS_NODE_ID, sample, agg_min);
 			if(TOS_NODE_ID==0){
 				dbg("Results","AGG RESULT epoch=%u MIN=%u \n", epochCounter, agg_min);
 			}else{
@@ -1159,6 +1165,9 @@ implementation
 		}else if(aggType==AGGREGATION_TYPE_AVG){
 			// similar for AVG
 		}
+		agg_count=0;
+		agg_sum=0;
+		agg_min=0xFFFF;
 	}
 
 	task void sendAggMinTask(){
@@ -1174,6 +1183,7 @@ implementation
 		}
 		if(MinSendBusy){
 			dbg("Min","SendAggMinTask(): MinSendBusy= TRUE!!!\n");
+			post sendAggMinTask();
 			return;
 		}
 		radioAggMinSendPkt = call AggMinSendQueue.dequeue();
@@ -1185,7 +1195,7 @@ implementation
 		}
 		
 		sendDone = call AggMinAMSend.send(mdest, &radioAggMinSendPkt, mlen);
-		if(sendDone==SUCCESS){
+		if(sendDone == SUCCESS ){
 			dbg("Min","SendAggMinTask(): Send returned success!!!\n");
 			setMinSendBusy(TRUE);
 		}else{
@@ -1194,6 +1204,7 @@ implementation
 	}
 
 	event void AggMinAMSend.sendDone(message_t* msg, error_t err){
+		dbg("Min","Inside the AggMinAMSend.sendDone() \n");
 		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
 		setMinSendBusy(FALSE);
 		if(!(call AggMinSendQueue.empty())){
