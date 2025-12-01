@@ -115,6 +115,10 @@ implementation
 	task void receiveRoutingTask();
 	task void sendAggMinTask();
 	task void receiveAggMinTask();
+	task void sendAggSumTask();
+	task void receiveAggSumTask();
+	task void sendAggAvgTask();
+	task void receiveAggAvgTask();
 	//no tag
 	//task void sendNotifyTask();
 	//task void receiveNotifyTask();
