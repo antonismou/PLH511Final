@@ -54,7 +54,7 @@ module SRTreeC
 	uses interface Receive as AggMinReceive;
 	uses interface PacketQueue as AggMinSendQueue;
 	uses interface PacketQueue as AggMinReceiveQueue;
-	/* --- commented out for testing perposes
+
 	uses interface Packet as AggSumPacket;
 	uses interface AMSend as AggSumAMSend;
 	uses interface Receive as AggSumReceive;
@@ -66,8 +66,9 @@ module SRTreeC
 	uses interface Receive as AggAvgReceive;
 	uses interface PacketQueue as AggAvgSendQueue;
 	uses interface PacketQueue as AggAvgReceiveQueue;
-	*/
+	
 	uses interface Timer<TMilli> as EpochTimer;
+	// END ADDED
 }
 implementation
 {
@@ -76,6 +77,8 @@ implementation
 	message_t radioRoutingSendPkt;
 	//message_t radioNotifySendPkt; no tag
 	message_t radioAggMinSendPkt;
+	message_t radioAggAvgSendPkt;
+	message_t radioAggSumSendPkt;
 	
 	message_t serialPkt;
 	//message_t serialRecPkt;
@@ -375,8 +378,8 @@ implementation
 			dbg("Routing", "#######   ROUND   %u    ############## \n", roundCounter);
 			dbg("Routing", "#####################################\n");
 			//ADDED
-			//aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
-			aggType=1; // for testing only MIN
+			aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
+			//aggType=1; // for testing only MIN
 			epochCounter=0;
 			agg_count=0;
 			agg_sum=0;
@@ -1114,9 +1117,6 @@ implementation
 		message_t tmp;
 		uint16_t temp;
 		error_t enqueueDone;
-		AggregationMin* msgMin;
-		AggregationSUM* msgSum;
-		AggregationAVG* msgAvg;
 
 		dbg("Epoch","EpochTimer fired! \n");
 
@@ -1131,8 +1131,9 @@ implementation
 				sample = 1;
 			}
 		}
-		dbg("Sample","NodeID= %d : AggregationMin sample= %u , agg_min= %u \n", TOS_NODE_ID, sample, agg_min);
+		
 		if(aggType==AGGREGATION_TYPE_MIN){
+			dbg("Sample","NodeID= %d : AggregationMin sample= %u , agg_min= %u \n", TOS_NODE_ID, sample, agg_min);
 			if(sample < agg_min){
 				temp = sample;
 				agg_min = sample;
@@ -1143,6 +1144,7 @@ implementation
 			if(TOS_NODE_ID==0){
 				dbg("Results","AGG RESULT epoch=%u MIN=%u \n", epochCounter, agg_min);
 			}else{
+				AggregationMin* msgMin;
 				if(call AggMinSendQueue.full()){
 					dbg("Min","AggMinSendQueue is FULL!!! \n");
 					return;
@@ -1170,9 +1172,75 @@ implementation
 				}
 			}//if for TOS_NODE_ID==0	
 		}else if(aggType==AGGREGATION_TYPE_SUM){
-			// similar for SUM
+			dbg("Sample","NodeID= %d : AggregationSum sample= %u , sumBefore= %u \n", TOS_NODE_ID, sample, agg_sum);
+			agg_sum += sample;
+			dbg("Sample","NodeID= %d : AggregationSum sumAfter= %u \n", TOS_NODE_ID, agg_sum);
+			if(TOS_NODE_ID==0){
+				dbg("Results","AGG RESULT epoch=%u Sum=%u \n", epochCounter, agg_sum);
+			}else{
+				AggregationSum* msgSum;
+				if(call AggSumSendQueue.full()){
+					dbg("Sum","AggSumSendQueue is FULL!!! \n");
+					return;
+				}
+				msgSum = (AggregationSum*) (call AggSumPacket.getPayload(&tmp, sizeof(AggregationSum)));
+				if(msgSum==NULL){
+					dbg("Sum","EpochTimer.fired(): No valid payload... \n");
+					return;
+				}
+				atomic{
+				msgSum->sum = agg_sum;
+				msgSum->epoch = epochCounter;
+				}
+				dbg("Sum","NodeID= %d : AggregationSum value= %u \n", TOS_NODE_ID, agg_sum);
+				call AggSumAMPacket.setDestination(&tmp, parentID);
+				call AggSumPacket.setPayloadLength(&tmp, sizeof(AggregationSum));
+				enqueueDone = call AggSumSendQueue.enqueue(tmp);
+
+				if(enqueueDone==SUCCESS){
+					if(call AggSumSendQueue.size()==1){
+						dbg("Sum","SendAggSumTask() posted!!\n");
+						post sendAggSumTask();
+					}
+					dbg("Sum","AggregationSum enqueued successfully in SendingQueue!!!\n");
+				}
+			}//if for TOS_NODE_ID==0
 		}else if(aggType==AGGREGATION_TYPE_AVG){
-			// similar for AVG
+			dbg("Sample","NodeID= %d : AggregationAvg sample= %u , BeforeCount= %u, BeforeSum= %u \n", TOS_NODE_ID, sample, agg_count, agg_sum);
+			agg_sum += sample;
+			agg_count += 1;
+			dbg("Sample","NodeID= %d : AggregationAvg CountAfter = %u, SumAfter= %u \n", TOS_NODE_ID, agg_count, agg_sum);
+			if(TOS_NODE_ID==0){
+				dbg("Results","AGG RESULT epoch=%u AVG=%u/%u=%u \n", epochCounter, agg_sum, agg_count, agg_sum/agg_count);
+			}else{
+				AggregationAvg* msgAvg;
+				if(call AggAvgSendQueue.full()){
+					dbg("Avg","AggAvgSendQueue is FULL!!! \n");
+					return;
+				}
+				msgAvg = (AggregationAvg*) (call AggAvgPacket.getPayload(&tmp, sizeof(AggregationAvg)));
+				if(msgAvg==NULL){
+					dbg("Avg","EpochTimer.fired(): No valid payload... \n");
+					return;
+				}
+				atomic{
+				msgAvg->sum = agg_sum;
+				msgAvg->count = agg_count;
+				msgAvg->epoch = epochCounter;
+				}
+				dbg("Avg","NodeID= %d : AggregationAvg value= %u/%u \n", TOS_NODE_ID, agg_sum, agg_count);
+				call AggAvgAMPacket.setDestination(&tmp, parentID);
+				call AggAvgPacket.setPayloadLength(&tmp, sizeof(AggregationAvg));
+				enqueueDone = call AggAvgSendQueue.enqueue(tmp);
+
+				if(enqueueDone==SUCCESS){
+					if(call AggAvgSendQueue.size()==1){
+						dbg("Avg","SendAggAvgTask() posted!!\n");
+						post sendAggAvgTask();
+					}
+					dbg("Avg","AggregationAvg enqueued successfully in SendingQueue!!!\n");
+				}
+			}//if for TOS_NODE_ID==0
 		}
 		agg_count=0;
 		agg_sum=0;
@@ -1180,7 +1248,6 @@ implementation
 	}
 
 	task void sendAggMinTask(){
-		
 		uint8_t mlen;
 		uint16_t mdest;
 		error_t sendDone;
@@ -1212,12 +1279,92 @@ implementation
 		}
 	}
 
+	task void sendAggSumTask(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+		dbg("Sum","SendAggSumTask(): Starting....\n");
+		if(call AggSumSendQueue.empty()){
+			dbg("Sum","SendAggSumTask(): Q is empty!\n");
+			return;
+		}
+		if(SumSendBusy){
+			dbg("Sum","SendAggSumTask(): SumSendBusy= TRUE!!!\n");
+			post sendAggSumTask();
+			return;
+		}
+		radioAggSumSendPkt = call AggSumSendQueue.dequeue();
+		mlen = call AggSumPacket.payloadLength(&radioAggSumSendPkt);
+		mdest = call AggSumAMPacket.destination(&radioAggSumSendPkt);
+		if(mlen!=sizeof(AggregationSum)){
+			dbg("Sum","\t\t SendAggSumTask(): Unknown message!!!\n");
+			return;
+		}
+		
+		sendDone = call AggSumAMSend.send(mdest, &radioAggSumSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Sum","SendAggSumTask(): Send returned success!!!\n");
+			setSumSendBusy(TRUE);
+		}else{
+			dbg("Sum","send failed!!!\n");
+		}
+	}
+
+	task void sendAggAvgTask(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+
+		dbg("Avg","SendAggAvgTask(): Starting....\n");
+		if(call AggAvgSendQueue.empty()){
+			dbg("Avg","SendAggAvgTask(): Q is empty!\n");
+			return;
+		}
+		if(AvgSendBusy){
+			dbg("Avg","SendAggAvgTask(): AvgSendBusy= TRUE!!!\n");
+			post sendAggAvgTask();
+			return;
+		}
+		radioAggAvgSendPkt = call AggAvgSendQueue.dequeue();
+		mlen = call AggAvgPacket.payloadLength(&radioAggAvgSendPkt);
+		mdest = call AggAvgAMPacket.destination(&radioAggAvgSendPkt);
+		if(mlen!=sizeof(AggregationAvg)){
+			dbg("Avg","\t\t SendAggAvgTask(): Unknown message!!!\n");
+			return;
+		}
+		
+		sendDone = call AggAvgAMSend.send(mdest, &radioAggAvgSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Avg","SendAggAvgTask(): Send returned success!!!\n");
+			setAvgSendBusy(TRUE);
+		}else{
+			dbg("Avg","send failed!!!\n");
+		}
+	}
+
 	event void AggMinAMSend.sendDone(message_t* msg, error_t err){
 		dbg("Min","Inside the AggMinAMSend.sendDone() \n");
 		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
 		setMinSendBusy(FALSE);
 		if(!(call AggMinSendQueue.empty())){
 			post sendAggMinTask();
+		}
+	}
+	event void AggSumAMSend.sendDone(message_t* msg, error_t err){
+		dbg("Sum","Inside the AggSumAMSend.sendDone() \n");
+		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setSumSendBusy(FALSE);
+		if(!(call AggSumSendQueue.empty())){
+			post sendAggSumTask();
+		}
+	}
+
+	event void AggAvgAMSend.sendDone(message_t* msg, error_t err){
+		dbg("Avg","Inside the AggAvgAMSend.sendDone() \n");
+		dbg("Avg","A AggregationAvg package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setAvgSendBusy(FALSE);
+		if(!(call AggAvgSendQueue.empty())){
+			post sendAggAvgTask();
 		}
 	}
 
@@ -1239,6 +1386,50 @@ implementation
 			post receiveAggMinTask();
 		}else{
 			dbg("Min","AggMinMsg enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
+	event message_t* AggSumReceive.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggMinAMPacket.source(msg);
+		dbg("Sum","### AggSumReceive.receive() start ##### \n");
+		dbg("Sum","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call AggMinReceiveQueue.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Sum","posting receiveAggSumTask()!!!! \n");
+			post receiveAggSumTask();
+		}else{
+			dbg("Sum","AggSumMsg enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
+	event message_t* AggAvgReceive.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggAvgAMPacket.source(msg);
+		dbg("Avg","### AggAvgReceive.receive() start ##### \n");
+		dbg("Avg","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call AggAvgReceiveQueue.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Avg","posting receiveAggAvgTask()!!!! \n");
+			post receiveAggAvgTask();
+		}else{
+			dbg("Avg","AggAvgMsg enqueue failed!!! \n");
 		}
 		return msg;
 	}
@@ -1267,6 +1458,62 @@ implementation
 			}else if(mpkt->minVal < agg_min){
 				agg_min = mpkt->minVal;
 				dbg("Min","Inside the ReceiveAggMinTask(): New agg_min = %u \n", agg_min);
+			}
+		}//dbg("Sample","New sample = %u \n", sample);
+	}
+
+	task void receiveAggSumTask(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioAggSumRecPkt;
+		AggregationSum* mpkt;
+		dbg("Sum","ReceiveAggSumTask():received msg...\n");
+		radioAggSumRecPkt = call AggSumReceiveQueue.dequeue();
+		len = call AggSumPacket.payloadLength(&radioAggSumRecPkt);
+		dbg("Sum","ReceiveAggSumTask(): len=%u \n",len);
+		if(len == sizeof(AggregationSum)){
+			mpkt = (AggregationSum*) (call AggSumPacket.getPayload(&radioAggSumRecPkt,len));
+			if(mpkt==NULL){
+				dbg("Sum","receiveAggSumTask(): No valid payload... \n");
+				return;
+			}
+			dbg("Sum","receiveAggSumTask(): sumVal= %u , epoch= %u \n", mpkt->sumVal, mpkt->epoch);
+			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
+			if(mpkt->epoch != epochCounter + 1){
+				dbg("Sum","receiveAggSumTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
+				return;
+			}else(mpkt->minVal < agg_min){
+				agg_sum += mpkt->sumVal;
+				dbg("Sum","Inside the ReceiveAggSumTask(): New agg_sum = %u \n", agg_sum);
+			}
+		}//dbg("Sample","New sample = %u \n", sample);
+	}
+
+	task void receiveAggAvgTask(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioAggAvgRecPkt;
+		AggregationAvg* mpkt;
+
+		dbg("Avg","ReceiveAggAvgTask():received msg...\n");
+		radioAggAvgRecPkt = call AggAvgReceiveQueue.dequeue();
+		len = call AggAvgPacket.payloadLength(&radioAggAvgRecPkt);
+		dbg("Avg","ReceiveAggAvgTask(): len=%u \n",len);
+		if(len == sizeof(AggregationAvg)){
+			mpkt = (AggregationAvg*) (call AggAvgPacket.getPayload(&radioAggAvgRecPkt,len));
+			if(mpkt==NULL){
+				dbg("Avg","receiveAggAvgTask(): No valid payload... \n");
+				return;
+			}
+			dbg("Avg","receiveAggAvgTask(): sum= %u, count = %u, epoch= %u \n", mpkt->sum, mpkt->count, mpkt->epoch);
+			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
+			if(mpkt->epoch != epochCounter + 1){
+				dbg("Avg","receiveAggAvgTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
+				return;
+			}else{
+				agg_count += mpkt->count;
+				agg_sum += mpkt->sum;
+				dbg("Avg","Inside the ReceiveAggAvgTask(): New agg_sum = %u, New agg_count = %u \n", agg_sum, agg_count);
 			}
 		}//dbg("Sample","New sample = %u \n", sample);
 	}

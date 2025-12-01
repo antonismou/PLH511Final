@@ -30,16 +30,16 @@ typedef nx_struct AggregationMin {
 	nx_uint16_t minVal;     // minimum value (used for MIN) - changed from uint8_t to uint16_t
 } AggregationMin;
 
-typedef nx_struct AggregationSUM {
+typedef nx_struct AggregationSum {
 	nx_uint16_t epoch;      // epoch number
 	nx_uint16_t sum;      // sum value (used for SUM)
-} AggregationSUM;
+} AggregationSum;
 
-typedef nx_struct AggregationAVG {
+typedef nx_struct AggregationAvg {
 	nx_uint16_t epoch;      // epoch number
 	nx_uint16_t sum;        // sum value (used for AVG)
 	nx_uint16_t count;      // count of values (used for AVG)
-} AggregationAVG;
+} AggregationAvg;
 //END ADDED
 
 
