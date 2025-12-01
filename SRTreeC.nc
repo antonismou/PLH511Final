@@ -373,8 +373,8 @@ implementation
 			dbg("Routing", "#######   ROUND   %u    ############## \n", roundCounter);
 			dbg("Routing", "#####################################\n");
 			//ADDED
-			aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
-			//aggType=1; // for testing only MIN
+			//aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
+			aggType=1; // for testing only MIN
 			call RoutingMsgTimer.startOneShot(LENGTH_SEASON);
 		}
 		
