@@ -1121,7 +1121,7 @@ implementation
 				sample = 1;
 			}
 		}
-		dbg("Sample","New sample = %u \n", sample);
+		//dbg("Sample","New sample = %u \n", sample);
 		if(aggType==AGGREGATION_TYPE_MIN){
 			if(sample < agg_min){
 				temp = sample;
