@@ -37,6 +37,16 @@ implementation{
     components new AMSenderC(AGGREGATION_TYPE_MIN) as AggMinSenderC;
     components new AMReceiverC(AGGREGATION_TYPE_MIN) as AggMinReceiverC;
 
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as AggAvgSendQueueC;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as AggAvgReceiveQueueC;
+    components new AMSenderC(AGGREGATION_TYPE_AVG) as AggAvgSenderC;
+    components new AMReceiverC(AGGREGATION_TYPE_AVG) as AggAvgReceiverC;
+
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as AggSumSendQueueC;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as AggSumReceiveQueueC;
+    components new AMSenderC(AGGREGATION_TYPE_SUM) as AggSumSenderC;
+    components new AMReceiverC(AGGREGATION_TYPE_SUM) as AggSumReceiverC;
+
     components new TimerMilliC() as EpochTimerC;
 	components new TimerMilliC() as SeasonTimerC;
 	//END ADDED
