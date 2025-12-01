@@ -1204,7 +1204,7 @@ implementation
 				enqueueDone = call AggSumSendQueue.enqueue(tmp);
 
 				if(enqueueDone==SUCCESS){
-					if(call !(AggSumSendQueue.empty())){
+					if(call !(AggSumSendQueue.empty)){
 						dbg("Sum","SendAggSumTask() posted!!\n");
 						post sendAggSumTask();
 					}
