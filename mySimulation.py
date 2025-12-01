@@ -18,7 +18,7 @@ SIM_END_TIME= 400 * t.ticksPerSecond()
 print "TicksPerSecond : ", t.ticksPerSecond(),"\n"
 
 #t.addChannel("Boot",f)
-t.addChannel("Routing",f)
+#t.addChannel("Routing",f)
 t.addChannel("printTopology",f)
 #t.addChannel("Radio",f)
 #t.addChannel("Serial",f)
