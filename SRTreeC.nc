@@ -847,6 +847,10 @@ implementation
 				parentID= call RoutingAMPacket.source(&radioRoutingRecPkt);//mpkt->senderID;q
 				curdepth= mpkt->depth + 1;
 				aggType = mpkt->aggType;
+				epochCounter=0;
+				agg_count=0;
+				agg_sum=0;
+				agg_min=0xFFFF;
 				if (TOS_NODE_ID != 0){ 
 					call RoutingMsgTimer.startOneShot(TIMER_FAST_PERIOD);
 				}
