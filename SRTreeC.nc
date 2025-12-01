@@ -581,7 +581,7 @@ implementation
 		msource =call RoutingAMPacket.source(msg);
 		
 		dbg("Routing", "### RoutingReceive.receive() start ##### \n");
-		dbg("Routing", "Something received!!!  from %u  %u \n",((RoutingMsg*) payload)->senderID ,  msource);
+		dbg("Routing", "Something received!!!  from %u\n",  msource);
 		//dbg("SRTreeC", "Something received!!!\n");
 		#ifdef PRINTFDBG_MODE		
 		printf("Something Received!!!, len = %u , npm=%u , rm=%u\n",len, sizeof(NotifyParentMsg), sizeof(RoutingMsg));
