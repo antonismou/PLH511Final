@@ -1245,13 +1245,13 @@ implementation
 		len = call AggMinPacket.payloadLength(&radioAggMinRecPkt);
 		dbg("Min","ReceiveAggMinTask(): len=%u \n",len);
 		if(len == sizeof(AggregationMin)){
-			dbg("Min","receiveAggMinTask():senderID= %d , minVal= %u , epoch= %u \n", mpkt->senderID , mpkt->minVal, mpkt->epoch);
-			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
 			mpkt = (AggregationMin*) (call AggMinPacket.getPayload(&radioAggMinRecPkt,len));
 			if(mpkt==NULL){
 				dbg("Min","receiveAggMinTask(): No valid payload... \n");
 				return;
 			}
+			dbg("Min","receiveAggMinTask():senderID= %d , minVal= %u , epoch= %u \n", mpkt->senderID , mpkt->minVal, mpkt->epoch);
+			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
 			if(mpkt->epoch != epochCounter + 1){
 				dbg("Min","receiveAggMinTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
 				return;
