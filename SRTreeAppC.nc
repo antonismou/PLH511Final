@@ -3,7 +3,7 @@
 configuration SRTreeAppC @safe() { }
 implementation{
 	components SRTreeC;
-	components RandomC;
+	components RandomC , RandomMlcgC;
 
 #if defined(DELUGE) //defined(DELUGE_BASESTATION) || defined(DELUGE_LIGHT_BASESTATION)
 	components DelugeC;
@@ -82,6 +82,8 @@ implementation{
     SRTreeC.AggMinSendQueue->AggMinSendQueueC;
     SRTreeC.AggMinReceiveQueue->AggMinReceiveQueueC;
     SRTreeC.EpochTimer->EpochTimerC;
+
+	SRTreeC.Seed->RandomMlcgC.SeedInit;
 
 	//END ADDED
 }

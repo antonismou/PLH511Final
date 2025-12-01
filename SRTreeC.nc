@@ -43,6 +43,7 @@ module SRTreeC
 
 	// ADDED
 	uses interface Random as Random;
+	uses interface ParameterInit<uint16_t> as Seed;
 
 	uses interface PacketQueue as AggQuerySendQueue;
 	uses interface PacketQueue as AggQueryReceiveQueue;
@@ -224,6 +225,7 @@ implementation
 	event void Boot.booted(){
 		/////// arxikopoiisi radio kai serial
 		call RadioControl.start();
+		call Seed.init(clock()+TOS_NODE_ID);
 		
 		setRoutingSendBusy(FALSE);
 		setAvgSendBusy(FALSE);
