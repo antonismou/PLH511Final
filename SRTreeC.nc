@@ -379,7 +379,7 @@ implementation
 			agg_count=0;
 			agg_sum=0;
 			agg_min=0xFFFF;
-			call RoutingMsgTimer.startOneShot(LENGTH_SEASON);
+			//call RoutingMsgTimer.startOneShot(LENGTH_SEASON);
 		}
 		
 		if(call RoutingSendQueue.full())
