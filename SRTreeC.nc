@@ -1121,7 +1121,7 @@ implementation
 				sample = 1;
 			}
 		}
-		//dbg("Sample","New sample = %u \n", sample);
+		dbg("Sample","NodeID= %d : AggregationMin sample= %u , agg_min= %u \n", TOS_NODE_ID, sample, agg_min);
 		if(aggType==AGGREGATION_TYPE_MIN){
 			if(sample < agg_min){
 				temp = sample;
@@ -1129,7 +1129,7 @@ implementation
 			}else{
 				temp = agg_min;
 			}
-			dbg("Sample","NodeID= %d : AggregationMin sample= %u , agg_min= %u \n", TOS_NODE_ID, sample, agg_min);
+			
 			if(TOS_NODE_ID==0){
 				dbg("Results","AGG RESULT epoch=%u MIN=%u \n", epochCounter, agg_min);
 			}else{
