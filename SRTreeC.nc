@@ -375,6 +375,10 @@ implementation
 			//ADDED
 			//aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
 			aggType=1; // for testing only MIN
+			epochCounter=0;
+			agg_count=0;
+			agg_sum=0;
+			agg_min=0xFFFF;
 			call RoutingMsgTimer.startOneShot(LENGTH_SEASON);
 		}
 		
