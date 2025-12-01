@@ -1257,8 +1257,8 @@ implementation
 				return;
 			}else if(mpkt->minVal < agg_min){
 				agg_min = mpkt->minVal;
-				dbg("Min","NodeID= %d : New agg_min = %u \n", TOS_NODE_ID, agg_min);
+				dbg("Min","Inside the ReceiveAggMinTask(): New agg_min = %u \n", agg_min);
 			}
-		}
+		}//dbg("Sample","New sample = %u \n", sample);
 	}
 }
