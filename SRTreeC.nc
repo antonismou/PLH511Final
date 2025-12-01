@@ -1236,7 +1236,7 @@ implementation
 
 	task void receiveAggMinTask(){
 		uint8_t len;
-		uint16_t msource;
+		//uint16_t msource;
 		message_t radioAggMinRecPkt;
 		AggregationMin* mpkt;
 
@@ -1246,13 +1246,13 @@ implementation
 		dbg("Min","ReceiveAggMinTask(): len=%u \n",len);
 		if(len == sizeof(AggregationMin)){
 			dbg("Min","receiveAggMinTask():senderID= %d , minVal= %u , epoch= %u \n", mpkt->senderID , mpkt->minVal, mpkt->epoch);
-			msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
+			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
 			mpkt = (AggregationMin*) (call AggMinPacket.getPayload(&radioAggMinRecPkt,len));
 			if(mpkt==NULL){
 				dbg("Min","receiveAggMinTask(): No valid payload... \n");
 				return;
 			}
-			if(mpkt->epoch != epochCounter){
+			if(mpkt->epoch != epochCounter + 1){
 				dbg("Min","receiveAggMinTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
 				return;
 			}else if(mpkt->minVal < agg_min){
