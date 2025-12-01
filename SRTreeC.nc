@@ -1483,13 +1483,13 @@ implementation
 				dbg("Sum","receiveAggSumTask(): No valid payload... \n");
 				return;
 			}
-			dbg("Sum","receiveAggSumTask(): sumVal= %u , epoch= %u \n", mpkt->sumVal, mpkt->epoch);
+			dbg("Sum","receiveAggSumTask(): sum= %u , epoch= %u \n", mpkt->sum, mpkt->epoch);
 			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
 			if(mpkt->epoch != epochCounter + 1){
 				dbg("Sum","receiveAggSumTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
 				return;
-			}else(mpkt->minVal < agg_min){
-				agg_sum += mpkt->sumVal;
+			}else{
+				agg_sum += mpkt->sum;
 				dbg("Sum","Inside the ReceiveAggSumTask(): New agg_sum = %u \n", agg_sum);
 			}
 		}//dbg("Sample","New sample = %u \n", sample);
