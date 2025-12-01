@@ -838,10 +838,10 @@ implementation
 			//}
 			//
 			
-			dbg("Routing" , "receiveRoutingTask():senderID= %d , depth= %d \n", mpkt->senderID , mpkt->depth);
+			dbg("Routing" , "receiveRoutingTask(): depth= %d \n", mpkt->depth);
 			#ifdef PRINTFDBG_MODE
 			printf("NodeID= %d , RoutingMsg received! \n",TOS_NODE_ID);
-			printf("receiveRoutingTask():senderID= %d , depth= %d \n", mpkt->senderID , mpkt->depth);
+			printf("receiveRoutingTask(): depth= %d \n", mpkt->depth);
 			printfflush();
 			#endif
 			if ( (parentID<0)||(parentID>=65535))
