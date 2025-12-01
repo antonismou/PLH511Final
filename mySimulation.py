@@ -13,7 +13,7 @@ nodeCount=int(sys.argv[2])
 
 t=Tossim([])
 f=sys.stdout #open('./logfile.txt','w')
-SIM_END_TIME= 1000 * t.ticksPerSecond()
+SIM_END_TIME= 400 * t.ticksPerSecond()
 
 print "TicksPerSecond : ", t.ticksPerSecond(),"\n"
 
