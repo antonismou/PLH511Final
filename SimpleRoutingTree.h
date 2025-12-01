@@ -28,26 +28,22 @@ uint16_t AM_NOTIFYPARENTMSG=AM_SIMPLEROUTINGTREEMSG;
 typedef nx_struct AggregationMin {
 	nx_uint16_t epoch;      // epoch number
 	nx_uint16_t minVal;     // minimum value (used for MIN) - changed from uint8_t to uint16_t
-	nx_uint16_t senderID;   // id of node sending this msg (optional, for debug)
 } AggregationMin;
 
 typedef nx_struct AggregationSUM {
 	nx_uint16_t epoch;      // epoch number
 	nx_uint16_t sum;      // sum value (used for SUM)
-	nx_uint16_t senderID;   // id of node sending this msg (optional, for debug)
 } AggregationSUM;
 
 typedef nx_struct AggregationAVG {
 	nx_uint16_t epoch;      // epoch number
 	nx_uint16_t sum;        // sum value (used for AVG)
 	nx_uint16_t count;      // count of values (used for AVG)
-	nx_uint16_t senderID;   // id of node sending this msg (optional, for debug)
 } AggregationAVG;
 //END ADDED
 
 
 typedef nx_struct RoutingMsg{
-	nx_uint16_t senderID;
 	nx_uint8_t depth;
 	nx_uint8_t aggType;     // ADDED
 } RoutingMsg;

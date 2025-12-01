@@ -403,7 +403,6 @@ implementation
 			return;
 		}
 		atomic{
-			mrpkt->senderID=TOS_NODE_ID;
 			mrpkt->depth = curdepth;
 			mrpkt->aggType=aggType; // ADDED
 		}
@@ -1152,7 +1151,6 @@ implementation
 					return;
 				}
 				atomic{
-				msgMin->senderID = TOS_NODE_ID;
 				msgMin->minVal = agg_min;
 				msgMin->epoch = epochCounter;
 				}
@@ -1228,7 +1226,7 @@ implementation
 
 		msource = call AggMinAMPacket.source(msg);
 		dbg("Min","### AggMinReceive.receive() start ##### \n");
-		dbg("Min","Something received!!!  from %u  %u \n",((AggregationMin*) payload)->senderID ,  msource);
+		dbg("Min","Something received!!!  from %u\n",  msource);
 		
 		atomic{
 		memcpy(&tmp, msg, sizeof(message_t));
@@ -1259,7 +1257,7 @@ implementation
 				dbg("Min","receiveAggMinTask(): No valid payload... \n");
 				return;
 			}
-			dbg("Min","receiveAggMinTask():senderID= %d , minVal= %u , epoch= %u \n", mpkt->senderID , mpkt->minVal, mpkt->epoch);
+			dbg("Min","receiveAggMinTask(): minVal= %u , epoch= %u \n", mpkt->minVal, mpkt->epoch);
 			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
 			if(mpkt->epoch != epochCounter + 1){
 				dbg("Min","receiveAggMinTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
