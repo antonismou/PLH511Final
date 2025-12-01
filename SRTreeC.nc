@@ -56,12 +56,14 @@ module SRTreeC
 	uses interface PacketQueue as AggMinReceiveQueue;
 
 	uses interface Packet as AggSumPacket;
+	uses interface AMPacket as AggSumAMPacket;
 	uses interface AMSend as AggSumAMSend;
 	uses interface Receive as AggSumReceive;
 	uses interface PacketQueue as AggSumSendQueue;
 	uses interface PacketQueue as AggSumReceiveQueue;
 
 	uses interface Packet as AggAvgPacket;
+	uses interface AMPacket as AggAvgAMPacket;
 	uses interface AMSend as AggAvgAMSend;
 	uses interface Receive as AggAvgReceive;
 	uses interface PacketQueue as AggAvgSendQueue;
