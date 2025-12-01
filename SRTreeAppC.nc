@@ -38,6 +38,7 @@ implementation{
     components new AMReceiverC(AGGREGATION_TYPE_MIN) as AggMinReceiverC;
 
     components new TimerMilliC() as EpochTimerC;
+	components new TimerMilliC() as SeasonTimerC;
 	//END ADDED
 	SRTreeC.Boot->MainC.Boot;
 	

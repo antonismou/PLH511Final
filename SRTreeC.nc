@@ -278,6 +278,7 @@ implementation
 			if (TOS_NODE_ID==0)
 			{
 				call RoutingMsgTimer.startOneShot(TIMER_FAST_PERIOD);
+				
 			}
 		}
 		else
@@ -372,9 +373,9 @@ implementation
 			dbg("Routing", "#######   ROUND   %u    ############## \n", roundCounter);
 			dbg("Routing", "#####################################\n");
 			//ADDED
-			//aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
-			aggType=1; // for testing only MIN
-			//call RoutingMsgTimer.startOneShot(TIMER_PERIOD_MILLI);
+			aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
+			//aggType=1; // for testing only MIN
+			call RoutingMsgTimer.startOneShot(LENGTH_SEASON);
 		}
 		
 		if(call RoutingSendQueue.full())
