@@ -384,8 +384,8 @@ implementation
 			dbg("Routing", "#######   ROUND   %u    ############## \n", roundCounter);
 			dbg("Routing", "#####################################\n");
 			//ADDED
-			aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
-			//aggType=1; // for testing only MIN
+			//aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
+			aggType=2; // for testing only MIN
 			epochCounter=0;
 			agg_count=0;
 			agg_sum=0;
