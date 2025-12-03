@@ -1408,7 +1408,7 @@ implementation
 		atomic{
 		memcpy(&tmp, msg, sizeof(message_t));
 		}
-		enqueueDone = call AggMinReceiveQueue.enqueue(tmp);
+		enqueueDone = call AggSumReceiveQueue.enqueue(tmp);
 		if(enqueueDone == SUCCESS){
 			dbg("Sum","posting receiveAggSumTask()!!!! \n");
 			post receiveAggSumTask();
