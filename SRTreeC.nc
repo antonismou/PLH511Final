@@ -1401,7 +1401,7 @@ implementation
 		message_t tmp;
 		uint16_t msource;
 
-		msource = call AggMinAMPacket.source(msg);
+		msource = call AggSumAMPacket.source(msg);
 		dbg("Sum","### AggSumReceive.receive() start ##### \n");
 		dbg("Sum","Something received!!!  from %u\n",  msource);
 		
