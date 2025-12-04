@@ -101,10 +101,10 @@ implementation
 	uint16_t parentID;
 	// ADDED
 	uint8_t aggType;
-	uint16_t sample;
+	uint8_t sample;
 	uint16_t epochCounter;
-	uint16_t agg_min;
-	uint32_t agg_sum;
+	uint8_t agg_min;
+	uint16_t agg_sum;
 	uint16_t agg_count;
 	bool AvgSendBusy=FALSE;	
 	bool MinSendBusy=FALSE;	
@@ -390,6 +390,7 @@ implementation
 			agg_count=0;
 			agg_sum=0;
 			agg_min=0xFFFF;
+
 			//call RoutingMsgTimer.startOneShot(LENGTH_SEASON);
 		}
 		
@@ -1121,7 +1122,7 @@ implementation
 	//ADDED
 	event void EpochTimer.fired(){
 		message_t tmp;
-		uint16_t temp;
+		uint8_t temp;
 		error_t enqueueDone;
 
 		dbg("Epoch","EpochTimer fired! \n");
@@ -1162,7 +1163,7 @@ implementation
 				}
 				atomic{
 				msgMin->minVal = agg_min;
-				msgMin->epoch = epochCounter;
+				//msgMin->epoch = epochCounter;
 				}
 				dbg("Min","NodeID= %d : AggregationMin value= %u \n", TOS_NODE_ID, agg_min);
 				call AggMinAMPacket.setDestination(&tmp, parentID);
@@ -1196,7 +1197,7 @@ implementation
 				}
 				atomic{
 				msgSum->sum = agg_sum;
-				msgSum->epoch = epochCounter;
+				//msgSum->epoch = epochCounter;
 				}
 				dbg("Sum","NodeID= %d : AggregationSum value= %u \n", TOS_NODE_ID, agg_sum);
 				call AggSumAMPacket.setDestination(&tmp, parentID);
@@ -1232,7 +1233,7 @@ implementation
 				atomic{
 				msgAvg->sum = agg_sum;
 				msgAvg->count = agg_count;
-				msgAvg->epoch = epochCounter;
+				//msgAvg->epoch = epochCounter;
 				}
 				dbg("Avg","NodeID= %d : AggregationAvg value= %u/%u \n", TOS_NODE_ID, agg_sum, agg_count);
 				call AggAvgAMPacket.setDestination(&tmp, parentID);
@@ -1456,12 +1457,8 @@ implementation
 				dbg("Min","receiveAggMinTask(): No valid payload... \n");
 				return;
 			}
-			dbg("Min","receiveAggMinTask(): minVal= %u , epoch= %u \n", mpkt->minVal, mpkt->epoch);
-			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
-			if(mpkt->epoch != epochCounter + 1){
-				dbg("Min","receiveAggMinTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
-				return;
-			}else if(mpkt->minVal < agg_min){
+			dbg("Min","receiveAggMinTask(): minVal= %u \n", mpkt->minVal);
+			if(mpkt->minVal < agg_min){
 				agg_min = mpkt->minVal;
 				dbg("Min","Inside the ReceiveAggMinTask(): New agg_min = %u \n", agg_min);
 			}
@@ -1483,15 +1480,10 @@ implementation
 				dbg("Sum","receiveAggSumTask(): No valid payload... \n");
 				return;
 			}
-			dbg("Sum","receiveAggSumTask(): sum= %u , epoch= %u \n", mpkt->sum, mpkt->epoch);
-			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
-			if(mpkt->epoch != epochCounter + 1){
-				dbg("Sum","receiveAggSumTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
-				return;
-			}else{
-				agg_sum += mpkt->sum;
-				dbg("Sum","Inside the ReceiveAggSumTask(): New agg_sum = %u \n", agg_sum);
-			}
+			dbg("Sum","receiveAggSumTask(): sum= %u \n", mpkt->sum);
+			agg_sum += mpkt->sum;
+			dbg("Sum","Inside the ReceiveAggSumTask(): New agg_sum = %u \n", agg_sum);
+			
 		}//dbg("Sample","New sample = %u \n", sample);
 	}
 
@@ -1511,16 +1503,11 @@ implementation
 				dbg("Avg","receiveAggAvgTask(): No valid payload... \n");
 				return;
 			}
-			dbg("Avg","receiveAggAvgTask(): sum= %u, count = %u, epoch= %u \n", mpkt->sum, mpkt->count, mpkt->epoch);
+			dbg("Avg","receiveAggAvgTask(): sum= %u, count = %u \n", mpkt->sum, mpkt->count);
 			//msource = call AggMinAMPacket.source(&radioAggMinRecPkt);
-			if(mpkt->epoch != epochCounter + 1){
-				dbg("Avg","receiveAggAvgTask(): epoch mismatch (received=%u , current=%u) \n", mpkt->epoch, epochCounter);
-				return;
-			}else{
-				agg_count += mpkt->count;
-				agg_sum += mpkt->sum;
-				dbg("Avg","Inside the ReceiveAggAvgTask(): New agg_sum = %u, New agg_count = %u \n", agg_sum, agg_count);
-			}
+			agg_count += mpkt->count;
+			agg_sum += mpkt->sum;
+			dbg("Avg","Inside the ReceiveAggAvgTask(): New agg_sum = %u, New agg_count = %u \n", agg_sum, agg_count);
 		}//dbg("Sample","New sample = %u \n", sample);
 	}
 }
