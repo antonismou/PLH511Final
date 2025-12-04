@@ -685,8 +685,9 @@ implementation
 			return;
 		}
 		if (curdepth >= 0) {
+			uint8_t random_offset = call Random.rand16() % 10;
 			dbg("Epoch","Start epoch timer for node %d \n", TOS_NODE_ID);
-			call EpochTimer.startPeriodicAt(-(curdepth*WINDOW_MILLI),EPOCH_PERIOD_MILLI);
+			call EpochTimer.startPeriodicAt(-(curdepth*WINDOW_MILLI)+random_offset,EPOCH_PERIOD_MILLI);
 		}
 		
 		radioRoutingSendPkt = call RoutingSendQueue.dequeue();
@@ -1185,7 +1186,10 @@ implementation
 			agg_sum += sample;
 			dbg("Sample","NodeID= %d : AggregationSum sumAfter= %u \n", TOS_NODE_ID, agg_sum);
 			if(TOS_NODE_ID==0){
+				
+				dbg("Results","***////////||||||\\\\\\***\n");
 				dbg("Results","AGG RESULT epoch=%u Sum=%u \n", epochCounter, agg_sum);
+				dbg("Results","***\\\\\\\\||||||//////***\n");
 			}else{
 				AggregationSum* msgSum;
 				if(call AggSumSendQueue.full()){
@@ -1220,8 +1224,10 @@ implementation
 			agg_count += 1;
 			dbg("Sample","NodeID= %d : AggregationAvg CountAfter = %u, SumAfter= %u \n", TOS_NODE_ID, agg_count, agg_sum);
 			if(TOS_NODE_ID==0){
+				dbg("Results","***////////||||||\\\\\\***\n");
 				dbg("Results","AGG RESULT epoch=%u AVG=%u/%u=%u \n", epochCounter, agg_sum, agg_count, agg_sum/agg_count);
-			}else{
+				dbg("Results","***\\\\\\\\||||||//////***\n");
+				}else{
 				AggregationAvg* msgAvg;
 				if(call AggAvgSendQueue.full()){
 					dbg("Avg","AggAvgSendQueue is FULL!!! \n");
