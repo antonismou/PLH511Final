@@ -35,7 +35,7 @@ typedef nx_struct AggregationSum {
 
 typedef nx_struct AggregationAvg {
 	nx_uint16_t sum;        // sum value (used for AVG)
-	nx_uint16_t count;      // count of values (used for AVG)
+	nx_uint8_t count;      // count of values (used for AVG)
 } AggregationAvg;
 //END ADDED
 
