@@ -48,7 +48,6 @@ implementation{
     components new AMReceiverC(AGGREGATION_TYPE_SUM) as AggSumReceiverC;
 
     components new TimerMilliC() as EpochTimerC;
-	components new TimerMilliC() as SeasonTimerC;
 	//END ADDED
 	SRTreeC.Boot->MainC.Boot;
 	

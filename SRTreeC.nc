@@ -78,9 +78,7 @@ implementation
 	
 	message_t radioRoutingSendPkt;
 	//message_t radioNotifySendPkt; no tag
-	message_t radioAggMinSendPkt;
-	message_t radioAggAvgSendPkt;
-	message_t radioAggSumSendPkt;
+	
 	
 	message_t serialPkt;
 	//message_t serialRecPkt;
@@ -100,6 +98,9 @@ implementation
 	uint8_t curdepth;
 	uint16_t parentID;
 	// ADDED
+	message_t radioAggMinSendPkt;
+	message_t radioAggAvgSendPkt;
+	message_t radioAggSumSendPkt;
 	uint8_t aggType;
 	uint8_t sample;
 	uint16_t epochCounter;

@@ -26,17 +26,14 @@ uint16_t AM_NOTIFYPARENTMSG=AM_SIMPLEROUTINGTREEMSG;
 
 //ADDED
 typedef nx_struct AggregationMin {
-	//nx_uint16_t epoch;      // epoch number
 	nx_uint8_t minVal;     // minimum value (used for MIN)
 } AggregationMin;
 
 typedef nx_struct AggregationSum {
-	//nx_uint16_t epoch;      // epoch number
 	nx_uint16_t sum;      // sum value (used for SUM)
 } AggregationSum;
 
 typedef nx_struct AggregationAvg {
-	//nx_uint16_t epoch;      // epoch number
 	nx_uint16_t sum;        // sum value (used for AVG)
 	nx_uint16_t count;      // count of values (used for AVG)
 } AggregationAvg;
