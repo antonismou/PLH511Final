@@ -1,0 +1,2486 @@
+﻿TicksPerSecond :  10000000000
+
+
+  0   1   -50.0
+  1   0   -50.0
+  0   2   -50.0
+  2   0   -50.0
+  0   3   -50.0
+  3   0   -50.0
+  1   4   -50.0
+  4   1   -50.0
+  1   7   -50.0
+  7   1   -50.0
+  1   2   -50.0
+  2   1   -50.0
+  2   4   -50.0
+  4   2   -50.0
+  2   5   -50.0
+  5   2   -50.0
+  2   3   -50.0
+  3   2   -50.0
+  3   5   -50.0
+  5   3   -50.0
+  3   6   -50.0
+  6   3   -50.0
+  4   7   -50.0
+  7   4   -50.0
+  4   5   -50.0
+  5   4   -50.0
+  5   6   -50.0
+  6   5   -50.0
+  5   8   -50.0
+  8   5   -50.0
+  6   8   -50.0
+  8   6   -50.0
+  7   8   -50.0
+  8   7   -50.0
+0:0:10.199462896 DEBUG (3): NodeID 3: parentID= 0 , curdepth= 1 , aggType= 3
+0:0:10.199462896 DEBUG (1): NodeID 1: parentID= 0 , curdepth= 1 , aggType= 3
+0:0:10.199462896 DEBUG (2): NodeID 2: parentID= 0 , curdepth= 1 , aggType= 3
+0:0:10.397216811 DEBUG (6): NodeID 6: parentID= 3 , curdepth= 2 , aggType= 3
+0:0:10.397216811 DEBUG (5): NodeID 5: parentID= 3 , curdepth= 2 , aggType= 3
+0:0:10.399520875 DEBUG (4): NodeID 4: parentID= 2 , curdepth= 2 , aggType= 3
+0:0:10.402557356 DEBUG (7): NodeID 7: parentID= 1 , curdepth= 2 , aggType= 3
+0:0:10.593185447 DEBUG (8): NodeID 8: parentID= 5 , curdepth= 3 , aggType= 3
+0:0:29.305664073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 24 , BeforeCount= 0, BeforeSum= 0
+0:0:29.305664073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 24
+0:0:29.305664073 DEBUG (8): NodeID= 8 : AggregationAvg value= 24/1
+0:0:29.305664073 DEBUG (8): SendAggAvgTask() posted!!
+0:0:29.305664073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.305664083 DEBUG (8): SendAggAvgTask(): Starting....
+0:0:29.305664083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:0:29.309646604 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:0:29.309646604 DEBUG (5): Something received!!!  from 8
+0:0:29.309646604 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:0:29.309646614 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:0:29.309646614 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:0:29.309646614 DEBUG (5): receiveAggAvgTask(): sum= 24, count = 1
+0:0:29.309646614 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 24, New agg_count = 1
+0:0:29.309814449 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:0:29.309814449 DEBUG (8): A AggregationAvg package sent... True
+0:0:29.375976573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:0:29.375976573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:0:29.375976573 DEBUG (6): NodeID= 6 : AggregationAvg value= 26/1
+0:0:29.375976573 DEBUG (6): SendAggAvgTask() posted!!
+0:0:29.375976573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.375976583 DEBUG (6): SendAggAvgTask(): Starting....
+0:0:29.375976583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:0:29.376953135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 53 , BeforeCount= 0, BeforeSum= 0
+0:0:29.376953135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 53
+0:0:29.376953135 DEBUG (4): NodeID= 4 : AggregationAvg value= 53/1
+0:0:29.376953135 DEBUG (4): SendAggAvgTask() posted!!
+0:0:29.376953135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.376953145 DEBUG (4): SendAggAvgTask(): Starting....
+0:0:29.376953145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:0:29.377929698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:0:29.377929698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:0:29.377929698 DEBUG (7): NodeID= 7 : AggregationAvg value= 22/1
+0:0:29.377929698 DEBUG (7): SendAggAvgTask() posted!!
+0:0:29.377929698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.377929708 DEBUG (7): SendAggAvgTask(): Starting....
+0:0:29.377929708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:0:29.378906260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 34 , BeforeCount= 1, BeforeSum= 24
+0:0:29.378906260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 58
+0:0:29.378906260 DEBUG (5): NodeID= 5 : AggregationAvg value= 58/2
+0:0:29.378906260 DEBUG (5): SendAggAvgTask() posted!!
+0:0:29.378906260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.378906270 DEBUG (5): SendAggAvgTask(): Starting....
+0:0:29.378906270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:0:29.380935677 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:0:29.380935677 DEBUG (3): Something received!!!  from 5
+0:0:29.380935677 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:0:29.380935687 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:0:29.380935687 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:0:29.380935687 DEBUG (3): receiveAggAvgTask(): sum= 58, count = 2
+0:0:29.380935687 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 58, New agg_count = 2
+0:0:29.381103523 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:0:29.381103523 DEBUG (5): A AggregationAvg package sent... True
+0:0:29.383087137 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:0:29.383087137 DEBUG (3): Something received!!!  from 6
+0:0:29.383087137 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:0:29.383087147 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:0:29.383087147 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:0:29.383087147 DEBUG (3): receiveAggAvgTask(): sum= 26, count = 1
+0:0:29.383087147 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 84, New agg_count = 3
+0:0:29.383102401 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:0:29.383102401 DEBUG (2): Something received!!!  from 4
+0:0:29.383102401 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:0:29.383102411 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:0:29.383102411 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:0:29.383102411 DEBUG (2): receiveAggAvgTask(): sum= 53, count = 1
+0:0:29.383102411 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 53, New agg_count = 1
+0:0:29.383254983 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:0:29.383254983 DEBUG (6): A AggregationAvg package sent... True
+0:0:29.383270247 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:0:29.383270247 DEBUG (4): A AggregationAvg package sent... True
+0:0:29.385238625 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:0:29.385238625 DEBUG (7): A AggregationAvg package sent... True
+0:0:29.453125010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 13 , BeforeCount= 3, BeforeSum= 84
+0:0:29.453125010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 97
+0:0:29.453125010 DEBUG (3): NodeID= 3 : AggregationAvg value= 97/4
+0:0:29.453125010 DEBUG (3): SendAggAvgTask() posted!!
+0:0:29.453125010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.453125020 DEBUG (3): SendAggAvgTask(): Starting....
+0:0:29.453125020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:0:29.458648669 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:0:29.458648669 DEBUG (0): Something received!!!  from 3
+0:0:29.458648669 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:0:29.458648679 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:0:29.458648679 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:0:29.458648679 DEBUG (0): receiveAggAvgTask(): sum= 97, count = 4
+0:0:29.458648679 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 97, New agg_count = 4
+0:0:29.458816515 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:0:29.458816515 DEBUG (3): A AggregationAvg package sent... True
+0:0:29.460937510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 32 , BeforeCount= 1, BeforeSum= 53
+0:0:29.460937510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 85
+0:0:29.460937510 DEBUG (2): NodeID= 2 : AggregationAvg value= 85/2
+0:0:29.460937510 DEBUG (2): SendAggAvgTask() posted!!
+0:0:29.460937510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.460937520 DEBUG (2): SendAggAvgTask(): Starting....
+0:0:29.460937520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:0:29.461914072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 23 , BeforeCount= 0, BeforeSum= 0
+0:0:29.461914072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 1, SumAfter= 23
+0:0:29.461914072 DEBUG (1): NodeID= 1 : AggregationAvg value= 23/1
+0:0:29.461914072 DEBUG (1): SendAggAvgTask() posted!!
+0:0:29.461914072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:29.461914082 DEBUG (1): SendAggAvgTask(): Starting....
+0:0:29.461914082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:0:29.468460059 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:0:29.468460059 DEBUG (0): Something received!!!  from 2
+0:0:29.468460059 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:0:29.468460069 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:0:29.468460069 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:0:29.468460069 DEBUG (0): receiveAggAvgTask(): sum= 85, count = 2
+0:0:29.468460069 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 182, New agg_count = 6
+0:0:29.468627905 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:0:29.468627905 DEBUG (2): A AggregationAvg package sent... True
+0:0:29.471511804 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:0:29.471511804 DEBUG (0): Something received!!!  from 1
+0:0:29.471511804 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:0:29.471511814 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:0:29.471511814 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:0:29.471511814 DEBUG (0): receiveAggAvgTask(): sum= 23, count = 1
+0:0:29.471511814 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 205, New agg_count = 7
+0:0:29.471679650 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:0:29.471679650 DEBUG (1): A AggregationAvg package sent... True
+0:0:29.540039072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 12 , BeforeCount= 7, BeforeSum= 205
+0:0:29.540039072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 8, SumAfter= 217
+0:0:29.540039072 DEBUG (0): ***////////||||||\\\***
+0:0:29.540039072 DEBUG (0): AGG RESULT epoch=1 AVG=217/8=27
+0:0:29.540039072 DEBUG (0): ***\\\\||||||//////***
+0:0:48.836914073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:0:48.836914073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:0:48.836914073 DEBUG (8): NodeID= 8 : AggregationAvg value= 26/1
+0:0:48.836914073 DEBUG (8): SendAggAvgTask() posted!!
+0:0:48.836914073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.836914083 DEBUG (8): SendAggAvgTask(): Starting....
+0:0:48.836914083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:0:48.843170150 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:0:48.843170150 DEBUG (5): Something received!!!  from 8
+0:0:48.843170150 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:0:48.843170160 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:0:48.843170160 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:0:48.843170160 DEBUG (5): receiveAggAvgTask(): sum= 26, count = 1
+0:0:48.843170160 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 26, New agg_count = 1
+0:0:48.843337996 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:0:48.843337996 DEBUG (8): A AggregationAvg package sent... True
+0:0:48.907226573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 23 , BeforeCount= 0, BeforeSum= 0
+0:0:48.907226573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 23
+0:0:48.907226573 DEBUG (6): NodeID= 6 : AggregationAvg value= 23/1
+0:0:48.907226573 DEBUG (6): SendAggAvgTask() posted!!
+0:0:48.907226573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.907226583 DEBUG (6): SendAggAvgTask(): Starting....
+0:0:48.907226583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:0:48.908203135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 58 , BeforeCount= 0, BeforeSum= 0
+0:0:48.908203135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 58
+0:0:48.908203135 DEBUG (4): NodeID= 4 : AggregationAvg value= 58/1
+0:0:48.908203135 DEBUG (4): SendAggAvgTask() posted!!
+0:0:48.908203135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.908203145 DEBUG (4): SendAggAvgTask(): Starting....
+0:0:48.908203145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:0:48.909179698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 17 , BeforeCount= 0, BeforeSum= 0
+0:0:48.909179698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 17
+0:0:48.909179698 DEBUG (7): NodeID= 7 : AggregationAvg value= 17/1
+0:0:48.909179698 DEBUG (7): SendAggAvgTask() posted!!
+0:0:48.909179698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.909179708 DEBUG (7): SendAggAvgTask(): Starting....
+0:0:48.909179708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:0:48.909988407 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:0:48.909988407 DEBUG (3): Something received!!!  from 6
+0:0:48.909988407 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:0:48.909988417 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:0:48.909988417 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:0:48.909988417 DEBUG (3): receiveAggAvgTask(): sum= 23, count = 1
+0:0:48.909988417 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 23, New agg_count = 1
+0:0:48.910156253 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:0:48.910156253 DEBUG (6): A AggregationAvg package sent... True
+0:0:48.910156260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 34 , BeforeCount= 1, BeforeSum= 26
+0:0:48.910156260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 60
+0:0:48.910156260 DEBUG (5): NodeID= 5 : AggregationAvg value= 60/2
+0:0:48.910156260 DEBUG (5): SendAggAvgTask() posted!!
+0:0:48.910156260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.910156270 DEBUG (5): SendAggAvgTask(): Starting....
+0:0:48.910156270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:0:48.912323000 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:0:48.912323000 DEBUG (1): Something received!!!  from 7
+0:0:48.912323000 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:0:48.912323010 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:0:48.912323010 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:0:48.912323010 DEBUG (1): receiveAggAvgTask(): sum= 17, count = 1
+0:0:48.912323010 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 17, New agg_count = 1
+0:0:48.912490846 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:0:48.912490846 DEBUG (7): A AggregationAvg package sent... True
+0:0:48.916885345 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:0:48.916885345 DEBUG (2): Something received!!!  from 4
+0:0:48.916885345 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:0:48.916885355 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:0:48.916885355 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:0:48.916885355 DEBUG (2): receiveAggAvgTask(): sum= 58, count = 1
+0:0:48.916885355 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 58, New agg_count = 1
+0:0:48.917053191 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:0:48.917053191 DEBUG (4): A AggregationAvg package sent... True
+0:0:48.921585036 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:0:48.921585036 DEBUG (5): A AggregationAvg package sent... True
+0:0:48.984375010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 13 , BeforeCount= 1, BeforeSum= 23
+0:0:48.984375010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 2, SumAfter= 36
+0:0:48.984375010 DEBUG (3): NodeID= 3 : AggregationAvg value= 36/2
+0:0:48.984375010 DEBUG (3): SendAggAvgTask() posted!!
+0:0:48.984375010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.984375020 DEBUG (3): SendAggAvgTask(): Starting....
+0:0:48.984375020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:0:48.991989111 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:0:48.991989111 DEBUG (0): Something received!!!  from 3
+0:0:48.991989111 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:0:48.991989121 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:0:48.991989121 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:0:48.991989121 DEBUG (0): receiveAggAvgTask(): sum= 36, count = 2
+0:0:48.991989121 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 36, New agg_count = 2
+0:0:48.992156957 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:0:48.992156957 DEBUG (3): A AggregationAvg package sent... True
+0:0:48.992187510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 35 , BeforeCount= 1, BeforeSum= 58
+0:0:48.992187510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 93
+0:0:48.992187510 DEBUG (2): NodeID= 2 : AggregationAvg value= 93/2
+0:0:48.992187510 DEBUG (2): SendAggAvgTask() posted!!
+0:0:48.992187510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.992187520 DEBUG (2): SendAggAvgTask(): Starting....
+0:0:48.992187520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:0:48.993164072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 25 , BeforeCount= 1, BeforeSum= 17
+0:0:48.993164072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 42
+0:0:48.993164072 DEBUG (1): NodeID= 1 : AggregationAvg value= 42/2
+0:0:48.993164072 DEBUG (1): SendAggAvgTask() posted!!
+0:0:48.993164072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:0:48.993164082 DEBUG (1): SendAggAvgTask(): Starting....
+0:0:48.993164082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:0:48.994903574 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:0:48.994903574 DEBUG (0): Something received!!!  from 1
+0:0:48.994903574 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:0:48.994903584 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:0:48.994903584 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:0:48.994903584 DEBUG (0): receiveAggAvgTask(): sum= 42, count = 2
+0:0:48.994903584 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 78, New agg_count = 4
+0:0:48.995071420 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:0:48.995071420 DEBUG (1): A AggregationAvg package sent... True
+0:0:49.002639729 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:0:49.002639729 DEBUG (0): Something received!!!  from 2
+0:0:49.002639729 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:0:49.002639739 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:0:49.002639739 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:0:49.002639739 DEBUG (0): receiveAggAvgTask(): sum= 93, count = 2
+0:0:49.002639739 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 171, New agg_count = 6
+0:0:49.002807575 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:0:49.002807575 DEBUG (2): A AggregationAvg package sent... True
+0:0:49.071289072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 12 , BeforeCount= 6, BeforeSum= 171
+0:0:49.071289072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 7, SumAfter= 183
+0:0:49.071289072 DEBUG (0): ***////////||||||\\\***
+0:0:49.071289072 DEBUG (0): AGG RESULT epoch=2 AVG=183/7=26
+0:0:49.071289072 DEBUG (0): ***\\\\||||||//////***
+0:1:8.368164073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 28 , BeforeCount= 0, BeforeSum= 0
+0:1:8.368164073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 28
+0:1:8.368164073 DEBUG (8): NodeID= 8 : AggregationAvg value= 28/1
+0:1:8.368164073 DEBUG (8): SendAggAvgTask() posted!!
+0:1:8.368164073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.368164083 DEBUG (8): SendAggAvgTask(): Starting....
+0:1:8.368164083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:1:8.372421260 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:1:8.372421260 DEBUG (5): Something received!!!  from 8
+0:1:8.372421260 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:1:8.372421270 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:1:8.372421270 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:1:8.372421270 DEBUG (5): receiveAggAvgTask(): sum= 28, count = 1
+0:1:8.372421270 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 28, New agg_count = 1
+0:1:8.372589106 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:1:8.372589106 DEBUG (8): A AggregationAvg package sent... True
+0:1:8.438476573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 21 , BeforeCount= 0, BeforeSum= 0
+0:1:8.438476573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 21
+0:1:8.438476573 DEBUG (6): NodeID= 6 : AggregationAvg value= 21/1
+0:1:8.438476573 DEBUG (6): SendAggAvgTask() posted!!
+0:1:8.438476573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.438476583 DEBUG (6): SendAggAvgTask(): Starting....
+0:1:8.438476583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:1:8.439453135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 52 , BeforeCount= 0, BeforeSum= 0
+0:1:8.439453135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 52
+0:1:8.439453135 DEBUG (4): NodeID= 4 : AggregationAvg value= 52/1
+0:1:8.439453135 DEBUG (4): SendAggAvgTask() posted!!
+0:1:8.439453135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.439453145 DEBUG (4): SendAggAvgTask(): Starting....
+0:1:8.439453145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:1:8.440429698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 19 , BeforeCount= 0, BeforeSum= 0
+0:1:8.440429698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 19
+0:1:8.440429698 DEBUG (7): NodeID= 7 : AggregationAvg value= 19/1
+0:1:8.440429698 DEBUG (7): SendAggAvgTask() posted!!
+0:1:8.440429698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.440429708 DEBUG (7): SendAggAvgTask(): Starting....
+0:1:8.440429708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:1:8.441406260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 31 , BeforeCount= 1, BeforeSum= 28
+0:1:8.441406260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 59
+0:1:8.441406260 DEBUG (5): NodeID= 5 : AggregationAvg value= 59/2
+0:1:8.441406260 DEBUG (5): SendAggAvgTask() posted!!
+0:1:8.441406260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.441406270 DEBUG (5): SendAggAvgTask(): Starting....
+0:1:8.441406270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:1:8.442504885 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:1:8.442504885 DEBUG (2): Something received!!!  from 4
+0:1:8.442504885 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:1:8.442504895 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:1:8.442504895 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:1:8.442504895 DEBUG (2): receiveAggAvgTask(): sum= 52, count = 1
+0:1:8.442504895 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 52, New agg_count = 1
+0:1:8.442672731 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:1:8.442672731 DEBUG (4): A AggregationAvg package sent... True
+0:1:8.445693965 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:1:8.445693965 DEBUG (5): A AggregationAvg package sent... True
+0:1:8.445709206 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:1:8.445709206 DEBUG (6): A AggregationAvg package sent... True
+0:1:8.446884138 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:1:8.446884138 DEBUG (1): Something received!!!  from 7
+0:1:8.446884138 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:1:8.446884148 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:1:8.446884148 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:1:8.446884148 DEBUG (1): receiveAggAvgTask(): sum= 19, count = 1
+0:1:8.446884148 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 19, New agg_count = 1
+0:1:8.447051984 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:1:8.447051984 DEBUG (7): A AggregationAvg package sent... True
+0:1:8.515625010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 14 , BeforeCount= 0, BeforeSum= 0
+0:1:8.515625010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 1, SumAfter= 14
+0:1:8.515625010 DEBUG (3): NodeID= 3 : AggregationAvg value= 14/1
+0:1:8.515625010 DEBUG (3): SendAggAvgTask() posted!!
+0:1:8.515625010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.515625020 DEBUG (3): SendAggAvgTask(): Starting....
+0:1:8.515625020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:1:8.521102893 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:8.521102893 DEBUG (0): Something received!!!  from 3
+0:1:8.521102893 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:8.521102903 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:8.521102903 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:8.521102903 DEBUG (0): receiveAggAvgTask(): sum= 14, count = 1
+0:1:8.521102903 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 14, New agg_count = 1
+0:1:8.521270739 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:1:8.521270739 DEBUG (3): A AggregationAvg package sent... True
+0:1:8.523437510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 33 , BeforeCount= 1, BeforeSum= 52
+0:1:8.523437510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 85
+0:1:8.523437510 DEBUG (2): NodeID= 2 : AggregationAvg value= 85/2
+0:1:8.523437510 DEBUG (2): SendAggAvgTask() posted!!
+0:1:8.523437510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.523437520 DEBUG (2): SendAggAvgTask(): Starting....
+0:1:8.523437520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:1:8.524414072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 20 , BeforeCount= 1, BeforeSum= 19
+0:1:8.524414072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 39
+0:1:8.524414072 DEBUG (1): NodeID= 1 : AggregationAvg value= 39/2
+0:1:8.524414072 DEBUG (1): SendAggAvgTask() posted!!
+0:1:8.524414072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:8.524414082 DEBUG (1): SendAggAvgTask(): Starting....
+0:1:8.524414082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:1:8.527343753 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:8.527343753 DEBUG (0): Something received!!!  from 1
+0:1:8.527343753 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:8.527343763 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:8.527343763 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:8.527343763 DEBUG (0): receiveAggAvgTask(): sum= 39, count = 2
+0:1:8.527343763 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 53, New agg_count = 3
+0:1:8.527511598 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:1:8.527511598 DEBUG (1): A AggregationAvg package sent... True
+0:1:8.532424894 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:8.532424894 DEBUG (0): Something received!!!  from 2
+0:1:8.532424894 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:8.532424904 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:8.532424904 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:8.532424904 DEBUG (0): receiveAggAvgTask(): sum= 85, count = 2
+0:1:8.532424904 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 138, New agg_count = 5
+0:1:8.532592740 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:1:8.532592740 DEBUG (2): A AggregationAvg package sent... True
+0:1:8.602539072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 13 , BeforeCount= 5, BeforeSum= 138
+0:1:8.602539072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 6, SumAfter= 151
+0:1:8.602539072 DEBUG (0): ***////////||||||\\\***
+0:1:8.602539072 DEBUG (0): AGG RESULT epoch=3 AVG=151/6=25
+0:1:8.602539072 DEBUG (0): ***\\\\||||||//////***
+0:1:27.899414073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 31 , BeforeCount= 0, BeforeSum= 0
+0:1:27.899414073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 31
+0:1:27.899414073 DEBUG (8): NodeID= 8 : AggregationAvg value= 31/1
+0:1:27.899414073 DEBUG (8): SendAggAvgTask() posted!!
+0:1:27.899414073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:27.899414083 DEBUG (8): SendAggAvgTask(): Starting....
+0:1:27.899414083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:1:27.903900141 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:1:27.903900141 DEBUG (5): Something received!!!  from 8
+0:1:27.903900141 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:1:27.903900151 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:1:27.903900151 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:1:27.903900151 DEBUG (5): receiveAggAvgTask(): sum= 31, count = 1
+0:1:27.903900151 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 31, New agg_count = 1
+0:1:27.904067986 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:1:27.904067986 DEBUG (8): A AggregationAvg package sent... True
+0:1:27.969726573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 23 , BeforeCount= 0, BeforeSum= 0
+0:1:27.969726573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 23
+0:1:27.969726573 DEBUG (6): NodeID= 6 : AggregationAvg value= 23/1
+0:1:27.969726573 DEBUG (6): SendAggAvgTask() posted!!
+0:1:27.969726573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:27.969726583 DEBUG (6): SendAggAvgTask(): Starting....
+0:1:27.969726583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:1:27.970703135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 60 , BeforeCount= 0, BeforeSum= 0
+0:1:27.970703135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 60
+0:1:27.970703135 DEBUG (4): NodeID= 4 : AggregationAvg value= 60/1
+0:1:27.970703135 DEBUG (4): SendAggAvgTask() posted!!
+0:1:27.970703135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:27.970703145 DEBUG (4): SendAggAvgTask(): Starting....
+0:1:27.970703145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:1:27.971679698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 21 , BeforeCount= 0, BeforeSum= 0
+0:1:27.971679698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 21
+0:1:27.971679698 DEBUG (7): NodeID= 7 : AggregationAvg value= 21/1
+0:1:27.971679698 DEBUG (7): SendAggAvgTask() posted!!
+0:1:27.971679698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:27.971679708 DEBUG (7): SendAggAvgTask(): Starting....
+0:1:27.971679708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:1:27.972396855 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:1:27.972396855 DEBUG (3): Something received!!!  from 6
+0:1:27.972396855 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:1:27.972396865 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:1:27.972396865 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:1:27.972396865 DEBUG (3): receiveAggAvgTask(): sum= 23, count = 1
+0:1:27.972396865 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 23, New agg_count = 1
+0:1:27.972564701 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:1:27.972564701 DEBUG (6): A AggregationAvg package sent... True
+0:1:27.972656260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 31 , BeforeCount= 1, BeforeSum= 31
+0:1:27.972656260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 62
+0:1:27.972656260 DEBUG (5): NodeID= 5 : AggregationAvg value= 62/2
+0:1:27.972656260 DEBUG (5): SendAggAvgTask() posted!!
+0:1:27.972656260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:27.972656270 DEBUG (5): SendAggAvgTask(): Starting....
+0:1:27.972656270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:1:27.978317242 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:1:27.978317242 DEBUG (1): Something received!!!  from 7
+0:1:27.978317242 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:1:27.978317252 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:1:27.978317252 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:1:27.978317252 DEBUG (1): receiveAggAvgTask(): sum= 21, count = 1
+0:1:27.978317252 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 21, New agg_count = 1
+0:1:27.978485088 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:1:27.978485088 DEBUG (7): A AggregationAvg package sent... True
+0:1:27.980545018 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:1:27.980545018 DEBUG (3): Something received!!!  from 5
+0:1:27.980545018 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:1:27.980545028 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:1:27.980545028 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:1:27.980545028 DEBUG (3): receiveAggAvgTask(): sum= 62, count = 2
+0:1:27.980545028 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 85, New agg_count = 3
+0:1:27.980712864 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:1:27.980712864 DEBUG (5): A AggregationAvg package sent... True
+0:1:27.983306831 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:1:27.983306831 DEBUG (4): A AggregationAvg package sent... True
+0:1:28.046875010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 12 , BeforeCount= 3, BeforeSum= 85
+0:1:28.046875010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 97
+0:1:28.046875010 DEBUG (3): NodeID= 3 : AggregationAvg value= 97/4
+0:1:28.046875010 DEBUG (3): SendAggAvgTask() posted!!
+0:1:28.046875010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:28.046875020 DEBUG (3): SendAggAvgTask(): Starting....
+0:1:28.046875020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:1:28.054687510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 33 , BeforeCount= 0, BeforeSum= 0
+0:1:28.054687510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 1, SumAfter= 33
+0:1:28.054687510 DEBUG (2): NodeID= 2 : AggregationAvg value= 33/1
+0:1:28.054687510 DEBUG (2): SendAggAvgTask() posted!!
+0:1:28.054687510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:28.054687520 DEBUG (2): SendAggAvgTask(): Starting....
+0:1:28.054687520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:1:28.055129977 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:28.055129977 DEBUG (0): Something received!!!  from 3
+0:1:28.055129977 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:28.055129987 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:28.055129987 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:28.055129987 DEBUG (0): receiveAggAvgTask(): sum= 97, count = 4
+0:1:28.055129987 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 97, New agg_count = 4
+0:1:28.055297822 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:1:28.055297822 DEBUG (3): A AggregationAvg package sent... True
+0:1:28.055664072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 23 , BeforeCount= 1, BeforeSum= 21
+0:1:28.055664072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 44
+0:1:28.055664072 DEBUG (1): NodeID= 1 : AggregationAvg value= 44/2
+0:1:28.055664072 DEBUG (1): SendAggAvgTask() posted!!
+0:1:28.055664072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:28.055664082 DEBUG (1): SendAggAvgTask(): Starting....
+0:1:28.055664082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:1:28.062805154 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:28.062805154 DEBUG (0): Something received!!!  from 1
+0:1:28.062805154 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:28.062805164 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:28.062805164 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:28.062805164 DEBUG (0): receiveAggAvgTask(): sum= 44, count = 2
+0:1:28.062805164 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 141, New agg_count = 6
+0:1:28.062972999 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:1:28.062972999 DEBUG (1): A AggregationAvg package sent... True
+0:1:28.065414386 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:28.065414386 DEBUG (0): Something received!!!  from 2
+0:1:28.065414386 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:28.065414396 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:28.065414396 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:28.065414396 DEBUG (0): receiveAggAvgTask(): sum= 33, count = 1
+0:1:28.065414396 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 174, New agg_count = 7
+0:1:28.065582232 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:1:28.065582232 DEBUG (2): A AggregationAvg package sent... True
+0:1:28.133789072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 11 , BeforeCount= 7, BeforeSum= 174
+0:1:28.133789072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 8, SumAfter= 185
+0:1:28.133789072 DEBUG (0): ***////////||||||\\\***
+0:1:28.133789072 DEBUG (0): AGG RESULT epoch=4 AVG=185/8=23
+0:1:28.133789072 DEBUG (0): ***\\\\||||||//////***
+0:1:47.430664073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 31 , BeforeCount= 0, BeforeSum= 0
+0:1:47.430664073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 31
+0:1:47.430664073 DEBUG (8): NodeID= 8 : AggregationAvg value= 31/1
+0:1:47.430664073 DEBUG (8): SendAggAvgTask() posted!!
+0:1:47.430664073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.430664083 DEBUG (8): SendAggAvgTask(): Starting....
+0:1:47.430664083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:1:47.438552831 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:1:47.438552831 DEBUG (5): Something received!!!  from 8
+0:1:47.438552831 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:1:47.438552841 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:1:47.438552841 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:1:47.438552841 DEBUG (5): receiveAggAvgTask(): sum= 31, count = 1
+0:1:47.438552841 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 31, New agg_count = 1
+0:1:47.438720676 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:1:47.438720676 DEBUG (8): A AggregationAvg package sent... True
+0:1:47.500976573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 25 , BeforeCount= 0, BeforeSum= 0
+0:1:47.500976573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 25
+0:1:47.500976573 DEBUG (6): NodeID= 6 : AggregationAvg value= 25/1
+0:1:47.500976573 DEBUG (6): SendAggAvgTask() posted!!
+0:1:47.500976573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.500976583 DEBUG (6): SendAggAvgTask(): Starting....
+0:1:47.500976583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:1:47.501953135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 51 , BeforeCount= 0, BeforeSum= 0
+0:1:47.501953135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 51
+0:1:47.501953135 DEBUG (4): NodeID= 4 : AggregationAvg value= 51/1
+0:1:47.501953135 DEBUG (4): SendAggAvgTask() posted!!
+0:1:47.501953135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.501953145 DEBUG (4): SendAggAvgTask(): Starting....
+0:1:47.501953145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:1:47.502929698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 17 , BeforeCount= 0, BeforeSum= 0
+0:1:47.502929698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 17
+0:1:47.502929698 DEBUG (7): NodeID= 7 : AggregationAvg value= 17/1
+0:1:47.502929698 DEBUG (7): SendAggAvgTask() posted!!
+0:1:47.502929698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.502929708 DEBUG (7): SendAggAvgTask(): Starting....
+0:1:47.502929708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:1:47.503448492 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:1:47.503448492 DEBUG (3): Something received!!!  from 6
+0:1:47.503448492 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:1:47.503448502 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:1:47.503448502 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:1:47.503448502 DEBUG (3): receiveAggAvgTask(): sum= 25, count = 1
+0:1:47.503448502 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 25, New agg_count = 1
+0:1:47.503616338 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:1:47.503616338 DEBUG (6): A AggregationAvg package sent... True
+0:1:47.503906260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 34 , BeforeCount= 1, BeforeSum= 31
+0:1:47.503906260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 65
+0:1:47.503906260 DEBUG (5): NodeID= 5 : AggregationAvg value= 65/2
+0:1:47.503906260 DEBUG (5): SendAggAvgTask() posted!!
+0:1:47.503906260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.503906270 DEBUG (5): SendAggAvgTask(): Starting....
+0:1:47.503906270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:1:47.507141103 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:1:47.507141103 DEBUG (2): Something received!!!  from 4
+0:1:47.507141103 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:1:47.507141113 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:1:47.507141113 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:1:47.507141113 DEBUG (2): receiveAggAvgTask(): sum= 51, count = 1
+0:1:47.507141113 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 51, New agg_count = 1
+0:1:47.507217402 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:1:47.507217402 DEBUG (7): A AggregationAvg package sent... True
+0:1:47.507308949 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:1:47.507308949 DEBUG (4): A AggregationAvg package sent... True
+0:1:47.508880606 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:1:47.508880606 DEBUG (3): Something received!!!  from 5
+0:1:47.508880606 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:1:47.508880616 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:1:47.508880616 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:1:47.508880616 DEBUG (3): receiveAggAvgTask(): sum= 65, count = 2
+0:1:47.508880616 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 90, New agg_count = 3
+0:1:47.509048452 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:1:47.509048452 DEBUG (5): A AggregationAvg package sent... True
+0:1:47.578125010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 14 , BeforeCount= 3, BeforeSum= 90
+0:1:47.578125010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 104
+0:1:47.578125010 DEBUG (3): NodeID= 3 : AggregationAvg value= 104/4
+0:1:47.578125010 DEBUG (3): SendAggAvgTask() posted!!
+0:1:47.578125010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.578125020 DEBUG (3): SendAggAvgTask(): Starting....
+0:1:47.578125020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:1:47.585937510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 30 , BeforeCount= 1, BeforeSum= 51
+0:1:47.585937510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 81
+0:1:47.585937510 DEBUG (2): NodeID= 2 : AggregationAvg value= 81/2
+0:1:47.585937510 DEBUG (2): SendAggAvgTask() posted!!
+0:1:47.585937510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.585937520 DEBUG (2): SendAggAvgTask(): Starting....
+0:1:47.585937520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:1:47.586914072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:1:47.586914072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:1:47.586914072 DEBUG (1): NodeID= 1 : AggregationAvg value= 26/1
+0:1:47.586914072 DEBUG (1): SendAggAvgTask() posted!!
+0:1:47.586914072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:1:47.586914082 DEBUG (1): SendAggAvgTask(): Starting....
+0:1:47.586914082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:1:47.587722788 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:47.587722788 DEBUG (0): Something received!!!  from 2
+0:1:47.587722788 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:47.587722798 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:47.587722798 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:47.587722798 DEBUG (0): receiveAggAvgTask(): sum= 81, count = 2
+0:1:47.587722798 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 81, New agg_count = 2
+0:1:47.587890633 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:1:47.587890633 DEBUG (2): A AggregationAvg package sent... True
+0:1:47.591079656 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:47.591079656 DEBUG (0): Something received!!!  from 3
+0:1:47.591079656 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:47.591079666 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:47.591079666 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:47.591079666 DEBUG (0): receiveAggAvgTask(): sum= 104, count = 4
+0:1:47.591079666 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 185, New agg_count = 6
+0:1:47.591247502 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:1:47.591247502 DEBUG (3): A AggregationAvg package sent... True
+0:1:47.593566875 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:1:47.593566875 DEBUG (0): Something received!!!  from 1
+0:1:47.593566875 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:1:47.593566885 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:1:47.593566885 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:1:47.593566885 DEBUG (0): receiveAggAvgTask(): sum= 26, count = 1
+0:1:47.593566885 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 211, New agg_count = 7
+0:1:47.593734721 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:1:47.593734721 DEBUG (1): A AggregationAvg package sent... True
+0:1:47.665039072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 11 , BeforeCount= 7, BeforeSum= 211
+0:1:47.665039072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 8, SumAfter= 222
+0:1:47.665039072 DEBUG (0): ***////////||||||\\\***
+0:1:47.665039072 DEBUG (0): AGG RESULT epoch=5 AVG=222/8=27
+0:1:47.665039072 DEBUG (0): ***\\\\||||||//////***
+0:2:6.961914073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 31 , BeforeCount= 0, BeforeSum= 0
+0:2:6.961914073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 31
+0:2:6.961914073 DEBUG (8): NodeID= 8 : AggregationAvg value= 31/1
+0:2:6.961914073 DEBUG (8): SendAggAvgTask() posted!!
+0:2:6.961914073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:6.961914083 DEBUG (8): SendAggAvgTask(): Starting....
+0:2:6.961914083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:2:6.964050301 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:2:6.964050301 DEBUG (5): Something received!!!  from 8
+0:2:6.964050301 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:2:6.964050311 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:2:6.964050311 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:2:6.964050311 DEBUG (5): receiveAggAvgTask(): sum= 31, count = 1
+0:2:6.964050311 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 31, New agg_count = 1
+0:2:6.964218147 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:2:6.964218147 DEBUG (8): A AggregationAvg package sent... True
+0:2:7.032226573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 29 , BeforeCount= 0, BeforeSum= 0
+0:2:7.032226573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 29
+0:2:7.032226573 DEBUG (6): NodeID= 6 : AggregationAvg value= 29/1
+0:2:7.032226573 DEBUG (6): SendAggAvgTask() posted!!
+0:2:7.032226573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.032226583 DEBUG (6): SendAggAvgTask(): Starting....
+0:2:7.032226583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:2:7.033203135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 42 , BeforeCount= 0, BeforeSum= 0
+0:2:7.033203135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 42
+0:2:7.033203135 DEBUG (4): NodeID= 4 : AggregationAvg value= 42/1
+0:2:7.033203135 DEBUG (4): SendAggAvgTask() posted!!
+0:2:7.033203135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.033203145 DEBUG (4): SendAggAvgTask(): Starting....
+0:2:7.033203145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:2:7.034179698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 19 , BeforeCount= 0, BeforeSum= 0
+0:2:7.034179698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 19
+0:2:7.034179698 DEBUG (7): NodeID= 7 : AggregationAvg value= 19/1
+0:2:7.034179698 DEBUG (7): SendAggAvgTask() posted!!
+0:2:7.034179698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.034179708 DEBUG (7): SendAggAvgTask(): Starting....
+0:2:7.034179708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:2:7.035156260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 28 , BeforeCount= 1, BeforeSum= 31
+0:2:7.035156260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 59
+0:2:7.035156260 DEBUG (5): NodeID= 5 : AggregationAvg value= 59/2
+0:2:7.035156260 DEBUG (5): SendAggAvgTask() posted!!
+0:2:7.035156260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.035156270 DEBUG (5): SendAggAvgTask(): Starting....
+0:2:7.035156270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:2:7.035537721 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:2:7.035537721 DEBUG (3): Something received!!!  from 6
+0:2:7.035537721 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:2:7.035537731 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:2:7.035537731 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:2:7.035537731 DEBUG (3): receiveAggAvgTask(): sum= 29, count = 1
+0:2:7.035537731 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 29, New agg_count = 1
+0:2:7.035705566 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:2:7.035705566 DEBUG (6): A AggregationAvg package sent... True
+0:2:7.038009641 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:2:7.038009641 DEBUG (1): Something received!!!  from 7
+0:2:7.038009641 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:2:7.038009651 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:2:7.038009651 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:2:7.038009651 DEBUG (1): receiveAggAvgTask(): sum= 19, count = 1
+0:2:7.038009651 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 19, New agg_count = 1
+0:2:7.038177487 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:2:7.038177487 DEBUG (7): A AggregationAvg package sent... True
+0:2:7.044296220 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:2:7.044296220 DEBUG (2): Something received!!!  from 4
+0:2:7.044296220 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:2:7.044296230 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:2:7.044296230 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:2:7.044296230 DEBUG (2): receiveAggAvgTask(): sum= 42, count = 1
+0:2:7.044296230 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 42, New agg_count = 1
+0:2:7.044464066 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:2:7.044464066 DEBUG (4): A AggregationAvg package sent... True
+0:2:7.045959430 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:2:7.045959430 DEBUG (3): Something received!!!  from 5
+0:2:7.045959430 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:2:7.045959440 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:2:7.045959440 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:2:7.045959440 DEBUG (3): receiveAggAvgTask(): sum= 59, count = 2
+0:2:7.045959440 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 88, New agg_count = 3
+0:2:7.046127275 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:2:7.046127275 DEBUG (5): A AggregationAvg package sent... True
+0:2:7.109375010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 11 , BeforeCount= 3, BeforeSum= 88
+0:2:7.109375010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 99
+0:2:7.109375010 DEBUG (3): NodeID= 3 : AggregationAvg value= 99/4
+0:2:7.109375010 DEBUG (3): SendAggAvgTask() posted!!
+0:2:7.109375010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.109375020 DEBUG (3): SendAggAvgTask(): Starting....
+0:2:7.109375020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:2:7.117187510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 30 , BeforeCount= 1, BeforeSum= 42
+0:2:7.117187510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 72
+0:2:7.117187510 DEBUG (2): NodeID= 2 : AggregationAvg value= 72/2
+0:2:7.117187510 DEBUG (2): SendAggAvgTask() posted!!
+0:2:7.117187510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.117187520 DEBUG (2): SendAggAvgTask(): Starting....
+0:2:7.117187520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:2:7.117721529 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:7.117721529 DEBUG (0): Something received!!!  from 3
+0:2:7.117721529 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:7.117721539 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:7.117721539 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:7.117721539 DEBUG (0): receiveAggAvgTask(): sum= 99, count = 4
+0:2:7.117721539 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 99, New agg_count = 4
+0:2:7.117889374 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:2:7.117889374 DEBUG (3): A AggregationAvg package sent... True
+0:2:7.118164072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 23 , BeforeCount= 1, BeforeSum= 19
+0:2:7.118164072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 42
+0:2:7.118164072 DEBUG (1): NodeID= 1 : AggregationAvg value= 42/2
+0:2:7.118164072 DEBUG (1): SendAggAvgTask() posted!!
+0:2:7.118164072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:7.118164082 DEBUG (1): SendAggAvgTask(): Starting....
+0:2:7.118164082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:2:7.119842539 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:7.119842539 DEBUG (0): Something received!!!  from 1
+0:2:7.119842539 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:7.119842549 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:7.119842549 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:7.119842549 DEBUG (0): receiveAggAvgTask(): sum= 42, count = 2
+0:2:7.119842549 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 141, New agg_count = 6
+0:2:7.120010385 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:2:7.120010385 DEBUG (1): A AggregationAvg package sent... True
+0:2:7.124755835 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:7.124755835 DEBUG (0): Something received!!!  from 2
+0:2:7.124755835 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:7.124755845 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:7.124755845 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:7.124755845 DEBUG (0): receiveAggAvgTask(): sum= 72, count = 2
+0:2:7.124755845 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 213, New agg_count = 8
+0:2:7.124923681 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:2:7.124923681 DEBUG (2): A AggregationAvg package sent... True
+0:2:7.196289072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 10 , BeforeCount= 8, BeforeSum= 213
+0:2:7.196289072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 223
+0:2:7.196289072 DEBUG (0): ***////////||||||\\\***
+0:2:7.196289072 DEBUG (0): AGG RESULT epoch=6 AVG=223/9=24
+0:2:7.196289072 DEBUG (0): ***\\\\||||||//////***
+0:2:26.493164073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 34 , BeforeCount= 0, BeforeSum= 0
+0:2:26.493164073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 34
+0:2:26.493164073 DEBUG (8): NodeID= 8 : AggregationAvg value= 34/1
+0:2:26.493164073 DEBUG (8): SendAggAvgTask() posted!!
+0:2:26.493164073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.493164083 DEBUG (8): SendAggAvgTask(): Starting....
+0:2:26.493164083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:2:26.501983611 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:2:26.501983611 DEBUG (5): Something received!!!  from 8
+0:2:26.501983611 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:2:26.501983621 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:2:26.501983621 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:2:26.501983621 DEBUG (5): receiveAggAvgTask(): sum= 34, count = 1
+0:2:26.501983621 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 34, New agg_count = 1
+0:2:26.502151457 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:2:26.502151457 DEBUG (8): A AggregationAvg package sent... True
+0:2:26.563476573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:2:26.563476573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:2:26.563476573 DEBUG (6): NodeID= 6 : AggregationAvg value= 26/1
+0:2:26.563476573 DEBUG (6): SendAggAvgTask() posted!!
+0:2:26.563476573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.563476583 DEBUG (6): SendAggAvgTask(): Starting....
+0:2:26.563476583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:2:26.564453135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 34 , BeforeCount= 0, BeforeSum= 0
+0:2:26.564453135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 34
+0:2:26.564453135 DEBUG (4): NodeID= 4 : AggregationAvg value= 34/1
+0:2:26.564453135 DEBUG (4): SendAggAvgTask() posted!!
+0:2:26.564453135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.564453145 DEBUG (4): SendAggAvgTask(): Starting....
+0:2:26.564453145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:2:26.565429698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 16 , BeforeCount= 0, BeforeSum= 0
+0:2:26.565429698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 16
+0:2:26.565429698 DEBUG (7): NodeID= 7 : AggregationAvg value= 16/1
+0:2:26.565429698 DEBUG (7): SendAggAvgTask() posted!!
+0:2:26.565429698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.565429708 DEBUG (7): SendAggAvgTask(): Starting....
+0:2:26.565429708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:2:26.566406260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 28 , BeforeCount= 1, BeforeSum= 34
+0:2:26.566406260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 62
+0:2:26.566406260 DEBUG (5): NodeID= 5 : AggregationAvg value= 62/2
+0:2:26.566406260 DEBUG (5): SendAggAvgTask() posted!!
+0:2:26.566406260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.566406270 DEBUG (5): SendAggAvgTask(): Starting....
+0:2:26.566406270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:2:26.568786627 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:2:26.568786627 DEBUG (3): Something received!!!  from 5
+0:2:26.568786627 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:2:26.568786637 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:2:26.568786637 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:2:26.568786637 DEBUG (3): receiveAggAvgTask(): sum= 62, count = 2
+0:2:26.568786637 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 62, New agg_count = 2
+0:2:26.568954473 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:2:26.568954473 DEBUG (5): A AggregationAvg package sent... True
+0:2:26.570709206 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:2:26.570709206 DEBUG (3): Something received!!!  from 6
+0:2:26.570709206 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:2:26.570709216 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:2:26.570709216 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:2:26.570709216 DEBUG (3): receiveAggAvgTask(): sum= 26, count = 1
+0:2:26.570709216 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 88, New agg_count = 3
+0:2:26.570877052 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:2:26.570877052 DEBUG (6): A AggregationAvg package sent... True
+0:2:26.573699923 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:2:26.573699923 DEBUG (1): Something received!!!  from 7
+0:2:26.573699923 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:2:26.573699933 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:2:26.573699933 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:2:26.573699933 DEBUG (1): receiveAggAvgTask(): sum= 16, count = 1
+0:2:26.573699933 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 16, New agg_count = 1
+0:2:26.573867769 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:2:26.573867769 DEBUG (7): A AggregationAvg package sent... True
+0:2:26.576248120 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:2:26.576248120 DEBUG (2): Something received!!!  from 4
+0:2:26.576248120 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:2:26.576248130 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:2:26.576248130 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:2:26.576248130 DEBUG (2): receiveAggAvgTask(): sum= 34, count = 1
+0:2:26.576248130 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 34, New agg_count = 1
+0:2:26.576415966 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:2:26.576415966 DEBUG (4): A AggregationAvg package sent... True
+0:2:26.640625010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 9 , BeforeCount= 3, BeforeSum= 88
+0:2:26.640625010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 97
+0:2:26.640625010 DEBUG (3): NodeID= 3 : AggregationAvg value= 97/4
+0:2:26.640625010 DEBUG (3): SendAggAvgTask() posted!!
+0:2:26.640625010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.640625020 DEBUG (3): SendAggAvgTask(): Starting....
+0:2:26.640625020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:2:26.643249516 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:26.643249516 DEBUG (0): Something received!!!  from 3
+0:2:26.643249516 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:26.643249526 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:26.643249526 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:26.643249526 DEBUG (0): receiveAggAvgTask(): sum= 97, count = 4
+0:2:26.643249526 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 97, New agg_count = 4
+0:2:26.643417362 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:2:26.643417362 DEBUG (3): A AggregationAvg package sent... True
+0:2:26.648437510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 27 , BeforeCount= 1, BeforeSum= 34
+0:2:26.648437510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 61
+0:2:26.648437510 DEBUG (2): NodeID= 2 : AggregationAvg value= 61/2
+0:2:26.648437510 DEBUG (2): SendAggAvgTask() posted!!
+0:2:26.648437510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.648437520 DEBUG (2): SendAggAvgTask(): Starting....
+0:2:26.648437520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:2:26.649414072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 22 , BeforeCount= 1, BeforeSum= 16
+0:2:26.649414072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 38
+0:2:26.649414072 DEBUG (1): NodeID= 1 : AggregationAvg value= 38/2
+0:2:26.649414072 DEBUG (1): SendAggAvgTask() posted!!
+0:2:26.649414072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:26.649414082 DEBUG (1): SendAggAvgTask(): Starting....
+0:2:26.649414082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:2:26.651412966 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:26.651412966 DEBUG (0): Something received!!!  from 2
+0:2:26.651412966 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:26.651412976 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:26.651412976 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:26.651412976 DEBUG (0): receiveAggAvgTask(): sum= 61, count = 2
+0:2:26.651412976 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 158, New agg_count = 6
+0:2:26.651580812 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:2:26.651580812 DEBUG (2): A AggregationAvg package sent... True
+0:2:26.653396603 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:26.653396603 DEBUG (0): Something received!!!  from 1
+0:2:26.653396603 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:26.653396613 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:26.653396613 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:26.653396613 DEBUG (0): receiveAggAvgTask(): sum= 38, count = 2
+0:2:26.653396613 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 196, New agg_count = 8
+0:2:26.653564449 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:2:26.653564449 DEBUG (1): A AggregationAvg package sent... True
+0:2:26.727539072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 11 , BeforeCount= 8, BeforeSum= 196
+0:2:26.727539072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 207
+0:2:26.727539072 DEBUG (0): ***////////||||||\\\***
+0:2:26.727539072 DEBUG (0): AGG RESULT epoch=7 AVG=207/9=23
+0:2:26.727539072 DEBUG (0): ***\\\\||||||//////***
+0:2:46.024414073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 27 , BeforeCount= 0, BeforeSum= 0
+0:2:46.024414073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 27
+0:2:46.024414073 DEBUG (8): NodeID= 8 : AggregationAvg value= 27/1
+0:2:46.024414073 DEBUG (8): SendAggAvgTask() posted!!
+0:2:46.024414073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.024414083 DEBUG (8): SendAggAvgTask(): Starting....
+0:2:46.024414083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:2:46.026306162 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:2:46.026306162 DEBUG (5): Something received!!!  from 8
+0:2:46.026306162 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:2:46.026306172 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:2:46.026306172 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:2:46.026306172 DEBUG (5): receiveAggAvgTask(): sum= 27, count = 1
+0:2:46.026306172 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 27, New agg_count = 1
+0:2:46.026474007 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:2:46.026474007 DEBUG (8): A AggregationAvg package sent... True
+0:2:46.094726573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 24 , BeforeCount= 0, BeforeSum= 0
+0:2:46.094726573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 24
+0:2:46.094726573 DEBUG (6): NodeID= 6 : AggregationAvg value= 24/1
+0:2:46.094726573 DEBUG (6): SendAggAvgTask() posted!!
+0:2:46.094726573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.094726583 DEBUG (6): SendAggAvgTask(): Starting....
+0:2:46.094726583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:2:46.095703135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 37 , BeforeCount= 0, BeforeSum= 0
+0:2:46.095703135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 37
+0:2:46.095703135 DEBUG (4): NodeID= 4 : AggregationAvg value= 37/1
+0:2:46.095703135 DEBUG (4): SendAggAvgTask() posted!!
+0:2:46.095703135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.095703145 DEBUG (4): SendAggAvgTask(): Starting....
+0:2:46.095703145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:2:46.096679698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 14 , BeforeCount= 0, BeforeSum= 0
+0:2:46.096679698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 14
+0:2:46.096679698 DEBUG (7): NodeID= 7 : AggregationAvg value= 14/1
+0:2:46.096679698 DEBUG (7): SendAggAvgTask() posted!!
+0:2:46.096679698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.096679708 DEBUG (7): SendAggAvgTask(): Starting....
+0:2:46.096679708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:2:46.097167975 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:2:46.097167975 DEBUG (3): Something received!!!  from 6
+0:2:46.097167975 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:2:46.097167985 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:2:46.097167985 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:2:46.097167985 DEBUG (3): receiveAggAvgTask(): sum= 24, count = 1
+0:2:46.097167985 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 24, New agg_count = 1
+0:2:46.097335820 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:2:46.097335820 DEBUG (6): A AggregationAvg package sent... True
+0:2:46.097656260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 30 , BeforeCount= 1, BeforeSum= 27
+0:2:46.097656260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 57
+0:2:46.097656260 DEBUG (5): NodeID= 5 : AggregationAvg value= 57/2
+0:2:46.097656260 DEBUG (5): SendAggAvgTask() posted!!
+0:2:46.097656260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.097656270 DEBUG (5): SendAggAvgTask(): Starting....
+0:2:46.097656270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:2:46.099914552 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:2:46.099914552 DEBUG (1): Something received!!!  from 7
+0:2:46.099914552 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:2:46.099914562 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:2:46.099914562 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:2:46.099914562 DEBUG (1): receiveAggAvgTask(): sum= 14, count = 1
+0:2:46.099914562 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 14, New agg_count = 1
+0:2:46.100082398 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:2:46.100082398 DEBUG (7): A AggregationAvg package sent... True
+0:2:46.104858376 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:2:46.104858376 DEBUG (3): Something received!!!  from 5
+0:2:46.104858376 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:2:46.104858386 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:2:46.104858386 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:2:46.104858386 DEBUG (3): receiveAggAvgTask(): sum= 57, count = 2
+0:2:46.104858386 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 81, New agg_count = 3
+0:2:46.105026222 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:2:46.105026222 DEBUG (5): A AggregationAvg package sent... True
+0:2:46.107772777 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:2:46.107772777 DEBUG (2): Something received!!!  from 4
+0:2:46.107772777 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:2:46.107772787 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:2:46.107772787 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:2:46.107772787 DEBUG (2): receiveAggAvgTask(): sum= 37, count = 1
+0:2:46.107772787 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 37, New agg_count = 1
+0:2:46.107940622 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:2:46.107940622 DEBUG (4): A AggregationAvg package sent... True
+0:2:46.171875010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 7 , BeforeCount= 3, BeforeSum= 81
+0:2:46.171875010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 88
+0:2:46.171875010 DEBUG (3): NodeID= 3 : AggregationAvg value= 88/4
+0:2:46.171875010 DEBUG (3): SendAggAvgTask() posted!!
+0:2:46.171875010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.171875020 DEBUG (3): SendAggAvgTask(): Starting....
+0:2:46.171875020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:2:46.179687510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 28 , BeforeCount= 1, BeforeSum= 37
+0:2:46.179687510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 65
+0:2:46.179687510 DEBUG (2): NodeID= 2 : AggregationAvg value= 65/2
+0:2:46.179687510 DEBUG (2): SendAggAvgTask() posted!!
+0:2:46.179687510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.179687520 DEBUG (2): SendAggAvgTask(): Starting....
+0:2:46.179687520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:2:46.179794285 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:46.179794285 DEBUG (0): Something received!!!  from 3
+0:2:46.179794285 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:46.179794295 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:46.179794295 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:46.179794295 DEBUG (0): receiveAggAvgTask(): sum= 88, count = 4
+0:2:46.179794295 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 88, New agg_count = 4
+0:2:46.179962131 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:2:46.179962131 DEBUG (3): A AggregationAvg package sent... True
+0:2:46.180664072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 22 , BeforeCount= 1, BeforeSum= 14
+0:2:46.180664072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 36
+0:2:46.180664072 DEBUG (1): NodeID= 1 : AggregationAvg value= 36/2
+0:2:46.180664072 DEBUG (1): SendAggAvgTask() posted!!
+0:2:46.180664072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:2:46.180664082 DEBUG (1): SendAggAvgTask(): Starting....
+0:2:46.180664082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:2:46.184005737 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:46.184005737 DEBUG (0): Something received!!!  from 1
+0:2:46.184005737 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:46.184005747 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:46.184005747 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:46.184005747 DEBUG (0): receiveAggAvgTask(): sum= 36, count = 2
+0:2:46.184005747 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 124, New agg_count = 6
+0:2:46.184173583 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:2:46.184173583 DEBUG (1): A AggregationAvg package sent... True
+0:2:46.186340313 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:2:46.186340313 DEBUG (0): Something received!!!  from 2
+0:2:46.186340313 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:2:46.186340323 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:2:46.186340323 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:2:46.186340323 DEBUG (0): receiveAggAvgTask(): sum= 65, count = 2
+0:2:46.186340323 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 189, New agg_count = 8
+0:2:46.186508159 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:2:46.186508159 DEBUG (2): A AggregationAvg package sent... True
+0:2:46.258789072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 12 , BeforeCount= 8, BeforeSum= 189
+0:2:46.258789072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 201
+0:2:46.258789072 DEBUG (0): ***////////||||||\\\***
+0:2:46.258789072 DEBUG (0): AGG RESULT epoch=8 AVG=201/9=22
+0:2:46.258789072 DEBUG (0): ***\\\\||||||//////***
+0:3:5.555664073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:3:5.555664073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:3:5.555664073 DEBUG (8): NodeID= 8 : AggregationAvg value= 22/1
+0:3:5.555664073 DEBUG (8): SendAggAvgTask() posted!!
+0:3:5.555664073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.555664083 DEBUG (8): SendAggAvgTask(): Starting....
+0:3:5.555664083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:3:5.563720676 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:3:5.563720676 DEBUG (5): Something received!!!  from 8
+0:3:5.563720676 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:3:5.563720686 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:3:5.563720686 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:3:5.563720686 DEBUG (5): receiveAggAvgTask(): sum= 22, count = 1
+0:3:5.563720686 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 22, New agg_count = 1
+0:3:5.563888522 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:3:5.563888522 DEBUG (8): A AggregationAvg package sent... True
+0:3:5.625976573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:3:5.625976573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:3:5.625976573 DEBUG (6): NodeID= 6 : AggregationAvg value= 22/1
+0:3:5.625976573 DEBUG (6): SendAggAvgTask() posted!!
+0:3:5.625976573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.625976583 DEBUG (6): SendAggAvgTask(): Starting....
+0:3:5.625976583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:3:5.626953135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 34 , BeforeCount= 0, BeforeSum= 0
+0:3:5.626953135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 34
+0:3:5.626953135 DEBUG (4): NodeID= 4 : AggregationAvg value= 34/1
+0:3:5.626953135 DEBUG (4): SendAggAvgTask() posted!!
+0:3:5.626953135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.626953145 DEBUG (4): SendAggAvgTask(): Starting....
+0:3:5.626953145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:3:5.627929698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 14 , BeforeCount= 0, BeforeSum= 0
+0:3:5.627929698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 14
+0:3:5.627929698 DEBUG (7): NodeID= 7 : AggregationAvg value= 14/1
+0:3:5.627929698 DEBUG (7): SendAggAvgTask() posted!!
+0:3:5.627929698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.627929708 DEBUG (7): SendAggAvgTask(): Starting....
+0:3:5.627929708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:3:5.628906260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 30 , BeforeCount= 1, BeforeSum= 22
+0:3:5.628906260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 52
+0:3:5.628906260 DEBUG (5): NodeID= 5 : AggregationAvg value= 52/2
+0:3:5.628906260 DEBUG (5): SendAggAvgTask() posted!!
+0:3:5.628906260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.628906270 DEBUG (5): SendAggAvgTask(): Starting....
+0:3:5.628906270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:3:5.633605938 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:3:5.633605938 DEBUG (2): Something received!!!  from 4
+0:3:5.633605938 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:3:5.633605948 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:3:5.633605948 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:3:5.633605948 DEBUG (2): receiveAggAvgTask(): sum= 34, count = 1
+0:3:5.633605948 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 34, New agg_count = 1
+0:3:5.633773784 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:3:5.633773784 DEBUG (4): A AggregationAvg package sent... True
+0:3:5.636779742 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:3:5.636779742 DEBUG (3): Something received!!!  from 6
+0:3:5.636779742 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:3:5.636779752 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:3:5.636779752 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:3:5.636779752 DEBUG (3): receiveAggAvgTask(): sum= 22, count = 1
+0:3:5.636779752 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 22, New agg_count = 1
+0:3:5.636947588 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:3:5.636947588 DEBUG (6): A AggregationAvg package sent... True
+0:3:5.638885460 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:3:5.638885460 DEBUG (3): Something received!!!  from 5
+0:3:5.638885460 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:3:5.638885470 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:3:5.638885470 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:3:5.638885470 DEBUG (3): receiveAggAvgTask(): sum= 52, count = 2
+0:3:5.638885470 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 74, New agg_count = 3
+0:3:5.639053306 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:3:5.639053306 DEBUG (5): A AggregationAvg package sent... True
+0:3:5.639099076 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:3:5.639099076 DEBUG (7): A AggregationAvg package sent... True
+0:3:5.703125010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 5 , BeforeCount= 3, BeforeSum= 74
+0:3:5.703125010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 79
+0:3:5.703125010 DEBUG (3): NodeID= 3 : AggregationAvg value= 79/4
+0:3:5.703125010 DEBUG (3): SendAggAvgTask() posted!!
+0:3:5.703125010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.703125020 DEBUG (3): SendAggAvgTask(): Starting....
+0:3:5.703125020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:3:5.710937510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 26 , BeforeCount= 1, BeforeSum= 34
+0:3:5.710937510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 60
+0:3:5.710937510 DEBUG (2): NodeID= 2 : AggregationAvg value= 60/2
+0:3:5.710937510 DEBUG (2): SendAggAvgTask() posted!!
+0:3:5.710937510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.710937520 DEBUG (2): SendAggAvgTask(): Starting....
+0:3:5.710937520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:3:5.711914072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:3:5.711914072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:3:5.711914072 DEBUG (1): NodeID= 1 : AggregationAvg value= 22/1
+0:3:5.711914072 DEBUG (1): SendAggAvgTask() posted!!
+0:3:5.711914072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:5.711914082 DEBUG (1): SendAggAvgTask(): Starting....
+0:3:5.711914082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:3:5.713928179 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:3:5.713928179 DEBUG (3): A AggregationAvg package sent... True
+0:3:5.714431768 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:3:5.714431768 DEBUG (1): A AggregationAvg package sent... True
+0:3:5.715652458 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:5.715652458 DEBUG (0): Something received!!!  from 2
+0:3:5.715652458 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:5.715652468 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:5.715652468 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:5.715652468 DEBUG (0): receiveAggAvgTask(): sum= 60, count = 2
+0:3:5.715652468 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 60, New agg_count = 2
+0:3:5.715820304 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:3:5.715820304 DEBUG (2): A AggregationAvg package sent... True
+0:3:5.790039072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 11 , BeforeCount= 2, BeforeSum= 60
+0:3:5.790039072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 3, SumAfter= 71
+0:3:5.790039072 DEBUG (0): ***////////||||||\\\***
+0:3:5.790039072 DEBUG (0): AGG RESULT epoch=9 AVG=71/3=23
+0:3:5.790039072 DEBUG (0): ***\\\\||||||//////***
+0:3:25.086914073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 25 , BeforeCount= 0, BeforeSum= 0
+0:3:25.086914073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 25
+0:3:25.086914073 DEBUG (8): NodeID= 8 : AggregationAvg value= 25/1
+0:3:25.086914073 DEBUG (8): SendAggAvgTask() posted!!
+0:3:25.086914073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.086914083 DEBUG (8): SendAggAvgTask(): Starting....
+0:3:25.086914083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:3:25.093688946 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:3:25.093688946 DEBUG (5): Something received!!!  from 8
+0:3:25.093688946 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:3:25.093688956 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:3:25.093688956 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:3:25.093688956 DEBUG (5): receiveAggAvgTask(): sum= 25, count = 1
+0:3:25.093688956 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 25, New agg_count = 1
+0:3:25.093856791 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:3:25.093856791 DEBUG (8): A AggregationAvg package sent... True
+0:3:25.157226573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 18 , BeforeCount= 0, BeforeSum= 0
+0:3:25.157226573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 18
+0:3:25.157226573 DEBUG (6): NodeID= 6 : AggregationAvg value= 18/1
+0:3:25.157226573 DEBUG (6): SendAggAvgTask() posted!!
+0:3:25.157226573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.157226583 DEBUG (6): SendAggAvgTask(): Starting....
+0:3:25.157226583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:3:25.158203135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 30 , BeforeCount= 0, BeforeSum= 0
+0:3:25.158203135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 30
+0:3:25.158203135 DEBUG (4): NodeID= 4 : AggregationAvg value= 30/1
+0:3:25.158203135 DEBUG (4): SendAggAvgTask() posted!!
+0:3:25.158203135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.158203145 DEBUG (4): SendAggAvgTask(): Starting....
+0:3:25.158203145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:3:25.159179698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 15 , BeforeCount= 0, BeforeSum= 0
+0:3:25.159179698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 15
+0:3:25.159179698 DEBUG (7): NodeID= 7 : AggregationAvg value= 15/1
+0:3:25.159179698 DEBUG (7): SendAggAvgTask() posted!!
+0:3:25.159179698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.159179708 DEBUG (7): SendAggAvgTask(): Starting....
+0:3:25.159179708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:3:25.160156260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 29 , BeforeCount= 1, BeforeSum= 25
+0:3:25.160156260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 54
+0:3:25.160156260 DEBUG (5): NodeID= 5 : AggregationAvg value= 54/2
+0:3:25.160156260 DEBUG (5): SendAggAvgTask() posted!!
+0:3:25.160156260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.160156270 DEBUG (5): SendAggAvgTask(): Starting....
+0:3:25.160156270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:3:25.163818341 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:3:25.163818341 DEBUG (3): Something received!!!  from 6
+0:3:25.163818341 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:3:25.163818351 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:3:25.163818351 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:3:25.163818351 DEBUG (3): receiveAggAvgTask(): sum= 18, count = 1
+0:3:25.163818351 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 18, New agg_count = 1
+0:3:25.163986187 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:3:25.163986187 DEBUG (6): A AggregationAvg package sent... True
+0:3:25.165145859 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:3:25.165145859 DEBUG (1): Something received!!!  from 7
+0:3:25.165145859 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:3:25.165145869 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:3:25.165145869 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:3:25.165145869 DEBUG (1): receiveAggAvgTask(): sum= 15, count = 1
+0:3:25.165145869 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 15, New agg_count = 1
+0:3:25.165313705 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:3:25.165313705 DEBUG (7): A AggregationAvg package sent... True
+0:3:25.166885357 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:3:25.166885357 DEBUG (3): Something received!!!  from 5
+0:3:25.166885357 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:3:25.166885367 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:3:25.166885367 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:3:25.166885367 DEBUG (3): receiveAggAvgTask(): sum= 54, count = 2
+0:3:25.166885367 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 72, New agg_count = 3
+0:3:25.167053202 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:3:25.167053202 DEBUG (5): A AggregationAvg package sent... True
+0:3:25.169296220 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:3:25.169296220 DEBUG (2): Something received!!!  from 4
+0:3:25.169296220 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:3:25.169296230 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:3:25.169296230 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:3:25.169296230 DEBUG (2): receiveAggAvgTask(): sum= 30, count = 1
+0:3:25.169296230 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 30, New agg_count = 1
+0:3:25.169464066 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:3:25.169464066 DEBUG (4): A AggregationAvg package sent... True
+0:3:25.234375010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 5 , BeforeCount= 3, BeforeSum= 72
+0:3:25.234375010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 77
+0:3:25.234375010 DEBUG (3): NodeID= 3 : AggregationAvg value= 77/4
+0:3:25.234375010 DEBUG (3): SendAggAvgTask() posted!!
+0:3:25.234375010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.234375020 DEBUG (3): SendAggAvgTask(): Starting....
+0:3:25.234375020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:3:25.242187510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 30 , BeforeCount= 1, BeforeSum= 30
+0:3:25.242187510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 60
+0:3:25.242187510 DEBUG (2): NodeID= 2 : AggregationAvg value= 60/2
+0:3:25.242187510 DEBUG (2): SendAggAvgTask() posted!!
+0:3:25.242187510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.242187520 DEBUG (2): SendAggAvgTask(): Starting....
+0:3:25.242187520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:3:25.243164072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 18 , BeforeCount= 1, BeforeSum= 15
+0:3:25.243164072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 33
+0:3:25.243164072 DEBUG (1): NodeID= 1 : AggregationAvg value= 33/2
+0:3:25.243164072 DEBUG (1): SendAggAvgTask() posted!!
+0:3:25.243164072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:25.243164082 DEBUG (1): SendAggAvgTask(): Starting....
+0:3:25.243164082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:3:25.245300249 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:25.245300249 DEBUG (0): Something received!!!  from 3
+0:3:25.245300249 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:25.245300259 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:25.245300259 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:25.245300259 DEBUG (0): receiveAggAvgTask(): sum= 77, count = 4
+0:3:25.245300259 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 77, New agg_count = 4
+0:3:25.245468095 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:3:25.245468095 DEBUG (3): A AggregationAvg package sent... True
+0:3:25.247192373 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:25.247192373 DEBUG (0): Something received!!!  from 2
+0:3:25.247192373 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:25.247192383 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:25.247192383 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:25.247192383 DEBUG (0): receiveAggAvgTask(): sum= 60, count = 2
+0:3:25.247192383 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 137, New agg_count = 6
+0:3:25.247360219 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:3:25.247360219 DEBUG (2): A AggregationAvg package sent... True
+0:3:25.252838098 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:25.252838098 DEBUG (0): Something received!!!  from 1
+0:3:25.252838098 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:25.252838108 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:25.252838108 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:25.252838108 DEBUG (0): receiveAggAvgTask(): sum= 33, count = 2
+0:3:25.252838108 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 170, New agg_count = 8
+0:3:25.253005944 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:3:25.253005944 DEBUG (1): A AggregationAvg package sent... True
+0:3:25.321289072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 12 , BeforeCount= 8, BeforeSum= 170
+0:3:25.321289072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 182
+0:3:25.321289072 DEBUG (0): ***////////||||||\\\***
+0:3:25.321289072 DEBUG (0): AGG RESULT epoch=10 AVG=182/9=20
+0:3:25.321289072 DEBUG (0): ***\\\\||||||//////***
+0:3:44.618164073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 23 , BeforeCount= 0, BeforeSum= 0
+0:3:44.618164073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 23
+0:3:44.618164073 DEBUG (8): NodeID= 8 : AggregationAvg value= 23/1
+0:3:44.618164073 DEBUG (8): SendAggAvgTask() posted!!
+0:3:44.618164073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.618164083 DEBUG (8): SendAggAvgTask(): Starting....
+0:3:44.618164083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:3:44.619918833 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:3:44.619918833 DEBUG (5): Something received!!!  from 8
+0:3:44.619918833 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:3:44.619918843 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:3:44.619918843 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:3:44.619918843 DEBUG (5): receiveAggAvgTask(): sum= 23, count = 1
+0:3:44.619918843 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 23, New agg_count = 1
+0:3:44.620086679 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:3:44.620086679 DEBUG (8): A AggregationAvg package sent... True
+0:3:44.688476573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 17 , BeforeCount= 0, BeforeSum= 0
+0:3:44.688476573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 17
+0:3:44.688476573 DEBUG (6): NodeID= 6 : AggregationAvg value= 17/1
+0:3:44.688476573 DEBUG (6): SendAggAvgTask() posted!!
+0:3:44.688476573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.688476583 DEBUG (6): SendAggAvgTask(): Starting....
+0:3:44.688476583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:3:44.689453135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 24 , BeforeCount= 0, BeforeSum= 0
+0:3:44.689453135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 24
+0:3:44.689453135 DEBUG (4): NodeID= 4 : AggregationAvg value= 24/1
+0:3:44.689453135 DEBUG (4): SendAggAvgTask() posted!!
+0:3:44.689453135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.689453145 DEBUG (4): SendAggAvgTask(): Starting....
+0:3:44.689453145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:3:44.690429698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 17 , BeforeCount= 0, BeforeSum= 0
+0:3:44.690429698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 17
+0:3:44.690429698 DEBUG (7): NodeID= 7 : AggregationAvg value= 17/1
+0:3:44.690429698 DEBUG (7): SendAggAvgTask() posted!!
+0:3:44.690429698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.690429708 DEBUG (7): SendAggAvgTask(): Starting....
+0:3:44.690429708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:3:44.691406260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 25 , BeforeCount= 1, BeforeSum= 23
+0:3:44.691406260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 48
+0:3:44.691406260 DEBUG (5): NodeID= 5 : AggregationAvg value= 48/2
+0:3:44.691406260 DEBUG (5): SendAggAvgTask() posted!!
+0:3:44.691406260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.691406270 DEBUG (5): SendAggAvgTask(): Starting....
+0:3:44.691406270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:3:44.695663430 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:3:44.695663430 DEBUG (3): Something received!!!  from 6
+0:3:44.695663430 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:3:44.695663440 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:3:44.695663440 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:3:44.695663440 DEBUG (3): receiveAggAvgTask(): sum= 17, count = 1
+0:3:44.695663440 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 17, New agg_count = 1
+0:3:44.695831276 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:3:44.695831276 DEBUG (6): A AggregationAvg package sent... True
+0:3:44.700332598 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:3:44.700332598 DEBUG (2): Something received!!!  from 4
+0:3:44.700332598 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:3:44.700332608 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:3:44.700332608 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:3:44.700332608 DEBUG (2): receiveAggAvgTask(): sum= 24, count = 1
+0:3:44.700332608 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 24, New agg_count = 1
+0:3:44.700500444 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:3:44.700500444 DEBUG (4): A AggregationAvg package sent... True
+0:3:44.702453569 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:3:44.702453569 DEBUG (3): Something received!!!  from 5
+0:3:44.702453569 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:3:44.702453579 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:3:44.702453579 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:3:44.702453579 DEBUG (3): receiveAggAvgTask(): sum= 48, count = 2
+0:3:44.702453579 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 65, New agg_count = 3
+0:3:44.702621415 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:3:44.702621415 DEBUG (5): A AggregationAvg package sent... True
+0:3:44.702835031 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:3:44.702835031 DEBUG (1): Something received!!!  from 7
+0:3:44.702835031 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:3:44.702835041 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:3:44.702835041 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:3:44.702835041 DEBUG (1): receiveAggAvgTask(): sum= 17, count = 1
+0:3:44.702835041 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 17, New agg_count = 1
+0:3:44.703002877 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:3:44.703002877 DEBUG (7): A AggregationAvg package sent... True
+0:3:44.765625010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 5 , BeforeCount= 3, BeforeSum= 65
+0:3:44.765625010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 70
+0:3:44.765625010 DEBUG (3): NodeID= 3 : AggregationAvg value= 70/4
+0:3:44.765625010 DEBUG (3): SendAggAvgTask() posted!!
+0:3:44.765625010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.765625020 DEBUG (3): SendAggAvgTask(): Starting....
+0:3:44.765625020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:3:44.773437510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 33 , BeforeCount= 1, BeforeSum= 24
+0:3:44.773437510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 57
+0:3:44.773437510 DEBUG (2): NodeID= 2 : AggregationAvg value= 57/2
+0:3:44.773437510 DEBUG (2): SendAggAvgTask() posted!!
+0:3:44.773437510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.773437520 DEBUG (2): SendAggAvgTask(): Starting....
+0:3:44.773437520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:3:44.774414072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 17 , BeforeCount= 1, BeforeSum= 17
+0:3:44.774414072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 34
+0:3:44.774414072 DEBUG (1): NodeID= 1 : AggregationAvg value= 34/2
+0:3:44.774414072 DEBUG (1): SendAggAvgTask() posted!!
+0:3:44.774414072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:3:44.774414082 DEBUG (1): SendAggAvgTask(): Starting....
+0:3:44.774414082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:3:44.775253260 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:44.775253260 DEBUG (0): Something received!!!  from 3
+0:3:44.775253260 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:44.775253270 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:44.775253270 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:44.775253270 DEBUG (0): receiveAggAvgTask(): sum= 70, count = 4
+0:3:44.775253270 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 70, New agg_count = 4
+0:3:44.775421105 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:3:44.775421105 DEBUG (3): A AggregationAvg package sent... True
+0:3:44.778198234 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:44.778198234 DEBUG (0): Something received!!!  from 2
+0:3:44.778198234 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:44.778198244 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:44.778198244 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:44.778198244 DEBUG (0): receiveAggAvgTask(): sum= 57, count = 2
+0:3:44.778198244 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 127, New agg_count = 6
+0:3:44.778366080 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:3:44.778366080 DEBUG (2): A AggregationAvg package sent... True
+0:3:44.782104467 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:3:44.782104467 DEBUG (0): Something received!!!  from 1
+0:3:44.782104467 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:3:44.782104477 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:3:44.782104477 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:3:44.782104477 DEBUG (0): receiveAggAvgTask(): sum= 34, count = 2
+0:3:44.782104477 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 161, New agg_count = 8
+0:3:44.782272313 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:3:44.782272313 DEBUG (1): A AggregationAvg package sent... True
+0:3:44.852539072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 11 , BeforeCount= 8, BeforeSum= 161
+0:3:44.852539072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 172
+0:3:44.852539072 DEBUG (0): ***////////||||||\\\***
+0:3:44.852539072 DEBUG (0): AGG RESULT epoch=11 AVG=172/9=19
+0:3:44.852539072 DEBUG (0): ***\\\\||||||//////***
+0:4:4.149414073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 19 , BeforeCount= 0, BeforeSum= 0
+0:4:4.149414073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 19
+0:4:4.149414073 DEBUG (8): NodeID= 8 : AggregationAvg value= 19/1
+0:4:4.149414073 DEBUG (8): SendAggAvgTask() posted!!
+0:4:4.149414073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.149414083 DEBUG (8): SendAggAvgTask(): Starting....
+0:4:4.149414083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:4:4.153472897 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:4:4.153472897 DEBUG (5): Something received!!!  from 8
+0:4:4.153472897 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:4:4.153472907 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:4:4.153472907 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:4:4.153472907 DEBUG (5): receiveAggAvgTask(): sum= 19, count = 1
+0:4:4.153472907 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 19, New agg_count = 1
+0:4:4.153640743 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:4:4.153640743 DEBUG (8): A AggregationAvg package sent... True
+0:4:4.219726573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 20 , BeforeCount= 0, BeforeSum= 0
+0:4:4.219726573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 20
+0:4:4.219726573 DEBUG (6): NodeID= 6 : AggregationAvg value= 20/1
+0:4:4.219726573 DEBUG (6): SendAggAvgTask() posted!!
+0:4:4.219726573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.219726583 DEBUG (6): SendAggAvgTask(): Starting....
+0:4:4.219726583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:4:4.220703135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 23 , BeforeCount= 0, BeforeSum= 0
+0:4:4.220703135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 23
+0:4:4.220703135 DEBUG (4): NodeID= 4 : AggregationAvg value= 23/1
+0:4:4.220703135 DEBUG (4): SendAggAvgTask() posted!!
+0:4:4.220703135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.220703145 DEBUG (4): SendAggAvgTask(): Starting....
+0:4:4.220703145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:4:4.221679698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 19 , BeforeCount= 0, BeforeSum= 0
+0:4:4.221679698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 19
+0:4:4.221679698 DEBUG (7): NodeID= 7 : AggregationAvg value= 19/1
+0:4:4.221679698 DEBUG (7): SendAggAvgTask() posted!!
+0:4:4.221679698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.221679708 DEBUG (7): SendAggAvgTask(): Starting....
+0:4:4.221679708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:4:4.222656260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 23 , BeforeCount= 1, BeforeSum= 19
+0:4:4.222656260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 42
+0:4:4.222656260 DEBUG (5): NodeID= 5 : AggregationAvg value= 42/2
+0:4:4.222656260 DEBUG (5): SendAggAvgTask() posted!!
+0:4:4.222656260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.222656270 DEBUG (5): SendAggAvgTask(): Starting....
+0:4:4.222656270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:4:4.223571781 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:4:4.223571781 DEBUG (2): Something received!!!  from 4
+0:4:4.223571781 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:4:4.223571791 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:4:4.223571791 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:4:4.223571791 DEBUG (2): receiveAggAvgTask(): sum= 23, count = 1
+0:4:4.223571791 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 23, New agg_count = 1
+0:4:4.223739626 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:4:4.223739626 DEBUG (4): A AggregationAvg package sent... True
+0:4:4.227661107 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:4:4.227661107 DEBUG (3): Something received!!!  from 6
+0:4:4.227661107 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:4:4.227661117 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:4:4.227661117 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:4:4.227661117 DEBUG (3): receiveAggAvgTask(): sum= 20, count = 1
+0:4:4.227661117 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 20, New agg_count = 1
+0:4:4.227828952 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:4:4.227828952 DEBUG (6): A AggregationAvg package sent... True
+0:4:4.230087251 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:4:4.230087251 DEBUG (1): Something received!!!  from 7
+0:4:4.230087251 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:4:4.230087261 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:4:4.230087261 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:4:4.230087261 DEBUG (1): receiveAggAvgTask(): sum= 19, count = 1
+0:4:4.230087261 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 19, New agg_count = 1
+0:4:4.230255097 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:4:4.230255097 DEBUG (7): A AggregationAvg package sent... True
+0:4:4.233474688 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:4:4.233474688 DEBUG (3): Something received!!!  from 5
+0:4:4.233474688 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:4:4.233474698 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:4:4.233474698 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:4:4.233474698 DEBUG (3): receiveAggAvgTask(): sum= 42, count = 2
+0:4:4.233474698 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 62, New agg_count = 3
+0:4:4.233642534 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:4:4.233642534 DEBUG (5): A AggregationAvg package sent... True
+0:4:4.296875010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 5 , BeforeCount= 3, BeforeSum= 62
+0:4:4.296875010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 67
+0:4:4.296875010 DEBUG (3): NodeID= 3 : AggregationAvg value= 67/4
+0:4:4.296875010 DEBUG (3): SendAggAvgTask() posted!!
+0:4:4.296875010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.296875020 DEBUG (3): SendAggAvgTask(): Starting....
+0:4:4.296875020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:4:4.300277710 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:4.300277710 DEBUG (0): Something received!!!  from 3
+0:4:4.300277710 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:4.300277720 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:4.300277720 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:4.300277720 DEBUG (0): receiveAggAvgTask(): sum= 67, count = 4
+0:4:4.300277720 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 67, New agg_count = 4
+0:4:4.300445556 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:4:4.300445556 DEBUG (3): A AggregationAvg package sent... True
+0:4:4.304687510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 27 , BeforeCount= 1, BeforeSum= 23
+0:4:4.304687510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 50
+0:4:4.304687510 DEBUG (2): NodeID= 2 : AggregationAvg value= 50/2
+0:4:4.304687510 DEBUG (2): SendAggAvgTask() posted!!
+0:4:4.304687510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.304687520 DEBUG (2): SendAggAvgTask(): Starting....
+0:4:4.304687520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:4:4.305664072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 16 , BeforeCount= 1, BeforeSum= 19
+0:4:4.305664072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 35
+0:4:4.305664072 DEBUG (1): NodeID= 1 : AggregationAvg value= 35/2
+0:4:4.305664072 DEBUG (1): SendAggAvgTask() posted!!
+0:4:4.305664072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:4.305664082 DEBUG (1): SendAggAvgTask(): Starting....
+0:4:4.305664082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:4:4.310852040 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:4.310852040 DEBUG (0): Something received!!!  from 1
+0:4:4.310852040 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:4.310852050 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:4.310852050 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:4.310852050 DEBUG (0): receiveAggAvgTask(): sum= 35, count = 2
+0:4:4.310852050 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 102, New agg_count = 6
+0:4:4.311019886 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:4:4.311019886 DEBUG (1): A AggregationAvg package sent... True
+0:4:4.314300501 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:4.314300501 DEBUG (0): Something received!!!  from 2
+0:4:4.314300501 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:4.314300511 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:4.314300511 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:4.314300511 DEBUG (0): receiveAggAvgTask(): sum= 50, count = 2
+0:4:4.314300511 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 152, New agg_count = 8
+0:4:4.314468346 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:4:4.314468346 DEBUG (2): A AggregationAvg package sent... True
+0:4:4.383789072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 10 , BeforeCount= 8, BeforeSum= 152
+0:4:4.383789072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 162
+0:4:4.383789072 DEBUG (0): ***////////||||||\\\***
+0:4:4.383789072 DEBUG (0): AGG RESULT epoch=12 AVG=162/9=18
+0:4:4.383789072 DEBUG (0): ***\\\\||||||//////***
+0:4:23.680664073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 16 , BeforeCount= 0, BeforeSum= 0
+0:4:23.680664073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 16
+0:4:23.680664073 DEBUG (8): NodeID= 8 : AggregationAvg value= 16/1
+0:4:23.680664073 DEBUG (8): SendAggAvgTask() posted!!
+0:4:23.680664073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.680664083 DEBUG (8): SendAggAvgTask(): Starting....
+0:4:23.680664083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:4:23.688125587 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:4:23.688125587 DEBUG (5): Something received!!!  from 8
+0:4:23.688125587 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:4:23.688125597 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:4:23.688125597 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:4:23.688125597 DEBUG (5): receiveAggAvgTask(): sum= 16, count = 1
+0:4:23.688125597 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 16, New agg_count = 1
+0:4:23.688293433 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:4:23.688293433 DEBUG (8): A AggregationAvg package sent... True
+0:4:23.750976573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:4:23.750976573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:4:23.750976573 DEBUG (6): NodeID= 6 : AggregationAvg value= 22/1
+0:4:23.750976573 DEBUG (6): SendAggAvgTask() posted!!
+0:4:23.750976573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.750976583 DEBUG (6): SendAggAvgTask(): Starting....
+0:4:23.750976583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:4:23.751953135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 23 , BeforeCount= 0, BeforeSum= 0
+0:4:23.751953135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 23
+0:4:23.751953135 DEBUG (4): NodeID= 4 : AggregationAvg value= 23/1
+0:4:23.751953135 DEBUG (4): SendAggAvgTask() posted!!
+0:4:23.751953135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.751953145 DEBUG (4): SendAggAvgTask(): Starting....
+0:4:23.751953145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:4:23.752929698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 16 , BeforeCount= 0, BeforeSum= 0
+0:4:23.752929698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 16
+0:4:23.752929698 DEBUG (7): NodeID= 7 : AggregationAvg value= 16/1
+0:4:23.752929698 DEBUG (7): SendAggAvgTask() posted!!
+0:4:23.752929698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.752929708 DEBUG (7): SendAggAvgTask(): Starting....
+0:4:23.752929708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:4:23.753906260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 22 , BeforeCount= 1, BeforeSum= 16
+0:4:23.753906260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 38
+0:4:23.753906260 DEBUG (5): NodeID= 5 : AggregationAvg value= 38/2
+0:4:23.753906260 DEBUG (5): SendAggAvgTask() posted!!
+0:4:23.753906260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.753906270 DEBUG (5): SendAggAvgTask(): Starting....
+0:4:23.753906270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:4:23.757492065 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:4:23.757492065 DEBUG (3): Something received!!!  from 5
+0:4:23.757492065 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:4:23.757492075 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:4:23.757492075 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:4:23.757492075 DEBUG (3): receiveAggAvgTask(): sum= 38, count = 2
+0:4:23.757492075 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 38, New agg_count = 2
+0:4:23.757659910 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:4:23.757659910 DEBUG (5): A AggregationAvg package sent... True
+0:4:23.759902928 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:4:23.759902928 DEBUG (2): Something received!!!  from 4
+0:4:23.759902928 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:4:23.759902938 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:4:23.759902938 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:4:23.759902938 DEBUG (2): receiveAggAvgTask(): sum= 23, count = 1
+0:4:23.759902938 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 23, New agg_count = 1
+0:4:23.760070773 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:4:23.760070773 DEBUG (4): A AggregationAvg package sent... True
+0:4:23.761840777 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:4:23.761840777 DEBUG (3): Something received!!!  from 6
+0:4:23.761840777 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:4:23.761840787 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:4:23.761840787 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:4:23.761840787 DEBUG (3): receiveAggAvgTask(): sum= 22, count = 1
+0:4:23.761840787 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 60, New agg_count = 3
+0:4:23.762008623 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:4:23.762008623 DEBUG (6): A AggregationAvg package sent... True
+0:4:23.763168295 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:4:23.763168295 DEBUG (1): Something received!!!  from 7
+0:4:23.763168295 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:4:23.763168305 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:4:23.763168305 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:4:23.763168305 DEBUG (1): receiveAggAvgTask(): sum= 16, count = 1
+0:4:23.763168305 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 16, New agg_count = 1
+0:4:23.763336141 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:4:23.763336141 DEBUG (7): A AggregationAvg package sent... True
+0:4:23.828125010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 5 , BeforeCount= 3, BeforeSum= 60
+0:4:23.828125010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 65
+0:4:23.828125010 DEBUG (3): NodeID= 3 : AggregationAvg value= 65/4
+0:4:23.828125010 DEBUG (3): SendAggAvgTask() posted!!
+0:4:23.828125010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.828125020 DEBUG (3): SendAggAvgTask(): Starting....
+0:4:23.828125020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:4:23.832641595 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:23.832641595 DEBUG (0): Something received!!!  from 3
+0:4:23.832641595 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:23.832641605 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:23.832641605 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:23.832641605 DEBUG (0): receiveAggAvgTask(): sum= 65, count = 4
+0:4:23.832641605 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 65, New agg_count = 4
+0:4:23.832809441 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:4:23.832809441 DEBUG (3): A AggregationAvg package sent... True
+0:4:23.835937510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 25 , BeforeCount= 1, BeforeSum= 23
+0:4:23.835937510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 48
+0:4:23.835937510 DEBUG (2): NodeID= 2 : AggregationAvg value= 48/2
+0:4:23.835937510 DEBUG (2): SendAggAvgTask() posted!!
+0:4:23.835937510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.835937520 DEBUG (2): SendAggAvgTask(): Starting....
+0:4:23.835937520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:4:23.836914072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 17 , BeforeCount= 1, BeforeSum= 16
+0:4:23.836914072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 33
+0:4:23.836914072 DEBUG (1): NodeID= 1 : AggregationAvg value= 33/2
+0:4:23.836914072 DEBUG (1): SendAggAvgTask() posted!!
+0:4:23.836914072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:23.836914082 DEBUG (1): SendAggAvgTask(): Starting....
+0:4:23.836914082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:4:23.839492797 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:23.839492797 DEBUG (0): Something received!!!  from 2
+0:4:23.839492797 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:23.839492807 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:23.839492807 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:23.839492807 DEBUG (0): receiveAggAvgTask(): sum= 48, count = 2
+0:4:23.839492807 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 113, New agg_count = 6
+0:4:23.839660643 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:4:23.839660643 DEBUG (2): A AggregationAvg package sent... True
+0:4:23.841217036 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:23.841217036 DEBUG (0): Something received!!!  from 1
+0:4:23.841217036 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:23.841217046 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:23.841217046 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:23.841217046 DEBUG (0): receiveAggAvgTask(): sum= 33, count = 2
+0:4:23.841217046 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 146, New agg_count = 8
+0:4:23.841384881 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:4:23.841384881 DEBUG (1): A AggregationAvg package sent... True
+0:4:23.915039072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 8 , BeforeCount= 8, BeforeSum= 146
+0:4:23.915039072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 154
+0:4:23.915039072 DEBUG (0): ***////////||||||\\\***
+0:4:23.915039072 DEBUG (0): AGG RESULT epoch=13 AVG=154/9=17
+0:4:23.915039072 DEBUG (0): ***\\\\||||||//////***
+0:4:43.211914073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 17 , BeforeCount= 0, BeforeSum= 0
+0:4:43.211914073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 17
+0:4:43.211914073 DEBUG (8): NodeID= 8 : AggregationAvg value= 17/1
+0:4:43.211914073 DEBUG (8): SendAggAvgTask() posted!!
+0:4:43.211914073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.211914083 DEBUG (8): SendAggAvgTask(): Starting....
+0:4:43.211914083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:4:43.216079708 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:4:43.216079708 DEBUG (5): Something received!!!  from 8
+0:4:43.216079708 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:4:43.216079718 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:4:43.216079718 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:4:43.216079718 DEBUG (5): receiveAggAvgTask(): sum= 17, count = 1
+0:4:43.216079718 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 17, New agg_count = 1
+0:4:43.216247554 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:4:43.216247554 DEBUG (8): A AggregationAvg package sent... True
+0:4:43.282226573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 25 , BeforeCount= 0, BeforeSum= 0
+0:4:43.282226573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 25
+0:4:43.282226573 DEBUG (6): NodeID= 6 : AggregationAvg value= 25/1
+0:4:43.282226573 DEBUG (6): SendAggAvgTask() posted!!
+0:4:43.282226573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.282226583 DEBUG (6): SendAggAvgTask(): Starting....
+0:4:43.282226583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:4:43.283203135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:4:43.283203135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:4:43.283203135 DEBUG (4): NodeID= 4 : AggregationAvg value= 22/1
+0:4:43.283203135 DEBUG (4): SendAggAvgTask() posted!!
+0:4:43.283203135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.283203145 DEBUG (4): SendAggAvgTask(): Starting....
+0:4:43.283203145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:4:43.284179698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 15 , BeforeCount= 0, BeforeSum= 0
+0:4:43.284179698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 15
+0:4:43.284179698 DEBUG (7): NodeID= 7 : AggregationAvg value= 15/1
+0:4:43.284179698 DEBUG (7): SendAggAvgTask() posted!!
+0:4:43.284179698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.284179708 DEBUG (7): SendAggAvgTask(): Starting....
+0:4:43.284179708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:4:43.285156260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 25 , BeforeCount= 1, BeforeSum= 17
+0:4:43.285156260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 42
+0:4:43.285156260 DEBUG (5): NodeID= 5 : AggregationAvg value= 42/2
+0:4:43.285156260 DEBUG (5): SendAggAvgTask() posted!!
+0:4:43.285156260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.285156270 DEBUG (5): SendAggAvgTask(): Starting....
+0:4:43.285156270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:4:43.289566029 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:4:43.289566029 DEBUG (1): Something received!!!  from 7
+0:4:43.289566029 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:4:43.289566039 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:4:43.289566039 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:4:43.289566039 DEBUG (1): receiveAggAvgTask(): sum= 15, count = 1
+0:4:43.289566039 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 15, New agg_count = 1
+0:4:43.289733875 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:4:43.289733875 DEBUG (7): A AggregationAvg package sent... True
+0:4:43.291259733 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:4:43.291259733 DEBUG (3): Something received!!!  from 6
+0:4:43.291259733 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:4:43.291259743 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:4:43.291259743 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:4:43.291259743 DEBUG (3): receiveAggAvgTask(): sum= 25, count = 1
+0:4:43.291259743 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 25, New agg_count = 1
+0:4:43.291427579 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:4:43.291427579 DEBUG (6): A AggregationAvg package sent... True
+0:4:43.293212852 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:4:43.293212852 DEBUG (2): Something received!!!  from 4
+0:4:43.293212852 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:4:43.293212862 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:4:43.293212862 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:4:43.293212862 DEBUG (2): receiveAggAvgTask(): sum= 22, count = 1
+0:4:43.293212862 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 22, New agg_count = 1
+0:4:43.293380698 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:4:43.293380698 DEBUG (4): A AggregationAvg package sent... True
+0:4:43.294616664 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:4:43.294616664 DEBUG (3): Something received!!!  from 5
+0:4:43.294616664 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:4:43.294616674 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:4:43.294616674 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:4:43.294616674 DEBUG (3): receiveAggAvgTask(): sum= 42, count = 2
+0:4:43.294616674 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 67, New agg_count = 3
+0:4:43.294784510 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:4:43.294784510 DEBUG (5): A AggregationAvg package sent... True
+0:4:43.359375010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 5 , BeforeCount= 3, BeforeSum= 67
+0:4:43.359375010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 72
+0:4:43.359375010 DEBUG (3): NodeID= 3 : AggregationAvg value= 72/4
+0:4:43.359375010 DEBUG (3): SendAggAvgTask() posted!!
+0:4:43.359375010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.359375020 DEBUG (3): SendAggAvgTask(): Starting....
+0:4:43.359375020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:4:43.365066515 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:43.365066515 DEBUG (0): Something received!!!  from 3
+0:4:43.365066515 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:43.365066525 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:43.365066525 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:43.365066525 DEBUG (0): receiveAggAvgTask(): sum= 72, count = 4
+0:4:43.365066525 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 72, New agg_count = 4
+0:4:43.365234361 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:4:43.365234361 DEBUG (3): A AggregationAvg package sent... True
+0:4:43.367187510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 26 , BeforeCount= 1, BeforeSum= 22
+0:4:43.367187510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 48
+0:4:43.367187510 DEBUG (2): NodeID= 2 : AggregationAvg value= 48/2
+0:4:43.367187510 DEBUG (2): SendAggAvgTask() posted!!
+0:4:43.367187510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.367187520 DEBUG (2): SendAggAvgTask(): Starting....
+0:4:43.367187520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:4:43.368164072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 19 , BeforeCount= 1, BeforeSum= 15
+0:4:43.368164072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 34
+0:4:43.368164072 DEBUG (1): NodeID= 1 : AggregationAvg value= 34/2
+0:4:43.368164072 DEBUG (1): SendAggAvgTask() posted!!
+0:4:43.368164072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:4:43.368164082 DEBUG (1): SendAggAvgTask(): Starting....
+0:4:43.368164082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:4:43.374938939 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:43.374938939 DEBUG (0): Something received!!!  from 2
+0:4:43.374938939 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:43.374938949 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:43.374938949 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:43.374938949 DEBUG (0): receiveAggAvgTask(): sum= 48, count = 2
+0:4:43.374938949 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 120, New agg_count = 6
+0:4:43.375106785 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:4:43.375106785 DEBUG (2): A AggregationAvg package sent... True
+0:4:43.376602143 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:4:43.376602143 DEBUG (0): Something received!!!  from 1
+0:4:43.376602143 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:4:43.376602153 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:4:43.376602153 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:4:43.376602153 DEBUG (0): receiveAggAvgTask(): sum= 34, count = 2
+0:4:43.376602153 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 154, New agg_count = 8
+0:4:43.376769989 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:4:43.376769989 DEBUG (1): A AggregationAvg package sent... True
+0:4:43.446289072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 8 , BeforeCount= 8, BeforeSum= 154
+0:4:43.446289072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 162
+0:4:43.446289072 DEBUG (0): ***////////||||||\\\***
+0:4:43.446289072 DEBUG (0): AGG RESULT epoch=14 AVG=162/9=18
+0:4:43.446289072 DEBUG (0): ***\\\\||||||//////***
+0:5:2.743164073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 20 , BeforeCount= 0, BeforeSum= 0
+0:5:2.743164073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 20
+0:5:2.743164073 DEBUG (8): NodeID= 8 : AggregationAvg value= 20/1
+0:5:2.743164073 DEBUG (8): SendAggAvgTask() posted!!
+0:5:2.743164073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.743164083 DEBUG (8): SendAggAvgTask(): Starting....
+0:5:2.743164083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:5:2.752685512 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:5:2.752685512 DEBUG (5): Something received!!!  from 8
+0:5:2.752685512 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:5:2.752685522 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:5:2.752685522 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:5:2.752685522 DEBUG (5): receiveAggAvgTask(): sum= 20, count = 1
+0:5:2.752685522 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 20, New agg_count = 1
+0:5:2.752853357 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:5:2.752853357 DEBUG (8): A AggregationAvg package sent... True
+0:5:2.813476573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 25 , BeforeCount= 0, BeforeSum= 0
+0:5:2.813476573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 25
+0:5:2.813476573 DEBUG (6): NodeID= 6 : AggregationAvg value= 25/1
+0:5:2.813476573 DEBUG (6): SendAggAvgTask() posted!!
+0:5:2.813476573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.813476583 DEBUG (6): SendAggAvgTask(): Starting....
+0:5:2.813476583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:5:2.814453135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 18 , BeforeCount= 0, BeforeSum= 0
+0:5:2.814453135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 18
+0:5:2.814453135 DEBUG (4): NodeID= 4 : AggregationAvg value= 18/1
+0:5:2.814453135 DEBUG (4): SendAggAvgTask() posted!!
+0:5:2.814453135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.814453145 DEBUG (4): SendAggAvgTask(): Starting....
+0:5:2.814453145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:5:2.815429698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 16 , BeforeCount= 0, BeforeSum= 0
+0:5:2.815429698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 16
+0:5:2.815429698 DEBUG (7): NodeID= 7 : AggregationAvg value= 16/1
+0:5:2.815429698 DEBUG (7): SendAggAvgTask() posted!!
+0:5:2.815429698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.815429708 DEBUG (7): SendAggAvgTask(): Starting....
+0:5:2.815429708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:5:2.816406260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 28 , BeforeCount= 1, BeforeSum= 20
+0:5:2.816406260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 48
+0:5:2.816406260 DEBUG (5): NodeID= 5 : AggregationAvg value= 48/2
+0:5:2.816406260 DEBUG (5): SendAggAvgTask() posted!!
+0:5:2.816406260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.816406270 DEBUG (5): SendAggAvgTask(): Starting....
+0:5:2.816406270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:5:2.816513064 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:5:2.816513064 DEBUG (3): Something received!!!  from 6
+0:5:2.816513064 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:5:2.816513074 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:5:2.816513074 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:5:2.816513074 DEBUG (3): receiveAggAvgTask(): sum= 25, count = 1
+0:5:2.816513074 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 25, New agg_count = 1
+0:5:2.816680910 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:5:2.816680910 DEBUG (6): A AggregationAvg package sent... True
+0:5:2.820037835 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:5:2.820037835 DEBUG (1): Something received!!!  from 7
+0:5:2.820037835 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:5:2.820037845 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:5:2.820037845 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:5:2.820037845 DEBUG (1): receiveAggAvgTask(): sum= 16, count = 1
+0:5:2.820037845 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 16, New agg_count = 1
+0:5:2.820205681 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:5:2.820205681 DEBUG (7): A AggregationAvg package sent... True
+0:5:2.824310277 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:5:2.824310277 DEBUG (3): Something received!!!  from 5
+0:5:2.824310277 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:5:2.824310287 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:5:2.824310287 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:5:2.824310287 DEBUG (3): receiveAggAvgTask(): sum= 48, count = 2
+0:5:2.824310287 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 73, New agg_count = 3
+0:5:2.824401817 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:5:2.824401817 DEBUG (4): A AggregationAvg package sent... True
+0:5:2.824478122 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:5:2.824478122 DEBUG (5): A AggregationAvg package sent... True
+0:5:2.890625010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 4 , BeforeCount= 3, BeforeSum= 73
+0:5:2.890625010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 77
+0:5:2.890625010 DEBUG (3): NodeID= 3 : AggregationAvg value= 77/4
+0:5:2.890625010 DEBUG (3): SendAggAvgTask() posted!!
+0:5:2.890625010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.890625020 DEBUG (3): SendAggAvgTask(): Starting....
+0:5:2.890625020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:5:2.898437510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:5:2.898437510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:5:2.898437510 DEBUG (2): NodeID= 2 : AggregationAvg value= 26/1
+0:5:2.898437510 DEBUG (2): SendAggAvgTask() posted!!
+0:5:2.898437510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.898437520 DEBUG (2): SendAggAvgTask(): Starting....
+0:5:2.898437520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:5:2.899414072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 15 , BeforeCount= 1, BeforeSum= 16
+0:5:2.899414072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 31
+0:5:2.899414072 DEBUG (1): NodeID= 1 : AggregationAvg value= 31/2
+0:5:2.899414072 DEBUG (1): SendAggAvgTask() posted!!
+0:5:2.899414072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:2.899414082 DEBUG (1): SendAggAvgTask(): Starting....
+0:5:2.899414082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:5:2.900527916 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:5:2.900527916 DEBUG (0): Something received!!!  from 3
+0:5:2.900527916 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:5:2.900527926 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:5:2.900527926 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:5:2.900527926 DEBUG (0): receiveAggAvgTask(): sum= 77, count = 4
+0:5:2.900527926 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 77, New agg_count = 4
+0:5:2.900695762 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:5:2.900695762 DEBUG (3): A AggregationAvg package sent... True
+0:5:2.902481075 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:5:2.902481075 DEBUG (2): A AggregationAvg package sent... True
+0:5:2.902526857 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:5:2.902526857 DEBUG (1): A AggregationAvg package sent... True
+0:5:2.977539072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 8 , BeforeCount= 4, BeforeSum= 77
+0:5:2.977539072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 5, SumAfter= 85
+0:5:2.977539072 DEBUG (0): ***////////||||||\\\***
+0:5:2.977539072 DEBUG (0): AGG RESULT epoch=15 AVG=85/5=17
+0:5:2.977539072 DEBUG (0): ***\\\\||||||//////***
+0:5:22.274414073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 21 , BeforeCount= 0, BeforeSum= 0
+0:5:22.274414073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 21
+0:5:22.274414073 DEBUG (8): NodeID= 8 : AggregationAvg value= 21/1
+0:5:22.274414073 DEBUG (8): SendAggAvgTask() posted!!
+0:5:22.274414073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.274414083 DEBUG (8): SendAggAvgTask(): Starting....
+0:5:22.274414083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:5:22.281631448 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:5:22.281631448 DEBUG (5): Something received!!!  from 8
+0:5:22.281631448 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:5:22.281631458 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:5:22.281631458 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:5:22.281631458 DEBUG (5): receiveAggAvgTask(): sum= 21, count = 1
+0:5:22.281631458 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 21, New agg_count = 1
+0:5:22.281799294 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:5:22.281799294 DEBUG (8): A AggregationAvg package sent... True
+0:5:22.344726573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:5:22.344726573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:5:22.344726573 DEBUG (6): NodeID= 6 : AggregationAvg value= 26/1
+0:5:22.344726573 DEBUG (6): SendAggAvgTask() posted!!
+0:5:22.344726573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.344726583 DEBUG (6): SendAggAvgTask(): Starting....
+0:5:22.344726583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:5:22.345703135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 18 , BeforeCount= 0, BeforeSum= 0
+0:5:22.345703135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 18
+0:5:22.345703135 DEBUG (4): NodeID= 4 : AggregationAvg value= 18/1
+0:5:22.345703135 DEBUG (4): SendAggAvgTask() posted!!
+0:5:22.345703135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.345703145 DEBUG (4): SendAggAvgTask(): Starting....
+0:5:22.345703145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:5:22.346679698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 17 , BeforeCount= 0, BeforeSum= 0
+0:5:22.346679698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 17
+0:5:22.346679698 DEBUG (7): NodeID= 7 : AggregationAvg value= 17/1
+0:5:22.346679698 DEBUG (7): SendAggAvgTask() posted!!
+0:5:22.346679698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.346679708 DEBUG (7): SendAggAvgTask(): Starting....
+0:5:22.346679708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:5:22.347656260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 29 , BeforeCount= 1, BeforeSum= 21
+0:5:22.347656260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 50
+0:5:22.347656260 DEBUG (5): NodeID= 5 : AggregationAvg value= 50/2
+0:5:22.347656260 DEBUG (5): SendAggAvgTask() posted!!
+0:5:22.347656260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.347656270 DEBUG (5): SendAggAvgTask(): Starting....
+0:5:22.347656270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:5:22.352569566 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:5:22.352569566 DEBUG (1): Something received!!!  from 7
+0:5:22.352569566 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:5:22.352569576 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:5:22.352569576 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:5:22.352569576 DEBUG (1): receiveAggAvgTask(): sum= 17, count = 1
+0:5:22.352569576 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 17, New agg_count = 1
+0:5:22.352737412 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:5:22.352737412 DEBUG (7): A AggregationAvg package sent... True
+0:5:22.353652922 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:5:22.353652922 DEBUG (3): Something received!!!  from 6
+0:5:22.353652922 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:5:22.353652932 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:5:22.353652932 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:5:22.353652932 DEBUG (3): receiveAggAvgTask(): sum= 26, count = 1
+0:5:22.353652932 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 26, New agg_count = 1
+0:5:22.353820768 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:5:22.353820768 DEBUG (6): A AggregationAvg package sent... True
+0:5:22.354660002 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:5:22.354660002 DEBUG (2): Something received!!!  from 4
+0:5:22.354660002 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:5:22.354660012 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:5:22.354660012 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:5:22.354660012 DEBUG (2): receiveAggAvgTask(): sum= 18, count = 1
+0:5:22.354660012 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 18, New agg_count = 1
+0:5:22.354827848 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:5:22.354827848 DEBUG (4): A AggregationAvg package sent... True
+0:5:22.357467614 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:5:22.357467614 DEBUG (3): Something received!!!  from 5
+0:5:22.357467614 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:5:22.357467624 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:5:22.357467624 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:5:22.357467624 DEBUG (3): receiveAggAvgTask(): sum= 50, count = 2
+0:5:22.357467624 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 76, New agg_count = 3
+0:5:22.357635460 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:5:22.357635460 DEBUG (5): A AggregationAvg package sent... True
+0:5:22.421875010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 3 , BeforeCount= 3, BeforeSum= 76
+0:5:22.421875010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 79
+0:5:22.421875010 DEBUG (3): NodeID= 3 : AggregationAvg value= 79/4
+0:5:22.421875010 DEBUG (3): SendAggAvgTask() posted!!
+0:5:22.421875010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.421875020 DEBUG (3): SendAggAvgTask(): Starting....
+0:5:22.421875020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:5:22.429687510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 22 , BeforeCount= 1, BeforeSum= 18
+0:5:22.429687510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 40
+0:5:22.429687510 DEBUG (2): NodeID= 2 : AggregationAvg value= 40/2
+0:5:22.429687510 DEBUG (2): SendAggAvgTask() posted!!
+0:5:22.429687510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.429687520 DEBUG (2): SendAggAvgTask(): Starting....
+0:5:22.429687520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:5:22.430587738 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:5:22.430587738 DEBUG (0): Something received!!!  from 3
+0:5:22.430587738 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:5:22.430587748 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:5:22.430587748 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:5:22.430587748 DEBUG (0): receiveAggAvgTask(): sum= 79, count = 4
+0:5:22.430587748 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 79, New agg_count = 4
+0:5:22.430664072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 15 , BeforeCount= 1, BeforeSum= 17
+0:5:22.430664072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 32
+0:5:22.430664072 DEBUG (1): NodeID= 1 : AggregationAvg value= 32/2
+0:5:22.430664072 DEBUG (1): SendAggAvgTask() posted!!
+0:5:22.430664072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:22.430664082 DEBUG (1): SendAggAvgTask(): Starting....
+0:5:22.430664082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:5:22.430755583 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:5:22.430755583 DEBUG (3): A AggregationAvg package sent... True
+0:5:22.436004627 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:5:22.436004627 DEBUG (1): A AggregationAvg package sent... True
+0:5:22.440139729 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:5:22.440139729 DEBUG (0): Something received!!!  from 2
+0:5:22.440139729 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:5:22.440139739 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:5:22.440139739 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:5:22.440139739 DEBUG (0): receiveAggAvgTask(): sum= 40, count = 2
+0:5:22.440139739 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 119, New agg_count = 6
+0:5:22.440307575 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:5:22.440307575 DEBUG (2): A AggregationAvg package sent... True
+0:5:22.508789072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 7 , BeforeCount= 6, BeforeSum= 119
+0:5:22.508789072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 7, SumAfter= 126
+0:5:22.508789072 DEBUG (0): ***////////||||||\\\***
+0:5:22.508789072 DEBUG (0): AGG RESULT epoch=16 AVG=126/7=18
+0:5:22.508789072 DEBUG (0): ***\\\\||||||//////***
+0:5:41.805664073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:5:41.805664073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:5:41.805664073 DEBUG (8): NodeID= 8 : AggregationAvg value= 22/1
+0:5:41.805664073 DEBUG (8): SendAggAvgTask() posted!!
+0:5:41.805664073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.805664083 DEBUG (8): SendAggAvgTask(): Starting....
+0:5:41.805664083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:5:41.810470573 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:5:41.810470573 DEBUG (5): Something received!!!  from 8
+0:5:41.810470573 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:5:41.810470583 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:5:41.810470583 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:5:41.810470583 DEBUG (5): receiveAggAvgTask(): sum= 22, count = 1
+0:5:41.810470583 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 22, New agg_count = 1
+0:5:41.810638419 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:5:41.810638419 DEBUG (8): A AggregationAvg package sent... True
+0:5:41.875976573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 26 , BeforeCount= 0, BeforeSum= 0
+0:5:41.875976573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 26
+0:5:41.875976573 DEBUG (6): NodeID= 6 : AggregationAvg value= 26/1
+0:5:41.875976573 DEBUG (6): SendAggAvgTask() posted!!
+0:5:41.875976573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.875976583 DEBUG (6): SendAggAvgTask(): Starting....
+0:5:41.875976583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:5:41.876953135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 18 , BeforeCount= 0, BeforeSum= 0
+0:5:41.876953135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 18
+0:5:41.876953135 DEBUG (4): NodeID= 4 : AggregationAvg value= 18/1
+0:5:41.876953135 DEBUG (4): SendAggAvgTask() posted!!
+0:5:41.876953135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.876953145 DEBUG (4): SendAggAvgTask(): Starting....
+0:5:41.876953145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:5:41.877929698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 19 , BeforeCount= 0, BeforeSum= 0
+0:5:41.877929698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 19
+0:5:41.877929698 DEBUG (7): NodeID= 7 : AggregationAvg value= 19/1
+0:5:41.877929698 DEBUG (7): SendAggAvgTask() posted!!
+0:5:41.877929698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.877929708 DEBUG (7): SendAggAvgTask(): Starting....
+0:5:41.877929708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:5:41.878906260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 33 , BeforeCount= 1, BeforeSum= 22
+0:5:41.878906260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 55
+0:5:41.878906260 DEBUG (5): NodeID= 5 : AggregationAvg value= 55/2
+0:5:41.878906260 DEBUG (5): SendAggAvgTask() posted!!
+0:5:41.878906260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.878906270 DEBUG (5): SendAggAvgTask(): Starting....
+0:5:41.878906270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:5:41.879425054 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:5:41.879425054 DEBUG (2): Something received!!!  from 4
+0:5:41.879425054 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:5:41.879425064 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:5:41.879425064 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:5:41.879425064 DEBUG (2): receiveAggAvgTask(): sum= 18, count = 1
+0:5:41.879425064 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 18, New agg_count = 1
+0:5:41.879592900 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:5:41.879592900 DEBUG (4): A AggregationAvg package sent... True
+0:5:41.880920401 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:5:41.880920401 DEBUG (3): Something received!!!  from 6
+0:5:41.880920401 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:5:41.880920411 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:5:41.880920411 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:5:41.880920411 DEBUG (3): receiveAggAvgTask(): sum= 26, count = 1
+0:5:41.880920411 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 26, New agg_count = 1
+0:5:41.881088247 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:5:41.881088247 DEBUG (6): A AggregationAvg package sent... True
+0:5:41.888397181 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:5:41.888397181 DEBUG (3): Something received!!!  from 5
+0:5:41.888397181 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:5:41.888397191 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:5:41.888397191 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:5:41.888397191 DEBUG (3): receiveAggAvgTask(): sum= 55, count = 2
+0:5:41.888397191 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 81, New agg_count = 3
+0:5:41.888565027 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:5:41.888565027 DEBUG (5): A AggregationAvg package sent... True
+0:5:41.888931230 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:5:41.888931230 DEBUG (1): Something received!!!  from 7
+0:5:41.888931230 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:5:41.888931240 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:5:41.888931240 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:5:41.888931240 DEBUG (1): receiveAggAvgTask(): sum= 19, count = 1
+0:5:41.888931240 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 19, New agg_count = 1
+0:5:41.889099076 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:5:41.889099076 DEBUG (7): A AggregationAvg package sent... True
+0:5:41.953125010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 2 , BeforeCount= 3, BeforeSum= 81
+0:5:41.953125010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 83
+0:5:41.953125010 DEBUG (3): NodeID= 3 : AggregationAvg value= 83/4
+0:5:41.953125010 DEBUG (3): SendAggAvgTask() posted!!
+0:5:41.953125010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.953125020 DEBUG (3): SendAggAvgTask(): Starting....
+0:5:41.953125020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:5:41.960937510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 17 , BeforeCount= 1, BeforeSum= 18
+0:5:41.960937510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 35
+0:5:41.960937510 DEBUG (2): NodeID= 2 : AggregationAvg value= 35/2
+0:5:41.960937510 DEBUG (2): SendAggAvgTask() posted!!
+0:5:41.960937510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.960937520 DEBUG (2): SendAggAvgTask(): Starting....
+0:5:41.960937520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:5:41.961914072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 16 , BeforeCount= 1, BeforeSum= 19
+0:5:41.961914072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 35
+0:5:41.961914072 DEBUG (1): NodeID= 1 : AggregationAvg value= 35/2
+0:5:41.961914072 DEBUG (1): SendAggAvgTask() posted!!
+0:5:41.961914072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:5:41.961914082 DEBUG (1): SendAggAvgTask(): Starting....
+0:5:41.961914082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:5:41.962036101 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:5:41.962036101 DEBUG (0): Something received!!!  from 3
+0:5:41.962036101 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:5:41.962036111 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:5:41.962036111 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:5:41.962036111 DEBUG (0): receiveAggAvgTask(): sum= 83, count = 4
+0:5:41.962036111 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 83, New agg_count = 4
+0:5:41.962203946 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:5:41.962203946 DEBUG (3): A AggregationAvg package sent... True
+0:5:41.964981081 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:5:41.964981081 DEBUG (0): Something received!!!  from 1
+0:5:41.964981081 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:5:41.964981091 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:5:41.964981091 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:5:41.964981091 DEBUG (0): receiveAggAvgTask(): sum= 35, count = 2
+0:5:41.964981091 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 118, New agg_count = 6
+0:5:41.965148927 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:5:41.965148927 DEBUG (1): A AggregationAvg package sent... True
+0:5:41.967071517 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:5:41.967071517 DEBUG (0): Something received!!!  from 2
+0:5:41.967071517 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:5:41.967071527 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:5:41.967071527 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:5:41.967071527 DEBUG (0): receiveAggAvgTask(): sum= 35, count = 2
+0:5:41.967071527 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 153, New agg_count = 8
+0:5:41.967239363 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:5:41.967239363 DEBUG (2): A AggregationAvg package sent... True
+0:5:42.040039072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 7 , BeforeCount= 8, BeforeSum= 153
+0:5:42.040039072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 160
+0:5:42.040039072 DEBUG (0): ***////////||||||\\\***
+0:5:42.040039072 DEBUG (0): AGG RESULT epoch=17 AVG=160/9=17
+0:5:42.040039072 DEBUG (0): ***\\\\||||||//////***
+0:6:1.336914073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 25 , BeforeCount= 0, BeforeSum= 0
+0:6:1.336914073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 25
+0:6:1.336914073 DEBUG (8): NodeID= 8 : AggregationAvg value= 25/1
+0:6:1.336914073 DEBUG (8): SendAggAvgTask() posted!!
+0:6:1.336914073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.336914083 DEBUG (8): SendAggAvgTask(): Starting....
+0:6:1.336914083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:6:1.347167929 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:6:1.347167929 DEBUG (5): Something received!!!  from 8
+0:6:1.347167929 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:6:1.347167939 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:6:1.347167939 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:6:1.347167939 DEBUG (5): receiveAggAvgTask(): sum= 25, count = 1
+0:6:1.347167939 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 25, New agg_count = 1
+0:6:1.347335775 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:6:1.347335775 DEBUG (8): A AggregationAvg package sent... True
+0:6:1.407226573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 28 , BeforeCount= 0, BeforeSum= 0
+0:6:1.407226573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 28
+0:6:1.407226573 DEBUG (6): NodeID= 6 : AggregationAvg value= 28/1
+0:6:1.407226573 DEBUG (6): SendAggAvgTask() posted!!
+0:6:1.407226573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.407226583 DEBUG (6): SendAggAvgTask(): Starting....
+0:6:1.407226583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:6:1.408203135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 14 , BeforeCount= 0, BeforeSum= 0
+0:6:1.408203135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 14
+0:6:1.408203135 DEBUG (4): NodeID= 4 : AggregationAvg value= 14/1
+0:6:1.408203135 DEBUG (4): SendAggAvgTask() posted!!
+0:6:1.408203135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.408203145 DEBUG (4): SendAggAvgTask(): Starting....
+0:6:1.408203145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:6:1.409179698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 20 , BeforeCount= 0, BeforeSum= 0
+0:6:1.409179698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 20
+0:6:1.409179698 DEBUG (7): NodeID= 7 : AggregationAvg value= 20/1
+0:6:1.409179698 DEBUG (7): SendAggAvgTask() posted!!
+0:6:1.409179698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.409179708 DEBUG (7): SendAggAvgTask(): Starting....
+0:6:1.409179708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:6:1.410156260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 26 , BeforeCount= 1, BeforeSum= 25
+0:6:1.410156260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 51
+0:6:1.410156260 DEBUG (5): NodeID= 5 : AggregationAvg value= 51/2
+0:6:1.410156260 DEBUG (5): SendAggAvgTask() posted!!
+0:6:1.410156260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.410156270 DEBUG (5): SendAggAvgTask(): Starting....
+0:6:1.410156270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:6:1.412368765 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:6:1.412368765 DEBUG (3): Something received!!!  from 6
+0:6:1.412368765 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:6:1.412368775 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:6:1.412368775 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:6:1.412368775 DEBUG (3): receiveAggAvgTask(): sum= 28, count = 1
+0:6:1.412368775 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 28, New agg_count = 1
+0:6:1.412536610 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:6:1.412536610 DEBUG (6): A AggregationAvg package sent... True
+0:6:1.414978019 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:6:1.414978019 DEBUG (3): Something received!!!  from 5
+0:6:1.414978019 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:6:1.414978029 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:6:1.414978029 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:6:1.414978029 DEBUG (3): receiveAggAvgTask(): sum= 51, count = 2
+0:6:1.414978029 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 79, New agg_count = 3
+0:6:1.415145865 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:6:1.415145865 DEBUG (5): A AggregationAvg package sent... True
+0:6:1.416717500 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:6:1.416717500 DEBUG (2): Something received!!!  from 4
+0:6:1.416717500 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:6:1.416717510 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:6:1.416717510 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:6:1.416717510 DEBUG (2): receiveAggAvgTask(): sum= 14, count = 1
+0:6:1.416717510 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 14, New agg_count = 1
+0:6:1.416885345 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:6:1.416885345 DEBUG (4): A AggregationAvg package sent... True
+0:6:1.419204674 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:6:1.419204674 DEBUG (1): Something received!!!  from 7
+0:6:1.419204674 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:6:1.419204684 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:6:1.419204684 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:6:1.419204684 DEBUG (1): receiveAggAvgTask(): sum= 20, count = 1
+0:6:1.419204684 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 20, New agg_count = 1
+0:6:1.419372519 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:6:1.419372519 DEBUG (7): A AggregationAvg package sent... True
+0:6:1.484375010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 1 , BeforeCount= 3, BeforeSum= 79
+0:6:1.484375010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 80
+0:6:1.484375010 DEBUG (3): NodeID= 3 : AggregationAvg value= 80/4
+0:6:1.484375010 DEBUG (3): SendAggAvgTask() posted!!
+0:6:1.484375010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.484375020 DEBUG (3): SendAggAvgTask(): Starting....
+0:6:1.484375020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:6:1.489776600 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:6:1.489776600 DEBUG (0): Something received!!!  from 3
+0:6:1.489776600 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:6:1.489776610 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:6:1.489776610 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:6:1.489776610 DEBUG (0): receiveAggAvgTask(): sum= 80, count = 4
+0:6:1.489776610 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 80, New agg_count = 4
+0:6:1.489944445 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:6:1.489944445 DEBUG (3): A AggregationAvg package sent... True
+0:6:1.492187510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 15 , BeforeCount= 1, BeforeSum= 14
+0:6:1.492187510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 29
+0:6:1.492187510 DEBUG (2): NodeID= 2 : AggregationAvg value= 29/2
+0:6:1.492187510 DEBUG (2): SendAggAvgTask() posted!!
+0:6:1.492187510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.492187520 DEBUG (2): SendAggAvgTask(): Starting....
+0:6:1.492187520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:6:1.493164072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 15 , BeforeCount= 1, BeforeSum= 20
+0:6:1.493164072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 35
+0:6:1.493164072 DEBUG (1): NodeID= 1 : AggregationAvg value= 35/2
+0:6:1.493164072 DEBUG (1): SendAggAvgTask() posted!!
+0:6:1.493164072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:1.493164082 DEBUG (1): SendAggAvgTask(): Starting....
+0:6:1.493164082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:6:1.497482289 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:6:1.497482289 DEBUG (0): Something received!!!  from 2
+0:6:1.497482289 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:6:1.497482299 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:6:1.497482299 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:6:1.497482299 DEBUG (0): receiveAggAvgTask(): sum= 29, count = 2
+0:6:1.497482299 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 109, New agg_count = 6
+0:6:1.497650134 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:6:1.497650134 DEBUG (2): A AggregationAvg package sent... True
+0:6:1.502792322 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:6:1.502792322 DEBUG (0): Something received!!!  from 1
+0:6:1.502792322 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:6:1.502792332 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:6:1.502792332 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:6:1.502792332 DEBUG (0): receiveAggAvgTask(): sum= 35, count = 2
+0:6:1.502792332 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 144, New agg_count = 8
+0:6:1.502960168 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:6:1.502960168 DEBUG (1): A AggregationAvg package sent... True
+0:6:1.571289072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 7 , BeforeCount= 8, BeforeSum= 144
+0:6:1.571289072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 151
+0:6:1.571289072 DEBUG (0): ***////////||||||\\\***
+0:6:1.571289072 DEBUG (0): AGG RESULT epoch=18 AVG=151/9=16
+0:6:1.571289072 DEBUG (0): ***\\\\||||||//////***
+0:6:20.868164073 DEBUG (8): NodeID= 8 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:6:20.868164073 DEBUG (8): NodeID= 8 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:6:20.868164073 DEBUG (8): NodeID= 8 : AggregationAvg value= 22/1
+0:6:20.868164073 DEBUG (8): SendAggAvgTask() posted!!
+0:6:20.868164073 DEBUG (8): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:20.868164083 DEBUG (8): SendAggAvgTask(): Starting....
+0:6:20.868164083 DEBUG (8): SendAggAvgTask(): Send returned success!!!
+0:6:20.877120940 DEBUG (5): ### AggAvgReceive.receive() start #####
+0:6:20.877120940 DEBUG (5): Something received!!!  from 8
+0:6:20.877120940 DEBUG (5): posting receiveAggAvgTask()!!!!
+0:6:20.877120950 DEBUG (5): ReceiveAggAvgTask():received msg...
+0:6:20.877120950 DEBUG (5): ReceiveAggAvgTask(): len=3
+0:6:20.877120950 DEBUG (5): receiveAggAvgTask(): sum= 22, count = 1
+0:6:20.877120950 DEBUG (5): Inside the ReceiveAggAvgTask(): New agg_sum = 22, New agg_count = 1
+0:6:20.877288785 DEBUG (8): Inside the AggAvgAMSend.sendDone()
+0:6:20.877288785 DEBUG (8): A AggregationAvg package sent... True
+0:6:20.938476573 DEBUG (6): NodeID= 6 : AggregationAvg sample= 33 , BeforeCount= 0, BeforeSum= 0
+0:6:20.938476573 DEBUG (6): NodeID= 6 : AggregationAvg CountAfter = 1, SumAfter= 33
+0:6:20.938476573 DEBUG (6): NodeID= 6 : AggregationAvg value= 33/1
+0:6:20.938476573 DEBUG (6): SendAggAvgTask() posted!!
+0:6:20.938476573 DEBUG (6): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:20.938476583 DEBUG (6): SendAggAvgTask(): Starting....
+0:6:20.938476583 DEBUG (6): SendAggAvgTask(): Send returned success!!!
+0:6:20.939453135 DEBUG (4): NodeID= 4 : AggregationAvg sample= 12 , BeforeCount= 0, BeforeSum= 0
+0:6:20.939453135 DEBUG (4): NodeID= 4 : AggregationAvg CountAfter = 1, SumAfter= 12
+0:6:20.939453135 DEBUG (4): NodeID= 4 : AggregationAvg value= 12/1
+0:6:20.939453135 DEBUG (4): SendAggAvgTask() posted!!
+0:6:20.939453135 DEBUG (4): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:20.939453145 DEBUG (4): SendAggAvgTask(): Starting....
+0:6:20.939453145 DEBUG (4): SendAggAvgTask(): Send returned success!!!
+0:6:20.940429698 DEBUG (7): NodeID= 7 : AggregationAvg sample= 22 , BeforeCount= 0, BeforeSum= 0
+0:6:20.940429698 DEBUG (7): NodeID= 7 : AggregationAvg CountAfter = 1, SumAfter= 22
+0:6:20.940429698 DEBUG (7): NodeID= 7 : AggregationAvg value= 22/1
+0:6:20.940429698 DEBUG (7): SendAggAvgTask() posted!!
+0:6:20.940429698 DEBUG (7): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:20.940429708 DEBUG (7): SendAggAvgTask(): Starting....
+0:6:20.940429708 DEBUG (7): SendAggAvgTask(): Send returned success!!!
+0:6:20.940521248 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:6:20.940521248 DEBUG (3): Something received!!!  from 6
+0:6:20.940521248 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:6:20.940521258 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:6:20.940521258 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:6:20.940521258 DEBUG (3): receiveAggAvgTask(): sum= 33, count = 1
+0:6:20.940521258 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 33, New agg_count = 1
+0:6:20.940689094 DEBUG (6): Inside the AggAvgAMSend.sendDone()
+0:6:20.940689094 DEBUG (6): A AggregationAvg package sent... True
+0:6:20.941406260 DEBUG (5): NodeID= 5 : AggregationAvg sample= 27 , BeforeCount= 1, BeforeSum= 22
+0:6:20.941406260 DEBUG (5): NodeID= 5 : AggregationAvg CountAfter = 2, SumAfter= 49
+0:6:20.941406260 DEBUG (5): NodeID= 5 : AggregationAvg value= 49/2
+0:6:20.941406260 DEBUG (5): SendAggAvgTask() posted!!
+0:6:20.941406260 DEBUG (5): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:20.941406270 DEBUG (5): SendAggAvgTask(): Starting....
+0:6:20.941406270 DEBUG (5): SendAggAvgTask(): Send returned success!!!
+0:6:20.944122319 DEBUG (3): ### AggAvgReceive.receive() start #####
+0:6:20.944122319 DEBUG (3): Something received!!!  from 5
+0:6:20.944122319 DEBUG (3): posting receiveAggAvgTask()!!!!
+0:6:20.944122329 DEBUG (3): ReceiveAggAvgTask():received msg...
+0:6:20.944122329 DEBUG (3): ReceiveAggAvgTask(): len=3
+0:6:20.944122329 DEBUG (3): receiveAggAvgTask(): sum= 49, count = 2
+0:6:20.944122329 DEBUG (3): Inside the ReceiveAggAvgTask(): New agg_sum = 82, New agg_count = 3
+0:6:20.944290164 DEBUG (5): Inside the AggAvgAMSend.sendDone()
+0:6:20.944290164 DEBUG (5): A AggregationAvg package sent... True
+0:6:20.948165863 DEBUG (2): ### AggAvgReceive.receive() start #####
+0:6:20.948165863 DEBUG (2): Something received!!!  from 4
+0:6:20.948165863 DEBUG (2): posting receiveAggAvgTask()!!!!
+0:6:20.948165873 DEBUG (2): ReceiveAggAvgTask():received msg...
+0:6:20.948165873 DEBUG (2): ReceiveAggAvgTask(): len=3
+0:6:20.948165873 DEBUG (2): receiveAggAvgTask(): sum= 12, count = 1
+0:6:20.948165873 DEBUG (2): Inside the ReceiveAggAvgTask(): New agg_sum = 12, New agg_count = 1
+0:6:20.948333708 DEBUG (4): Inside the AggAvgAMSend.sendDone()
+0:6:20.948333708 DEBUG (4): A AggregationAvg package sent... True
+0:6:20.950134241 DEBUG (1): ### AggAvgReceive.receive() start #####
+0:6:20.950134241 DEBUG (1): Something received!!!  from 7
+0:6:20.950134241 DEBUG (1): posting receiveAggAvgTask()!!!!
+0:6:20.950134251 DEBUG (1): ReceiveAggAvgTask():received msg...
+0:6:20.950134251 DEBUG (1): ReceiveAggAvgTask(): len=3
+0:6:20.950134251 DEBUG (1): receiveAggAvgTask(): sum= 22, count = 1
+0:6:20.950134251 DEBUG (1): Inside the ReceiveAggAvgTask(): New agg_sum = 22, New agg_count = 1
+0:6:20.950302087 DEBUG (7): Inside the AggAvgAMSend.sendDone()
+0:6:20.950302087 DEBUG (7): A AggregationAvg package sent... True
+0:6:21.015625010 DEBUG (3): NodeID= 3 : AggregationAvg sample= 1 , BeforeCount= 3, BeforeSum= 82
+0:6:21.015625010 DEBUG (3): NodeID= 3 : AggregationAvg CountAfter = 4, SumAfter= 83
+0:6:21.015625010 DEBUG (3): NodeID= 3 : AggregationAvg value= 83/4
+0:6:21.015625010 DEBUG (3): SendAggAvgTask() posted!!
+0:6:21.015625010 DEBUG (3): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:21.015625020 DEBUG (3): SendAggAvgTask(): Starting....
+0:6:21.015625020 DEBUG (3): SendAggAvgTask(): Send returned success!!!
+0:6:21.020523063 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:6:21.020523063 DEBUG (0): Something received!!!  from 3
+0:6:21.020523063 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:6:21.020523073 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:6:21.020523073 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:6:21.020523073 DEBUG (0): receiveAggAvgTask(): sum= 83, count = 4
+0:6:21.020523073 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 83, New agg_count = 4
+0:6:21.020690908 DEBUG (3): Inside the AggAvgAMSend.sendDone()
+0:6:21.020690908 DEBUG (3): A AggregationAvg package sent... True
+0:6:21.023437510 DEBUG (2): NodeID= 2 : AggregationAvg sample= 15 , BeforeCount= 1, BeforeSum= 12
+0:6:21.023437510 DEBUG (2): NodeID= 2 : AggregationAvg CountAfter = 2, SumAfter= 27
+0:6:21.023437510 DEBUG (2): NodeID= 2 : AggregationAvg value= 27/2
+0:6:21.023437510 DEBUG (2): SendAggAvgTask() posted!!
+0:6:21.023437510 DEBUG (2): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:21.023437520 DEBUG (2): SendAggAvgTask(): Starting....
+0:6:21.023437520 DEBUG (2): SendAggAvgTask(): Send returned success!!!
+0:6:21.024414072 DEBUG (1): NodeID= 1 : AggregationAvg sample= 15 , BeforeCount= 1, BeforeSum= 22
+0:6:21.024414072 DEBUG (1): NodeID= 1 : AggregationAvg CountAfter = 2, SumAfter= 37
+0:6:21.024414072 DEBUG (1): NodeID= 1 : AggregationAvg value= 37/2
+0:6:21.024414072 DEBUG (1): SendAggAvgTask() posted!!
+0:6:21.024414072 DEBUG (1): AggregationAvg enqueued successfully in SendingQueue!!!
+0:6:21.024414082 DEBUG (1): SendAggAvgTask(): Starting....
+0:6:21.024414082 DEBUG (1): SendAggAvgTask(): Send returned success!!!
+0:6:21.025634773 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:6:21.025634773 DEBUG (0): Something received!!!  from 2
+0:6:21.025634773 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:6:21.025634783 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:6:21.025634783 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:6:21.025634783 DEBUG (0): receiveAggAvgTask(): sum= 27, count = 2
+0:6:21.025634783 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 110, New agg_count = 6
+0:6:21.025802618 DEBUG (2): Inside the AggAvgAMSend.sendDone()
+0:6:21.025802618 DEBUG (2): A AggregationAvg package sent... True
+0:6:21.027816772 DEBUG (0): ### AggAvgReceive.receive() start #####
+0:6:21.027816772 DEBUG (0): Something received!!!  from 1
+0:6:21.027816772 DEBUG (0): posting receiveAggAvgTask()!!!!
+0:6:21.027816782 DEBUG (0): ReceiveAggAvgTask():received msg...
+0:6:21.027816782 DEBUG (0): ReceiveAggAvgTask(): len=3
+0:6:21.027816782 DEBUG (0): receiveAggAvgTask(): sum= 37, count = 2
+0:6:21.027816782 DEBUG (0): Inside the ReceiveAggAvgTask(): New agg_sum = 147, New agg_count = 8
+0:6:21.027984618 DEBUG (1): Inside the AggAvgAMSend.sendDone()
+0:6:21.027984618 DEBUG (1): A AggregationAvg package sent... True
+0:6:21.102539072 DEBUG (0): NodeID= 0 : AggregationAvg sample= 5 , BeforeCount= 8, BeforeSum= 147
+0:6:21.102539072 DEBUG (0): NodeID= 0 : AggregationAvg CountAfter = 9, SumAfter= 152
+0:6:21.102539072 DEBUG (0): ***////////||||||\\\***
+0:6:21.102539072 DEBUG (0): AGG RESULT epoch=19 AVG=152/9=16
+0:6:21.102539072 DEBUG (0): ***\\\\||||||//////***
+Node 0 connected with node 1 True True
+Node 0 connected with node 2 True True
+Node 1 connected with node 7 True True
+Node 2 connected with node 3 True True
+Node 4 connected with node 8 False False

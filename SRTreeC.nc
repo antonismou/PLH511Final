@@ -106,7 +106,7 @@ implementation
 	uint16_t epochCounter;
 	uint8_t agg_min;
 	uint16_t agg_sum;
-	uint16_t agg_count;
+	uint8_t agg_count;
 	bool AvgSendBusy=FALSE;	
 	bool MinSendBusy=FALSE;	
 	bool SumSendBusy=FALSE;
