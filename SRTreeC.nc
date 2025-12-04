@@ -1149,7 +1149,9 @@ implementation
 			}
 			
 			if(TOS_NODE_ID==0){
+				dbg("Results","***////////||||||\\\\\\***\n");
 				dbg("Results","AGG RESULT epoch=%u MIN=%u \n", epochCounter, agg_min);
+				dbg("Results","***\\\\\\\\||||||//////***\n");
 			}else{
 				AggregationMin* msgMin;
 				if(call AggMinSendQueue.full()){
