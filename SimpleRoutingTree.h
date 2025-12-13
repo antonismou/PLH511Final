@@ -6,7 +6,7 @@ enum{
 	RECEIVER_QUEUE_SIZE=3,
 	AM_SIMPLEROUTINGTREEMSG=22,
 	AM_ROUTINGMSG=22,
-	AM_NOTIFYPARENTMSG=12,
+	//AM_NOTIFYPARENTMSG=12,
 	SEND_CHECK_MILLIS=70000,
 	TIMER_PERIOD_MILLI=150000,
 	TIMER_FAST_PERIOD=200,
@@ -19,10 +19,70 @@ enum{
 	AGGREGATION_TYPE_SUM=2,
 	AGGREGATION_TYPE_AVG=3,
 	//END ADDED
+
+	//ADDED PHACE 2
+	AGGREGATION_TYPE_MIN_GROUP=4,
+	AGGREGATION_TYPE_SUM_GROUP=5,
+	ID_MSG_MIN_GROUP_1_2=412,
+	ID_MSG_MIN_GROUP_1_3=413,
+	ID_MSG_MIN_GROUP_2_3=423,
+	ID_MSG_MIN_GROUP_1_2_3=4123,
+	
+	ID_MSG_SUM_GROUP_1_2=512,
+	ID_MSG_SUM_GROUP_1_3=513,
+	ID_MSG_SUM_GROUP_2_3=523,
+	ID_MSG_SUM_GROUP_1_2_3=5123,
+	//END PHACE 2
 };
 /*uint16_t AM_ROUTINGMSG=AM_SIMPLEROUTINGTREEMSG;
 uint16_t AM_NOTIFYPARENTMSG=AM_SIMPLEROUTINGTREEMSG;
 */
+//ADDED PHACE 2
+
+typedef nx_struct Sum12Group{
+	nx_uint16_t sumGroup1;
+	nx_uint16_t sumGroup2;
+}Sum12Group;
+
+typedef nx_struct Sum13Group{
+	nx_uint16_t sumGroup1;
+	nx_uint16_t sumGroup3;
+}Sum13Group;
+
+typedef nx_struct Sum23Group{
+	nx_uint16_t sumGroup2;
+	nx_uint16_t sumGroup3;
+}Sum23Group;
+
+typedef nx_struct Sum3Group{
+	nx_uint16_t sumGroup1;
+	nx_uint16_t sumGroup2;
+	nx_uint16_t sumGroup3;
+}Sum3Group;
+
+typedef nx_struct Min12Group{
+	nx_uint8_t minGroup1;
+	nx_uint8_t minGroup2;
+}Min12Group;
+
+typedef nx_struct Min13Group{
+	nx_uint8_t minGroup1;
+	nx_uint8_t minGroup3;
+}Min13Group;
+
+typedef nx_struct Min23Group{
+	nx_uint8_t minGroup2;
+	nx_uint8_t minGroup3;
+}Min23Group;
+
+typedef nx_struct Min3Group{
+	nx_uint8_t minGroup1;
+	nx_uint8_t minGroup2;
+	nx_uint8_t minGroup3;
+}Min3Group;
+
+//END PHACE 2
+
 
 //ADDED
 typedef nx_struct AggregationMin {

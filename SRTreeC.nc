@@ -68,6 +68,56 @@ module SRTreeC
 	uses interface Receive as AggAvgReceive;
 	uses interface PacketQueue as AggAvgSendQueue;
 	uses interface PacketQueue as AggAvgReceiveQueue;
+
+	//phase 2
+	uses interface PacketQueue as QueueSendGroupMin2;
+	uses interface PacketQueue as QueueReceiveGroupMin2;
+	uses interface Packet as AggMinPacketGroup12;
+	uses interface AMPacket as AggMinAMPacketGroup12;
+	uses interface AMSend as AggMinAMSendGroup12;
+	uses interface Receive as AggMinReceiveGroup12;
+
+	uses interface Packet as AggMinPacketGroup13;
+	uses interface AMPacket as AggMinAMPacketGroup13;
+	uses interface AMSend as AggMinAMSendGroup13;
+	uses interface Receive as AggMinReceiveGroup13;
+
+	uses interface Packet as AggMinPacketGroup23;
+	uses interface AMPacket as AggMinAMPacketGroup23;
+	uses interface AMSend as AggMinAMSendGroup23;
+	uses interface Receive as AggMinReceiveGroup23;
+
+	uses interface PacketQueue as QueueSendGroupMin3;
+	uses interface PacketQueue as QueueReceiveGroupMin3;
+	uses interface Packet as AggMinPacketGroup123;
+	uses interface AMPacket as AggMinAMPacketGroup123;
+	uses interface AMSend as AggMinAMSendGroup123;
+	uses interface Receive as AggMinReceiveGroup123;
+
+	uses interface PacketQueue as QueueSendGroupSum2;
+	uses interface PacketQueue as QueueReceiveGroupSum2;
+	uses interface Packet as AggSumPacketGroup12;
+	uses interface AMPacket as AggSumAMPacketGroup12;
+	uses interface AMSend as AggSumAMSendGroup12;
+	uses interface Receive as AggSumReceiveGroup12;
+
+	uses interface Packet as AggSumPacketGroup13;
+	uses interface AMPacket as AggSumAMPacketGroup13;
+	uses interface AMSend as AggSumAMSendGroup13;
+	uses interface Receive as AggSumReceiveGroup13;
+
+	uses interface Packet as AggSumPacketGroup23;
+	uses interface AMPacket as AggSumAMPacketGroup23;
+	uses interface AMSend as AggSumAMSendGroup23;
+	uses interface Receive as AggSumReceiveGroup23;
+
+	uses interface PacketQueue as QueueSendGroupSum3;
+	uses interface PacketQueue as QueueReceiveGroupSum3;
+	uses interface Packet as AggSumPacketGroup123;
+	uses interface AMPacket as AggSumAMPacketGroup123;
+	uses interface AMSend as AggSumAMSendGroup123;
+	uses interface Receive as AggSumReceiveGroup123;
+// END phase 2
 	
 	uses interface Timer<TMilli> as EpochTimer;
 	// END ADDED
@@ -101,6 +151,7 @@ implementation
 	message_t radioAggMinSendPkt;
 	message_t radioAggAvgSendPkt;
 	message_t radioAggSumSendPkt;
+	message_t radioGroupSendPkt;
 	uint8_t aggType;
 	uint8_t sample;
 	uint16_t epochCounter;
@@ -111,6 +162,11 @@ implementation
 	bool MinSendBusy=FALSE;	
 	bool SumSendBusy=FALSE;
 	//END ADDED
+
+	//ADDED Phase 2
+	uint16_t agg_sum_array[3];
+	uint8_t agg_min_array[3];
+	//END ADDED Phase 2
 
 	task void sendRoutingTask();
 	task void receiveRoutingTask();
@@ -385,8 +441,8 @@ implementation
 			dbg("Routing", "#######   ROUND   %u    ############## \n", roundCounter);
 			dbg("Routing", "#####################################\n");
 			//ADDED
-			aggType= (call Random.rand16() %3) +1; // 1=MIN,2=SUM,3=AVG
-			//aggType=2; // for testing only MIN
+			//aggType= (call Random.rand16() %5) +1; // 1=MIN,2=SUM,3=AVG
+			aggType=4; // for testing only MIN
 			epochCounter=0;
 			agg_count=0;
 			agg_sum=0;
@@ -812,7 +868,7 @@ implementation
 	}
 */
 	////////////////////////////////////////////////////////////////////
-	//*****************************************************************/
+		//*****************************************************************/
 	///////////////////////////////////////////////////////////////////
 	/**
 	 * dequeues a message and processes it
@@ -1006,10 +1062,6 @@ implementation
 		*/
 	}
 
-
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////	
 	
 /* no tag
 	task void receiveNotifyTask()
@@ -1257,11 +1309,37 @@ implementation
 					dbg("Avg","AggregationAvg enqueued successfully in SendingQueue!!!\n");
 				}
 			}//if for TOS_NODE_ID==0
+		}else if(aggType==AGGREGATION_TYPE_MIN_GROUP){
+			
+		}else if(aggType==AGGREGATION_TYPE_SUM_GROUP){
+			uint8_t group_id = (TOS_NODE_ID % 3); 
+			dbg("Sample","NodeID= %d : Group %u AggregationSum sample %u\n", TOS_NODE_ID, group_id + 1, sample);
+			agg_sum_array[group_id] += sample;
+			dbg("Sample","NodeID= %d : Group %u AggregationSum sumAfter= %u \n", TOS_NODE_ID, group_id + 1, agg_sum_array[group_id]);
+			if(TOS_NODE_ID==0){
+				dbg("Results","***////////||||||\\\\\\***\n");
+				for(uint8_t i=0; i<3; i++){
+					dbg("Results","AGG RESULT epoch=%u Group %u Sum=%u \n", epochCounter, i + 1, agg_sum_array[i]);
+				}
+				dbg("Results","***\\\\\\\\||||||//////***\n");
+			}else{
+				if(){
+					
+				}
+			}
+
 		}
 		agg_count=0;
 		agg_sum=0;
+		agg_min_array[0]=0xFFFF;
+		agg_min_array[1]=0xFFFF;
+		agg_min_array[2]=0xFFFF;
+		agg_sum_array[0]=0;
+		agg_sum_array[1]=0;
+		agg_sum_array[2]=0;
 		agg_min=0xFFFF;
 	}
+
 
 	task void sendAggMinTask(){
 		uint8_t mlen;

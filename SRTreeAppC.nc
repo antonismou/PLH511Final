@@ -46,6 +46,35 @@ implementation{
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as AggSumReceiveQueueC;
     components new AMSenderC(AGGREGATION_TYPE_SUM) as AggSumSenderC;
     components new AMReceiverC(AGGREGATION_TYPE_SUM) as AggSumReceiverC;
+//------ phase 2
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupMin2C;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupMin2C;
+    components new AMSenderC(ID_MSG_MIN_GROUP_1_2) as AggMinSenderGroup12C;
+    components new AMReceiverC(ID_MSG_MIN_GROUP_1_2) as AggMinReceiverGroup12C;
+	components new AMSenderC(ID_MSG_MIN_GROUP_1_3) as AggMinSenderGroup13C;
+    components new AMReceiverC(ID_MSG_MIN_GROUP_1_3) as AggMinReceiverGroup13C;
+	components new AMSenderC(ID_MSG_MIN_GROUP_2_3) as AggMinSenderGroup23C;
+	components new AMReceiverC(ID_MSG_MIN_GROUP_2_3) as AggMinReceiverGroup23C;
+
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupMin3C;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupMin3C;
+	components new AMSenderC(ID_MSG_MIN_GROUP_1_2_3) as AggMinSenderGroup123C;
+	components new AMReceiverC(ID_MSG_MIN_GROUP_1_2_3) as AggMinReceiverGroup123C;
+
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupSum2C;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupSum2C;
+    components new AMSenderC(ID_MSG_SUM_GROUP_1_2) as AggSumSenderGroup12C;
+    components new AMReceiverC(ID_MSG_SUM_GROUP_1_2) as AggSumReceiverGroup12C;
+	components new AMSenderC(ID_MSG_SUM_GROUP_1_3) as AggSumSenderGroup13C;
+    components new AMReceiverC(ID_MSG_SUM_GROUP_1_3) as AggSumReceiverGroup13C;
+	components new AMSenderC(ID_MSG_SUM_GROUP_2_3) as AggSumSenderGroup23C;
+	components new AMReceiverC(ID_MSG_SUM_GROUP_2_3) as AggSumReceiverGroup23C;
+
+	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupSum3C;
+    components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupSum3C;
+	components new AMSenderC(ID_MSG_SUM_GROUP_1_2_3) as AggSumSenderGroup123C;
+	components new AMReceiverC(ID_MSG_SUM_GROUP_1_2_3) as AggSumReceiverGroup123C;
+
 
     components new TimerMilliC() as EpochTimerC;
 	//END ADDED
@@ -104,6 +133,63 @@ implementation{
     SRTreeC.AggSumReceive->AggSumReceiverC.Receive;
     SRTreeC.AggSumSendQueue->AggSumSendQueueC;
     SRTreeC.AggSumReceiveQueue->AggSumReceiveQueueC;
+
+
+	//------ phase 2
+	//min
+	SRTreeC.QueueSendGroupMin2->QueueSendGroupMin2C;
+	SRTreeC.QueueReceiveGroupMin2->QueueReceiveGroupMin2C;
+
+	SRTreeC.AggMinPacketGroup12->AggMinSenderGroup12C.Packet;
+	SRTreeC.AggMinAMPacketGroup12->AggMinSenderGroup12C.AMPacket;
+	SRTreeC.AggMinAMSendGroup12->AggMinSenderGroup12C.AMSend;
+	SRTreeC.AggMinReceiveGroup12->AggMinReceiverGroup12C.Receive;
+	
+	SRTreeC.AggMinPacketGroup13->AggMinSenderGroup13C.Packet;
+	SRTreeC.AggMinAMPacketGroup13->AggMinSenderGroup13C.AMPacket;
+	SRTreeC.AggMinAMSendGroup13->AggMinSenderGroup13C.AMSend;
+	SRTreeC.AggMinReceiveGroup13->AggMinReceiverGroup13C.Receive;
+
+	SRTreeC.AggMinPacketGroup23->AggMinSenderGroup23C.Packet;
+	SRTreeC.AggMinAMPacketGroup23->AggMinSenderGroup23C.AMPacket;
+	SRTreeC.AggMinAMSendGroup23->AggMinSenderGroup23C.AMSend;
+	SRTreeC.AggMinReceiveGroup23->AggMinReceiverGroup23C.Receive;
+
+	SRTreeC.QueueSendGroupMin3->QueueSendGroupMin3C;
+	SRTreeC.QueueReceiveGroupMin3->QueueReceiveGroupMin3C;
+
+	SRTreeC.AggMinPacketGroup123->AggMinSenderGroup123C.Packet;
+	SRTreeC.AggMinAMPacketGroup123->AggMinSenderGroup123C.AMPacket;
+	SRTreeC.AggMinAMSendGroup123->AggMinSenderGroup123C.AMSend;
+	SRTreeC.AggMinReceiveGroup123->AggMinReceiverGroup123C.Receive;
+
+	//sum
+	SRTreeC.QueueSendGroupSum2->QueueSendGroupSum2C;
+	SRTreeC.QueueReceiveGroupSum2->QueueReceiveGroupSum2C;
+
+	SRTreeC.AggSumPacketGroup12->AggSumSenderGroup12C.Packet;
+	SRTreeC.AggSumAMPacketGroup12->AggSumSenderGroup12C.AMPacket;
+	SRTreeC.AggSumAMSendGroup12->AggSumSenderGroup12C.AMSend;
+	SRTreeC.AggSumReceiveGroup12->AggSumReceiverGroup12C.Receive;
+
+	SRTreeC.AggSumPacketGroup13->AggSumSenderGroup13C.Packet;
+	SRTreeC.AggSumAMPacketGroup13->AggSumSenderGroup13C.AMPacket;
+	SRTreeC.AggSumAMSendGroup13->AggSumSenderGroup13C.AMSend;
+	SRTreeC.AggSumReceiveGroup13->AggSumReceiverGroup13C.Receive;
+
+	SRTreeC.AggSumPacketGroup23->AggSumSenderGroup23C.Packet;
+	SRTreeC.AggSumAMPacketGroup23->AggSumSenderGroup23C.AMPacket;
+	SRTreeC.AggSumAMSendGroup23->AggSumSenderGroup23C.AMSend;
+	SRTreeC.AggSumReceiveGroup23->AggSumReceiverGroup23C.Receive;
+
+	SRTreeC.QueueSendGroupSum3->QueueSendGroupSum3C;
+	SRTreeC.QueueReceiveGroupSum3->QueueReceiveGroupSum3C;
+
+	SRTreeC.AggSumPacketGroup123->AggSumSenderGroup123C.Packet;
+	SRTreeC.AggSumAMPacketGroup123->AggSumSenderGroup123C.AMPacket;
+	SRTreeC.AggSumAMSendGroup123->AggSumSenderGroup123C.AMSend;
+	SRTreeC.AggSumReceiveGroup123->AggSumReceiverGroup123C.Receive;
+	//phase 2 end
 
     SRTreeC.EpochTimer->EpochTimerC;
 
