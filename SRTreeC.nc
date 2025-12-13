@@ -1337,12 +1337,12 @@ implementation
 				bool toSendForGroup3 = (agg_sum_array[2] != 0);
 				if(toSendForGroup1 && toSendForGroup2 && toSendForGroup3){
 					// send all three groups in one message
-					Sum123Group* msgSum123;
+					sum3Group* msgSum123;
 					if(call QueueSendGroupSum3.full()){
 						dbg("Sum","QueueSendGroupSum3 is FULL!!! \n");
 						return;
 					}
-					msgSum123 = (Sum123Group*) (call AggSumPacketGroup123.getPayload(&tmp, sizeof(Sum123Group)));
+					msgSum123 = (sum3Group*) (call AggSumPacketGroup123.getPayload(&tmp, sizeof(sum3Group)));
 					if(msgSum123==NULL){
 						dbg("Sum","EpochTimer.fired(): No valid payload... \n");
 						return;
@@ -1354,7 +1354,7 @@ implementation
 					}
 					dbg("Sum","NodeID= %d : AggregationSum Group1=%u, Group2=%u, Group3=%u \n", TOS_NODE_ID, agg_sum_array[0], agg_sum_array[1], agg_sum_array[2]);
 					call AggSumAMPacketGroup123.setDestination(&tmp, parentID);
-					call AggSumPacketGroup123.setPayloadLength(&tmp, sizeof(Sum123Group));
+					call AggSumPacketGroup123.setPayloadLength(&tmp, sizeof(sum3Group));
 					enqueueDone = call QueueSendGroupSum3.enqueue(tmp);
 
 					if(enqueueDone==SUCCESS){
@@ -1732,7 +1732,7 @@ implementation
 		radioAggSumSendPkt = call QueueSendGroupSum3.dequeue();
 		mlen = call AggSumPacketGroup123.payloadLength(&radioAggSumSendPkt);
 		mdest = call AggSumAMPacketGroup123.destination(&radioAggSumSendPkt);
-		if(mlen!=sizeof(Sum123Group)){
+		if(mlen!=sizeof(sum3Group)){
 			dbg("Sum","\t\t sendSumGroup123(): Unknown message!!!\n");
 			return;
 		}
