@@ -176,6 +176,14 @@ implementation
 	task void receiveAggSumTask();
 	task void sendAggAvgTask();
 	task void receiveAggAvgTask();
+	task void sendSumGroup12();
+	task void sendSumGroup13();
+	task void sendSumGroup23();
+	task void sendSumGroup123();
+	task void receiveSumGroup12();
+	task void receiveSumGroup13();
+	task void receiveSumGroup23();
+	task void receiveSumGroup123();
 	//no tag
 	//task void sendNotifyTask();
 	//task void receiveNotifyTask();
@@ -1317,8 +1325,9 @@ implementation
 			agg_sum_array[group_id] += sample;
 			dbg("Sample","NodeID= %d : Group %u AggregationSum sumAfter= %u \n", TOS_NODE_ID, group_id + 1, agg_sum_array[group_id]);
 			if(TOS_NODE_ID==0){
+				uint8_t i=0;
 				dbg("Results","***////////||||||\\\\\\***\n");
-				for(uint8_t i=0; i<3; i++){
+				for(i=0; i<3; i++){
 					dbg("Results","AGG RESULT epoch=%u Group %u Sum=%u \n", epochCounter, i + 1, agg_sum_array[i]);
 				}
 				dbg("Results","***\\\\\\\\||||||//////***\n");
@@ -1694,16 +1703,8 @@ implementation
 			dbg("Sum","send failed!!!\n");
 		}
 			return;
-		}
-
-		sendDone = call AggSumAMSendGroup23.send(mdest, &radioAggSumSendPkt, mlen);
-		if(sendDone == SUCCESS ){
-			dbg("Sum","sendSumGroup23(): Send returned success!!!\n");
-			setSumSendBusy(TRUE);
-		}else{
-			dbg("Sum","send failed!!!\n");
-		}
 	}
+	
 
 	event void AggSumAMSendGroup23.sendDone(message_t* msg, error_t err){
 		dbg("Sum","Inside the AggSumAMSendGroup23.sendDone() \n");
