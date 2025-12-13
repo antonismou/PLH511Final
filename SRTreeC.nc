@@ -442,7 +442,7 @@ implementation
 			dbg("Routing", "#####################################\n");
 			//ADDED
 			//aggType= (call Random.rand16() %5) +1; // 1=MIN,2=SUM,3=AVG
-			aggType=4; // for testing only MIN
+			aggType=5; // for testing only MIN
 			epochCounter=0;
 			agg_count=0;
 			agg_sum=0;
@@ -1323,8 +1323,156 @@ implementation
 				}
 				dbg("Results","***\\\\\\\\||||||//////***\n");
 			}else{
-				if(){
+				bool toSendForGroup1 = (agg_sum_array[0] != 0);
+				bool toSendForGroup2 = (agg_sum_array[1] != 0);
+				bool toSendForGroup3 = (agg_sum_array[2] != 0);
+				if(toSendForGroup1 && toSendForGroup2 && toSendForGroup3){
+					// send all three groups in one message
+					Sum123Group* msgSum123;
+					if(call QueueSendGroupSum3.full()){
+						dbg("Sum","QueueSendGroupSum3 is FULL!!! \n");
+						return;
+					}
+					msgSum123 = (Sum123Group*) (call AggSumPacketGroup123.getPayload(&tmp, sizeof(Sum123Group)));
+					if(msgSum123==NULL){
+						dbg("Sum","EpochTimer.fired(): No valid payload... \n");
+						return;
+					}
+					atomic{
+						msgSum123->sumGroup1 = agg_sum_array[0];
+						msgSum123->sumGroup2 = agg_sum_array[1];
+						msgSum123->sumGroup3 = agg_sum_array[2];
+					}
+					dbg("Sum","NodeID= %d : AggregationSum Group1=%u, Group2=%u, Group3=%u \n", TOS_NODE_ID, agg_sum_array[0], agg_sum_array[1], agg_sum_array[2]);
+					call AggSumAMPacketGroup123.setDestination(&tmp, parentID);
+					call AggSumPacketGroup123.setPayloadLength(&tmp, sizeof(Sum123Group));
+					enqueueDone = call QueueSendGroupSum3.enqueue(tmp);
+
+					if(enqueueDone==SUCCESS){
+						if(call QueueSendGroupSum3.size()==1){
+							dbg("Sum","sendSumGroup123() posted!!\n");
+							post sendSumGroup123();
+						}
+						dbg("Sum","AggregationSum Group1,2,3 enqueued successfully in SendingQueue!!!\n");
+					}
 					
+				}else if(toSendForGroup1 && toSendForGroup2){
+					// send group 1 and 2
+					Sum12Group* msgSum12;
+					if(call QueueSendGroupSum2.full()){
+						dbg("Sum","QueueSendGroupSum2 is FULL!!! \n");
+						return;
+					}
+					msgSum12 = (Sum12Group*) (call AggSumPacketGroup12.getPayload(&tmp, sizeof(Sum12Group)));
+					if(msgSum12==NULL){
+						dbg("Sum","EpochTimer.fired(): No valid payload... \n");
+						return;
+					}
+					atomic{
+						msgSum12->sumGroup1 = agg_sum_array[0];
+						msgSum12->sumGroup2 = agg_sum_array[1];
+					}
+					dbg("Sum","NodeID= %d : AggregationSum Group1=%u, Group2=%u \n", TOS_NODE_ID, agg_sum_array[0], agg_sum_array[1]);
+					call AggSumAMPacketGroup12.setDestination(&tmp, parentID);
+					call AggSumPacketGroup12.setPayloadLength(&tmp, sizeof(Sum12Group));
+					enqueueDone = call QueueSendGroupSum2.enqueue(tmp);
+
+					if(enqueueDone==SUCCESS){
+						if(call QueueSendGroupSum2.size()==1){
+							dbg("Sum","sendSumGroup12() posted!!\n");
+							post sendSumGroup12();
+						}
+						dbg("Sum","AggregationSum Group1,2 enqueued successfully in SendingQueue!!!\n");
+					}
+				}else if(toSendForGroup1 && toSendForGroup3){
+					// send group 1 and 3
+					Sum13Group* msgSum13;
+					if(call QueueSendGroupSum2.full()){
+						dbg("Sum","QueueSendGroupSum2 is FULL!!! \n");
+						return;
+					}
+					msgSum13 = (Sum13Group*) (call AggSumPacketGroup13.getPayload(&tmp, sizeof(Sum13Group)));
+					if(msgSum13==NULL){
+						dbg("Sum","EpochTimer.fired(): No valid payload... \n");
+						return;
+					}
+					atomic{
+						msgSum13->sumGroup1 = agg_sum_array[0];
+						msgSum13->sumGroup3 = agg_sum_array[2];
+					}
+					dbg("Sum","NodeID= %d : AggregationSum Group1=%u, Group3=%u \n", TOS_NODE_ID, agg_sum_array[0], agg_sum_array[2]);
+					call AggSumAMPacketGroup13.setDestination(&tmp, parentID);
+					call AggSumPacketGroup13.setPayloadLength(&tmp, sizeof(Sum13Group));
+					enqueueDone = call QueueSendGroupSum2.enqueue(tmp);
+
+					if(enqueueDone==SUCCESS){
+						if(call QueueSendGroupSum2.size()==1){
+							dbg("Sum","sendSumGroup13() posted!!\n");
+							post sendSumGroup13();
+						}
+						dbg("Sum","AggregationSum Group1,3 enqueued successfully in SendingQueue!!!\n");
+					}
+				}else if(toSendForGroup2 && toSendForGroup3){
+					// send group 2 and 3
+					Sum23Group* msgSum23;
+					if(call QueueSendGroupSum2.full()){
+						dbg("Sum","QueueSendGroupSum2 is FULL!!! \n");
+						return;
+					}
+					msgSum23 = (Sum23Group*) (call AggSumPacketGroup23.getPayload(&tmp, sizeof(Sum23Group)));
+					if(msgSum23==NULL){
+						dbg("Sum","EpochTimer.fired(): No valid payload... \n");
+						return;
+					}
+					atomic{
+						msgSum23->sumGroup2 = agg_sum_array[1];
+						msgSum23->sumGroup3 = agg_sum_array[2];
+					}
+					dbg("Sum","NodeID= %d : AggregationSum Group2=%u, Group3=%u \n", TOS_NODE_ID, agg_sum_array[1], agg_sum_array[2]);
+					call AggSumAMPacketGroup23.setDestination(&tmp, parentID);
+					call AggSumPacketGroup23.setPayloadLength(&tmp, sizeof(Sum23Group));
+					enqueueDone = call QueueSendGroupSum2.enqueue(tmp);
+
+					if(enqueueDone==SUCCESS){
+						if(call QueueSendGroupSum2.size()==1){
+							dbg("Sum","sendSumGroup23() posted!!\n");
+							post sendSumGroup23();
+						}
+						dbg("Sum","AggregationSum Group2,3 enqueued successfully in SendingQueue!!!\n");
+					}
+				}else if(toSendForGroup1 || toSendForGroup2 || toSendForGroup3){
+					// send only one group
+					AggregationSum* msgSum;
+					if(call AggSumSendQueue.full()){
+						dbg("Sum","AggSumSendQueue is FULL!!! \n");
+						return;
+					}
+					msgSum = (AggregationSum*) (call AggSumPacket.getPayload(&tmp, sizeof(AggregationSum)));
+					if(msgSum==NULL){
+						dbg("Sum","EpochTimer.fired(): No valid payload... \n");
+						return;
+					}
+					atomic{
+						if(toSendForGroup1){
+							msgSum->sum = agg_sum_array[0];
+						}else if(toSendForGroup2){
+							msgSum->sum = agg_sum_array[1];
+						}else if(toSendForGroup3){
+							msgSum->sum = agg_sum_array[2];
+						}
+					}
+					dbg("Sum","NodeID= %d : AggregationSum value= %u \n", TOS_NODE_ID, msgSum->sum);
+					call AggSumAMPacket.setDestination(&tmp, parentID);
+					call AggSumPacket.setPayloadLength(&tmp, sizeof(AggregationSum));
+					enqueueDone = call AggSumSendQueue.enqueue(tmp);
+
+					if(enqueueDone==SUCCESS){
+						if(call AggSumSendQueue.size()==1){
+							dbg("Sum","SendAggSumTask() posted!!\n");
+							post sendAggSumTask();
+						}
+						dbg("Sum","AggregationSum enqueued successfully in SendingQueue!!!\n");
+					}
 				}
 			}
 
@@ -1436,6 +1584,176 @@ implementation
 		}
 	}
 
+	task void sendSumGroup12(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+		dbg("Sum","sendSumGroup12(): Starting....\n");
+		if(call QueueSendGroupSum2.empty()){
+			dbg("Sum","sendSumGroup12(): Q is empty!\n");
+			return;
+		}
+		if(SumSendBusy){
+			dbg("Sum","sendSumGroup12(): SumSendBusy= TRUE!!!\n");
+			post sendSumGroup12();
+			return;
+		}
+		radioAggSumSendPkt = call QueueSendGroupSum2.dequeue();
+		mlen = call AggSumPacketGroup12.payloadLength(&radioAggSumSendPkt);
+		mdest = call AggSumAMPacketGroup12.destination(&radioAggSumSendPkt);
+		if(mlen!=sizeof(Sum12Group)){
+			dbg("Sum","\t\t sendSumGroup12(): Unknown message!!!\n");
+			return;
+		}
+		
+		sendDone = call AggSumAMSendGroup12.send(mdest, &radioAggSumSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Sum","sendSumGroup12(): Send returned success!!!\n");
+			setSumSendBusy(TRUE);
+		}else{
+			dbg("Sum","send failed!!!\n");
+		}
+	}
+
+	event void AggSumAMSendGroup12.sendDone(message_t* msg, error_t err){
+		dbg("Sum","Inside the AggSumAMSendGroup12.sendDone() \n");
+		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setSumSendBusy(FALSE);
+		if(!(call QueueSendGroupSum2.empty())){
+			post sendSumGroup12();
+		}
+	}
+
+	task void sendSumGroup13(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+		dbg("Sum","sendSumGroup13(): Starting....\n");
+		if(call QueueSendGroupSum2.empty()){
+			dbg("Sum","sendSumGroup13(): Q is empty!\n");
+			return;
+		}
+		if(SumSendBusy){
+			dbg("Sum","sendSumGroup13(): SumSendBusy= TRUE!!!\n");
+			post sendSumGroup13();
+			return;
+		}
+		radioAggSumSendPkt = call QueueSendGroupSum2.dequeue();
+		mlen = call AggSumPacketGroup13.payloadLength(&radioAggSumSendPkt);
+		mdest = call AggSumAMPacketGroup13.destination(&radioAggSumSendPkt);
+		if(mlen!=sizeof(Sum13Group)){
+			dbg("Sum","\t\t sendSumGroup13(): Unknown message!!!\n");
+			return;
+		}
+
+		sendDone = call AggSumAMSendGroup13.send(mdest, &radioAggSumSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Sum","sendSumGroup13(): Send returned success!!!\n");
+			setSumSendBusy(TRUE);
+		}else{
+			dbg("Sum","send failed!!!\n");
+		}
+	}
+
+	event void AggSumAMSendGroup13.sendDone(message_t* msg, error_t err){
+		dbg("Sum","Inside the AggSumAMSendGroup13.sendDone() \n");
+		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setSumSendBusy(FALSE);
+		if(!(call QueueSendGroupSum2.empty())){
+			post sendSumGroup13();
+		}
+	}
+
+	task void sendSumGroup23(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+		dbg("Sum","sendSumGroup23(): Starting....\n");
+		if(call QueueSendGroupSum2.empty()){
+			dbg("Sum","sendSumGroup23(): Q is empty!\n");
+			return;
+		}
+		if(SumSendBusy){
+			dbg("Sum","sendSumGroup23(): SumSendBusy= TRUE!!!\n");
+			post sendSumGroup23();
+			return;
+		}
+		radioAggSumSendPkt = call QueueSendGroupSum2.dequeue();
+		mlen = call AggSumPacketGroup23.payloadLength(&radioAggSumSendPkt);
+		mdest = call AggSumAMPacketGroup23.destination(&radioAggSumSendPkt);
+		if(mlen!=sizeof(Sum23Group)){
+			dbg("Sum","\t\t sendSumGroup23(): Unknown message!!!\n");
+			return;
+		}
+
+		sendDone = call AggSumAMSendGroup23.send(mdest, &radioAggSumSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Sum","sendSumGroup23(): Send returned success!!!\n");
+			setSumSendBusy(TRUE);
+		}else{
+			dbg("Sum","send failed!!!\n");
+		}
+			return;
+		}
+
+		sendDone = call AggSumAMSendGroup23.send(mdest, &radioAggSumSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Sum","sendSumGroup23(): Send returned success!!!\n");
+			setSumSendBusy(TRUE);
+		}else{
+			dbg("Sum","send failed!!!\n");
+		}
+	}
+
+	event void AggSumAMSendGroup23.sendDone(message_t* msg, error_t err){
+		dbg("Sum","Inside the AggSumAMSendGroup23.sendDone() \n");
+		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setSumSendBusy(FALSE);
+		if(!(call QueueSendGroupSum2.empty())){
+			post sendSumGroup23();
+		}
+	}
+
+	task void sendSumGroup123(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+		dbg("Sum","sendSumGroup123(): Starting....\n");
+		if(call QueueSendGroupSum3.empty()){
+			dbg("Sum","sendSumGroup123(): Q is empty!\n");
+			return;
+		}
+		if(SumSendBusy){
+			dbg("Sum","sendSumGroup123(): SumSendBusy= TRUE!!!\n");
+			post sendSumGroup123();
+			return;
+		}
+		radioAggSumSendPkt = call QueueSendGroupSum3.dequeue();
+		mlen = call AggSumPacketGroup123.payloadLength(&radioAggSumSendPkt);
+		mdest = call AggSumAMPacketGroup123.destination(&radioAggSumSendPkt);
+		if(mlen!=sizeof(Sum123Group)){
+			dbg("Sum","\t\t sendSumGroup123(): Unknown message!!!\n");
+			return;
+		}
+
+		sendDone = call AggSumAMSendGroup123.send(mdest, &radioAggSumSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Sum","sendSumGroup123(): Send returned success!!!\n");
+			setSumSendBusy(TRUE);
+		}else{
+			dbg("Sum","send failed!!!\n");
+		}
+	}
+
+	event void AggSumAMSendGroup123.sendDone(message_t* msg, error_t err){
+		dbg("Sum","Inside the AggSumAMSendGroup123.sendDone() \n");
+		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setSumSendBusy(FALSE);
+		if(!(call QueueSendGroupSum3.empty())){
+			post sendSumGroup3();
+		}
+	}
+
 	event void AggMinAMSend.sendDone(message_t* msg, error_t err){
 		dbg("Min","Inside the AggMinAMSend.sendDone() \n");
 		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
@@ -1528,6 +1846,94 @@ implementation
 		return msg;
 	}
 
+	event message_t* AggSumReceiveGroup12.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggSumPacketGroup12.source(msg);
+		dbg("Sum","### AggSumReceiveGroup12.receive() start ##### \n");
+		dbg("Sum","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupSum2.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Sum","posting receiveSumGroup12Task()!!!! \n");
+			post receiveSumGroup12Task();
+		}else{
+			dbg("Sum","receiveSumGroup12Task enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
+	event message_t* AggSumReceiveGroup13.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggSumPacketGroup13.source(msg);
+		dbg("Sum","### AggSumReceiveGroup13.receive() start ##### \n");
+		dbg("Sum","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupSum2.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Sum","posting receiveSumGroup13Task()!!!! \n");
+			post receiveSumGroup13Task();
+		}else{
+			dbg("Sum","receiveSumGroup13Task enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
+	event message_t* AggSumReceiveGroup23.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggSumPacketGroup23.source(msg);
+		dbg("Sum","### AggSumReceiveGroup23.receive() start ##### \n");
+		dbg("Sum","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupSum2.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Sum","posting receiveSumGroup23Task()!!!! \n");
+			post receiveSumGroup23Task();
+		}else{
+			dbg("Sum","receiveSumGroup23Task enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
+	event message_t* AggSumReceiveGroup123.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggSumPacketGroup123.source(msg);
+		dbg("Sum","### AggSumReceiveGroup123.receive() start ##### \n");
+		dbg("Sum","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupSum3.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Sum","posting receiveSumGroup123Task()!!!! \n");
+			post receiveSumGroup123Task();
+		}else{
+			dbg("Sum","receiveSumGroup123Task enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
 	task void receiveAggMinTask(){
 		uint8_t len;
 		//uint16_t msource;
@@ -1572,6 +1978,95 @@ implementation
 			dbg("Sum","Inside the ReceiveAggSumTask(): New agg_sum = %u \n", agg_sum);
 			
 		}//dbg("Sample","New sample = %u \n", sample);
+	}
+
+	task void receiveSumGroup12Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Sum12Group* mpkt;
+		dbg("Sum","receiveSumGroup12Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupSum2.dequeue();
+		len = call AggSumPacketGroup12.payloadLength(&radioMsg);
+		dbg("Sum","receiveSumGroup12Task(): len=%u \n",len);
+		if(len == sizeof(Sum12Group)){
+			mpkt = (Sum12Group*) (call AggSumPacketGroup12.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Sum","receiveSumGroup12Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Sum","receiveSumGroup12Task(): sum group1= %u, sum group2= %u \n", mpkt->sumGroup1, mpkt->sumGroup2);
+			agg_sum_array[1] += mpkt->sumGroup1;
+			agg_sum_array[2] += mpkt->sumGroup2;
+			dbg("Sum","Inside the receiveSumGroup12Task(): New sum 1 = %u sum 2 = %u \n", agg_sum_array[1], agg_sum_array[2]);
+		}
+	}
+
+	task void receiveSumGroup13Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Sum13Group* mpkt;
+		dbg("Sum","receiveSumGroup13Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupSum2.dequeue();
+		len = call AggSumPacketGroup13.payloadLength(&radioMsg);
+		dbg("Sum","receiveSumGroup13Task(): len=%u \n",len);
+		if(len == sizeof(Sum13Group)){
+			mpkt = (Sum13Group*) (call AggSumPacketGroup13.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Sum","receiveSumGroup13Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Sum","receiveSumGroup13Task(): sum group1= %u, sum group3= %u \n", mpkt->sumGroup1, mpkt->sumGroup3);
+			agg_sum_array[1] += mpkt->sumGroup1;
+			agg_sum_array[3] += mpkt->sumGroup3;
+			dbg("Sum","Inside the receiveSumGroup13Task(): New sum 1 = %u sum 3 = %u \n", agg_sum_array[1], agg_sum_array[3]);
+		}
+	}
+
+	task void receiveSumGroup23Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Sum23Group* mpkt;
+		dbg("Sum","receiveSumGroup23Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupSum2.dequeue();
+		len = call AggSumPacketGroup23.payloadLength(&radioMsg);
+		dbg("Sum","receiveSumGroup23Task(): len=%u \n",len);
+		if(len == sizeof(Sum23Group)){
+			mpkt = (Sum23Group*) (call AggSumPacketGroup23.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Sum","receiveSumGroup23Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Sum","receiveSumGroup23Task(): sum group2= %u, sum group3= %u \n", mpkt->sumGroup2, mpkt->sumGroup3);
+			agg_sum_array[3] += mpkt->sumGroup3;
+			agg_sum_array[2] += mpkt->sumGroup2;
+			dbg("Sum","Inside the receiveSumGroup23Task(): New sum 2 = %u sum 3 = %u \n", agg_sum_array[2], agg_sum_array[3]);
+		}
+	}
+
+	task void receiveSumGroup123Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Sum3Group* mpkt;
+		dbg("Sum","receiveSumGroup123Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupSum3.dequeue();
+		len = call AggSumPacketGroup123.payloadLength(&radioMsg);
+		dbg("Sum","receiveSumGroup123Task(): len=%u \n",len);
+		if(len == sizeof(Sum3Group)){
+			mpkt = (Sum3Group*) (call AggSumPacketGroup123.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Sum","receiveSumGroup123Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Sum","receiveSumGroup123Task(): sum group1= %u, sum group2= %u, sum group3= %u \n", mpkt->sumGroup1, mpkt->sumGroup2, mpkt->sumGroup3);
+			agg_sum_array[1] += mpkt->sumGroup1;
+			agg_sum_array[2] += mpkt->sumGroup2;
+			agg_sum_array[3] += mpkt->sumGroup3;
+			dbg("Sum","Inside the receiveSumGroup123Task(): New sum 1 = %u sum 2 = %u sum 3 = %u \n", agg_sum_array[1], agg_sum_array[2], agg_sum_array[3]);
+		}
 	}
 
 	task void receiveAggAvgTask(){
