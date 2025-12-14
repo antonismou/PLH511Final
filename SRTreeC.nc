@@ -185,6 +185,8 @@ implementation
 	task void receiveSumGroup13Task();
 	task void receiveSumGroup23Task();
 	task void receiveSumGroup123Task();
+	task void sendAggSumTaskGroup();
+	task void receiveAggSumTaskGroup();
 	//no tag
 	//task void sendNotifyTask();
 	//task void receiveNotifyTask();
