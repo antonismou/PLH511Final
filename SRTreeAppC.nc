@@ -163,7 +163,7 @@ implementation{
 	*/
 	//sum
 	SRTreeC.AggSumPacketGroup->AggSumSenderGroupC.Packet;
-	SRTreeC.AggSumAMPacketGroup->AggSumSenderGroupC.AMPacket
+	SRTreeC.AggSumAMPacketGroup->AggSumSenderGroupC.AMPacket;
 	SRTreeC.AggSumAMSentGroup->AggSumSenderGroupC.AMSend;
 	SRTreeC.AggSumReceiveGroup->AggSumReceiverGroupC.Receive;
 
