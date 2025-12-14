@@ -97,10 +97,6 @@ implementation{
 	SRTreeC.NotifyReceive->NotifyReceiverC.Receive;
 */
 #ifdef SERIAL_EN	
-	SRTreeC.SerialReceive->SerialAMReceiverC.Receive;
-	SRTreeC.SerialAMSend->SerialAMSenderC.AMSend;
-	SRTreeC.SerialAMPacket->SerialAMSenderC.AMPacket;
-	SRTreeC.SerialPacket->SerialAMSenderC.Packet;
 	SRTreeC.SerialControl->SerialActiveMessageC;
 #endif
 	SRTreeC.RoutingSendQueue->RoutingSendQueueC;
@@ -133,7 +129,7 @@ implementation{
 
 
 	//------ phase 2
-	//min
+	/*min
 	SRTreeC.QueueSendGroupMin2->QueueSendGroupMin2C;
 	SRTreeC.QueueReceiveGroupMin2->QueueReceiveGroupMin2C;
 
@@ -159,7 +155,7 @@ implementation{
 	SRTreeC.AggMinAMPacketGroup123->AggMinSenderGroup123C.AMPacket;
 	SRTreeC.AggMinAMSendGroup123->AggMinSenderGroup123C.AMSend;
 	SRTreeC.AggMinReceiveGroup123->AggMinReceiverGroup123C.Receive;
-
+	*/
 	//sum
 	SRTreeC.QueueSendGroupSum2->QueueSendGroupSum2C;
 	SRTreeC.QueueReceiveGroupSum2->QueueReceiveGroupSum2C;
