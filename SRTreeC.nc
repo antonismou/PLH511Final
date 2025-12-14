@@ -95,6 +95,11 @@ module SRTreeC
 	uses interface AMSend as AggMinAMSendGroup123;
 	uses interface Receive as AggMinReceiveGroup123;
 */
+	uses interface Packet as AggSumPacketGroup;
+	uses interface AMPacket as AggSumAMPacketGroup;
+	uses interface AMSend as AggSumAMSentGroup;
+	uses interface Receive as AggSumReceiveGroup;
+	
 	uses interface PacketQueue as QueueSendGroupSum2;
 	uses interface PacketQueue as QueueReceiveGroupSum2;
 	uses interface Packet as AggSumPacketGroup12;
