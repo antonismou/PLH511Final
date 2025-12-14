@@ -99,7 +99,7 @@ module SRTreeC
 	uses interface AMPacket as AggSumAMPacketGroup;
 	uses interface AMSend as AggSumAMSentGroup;
 	uses interface Receive as AggSumReceiveGroup;
-	
+
 	uses interface PacketQueue as QueueSendGroupSum2;
 	uses interface PacketQueue as QueueReceiveGroupSum2;
 	uses interface Packet as AggSumPacketGroup12;
@@ -1632,7 +1632,7 @@ implementation
 		}
 	}
 
-	event void sendAggSumTaskGroup.sendDone(message_t* msg, error_t err){
+	event void AggSumAMSentGroup.sendDone(message_t* msg, error_t err){
 		dbg("Sum","Inside the sendAggSumTaskGroup.sendDone() \n");
 		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
 		setSumSendBusy(FALSE);
