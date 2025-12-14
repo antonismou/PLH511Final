@@ -1656,7 +1656,7 @@ implementation
 		enqueueDone = call AggSumSendQueue.enqueue(tmp);
 		if(enqueueDone == SUCCESS){
 			dbg("Sum","posting receiveSumGroupTask()!!!! \n");
-			post receiveSumGroup12Task();
+			post receiveSumGroupTask();
 		}else{
 			dbg("Sum","receiveSumGroupTask enqueue failed!!! \n");
 		}
