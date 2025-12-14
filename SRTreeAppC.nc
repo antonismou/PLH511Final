@@ -23,10 +23,7 @@ implementation{
 	components new AMReceiverC(AM_ROUTINGMSG) as RoutingReceiverC;
 	//components new AMSenderC(AM_NOTIFYPARENTMSG) as NotifySenderC;
 	//components new AMReceiverC(AM_NOTIFYPARENTMSG) as NotifyReceiverC;
-#ifdef SERIAL_EN
-	components new SerialAMSenderC(AM_NOTIFYPARENTMSG);
-	components new SerialAMReceiverC(AM_NOTIFYPARENTMSG);
-#endif
+
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as RoutingSendQueueC;
 	components new PacketQueueC(RECEIVER_QUEUE_SIZE) as RoutingReceiveQueueC;
 	//components new PacketQueueC(SENDER_QUEUE_SIZE) as NotifySendQueueC;
