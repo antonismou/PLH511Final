@@ -47,6 +47,7 @@ implementation{
 	/*min
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupMin2C;
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupMin2C;
+
     components new AMSenderC(ID_MSG_MIN_GROUP_1_2) as AggMinSenderGroup12C;
     components new AMReceiverC(ID_MSG_MIN_GROUP_1_2) as AggMinReceiverGroup12C;
 	components new AMSenderC(ID_MSG_MIN_GROUP_1_3) as AggMinSenderGroup13C;
@@ -59,6 +60,9 @@ implementation{
 	components new AMSenderC(ID_MSG_MIN_GROUP_1_2_3) as AggMinSenderGroup123C;
 	components new AMReceiverC(ID_MSG_MIN_GROUP_1_2_3) as AggMinReceiverGroup123C;
 	*/
+	components new AMSenderC(ID_MSG_SUM_GROUP) as AggSumSenderGroupC;
+	components new AMReceiverC(ID_MSG_SUM_GROUP) as AggSumReceiverGroupC;
+
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupSum2C;
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupSum2C;
     components new AMSenderC(ID_MSG_SUM_GROUP_1_2) as AggSumSenderGroup12C;
@@ -158,6 +162,11 @@ implementation{
 	SRTreeC.AggMinReceiveGroup123->AggMinReceiverGroup123C.Receive;
 	*/
 	//sum
+	SRTreeC.AggSumPacketGroup->AggSumSenderGroupC.Packet;
+	SRTreeC.AggSumAMPacketGroup->AggSumSenderGroupC.AMPacket
+	SRTreeC.AggSumAMSentGroup->AggSumSenderGroupC.AMSend;
+	SRTreeC.AggSumReceiveGroup->AggSumReceiverGroupC.Receive;
+
 	SRTreeC.QueueSendGroupSum2->QueueSendGroupSum2C;
 	SRTreeC.QueueReceiveGroupSum2->QueueReceiveGroupSum2C;
 
