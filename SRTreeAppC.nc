@@ -44,6 +44,7 @@ implementation{
     components new AMSenderC(AGGREGATION_TYPE_SUM) as AggSumSenderC;
     components new AMReceiverC(AGGREGATION_TYPE_SUM) as AggSumReceiverC;
 //------ phase 2
+	/*min
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupMin2C;
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupMin2C;
     components new AMSenderC(ID_MSG_MIN_GROUP_1_2) as AggMinSenderGroup12C;
@@ -57,7 +58,7 @@ implementation{
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupMin3C;
 	components new AMSenderC(ID_MSG_MIN_GROUP_1_2_3) as AggMinSenderGroup123C;
 	components new AMReceiverC(ID_MSG_MIN_GROUP_1_2_3) as AggMinReceiverGroup123C;
-
+	*/
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupSum2C;
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupSum2C;
     components new AMSenderC(ID_MSG_SUM_GROUP_1_2) as AggSumSenderGroup12C;
