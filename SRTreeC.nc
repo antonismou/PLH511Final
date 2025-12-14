@@ -70,6 +70,7 @@ module SRTreeC
 	uses interface PacketQueue as AggAvgReceiveQueue;
 
 	//phase 2
+	/*
 	uses interface PacketQueue as QueueSendGroupMin2;
 	uses interface PacketQueue as QueueReceiveGroupMin2;
 	uses interface Packet as AggMinPacketGroup12;
@@ -93,7 +94,7 @@ module SRTreeC
 	uses interface AMPacket as AggMinAMPacketGroup123;
 	uses interface AMSend as AggMinAMSendGroup123;
 	uses interface Receive as AggMinReceiveGroup123;
-
+*/
 	uses interface PacketQueue as QueueSendGroupSum2;
 	uses interface PacketQueue as QueueReceiveGroupSum2;
 	uses interface Packet as AggSumPacketGroup12;
@@ -1751,7 +1752,7 @@ implementation
 		dbg("Sum","A AggregationSum package sent... %s \n",(err==SUCCESS)?"True":"False");
 		setSumSendBusy(FALSE);
 		if(!(call QueueSendGroupSum3.empty())){
-			post sendSumGroup3();
+			post sendSumGroup123();
 		}
 	}
 
@@ -1852,7 +1853,7 @@ implementation
 		message_t tmp;
 		uint16_t msource;
 
-		msource = call AggSumPacketGroup12.source(msg);
+		msource = call AggSumAMPacketGroup12.source(msg);
 		dbg("Sum","### AggSumReceiveGroup12.receive() start ##### \n");
 		dbg("Sum","Something received!!!  from %u\n",  msource);
 		
@@ -1874,7 +1875,7 @@ implementation
 		message_t tmp;
 		uint16_t msource;
 
-		msource = call AggSumPacketGroup13.source(msg);
+		msource = call AggSumAMPacketGroup13.source(msg);
 		dbg("Sum","### AggSumReceiveGroup13.receive() start ##### \n");
 		dbg("Sum","Something received!!!  from %u\n",  msource);
 		
@@ -1896,7 +1897,7 @@ implementation
 		message_t tmp;
 		uint16_t msource;
 
-		msource = call AggSumPacketGroup23.source(msg);
+		msource = call AggSumAMPacketGroup23.source(msg);
 		dbg("Sum","### AggSumReceiveGroup23.receive() start ##### \n");
 		dbg("Sum","Something received!!!  from %u\n",  msource);
 		
@@ -1918,7 +1919,7 @@ implementation
 		message_t tmp;
 		uint16_t msource;
 
-		msource = call AggSumPacketGroup123.source(msg);
+		msource = call AggSumAMPacketGroup123.source(msg);
 		dbg("Sum","### AggSumReceiveGroup123.receive() start ##### \n");
 		dbg("Sum","Something received!!!  from %u\n",  msource);
 		
