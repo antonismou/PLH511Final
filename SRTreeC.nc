@@ -1877,7 +1877,7 @@ implementation
 	}
 
 	event message_t* AggMinReceiveGroup12.receive(message_t* msg, void* payload, uint8_t len) {
-		message_t* tmp;
+		message_t tmp;
 		uint16_t msource = call AggMinAMPacketGroup12.source(msg);
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup12.receive start\n");
@@ -1896,7 +1896,7 @@ implementation
 	}
 
 	event message_t* AggMinReceiveGroup13.receive(message_t* msg, void* payload, uint8_t len) {
-		message_t* tmp;
+		message_t tmp;
 		uint16_t msource = call AggMinAMPacketGroup13.source(msg);
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup13.receive start\n");
@@ -1915,7 +1915,7 @@ implementation
 	}
 
 	event message_t* AggMinReceiveGroup23.receive(message_t* msg, void* payload, uint8_t len) {
-		message_t* tmp;
+		message_t tmp;
 		uint16_t msource = call AggMinAMPacketGroup23.source(msg);
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup23.receive start\n");
@@ -1934,7 +1934,7 @@ implementation
 	}
 
 	event message_t* AggMinReceiveGroup123.receive(message_t* msg, void* payload, uint8_t len) {
-		message_t* tmp;
+		message_t tmp;
 		uint16_t msource = call AggMinAMPacketGroup123.source(msg);
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup123.receive start\n");
