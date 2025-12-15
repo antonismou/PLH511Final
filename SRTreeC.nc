@@ -1836,7 +1836,7 @@ implementation
 			return;
 		}
 		
-		sendDone = call AggMinAMSentGroup.send(mdest, &radioAggMinSendPkt, mlen);
+		sendDone = call AggMinAMSendGroup.send(mdest, &radioAggMinSendPkt, mlen);
 		if(sendDone == SUCCESS ){
 			dbg("Min","sendAggMinTaskGroup(): Send returned success!!!\n");
 			setMinSendBusy(TRUE);
@@ -1845,7 +1845,7 @@ implementation
 		}
 	}
 
-	event void AggMinAMSentGroup.sendDone(message_t* msg, error_t err){
+	event void AggMinAMSendGroup.sendDone(message_t* msg, error_t err){
 		dbg("Min","Inside the sendAggMinTaskGroup.sendDone() \n");
 		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
 		setMinSendBusy(FALSE);
@@ -1876,7 +1876,7 @@ implementation
 		return msg;
 	}
 
-	event message_t AggMinReceiveGroup12.receive(message_t* msg, void* payload, uint8_t len) {
+	event message_t* AggMinReceiveGroup12.receive(message_t* msg, void* payload, uint8_t len) {
 		message_t* tmp;
 		uint16_t msource = call AggMinAMPacketGroup12.source(msg);
 		error_t enqueueDone;
@@ -1895,7 +1895,7 @@ implementation
 		return msg;
 	}
 
-	event message_t AggMinReceiveGroup13.receive(message_t* msg, void* payload, uint8_t len) {
+	event message_t* AggMinReceiveGroup13.receive(message_t* msg, void* payload, uint8_t len) {
 		message_t* tmp;
 		uint16_t msource = call AggMinAMPacketGroup13.source(msg);
 		error_t enqueueDone;
@@ -1914,7 +1914,7 @@ implementation
 		return msg;
 	}
 
-	event message_t AggMinReceiveGroup23.receive(message_t* msg, void* payload, uint8_t len) {
+	event message_t* AggMinReceiveGroup23.receive(message_t* msg, void* payload, uint8_t len) {
 		message_t* tmp;
 		uint16_t msource = call AggMinAMPacketGroup23.source(msg);
 		error_t enqueueDone;
@@ -1933,7 +1933,7 @@ implementation
 		return msg;
 	}
 
-	event message_t AggMinReceiveGroup123.receive(message_t* msg, void* payload, uint8_t len) {
+	event message_t* AggMinReceiveGroup123.receive(message_t* msg, void* payload, uint8_t len) {
 		message_t* tmp;
 		uint16_t msource = call AggMinAMPacketGroup123.source(msg);
 		error_t enqueueDone;
