@@ -1683,13 +1683,13 @@ implementation
 			return;
 		}
 		radioAggMinSendPkt = call QueueSendGroupMin2.dequeue();
-		mlen = call AggMinPacketGroup12.payloadLength(radioAggMinSendPkt);
-		mdest = call AggMinAMPacketGroup12.destination(radioAggMinSendPkt);
+		mlen = call AggMinPacketGroup12.payloadLength(&radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup12.destination(&radioAggMinSendPkt);
 		if(mlen != sizeof(Min12Group)) {
 			dbg("Min"," sendMinGroup12Task Unknown message!!!\n");
 			return;
 		}
-		sendDone = call AggMinAMSendGroup12.send(mdest, radioAggMinSendPkt, mlen);
+		sendDone = call AggMinAMSendGroup12.send(mdest, &radioAggMinSendPkt, mlen);
 		if(sendDone == SUCCESS) {
 			dbg("Min","sendMinGroup12Task Send returned success!!!\n");
 			setMinSendBusy(TRUE);
@@ -1713,13 +1713,13 @@ implementation
 			return;
 		}
 		radioAggMinSendPkt = call QueueSendGroupMin2.dequeue();
-		mlen = call AggMinPacketGroup13.payloadLength(radioAggMinSendPkt);
-		mdest = call AggMinAMPacketGroup13.destination(radioAggMinSendPkt);
+		mlen = call AggMinPacketGroup13.payloadLength(&radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup13.destination(&radioAggMinSendPkt);
 		if(mlen != sizeof(Min13Group)) {
 			dbg("Min"," sendMinGroup13Task Unknown message!!!\n");
 			return;
 		}
-		sendDone = call AggMinAMSendGroup13.send(mdest, radioAggMinSendPkt, mlen);
+		sendDone = call AggMinAMSendGroup13.send(mdest, &radioAggMinSendPkt, mlen);
 		if(sendDone == SUCCESS) {
 			dbg("Min","sendMinGroup13Task Send returned success!!!\n");
 			setMinSendBusy(TRUE);
@@ -1743,13 +1743,13 @@ implementation
 			return;
 		}
 		radioAggMinSendPkt = call QueueSendGroupMin2.dequeue();
-		mlen = call AggMinPacketGroup23.payloadLength(radioAggMinSendPkt);
-		mdest = call AggMinAMPacketGroup23.destination(radioAggMinSendPkt);
+		mlen = call AggMinPacketGroup23.payloadLength(&radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup23.destination(&radioAggMinSendPkt);
 		if(mlen != sizeof(Min23Group)) {
 			dbg("Min"," sendMinGroup23Task Unknown message!!!\n");
 			return;
 		}
-		sendDone = call AggMinAMSendGroup23.send(mdest, radioAggMinSendPkt, mlen);
+		sendDone = call AggMinAMSendGroup23.send(mdest,&radioAggMinSendPkt, mlen);
 		if(sendDone == SUCCESS) {
 			dbg("Min","sendMinGroup23Task Send returned success!!!\n");
 			setMinSendBusy(TRUE);
@@ -1771,13 +1771,13 @@ implementation
 			return;
 		}
 		radioAggMinSendPkt = call QueueSendGroupMin3.dequeue();
-		mlen = call AggMinPacketGroup123.payloadLength(radioAggMinSendPkt);
-		mdest = call AggMinAMPacketGroup123.destination(radioAggMinSendPkt);
+		mlen = call AggMinPacketGroup123.payloadLength(&radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup123.destination(&radioAggMinSendPkt);
 		if(mlen != sizeof(Min3Group)) {
 			dbg("Min"," sendMinGroup123Task Unknown message!!!\n");
 			return;
 		}
-		sendDone = call AggMinAMSendGroup123.send(mdest, radioAggMinSendPkt, mlen);
+		sendDone = call AggMinAMSendGroup123.send(mdest, &radioAggMinSendPkt, mlen);
 		if(sendDone == SUCCESS) {
 			dbg("Min","sendMinGroup123Task Send returned success!!!\n");
 			setMinSendBusy(TRUE);
