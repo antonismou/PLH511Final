@@ -45,6 +45,9 @@ implementation{
     components new AMReceiverC(AGGREGATION_TYPE_SUM) as AggSumReceiverC;
 //------ phase 2
 	//min
+	components new AMSenderC(ID_MSG_MIN_GROUP) as AggMinSenderGroupC;
+	components new AMReceiverC(ID_MSG_MIN_GROUP) as AggMinReceiverGroupC;
+
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as QueueSendGroupMin2C;
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as QueueReceiveGroupMin2C;
 
@@ -135,6 +138,11 @@ implementation{
 
 	//------ phase 2
 	//min
+	SRTreeC.AggMinPacketGroup->AggMinSenderGroupC.Packet;
+	SRTreeC.AggMinAMPacketGroup->AggMinSenderGroupC.AMPacket;
+	SRTreeC.AggMinAMSentGroup->AggMinSenderGroupC.AMSend;
+	SRTreeC.AggMinReceiveGroup->AggMinReceiverGroupC.Receive;
+
 	SRTreeC.QueueSendGroupMin2->QueueSendGroupMin2C;
 	SRTreeC.QueueReceiveGroupMin2->QueueReceiveGroupMin2C;
 

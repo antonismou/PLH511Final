@@ -1478,7 +1478,7 @@ implementation
 				if(enqueueDone == SUCCESS) {
 					if(call AggMinSendQueue.size() == 1) {
 						dbg("Min","SendAggMinTask posted!!\n");
-						post sendAggMinTask();
+						post sendAggMinTaskGroup();
 					}
 				dbg("Min","AggregationMin enqueued successfully in SendingQueue!!!\n");
 				}
@@ -1780,6 +1780,96 @@ implementation
 		}
 	}
 
+	task void receiveMinGroupTask(){
+		uint8_t len;
+		uint16_t msource;
+		message_t radioMsg;
+		AggregationMin* mpkt;
+		uint8_t id;
+		dbg("Min","receiveMinGroupTask():received msg...\n");
+		radioMsg = call AggMinReceiveQueue.dequeue();
+		msource = call AggMinAMPacketGroup.source(&radioMsg);
+		len = call AggMinPacket.payloadLength(&radioMsg);
+		dbg("Min","receiveMinGroupTask(): len=%u \n",len);
+		if(len == sizeof(AggregationMin)){
+			mpkt = (AggregationMin*) (call AggMinPacketGroup.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Min","receiveMinGroupTask(): No valid payload... \n");
+				return;
+			}
+			id = (msource % 3);
+			dbg("Min","receiveMinGroupTask(): Min receive= %u, for group = %u \n", mpkt->minVal , id+1);
+			if(mpkt->minVal<agg_min_array[id]){
+				agg_min_array[id] += mpkt->minVal;
+			}else{
+				dbg("Min","Packet value is bigger");
+			}
+			dbg("Min","Inside the receiveMinGroupTask(): New Min for this group = %u\n", agg_sum_array[id]);
+		}
+	}
+
+	task void sendAggMinTaskGroup(){
+		uint8_t mlen;
+		uint16_t mdest;
+		error_t sendDone;
+		dbg("Min","sendAggMinTaskGroup(): Starting....\n");
+		if(call AggMinSendQueue.empty()){
+			dbg("Min","sendAggMinTaskGroup(): Q is empty!\n");
+			return;
+		}
+		if(MinSendBusy){
+			dbg("Min","sendAggMinTaskGroup(): MinSendBusy= TRUE!!!\n");
+			post sendAggMinTaskGroup();
+			return;
+		}
+		radioAggMinSendPkt = call AggMinSendQueue.dequeue();
+		mlen = call AggMinPacketGroup.payloadLength(&radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup.destination(&radioAggMinSendPkt);
+		if(mlen!=sizeof(AggregationMin)){
+			dbg("Min","\t\t sendAggMinTaskGroup(): Unknown message!!!\n");
+			return;
+		}
+		
+		sendDone = call AggMinAMSentGroup.send(mdest, &radioAggMinSendPkt, mlen);
+		if(sendDone == SUCCESS ){
+			dbg("Min","sendAggMinTaskGroup(): Send returned success!!!\n");
+			setMinSendBusy(TRUE);
+		}else{
+			dbg("Min","send failed!!!\n");
+		}
+	}
+
+	event void AggMinAMSentGroup.sendDone(message_t* msg, error_t err){
+		dbg("Min","Inside the sendAggMinTaskGroup.sendDone() \n");
+		dbg("Min","A AggregationMin package sent... %s \n",(err==SUCCESS)?"True":"False");
+		setMinSendBusy(FALSE);
+		if(!(call AggMinSendQueue.empty())){
+			post sendAggMinTaskGroup();
+		}
+	}
+	
+	event message_t* AggMinReceiveGroup.receive(message_t* msg, void* payload, uint8_t len){
+		error_t enqueueDone;
+		message_t tmp;
+		uint16_t msource;
+
+		msource = call AggMinAMPacketGroup.source(msg);
+		dbg("Min","### AggMinReceiveGroup.receive() start ##### \n");
+		dbg("Min","Something received!!!  from %u\n",  msource);
+		
+		atomic{
+		memcpy(&tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call AggMinReceiveQueue.enqueue(tmp);
+		if(enqueueDone == SUCCESS){
+			dbg("Sum","posting receiveSumGroupTask()!!!! \n");
+			post receiveSumGroupTask();
+		}else{
+			dbg("Sum","receiveSumGroupTask enqueue failed!!! \n");
+		}
+		return msg;
+	}
+
 	event message_t AggMinReceiveGroup12.receive(message_t* msg, void* payload, uint8_t len) {
 		message_t* tmp;
 		uint16_t msource = call AggMinAMPacketGroup12.source(msg);
@@ -2033,7 +2123,7 @@ implementation
 		atomic{
 		memcpy(&tmp, msg, sizeof(message_t));
 		}
-		enqueueDone = call AggSumSendQueue.enqueue(tmp);
+		enqueueDone = call AggSumReceiveQueue.enqueue(tmp);
 		if(enqueueDone == SUCCESS){
 			dbg("Sum","posting receiveSumGroupTask()!!!! \n");
 			post receiveSumGroupTask();
@@ -2049,8 +2139,8 @@ implementation
 		message_t radioMsg;
 		AggregationSum* mpkt;
 		uint8_t id;
-		dbg("Sum","receiveSumGroup12Task():received msg...\n");
-		radioMsg = call AggSumSendQueue.dequeue();
+		dbg("Sum","receiveSumGroupTask():received msg...\n");
+		radioMsg = call AggSumReceiveQueue.dequeue();
 		msource = call AggSumAMPacketGroup.source(&radioMsg);
 		len = call AggSumPacketGroup.payloadLength(&radioMsg);
 		dbg("Sum","receiveSumGroupTask(): len=%u \n",len);
