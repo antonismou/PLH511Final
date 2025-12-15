@@ -192,6 +192,11 @@ implementation
 	task void receiveSumGroup123Task();
 	task void sendAggSumTaskGroup();
 	task void receiveSumGroupTask();
+	task void sendMinGroup12Task();
+	task void sendMinGroup13Task();
+	task void sendMinGroup23Task();
+	task void sendMinGroup123Task();
+
 	//no tag
 	//task void sendNotifyTask();
 	//task void receiveNotifyTask();
@@ -1326,7 +1331,159 @@ implementation
 				}
 			}//if for TOS_NODE_ID==0
 		}else if(aggType==AGGREGATION_TYPE_MIN_GROUP){
-			
+			uint8_t groupid = TOSNODEID % 3;
+			dbg("Sample","NodeID %d Group %u AggregationMin sample %u, %u\n", TOSNODEID, groupid+1, sample, agg_min_array[groupid]);
+			if(sample < agg_min_array[groupid]){
+				agg_min_array[groupid] = sample;
+			}
+			dbg("Sample","NodeID %d Group %u AggregationMin minAfter %u\n", TOSNODEID, groupid+1, agg_min_array[groupid]);
+
+			if(TOSNODEID == 0) {
+				uint8_t i;
+				dbg("Results","***////////||||||\\\\\\***\n");
+				for(i=0; i<3; i++) {
+					dbg("Results","AGG RESULT epoch%u Group %u MIN%u\n", epochCounter, i+1, agg_min_array[i]);
+				}
+				dbg("Results","***\\\\\\\\||||||//////***\n");
+			} else {
+				bool toSendForGroup1 = agg_min_array[0] != 0xFF;
+				bool toSendForGroup2 = agg_min_array[1] != 0xFF;
+				bool toSendForGroup3 = agg_min_array[2] != 0xFF;
+		
+				if(toSendForGroup1 && toSendForGroup2 && toSendForGroup3) {
+					Min3Group* msgMin123;
+					if(call QueueSendGroupMin3.full()) {
+						dbg("Min","QueueSendGroupMin3 is FULL!!!\n");
+						return;
+					}
+					msgMin123 = (Min3Group*)call AggMinPacketGroup123.getPayload(tmp, sizeof(Min3Group));
+					if(msgMin123 == NULL) {
+						dbg("Min","EpochTimer.fired No valid payload...\n");
+						return;
+					}
+					atomic {
+					msgMin123->minGroup1 = agg_min_array[0];
+					msgMin123->minGroup2 = agg_min_array[1];
+					msgMin123->minGroup3 = agg_min_array[2];
+					}
+					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u, Group3%u\n", TOSNODEID, agg_min_array[0], agg_min_array[1], agg_min_array[2]);
+					call AggMinAMPacketGroup123.setDestination(tmp, parentID);
+					call AggMinPacketGroup123.setPayloadLength(tmp, sizeof(Min3Group));
+					enqueueDone = call QueueSendGroupMin3.enqueue(tmp);
+					if(enqueueDone == SUCCESS) {
+						if(call QueueSendGroupMin3.size() == 1) {
+							dbg("Min","sendMinGroup123 posted!!\n");
+							post sendMinGroup123Task();
+						}
+						dbg("Min","AggregationMin Group1,2,3 enqueued successfully in SendingQueue!!!\n");
+					}
+				} else if(toSendForGroup1 && toSendForGroup2) {
+					Min12Group* msgMin12;
+					if(call QueueSendGroupMin2.full()) {
+						dbg("Min","QueueSendGroupMin2 is FULL!!!\n");
+						return;
+					}
+					msgMin12 = (Min12Group*)call AggMinPacketGroup12.getPayload(tmp, sizeof(Min12Group));
+					if(msgMin12 == NULL) {
+						dbg("Min","EpochTimer.fired No valid payload...\n");
+						return;
+					}
+					atomic {
+					msgMin12->minGroup1 = agg_min_array[0];
+					msgMin12->minGroup2 = agg_min_array[1];
+					}
+					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u\n", TOSNODEID, agg_min_array[0], agg_min_array[1]);
+					call AggMinAMPacketGroup12.setDestination(tmp, parentID);
+					call AggMinPacketGroup12.setPayloadLength(tmp, sizeof(Min12Group));
+					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
+					if(enqueueDone == SUCCESS) {
+						if(call QueueSendGroupMin2.size() == 1) {
+							dbg("Min","sendMinGroup12 posted!!\n");
+							post sendMinGroup12Task();
+						}
+					dbg("Min","AggregationMin Group1,2 enqueued successfully in SendingQueue!!!\n");
+					}
+				} else if(toSendForGroup1 && toSendForGroup3) {
+					Min13Group* msgMin13;
+					if(call QueueSendGroupMin2.full()) {
+						dbg("Min","QueueSendGroupMin2 is FULL!!!\n");
+						return;
+					}
+					msgMin13 = (Min13Group*)call AggMinPacketGroup13.getPayload(tmp, sizeof(Min13Group));
+					if(msgMin13 == NULL) {
+						dbg("Min","EpochTimer.fired No valid payload...\n");
+						return;
+					}
+					atomic {
+					msgMin13->minGroup1 = agg_min_array[0];
+					msgMin13->minGroup3 = agg_min_array[2];
+					}
+					dbg("Min","NodeID %d AggregationMin Group1%u, Group3%u\n", TOSNODEID, agg_min_array[0], agg_min_array[2]);
+					call AggMinAMPacketGroup13.setDestination(tmp, parentID);
+					call AggMinPacketGroup13.setPayloadLength(tmp, sizeof(Min13Group));
+					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
+					if(enqueueDone == SUCCESS) {
+						if(call QueueSendGroupMin2.size() == 1) {
+						dbg("Min","sendMinGroup13 posted!!\n");
+						post sendMinGroup13Task();
+					}
+					dbg("Min","AggregationMin Group1,3 enqueued successfully in SendingQueue!!!\n");
+					}
+				} else if(toSendForGroup2 && toSendForGroup3) {
+					Min23Group* msgMin23;
+					if(call QueueSendGroupMin2.full()) {
+						dbg("Min","QueueSendGroupMin2 is FULL!!!\n");
+						return;
+					}
+					msgMin23 = (Min23Group*)call AggMinPacketGroup23.getPayload(tmp, sizeof(Min23Group));
+					if(msgMin23 == NULL) {
+					dbg("Min","EpochTimer.fired No valid payload...\n");
+					return;
+					}
+					atomic {
+					msgMin23->minGroup2 = agg_min_array[1];
+					msgMin23->minGroup3 = agg_min_array[2];
+					}
+					dbg("Min","NodeID %d AggregationMin Group2%u, Group3%u\n", TOSNODEID, agg_min_array[1], agg_min_array[2]);
+					call AggMinAMPacketGroup23.setDestination(tmp, parentID);
+					call AggMinPacketGroup23.setPayloadLength(tmp, sizeof(Min23Group));
+					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
+					if(enqueueDone == SUCCESS) {
+						if(call QueueSendGroupMin2.size() == 1) {
+							dbg("Min","sendMinGroup23 posted!!\n");
+							post sendMinGroup23Task();
+						}
+					dbg("Min","AggregationMin Group2,3 enqueued successfully in SendingQueue!!!\n");
+					}
+				} else if(toSendForGroup1 || toSendForGroup2 || toSendForGroup3) {
+				AggregationMin* msgMin;
+				if(call AggMinSendQueue.full()) {
+					dbg("Min","AggMinSendQueue is FULL!!!\n");
+					return;
+				}
+				msgMin = (AggregationMin*)call AggMinPacket.getPayload(tmp, sizeof(AggregationMin));
+				if(msgMin == NULL) {
+					dbg("Min","EpochTimer.fired No valid payload...\n");
+					return;
+				}
+				atomic {
+				if(toSendForGroup1) msgMin->minVal = agg_min_array[0];
+				else if(toSendForGroup2) msgMin->minVal = agg_min_array[1];
+				else msgMin->minVal = agg_min_array[2];
+				}
+				dbg("Min","NodeID %d AggregationMin value %u\n", TOSNODEID, msgMin->minVal);
+				call AggMinAMPacket.setDestination(tmp, parentID);
+				call AggMinPacket.setPayloadLength(tmp, sizeof(AggregationMin));
+				enqueueDone = call AggMinSendQueue.enqueue(tmp);
+				if(enqueueDone == SUCCESS) {
+					if(call AggMinSendQueue.size() == 1) {
+						dbg("Min","SendAggMinTask posted!!\n");
+						post sendAggMinTask();
+					}
+				dbg("Min","AggregationMin enqueued successfully in SendingQueue!!!\n");
+				}
+				}
+			}
 		}else if(aggType==AGGREGATION_TYPE_SUM_GROUP){
 			uint8_t group_id = (TOS_NODE_ID % 3); 
 			dbg("Sample","NodeID= %d : Group %u AggregationSum sample %u\n", TOS_NODE_ID, group_id + 1, sample);
@@ -1504,6 +1661,229 @@ implementation
 		agg_sum_array[2]=0;
 		agg_min=0xFFFF;
 	}
+	
+	task void sendMinGroup12Task() {
+		uint8_t mlen; 
+		uint16_t mdest; 
+		error_t sendDone;
+		dbg("Min","sendMinGroup12Task Starting....\n");
+		if(call QueueSendGroupMin2.empty()) {
+			dbg("Min","sendMinGroup12Task Q is empty!\n");
+			return;
+		}
+		if(MinSendBusy) {
+			dbg("Min","sendMinGroup12Task MinSendBusy TRUE!!!\n");
+			post sendMinGroup12Task();
+			return;
+		}
+		radioAggMinSendPkt = call QueueSendGroupMin2.dequeue();
+		mlen = call AggMinPacketGroup12.payloadLength(radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup12.destination(radioAggMinSendPkt);
+		if(mlen != sizeof(Min12Group)) {
+			dbg("Min"," sendMinGroup12Task Unknown message!!!\n");
+			return;
+		}
+		sendDone = call AggMinAMSendGroup12.send(mdest, radioAggMinSendPkt, mlen);
+		if(sendDone == SUCCESS) {
+			dbg("Min","sendMinGroup12Task Send returned success!!!\n");
+			setMinSendBusy(TRUE);
+		}else {
+			dbg("Min","send failed!!!\n");
+		}
+	}
+
+	task void sendMinGroup13Task() {
+		uint8_t mlen; 
+		uint16_t mdest; 
+		error_t sendDone;
+		dbg("Min","sendMinGroup13Task Starting....\n");
+		if(call QueueSendGroupMin2.empty()) {
+			dbg("Min","sendMinGroup13Task Q is empty!\n");
+			return;
+		}
+		if(MinSendBusy) {
+			dbg("Min","sendMinGroup13Task MinSendBusy TRUE!!!\n");
+			post sendMinGroup13Task();
+			return;
+		}
+		radioAggMinSendPkt = call QueueSendGroupMin2.dequeue();
+		mlen = call AggMinPacketGroup13.payloadLength(radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup13.destination(radioAggMinSendPkt);
+		if(mlen != sizeof(Min13Group)) {
+			dbg("Min"," sendMinGroup13Task Unknown message!!!\n");
+			return;
+		}
+		sendDone = call AggMinAMSendGroup13.send(mdest, radioAggMinSendPkt, mlen);
+		if(sendDone == SUCCESS) {
+			dbg("Min","sendMinGroup13Task Send returned success!!!\n");
+			setMinSendBusy(TRUE);
+		} else {
+		dbg("Min","send failed!!!\n");
+		}
+	}
+
+	task void sendMinGroup23Task() {
+		uint8_t mlen; 
+		uint16_t mdest; 
+		error_t sendDone;
+		dbg("Min","sendMinGroup23Task Starting....\n");
+		if(call QueueSendGroupMin2.empty()) {
+			dbg("Min","sendMinGroup23Task Q is empty!\n");
+			return;
+		}
+		if(MinSendBusy) {
+			dbg("Min","sendMinGroup23Task MinSendBusy TRUE!!!\n");
+			post sendMinGroup23Task();
+			return;
+		}
+		radioAggMinSendPkt = call QueueSendGroupMin2.dequeue();
+		mlen = call AggMinPacketGroup23.payloadLength(radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup23.destination(radioAggMinSendPkt);
+		if(mlen != sizeof(Min23Group)) {
+			dbg("Min"," sendMinGroup23Task Unknown message!!!\n");
+			return;
+		}
+		sendDone = call AggMinAMSendGroup23.send(mdest, radioAggMinSendPkt, mlen);
+		if(sendDone == SUCCESS) {
+			dbg("Min","sendMinGroup23Task Send returned success!!!\n");
+			setMinSendBusy(TRUE);
+		} else {
+			dbg("Min","send failed!!!\n");
+		}
+	}
+
+	task void sendMinGroup123Task() {
+		uint8_t mlen; uint16_t mdest; error_t sendDone;
+		dbg("Min","sendMinGroup123Task Starting....\n");
+		if(call QueueSendGroupMin3.empty()) {
+			dbg("Min","sendMinGroup123Task Q is empty!\n");
+			return;
+		}
+		if(MinSendBusy) {
+			dbg("Min","sendMinGroup123Task MinSendBusy TRUE!!!\n");
+			post sendMinGroup123Task();
+			return;
+		}
+		radioAggMinSendPkt = call QueueSendGroupMin3.dequeue();
+		mlen = call AggMinPacketGroup123.payloadLength(radioAggMinSendPkt);
+		mdest = call AggMinAMPacketGroup123.destination(radioAggMinSendPkt);
+		if(mlen != sizeof(Min3Group)) {
+			dbg("Min"," sendMinGroup123Task Unknown message!!!\n");
+			return;
+		}
+		sendDone = call AggMinAMSendGroup123.send(mdest, radioAggMinSendPkt, mlen);
+		if(sendDone == SUCCESS) {
+			dbg("Min","sendMinGroup123Task Send returned success!!!\n");
+			setMinSendBusy(TRUE);
+		} else {
+			dbg("Min","send failed!!!\n");
+		}
+	}
+
+	event message_t AggMinReceiveGroup12.receive(message_t* msg, void* payload, uint8_t len) {
+		message_t* tmp;
+		uint16_t msource = call AggMinAMPacketGroup12.source(msg);
+		error_t enqueueDone;
+		dbg("Min","AggMinReceiveGroup12.receive start\n");
+		dbg("Min","Something received!!! from %u\n", msource);
+		atomic {
+			memcpy(tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupMin2.enqueue(tmp);
+		if(enqueueDone == SUCCESS) {
+			dbg("Min","posting receiveMinGroup12Task!!!!\n");
+			post receiveMinGroup12Task();
+		} else {
+			dbg("Min","receiveMinGroup12Task enqueue failed!!!\n");
+		}
+		return msg;
+	}
+
+	event message_t AggMinReceiveGroup13.receive(message_t* msg, void* payload, uint8_t len) {
+		message_t* tmp;
+		uint16_t msource = call AggMinAMPacketGroup13.source(msg);
+		error_t enqueueDone;
+		dbg("Min","AggMinReceiveGroup13.receive start\n");
+		dbg("Min","Something received!!! from %u\n", msource);
+		atomic {
+			memcpy(tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupMin2.enqueue(tmp);
+		if(enqueueDone == SUCCESS) {
+			dbg("Min","posting receiveMinGroup13Task!!!!\n");
+			post receiveMinGroup13Task();
+		} else {
+			dbg("Min","receiveMinGroup13Task enqueue failed!!!\n");
+		}
+		return msg;
+	}
+
+	event message_t AggMinReceiveGroup23.receive(message_t* msg, void* payload, uint8_t len) {
+		message_t* tmp;
+		uint16_t msource = call AggMinAMPacketGroup23.source(msg);
+		error_t enqueueDone;
+		dbg("Min","AggMinReceiveGroup23.receive start\n");
+		dbg("Min","Something received!!! from %u\n", msource);
+		atomic {
+			memcpy(tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupMin2.enqueue(tmp);
+		if(enqueueDone == SUCCESS) {
+			dbg("Min","posting receiveMinGroup23Task!!!!\n");
+			post receiveMinGroup23Task();
+		} else {
+			dbg("Min","receiveMinGroup23Task enqueue failed!!!\n");
+		}
+		return msg;
+	}
+
+	event message_t AggMinReceiveGroup123.receive(message_t* msg, void* payload, uint8_t len) {
+		message_t* tmp;
+		uint16_t msource = call AggMinAMPacketGroup123.source(msg);
+		error_t enqueueDone;
+		dbg("Min","AggMinReceiveGroup123.receive start\n");
+		dbg("Min","Something received!!! from %u\n", msource);
+		atomic {
+			memcpy(tmp, msg, sizeof(message_t));
+		}
+		enqueueDone = call QueueReceiveGroupMin3.enqueue(tmp);
+		if(enqueueDone == SUCCESS) {
+			dbg("Min","posting receiveMinGroup123Task!!!!\n");
+			post receiveMinGroup123Task();
+		} else {
+			dbg("Min","receiveMinGroup123Task enqueue failed!!!\n");
+		}
+		return msg;
+	}
+
+	event void AggMinAMSendGroup12.sendDone(message_t* msg, error_t err) {
+		dbg("Min","Inside the AggMinAMSendGroup12.sendDone\n");
+		dbg("Min","A AggregationMin package sent... %s\n", err==SUCCESS?"True":"False");
+		setMinSendBusy(FALSE);
+		if(!call QueueSendGroupMin2.empty()) post sendMinGroup12Task();
+	}
+
+	event void AggMinAMSendGroup13.sendDone(message_t* msg, error_t err) {
+		dbg("Min","Inside the AggMinAMSendGroup13.sendDone\n");
+		dbg("Min","A AggregationMin package sent... %s\n", err==SUCCESS?"True":"False");
+		setMinSendBusy(FALSE);
+		if(!call QueueSendGroupMin2.empty()) post sendMinGroup13Task();
+	}
+
+	event void AggMinAMSendGroup23.sendDone(message_t* msg, error_t err) {
+		dbg("Min","Inside the AggMinAMSendGroup23.sendDone\n");
+		dbg("Min","A AggregationMin package sent... %s\n", err==SUCCESS?"True":"False");
+		setMinSendBusy(FALSE);
+		if(!call QueueSendGroupMin2.empty()) post sendMinGroup23Task();
+	}
+
+	event void AggMinAMSendGroup123.sendDone(message_t* msg, error_t err) {
+		dbg("Min","Inside the AggMinAMSendGroup123.sendDone\n");
+		dbg("Min","A AggregationMin package sent... %s\n", err==SUCCESS?"True":"False");
+		setMinSendBusy(FALSE);
+		if(!call QueueSendGroupMin3.empty()) post sendMinGroup123Task();
+	}
+
 
 
 	task void sendAggMinTask(){
