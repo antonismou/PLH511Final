@@ -70,7 +70,11 @@ module SRTreeC
 	uses interface PacketQueue as AggAvgReceiveQueue;
 
 	//phase 2
-	/*
+	uses interface Packet as AggMinPacketGroup;
+	uses interface AMPacket as AggMinAMPacketGroup;
+	uses interface AMSend as AggMinAMSendGroup;
+	uses interface Receive as AggMinReceiveGroup;
+
 	uses interface PacketQueue as QueueSendGroupMin2;
 	uses interface PacketQueue as QueueReceiveGroupMin2;
 	uses interface Packet as AggMinPacketGroup12;
@@ -94,7 +98,7 @@ module SRTreeC
 	uses interface AMPacket as AggMinAMPacketGroup123;
 	uses interface AMSend as AggMinAMSendGroup123;
 	uses interface Receive as AggMinReceiveGroup123;
-*/
+
 	uses interface Packet as AggSumPacketGroup;
 	uses interface AMPacket as AggSumAMPacketGroup;
 	uses interface AMSend as AggSumAMSentGroup;
@@ -1331,14 +1335,14 @@ implementation
 				}
 			}//if for TOS_NODE_ID==0
 		}else if(aggType==AGGREGATION_TYPE_MIN_GROUP){
-			uint8_t groupid = TOSNODEID % 3;
-			dbg("Sample","NodeID %d Group %u AggregationMin sample %u, %u\n", TOSNODEID, groupid+1, sample, agg_min_array[groupid]);
+			uint8_t groupid = TOS_NODE_ID % 3;
+			dbg("Sample","NodeID %d Group %u AggregationMin sample %u, %u\n", TOS_NODE_ID, groupid+1, sample, agg_min_array[groupid]);
 			if(sample < agg_min_array[groupid]){
 				agg_min_array[groupid] = sample;
 			}
-			dbg("Sample","NodeID %d Group %u AggregationMin minAfter %u\n", TOSNODEID, groupid+1, agg_min_array[groupid]);
+			dbg("Sample","NodeID %d Group %u AggregationMin minAfter %u\n", TOS_NODE_ID, groupid+1, agg_min_array[groupid]);
 
-			if(TOSNODEID == 0) {
+			if(TOS_NODE_ID == 0) {
 				uint8_t i;
 				dbg("Results","***////////||||||\\\\\\***\n");
 				for(i=0; i<3; i++) {
@@ -1366,7 +1370,7 @@ implementation
 					msgMin123->minGroup2 = agg_min_array[1];
 					msgMin123->minGroup3 = agg_min_array[2];
 					}
-					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u, Group3%u\n", TOSNODEID, agg_min_array[0], agg_min_array[1], agg_min_array[2]);
+					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u, Group3%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1], agg_min_array[2]);
 					call AggMinAMPacketGroup123.setDestination(tmp, parentID);
 					call AggMinPacketGroup123.setPayloadLength(tmp, sizeof(Min3Group));
 					enqueueDone = call QueueSendGroupMin3.enqueue(tmp);
@@ -1392,7 +1396,7 @@ implementation
 					msgMin12->minGroup1 = agg_min_array[0];
 					msgMin12->minGroup2 = agg_min_array[1];
 					}
-					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u\n", TOSNODEID, agg_min_array[0], agg_min_array[1]);
+					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1]);
 					call AggMinAMPacketGroup12.setDestination(tmp, parentID);
 					call AggMinPacketGroup12.setPayloadLength(tmp, sizeof(Min12Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
@@ -1418,7 +1422,7 @@ implementation
 					msgMin13->minGroup1 = agg_min_array[0];
 					msgMin13->minGroup3 = agg_min_array[2];
 					}
-					dbg("Min","NodeID %d AggregationMin Group1%u, Group3%u\n", TOSNODEID, agg_min_array[0], agg_min_array[2]);
+					dbg("Min","NodeID %d AggregationMin Group1%u, Group3%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[2]);
 					call AggMinAMPacketGroup13.setDestination(tmp, parentID);
 					call AggMinPacketGroup13.setPayloadLength(tmp, sizeof(Min13Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
@@ -1444,7 +1448,7 @@ implementation
 					msgMin23->minGroup2 = agg_min_array[1];
 					msgMin23->minGroup3 = agg_min_array[2];
 					}
-					dbg("Min","NodeID %d AggregationMin Group2%u, Group3%u\n", TOSNODEID, agg_min_array[1], agg_min_array[2]);
+					dbg("Min","NodeID %d AggregationMin Group2%u, Group3%u\n", TOS_NODE_ID, agg_min_array[1], agg_min_array[2]);
 					call AggMinAMPacketGroup23.setDestination(tmp, parentID);
 					call AggMinPacketGroup23.setPayloadLength(tmp, sizeof(Min23Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
@@ -1471,7 +1475,7 @@ implementation
 				else if(toSendForGroup2) msgMin->minVal = agg_min_array[1];
 				else msgMin->minVal = agg_min_array[2];
 				}
-				dbg("Min","NodeID %d AggregationMin value %u\n", TOSNODEID, msgMin->minVal);
+				dbg("Min","NodeID %d AggregationMin value %u\n", TOS_NODE_ID, msgMin->minVal);
 				call AggMinAMPacket.setDestination(tmp, parentID);
 				call AggMinPacket.setPayloadLength(tmp, sizeof(AggregationMin));
 				enqueueDone = call AggMinSendQueue.enqueue(tmp);
