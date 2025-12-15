@@ -1360,7 +1360,7 @@ implementation
 						dbg("Min","QueueSendGroupMin3 is FULL!!!\n");
 						return;
 					}
-					msgMin123 = (Min3Group*)call AggMinPacketGroup123.getPayload(tmp, sizeof(Min3Group));
+					msgMin123 = (Min3Group*)call AggMinPacketGroup123.getPayload(&tmp, sizeof(Min3Group));
 					if(msgMin123 == NULL) {
 						dbg("Min","EpochTimer.fired No valid payload...\n");
 						return;
@@ -1371,8 +1371,8 @@ implementation
 					msgMin123->minGroup3 = agg_min_array[2];
 					}
 					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u, Group3%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1], agg_min_array[2]);
-					call AggMinAMPacketGroup123.setDestination(tmp, parentID);
-					call AggMinPacketGroup123.setPayloadLength(tmp, sizeof(Min3Group));
+					call AggMinAMPacketGroup123.setDestination(&tmp, parentID);
+					call AggMinPacketGroup123.setPayloadLength(&tmp, sizeof(Min3Group));
 					enqueueDone = call QueueSendGroupMin3.enqueue(tmp);
 					if(enqueueDone == SUCCESS) {
 						if(call QueueSendGroupMin3.size() == 1) {
@@ -1387,7 +1387,7 @@ implementation
 						dbg("Min","QueueSendGroupMin2 is FULL!!!\n");
 						return;
 					}
-					msgMin12 = (Min12Group*)call AggMinPacketGroup12.getPayload(tmp, sizeof(Min12Group));
+					msgMin12 = (Min12Group*)call AggMinPacketGroup12.getPayload(&tmp, sizeof(Min12Group));
 					if(msgMin12 == NULL) {
 						dbg("Min","EpochTimer.fired No valid payload...\n");
 						return;
@@ -1397,8 +1397,8 @@ implementation
 					msgMin12->minGroup2 = agg_min_array[1];
 					}
 					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1]);
-					call AggMinAMPacketGroup12.setDestination(tmp, parentID);
-					call AggMinPacketGroup12.setPayloadLength(tmp, sizeof(Min12Group));
+					call AggMinAMPacketGroup12.setDestination(&tmp, parentID);
+					call AggMinPacketGroup12.setPayloadLength(&tmp, sizeof(Min12Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
 					if(enqueueDone == SUCCESS) {
 						if(call QueueSendGroupMin2.size() == 1) {
@@ -1413,7 +1413,7 @@ implementation
 						dbg("Min","QueueSendGroupMin2 is FULL!!!\n");
 						return;
 					}
-					msgMin13 = (Min13Group*)call AggMinPacketGroup13.getPayload(tmp, sizeof(Min13Group));
+					msgMin13 = (Min13Group*)call AggMinPacketGroup13.getPayload(&tmp, sizeof(Min13Group));
 					if(msgMin13 == NULL) {
 						dbg("Min","EpochTimer.fired No valid payload...\n");
 						return;
@@ -1423,8 +1423,8 @@ implementation
 					msgMin13->minGroup3 = agg_min_array[2];
 					}
 					dbg("Min","NodeID %d AggregationMin Group1%u, Group3%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[2]);
-					call AggMinAMPacketGroup13.setDestination(tmp, parentID);
-					call AggMinPacketGroup13.setPayloadLength(tmp, sizeof(Min13Group));
+					call AggMinAMPacketGroup13.setDestination(&tmp, parentID);
+					call AggMinPacketGroup13.setPayloadLength(&tmp, sizeof(Min13Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
 					if(enqueueDone == SUCCESS) {
 						if(call QueueSendGroupMin2.size() == 1) {
@@ -1439,7 +1439,7 @@ implementation
 						dbg("Min","QueueSendGroupMin2 is FULL!!!\n");
 						return;
 					}
-					msgMin23 = (Min23Group*)call AggMinPacketGroup23.getPayload(tmp, sizeof(Min23Group));
+					msgMin23 = (Min23Group*)call AggMinPacketGroup23.getPayload(&tmp, sizeof(Min23Group));
 					if(msgMin23 == NULL) {
 					dbg("Min","EpochTimer.fired No valid payload...\n");
 					return;
@@ -1449,8 +1449,8 @@ implementation
 					msgMin23->minGroup3 = agg_min_array[2];
 					}
 					dbg("Min","NodeID %d AggregationMin Group2%u, Group3%u\n", TOS_NODE_ID, agg_min_array[1], agg_min_array[2]);
-					call AggMinAMPacketGroup23.setDestination(tmp, parentID);
-					call AggMinPacketGroup23.setPayloadLength(tmp, sizeof(Min23Group));
+					call AggMinAMPacketGroup23.setDestination(&tmp, parentID);
+					call AggMinPacketGroup23.setPayloadLength(&tmp, sizeof(Min23Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
 					if(enqueueDone == SUCCESS) {
 						if(call QueueSendGroupMin2.size() == 1) {
@@ -1465,7 +1465,7 @@ implementation
 					dbg("Min","AggMinSendQueue is FULL!!!\n");
 					return;
 				}
-				msgMin = (AggregationMin*)call AggMinPacket.getPayload(tmp, sizeof(AggregationMin));
+				msgMin = (AggregationMin*)call AggMinPacket.getPayload(&tmp, sizeof(AggregationMin));
 				if(msgMin == NULL) {
 					dbg("Min","EpochTimer.fired No valid payload...\n");
 					return;
@@ -1476,8 +1476,8 @@ implementation
 				else msgMin->minVal = agg_min_array[2];
 				}
 				dbg("Min","NodeID %d AggregationMin value %u\n", TOS_NODE_ID, msgMin->minVal);
-				call AggMinAMPacket.setDestination(tmp, parentID);
-				call AggMinPacket.setPayloadLength(tmp, sizeof(AggregationMin));
+				call AggMinAMPacket.setDestination(&tmp, parentID);
+				call AggMinPacket.setPayloadLength(&tmp, sizeof(AggregationMin));
 				enqueueDone = call AggMinSendQueue.enqueue(tmp);
 				if(enqueueDone == SUCCESS) {
 					if(call AggMinSendQueue.size() == 1) {
