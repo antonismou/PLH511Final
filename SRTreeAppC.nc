@@ -140,7 +140,7 @@ implementation{
 	//min
 	SRTreeC.AggMinPacketGroup->AggMinSenderGroupC.Packet;
 	SRTreeC.AggMinAMPacketGroup->AggMinSenderGroupC.AMPacket;
-	SRTreeC.AggMinAMSentGroup->AggMinSenderGroupC.AMSend;
+	SRTreeC.AggMinAMSendGroup->AggMinSenderGroupC.AMSend;
 	SRTreeC.AggMinReceiveGroup->AggMinReceiverGroupC.Receive;
 
 	SRTreeC.QueueSendGroupMin2->QueueSendGroupMin2C;
