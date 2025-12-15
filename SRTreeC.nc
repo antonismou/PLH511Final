@@ -200,6 +200,8 @@ implementation
 	task void sendMinGroup13Task();
 	task void sendMinGroup23Task();
 	task void sendMinGroup123Task();
+	task void sendAggMinTaskGroup();
+	task void receiveMinGroupTask();
 
 	//no tag
 	//task void sendNotifyTask();
