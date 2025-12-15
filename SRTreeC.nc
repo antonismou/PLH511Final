@@ -1882,7 +1882,7 @@ implementation
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup12.receive start\n");
 		dbg("Min","Something received!!! from %u\n", msource);
-		atomic {
+		atomic{
 			memcpy(&tmp, msg, sizeof(message_t));
 		}
 		enqueueDone = call QueueReceiveGroupMin2.enqueue(tmp);
@@ -1901,7 +1901,7 @@ implementation
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup13.receive start\n");
 		dbg("Min","Something received!!! from %u\n", msource);
-		atomic {
+		atomic{
 			memcpy(&tmp, msg, sizeof(message_t));
 		}
 		enqueueDone = call QueueReceiveGroupMin2.enqueue(tmp);
@@ -1920,7 +1920,7 @@ implementation
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup23.receive start\n");
 		dbg("Min","Something received!!! from %u\n", msource);
-		atomic {
+		atomic{
 			memcpy(&tmp, msg, sizeof(message_t));
 		}
 		enqueueDone = call QueueReceiveGroupMin2.enqueue(tmp);
@@ -1939,7 +1939,7 @@ implementation
 		error_t enqueueDone;
 		dbg("Min","AggMinReceiveGroup123.receive start\n");
 		dbg("Min","Something received!!! from %u\n", msource);
-		atomic {
+		atomic{
 			memcpy(&tmp, msg, sizeof(message_t));
 		}
 		enqueueDone = call QueueReceiveGroupMin3.enqueue(tmp);
