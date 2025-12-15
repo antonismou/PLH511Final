@@ -202,6 +202,10 @@ implementation
 	task void sendMinGroup123Task();
 	task void sendAggMinTaskGroup();
 	task void receiveMinGroupTask();
+	task void receiveMinGroup12Task();
+	task void receiveMinGroup13Task();
+	task void receiveMinGroup23Task();
+	task void receiveMinGroup123Task();
 
 	//no tag
 	//task void sendNotifyTask();
@@ -1868,10 +1872,10 @@ implementation
 		}
 		enqueueDone = call AggMinReceiveQueue.enqueue(tmp);
 		if(enqueueDone == SUCCESS){
-			dbg("Sum","posting receiveSumGroupTask()!!!! \n");
+			dbg("Min","posting receiveMinGroupTask()!!!! \n");
 			post receiveMinGroupTask();
 		}else{
-			dbg("Sum","receiveSumGroupTask enqueue failed!!! \n");
+			dbg("Min","receiveMinGroupTask enqueue failed!!! \n");
 		}
 		return msg;
 	}
@@ -2662,5 +2666,106 @@ implementation
 			agg_sum += mpkt->sum;
 			dbg("Avg","Inside the ReceiveAggAvgTask(): New agg_sum = %u, New agg_count = %u \n", agg_sum, agg_count);
 		}//dbg("Sample","New sample = %u \n", sample);
+	}
+
+	task void receiveMinGroup12Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Min12Group* mpkt;
+		dbg("Min","receiveMinGroup12Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupMin2.dequeue();
+		len = call AggMinPacketGroup12.payloadLength(&radioMsg);
+		dbg("Min","receiveMinGroup12Task(): len=%u \n",len);
+		if(len == sizeof(Min12Group)){
+			mpkt = (Min12Group*) (call AggMinPacketGroup12.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Min","receiveMinGroup12Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Min","receiveMinGroup12Task(): Min group1= %u, Min group2= %u \n", mpkt->minGroup1, mpkt->minGroup1);
+			if(agg_min_array[1] >  mpkt->minGroup1){
+				agg_min_array[1] += mpkt->minGroup1;
+			}
+			if(agg_min_array[2] > mpkt->minGroup2){
+				agg_min_array[2] += mpkt->minGroup2;
+			}
+			dbg("Min","Inside the receiveMinGroup12Task(): New Min 1 = %u Min 2 = %u \n", agg_min_array[1], agg_min_array[2]);
+		}
+	}
+
+	task void receiveMinGroup13Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Min13Group* mpkt;
+		dbg("Min","receiveMinGroup13Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupMin2.dequeue();
+		len = call AggMinPacketGroup13.payloadLength(&radioMsg);
+		dbg("Min","receiveMinGroup13Task(): len=%u \n",len);
+		if(len == sizeof(Min13Group)){
+			mpkt = (Min13Group*) (call AggMinPacketGroup13.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Min","receiveMinGroup13Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Min","receiveMinGroup13Task(): Min group1= %u, Min group3= %u \n", mpkt->minGroup1, mpkt->minGroup3);
+			if(agg_min_array[1] >  mpkt->minGroup1){
+				agg_min_array[1] += mpkt->minGroup1;
+			}
+			if(agg_min_array[3] >  mpkt->minGroup3){
+				agg_min_array[3] += mpkt->minGroup3;
+			}
+			dbg("Min","Inside the receiveMinGroup13Task(): New Min 1 = %u Min 3 = %u \n", agg_min_array[1], agg_min_array[3]);
+		}
+	}
+
+	task void receiveMinGroup23Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Min23Group* mpkt;
+		dbg("Min","receiveMinGroup23Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupMin2.dequeue();
+		len = call AggMinPacketGroup23.payloadLength(&radioMsg);
+		dbg("Min","receiveMinGroup23Task(): len=%u \n",len);
+		if(len == sizeof(Min23Group)){
+			mpkt = (Min23Group*) (call AggMinPacketGroup23.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Min","receiveMinGroup23Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Min","receiveMinGroup23Task(): Min group2= %u, Min group3= %u \n", mpkt->minGroup2, mpkt->minGroup3);
+			if(agg_min_array[2] >  mpkt->minGroup2){
+				agg_min_array[2] += mpkt->minGroup2;
+			}
+			if(agg_min_array[3] >  mpkt->minGroup3){
+				agg_min_array[3] += mpkt->minGroup3;
+			}
+			dbg("Min","Inside the receiveMinGroup23Task(): New Min 2 = %u Min 3 = %u \n", agg_min_array[2], agg_min_array[3]);
+		}
+	}
+
+	task void receiveMinGroup123Task(){
+		uint8_t len;
+		//uint16_t msource;
+		message_t radioMsg;
+		Min3Group* mpkt;
+		dbg("Min","receiveMinGroup123Task():received msg...\n");
+		radioMsg = call QueueReceiveGroupMin3.dequeue();
+		len = call AggMinPacketGroup123.payloadLength(&radioMsg);
+		dbg("Min","receiveMinGroup123Task(): len=%u \n",len);
+		if(len == sizeof(Min3Group)){
+			mpkt = (Min3Group*) (call AggMinPacketGroup123.getPayload(&radioMsg,len));
+			if(mpkt==NULL){
+				dbg("Min","receiveMinGroup123Task(): No valid payload... \n");
+				return;
+			}
+			dbg("Min","receiveMinGroup123Task(): Min group1= %u, Min group2= %u, Min group3= %u \n", mpkt->minGroup1, mpkt->minGroup2, mpkt->minGroup3);
+			agg_min_array[1] += mpkt->minGroup1;
+			agg_min_array[2] += mpkt->minGroup2;
+			agg_min_array[3] += mpkt->minGroup3;
+			dbg("Min","Inside the receiveMinGroup123Task(): New Min 1 = %u Min 2 = %u Min 3 = %u \n", agg_min_array[1], agg_min_array[2], agg_min_array[3]);
+		}
 	}
 }
