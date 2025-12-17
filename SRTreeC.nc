@@ -337,6 +337,12 @@ implementation
 		agg_sum=0;
 		agg_min=0xFFFF;
 		sample=0;
+		agg_min_array[0]=0xFFFF;
+		agg_min_array[1]=0xFFFF;
+		agg_min_array[2]=0xFFFF;
+		agg_sum_array[0]=0;
+		agg_sum_array[1]=0;
+		agg_sum_array[2]=0;
 		if(TOS_NODE_ID==0){
 			#ifdef SERIAL_EN
 			call SerialControl.start();
