@@ -2573,7 +2573,7 @@ implementation
 			dbg("Sum","receiveSumGroup12Task(): sum group1= %u, sum group2= %u \n", mpkt->sumGroup1, mpkt->sumGroup2);
 			agg_sum_array[0] += mpkt->sumGroup1;
 			agg_sum_array[1] += mpkt->sumGroup2;
-			dbg("Sum","Inside the receiveSumGroup12Task(): New sum 1 = %u sum 2 = %u \n", agg_sum_array[1], agg_sum_array[2]);
+			dbg("Sum","Inside the receiveSumGroup12Task(): New sum 1 = %u sum 2 = %u \n", agg_sum_array[0], agg_sum_array[1]);
 		}
 	}
 
@@ -2595,7 +2595,7 @@ implementation
 			dbg("Sum","receiveSumGroup13Task(): sum group1= %u, sum group3= %u \n", mpkt->sumGroup1, mpkt->sumGroup3);
 			agg_sum_array[0] += mpkt->sumGroup1;
 			agg_sum_array[2] += mpkt->sumGroup3;
-			dbg("Sum","Inside the receiveSumGroup13Task(): New sum 1 = %u sum 3 = %u \n", agg_sum_array[1], agg_sum_array[3]);
+			dbg("Sum","Inside the receiveSumGroup13Task(): New sum 1 = %u sum 3 = %u \n", agg_sum_array[0], agg_sum_array[2]);
 		}
 	}
 
@@ -2617,7 +2617,7 @@ implementation
 			dbg("Sum","receiveSumGroup23Task(): sum group2= %u, sum group3= %u \n", mpkt->sumGroup2, mpkt->sumGroup3);
 			agg_sum_array[2] += mpkt->sumGroup3;
 			agg_sum_array[1] += mpkt->sumGroup2;
-			dbg("Sum","Inside the receiveSumGroup23Task(): New sum 2 = %u sum 3 = %u \n", agg_sum_array[2], agg_sum_array[3]);
+			dbg("Sum","Inside the receiveSumGroup23Task(): New sum 2 = %u sum 3 = %u \n", agg_sum_array[1], agg_sum_array[2]);
 		}
 	}
 
@@ -2640,7 +2640,7 @@ implementation
 			agg_sum_array[0] += mpkt->sumGroup1;
 			agg_sum_array[1] += mpkt->sumGroup2;
 			agg_sum_array[2] += mpkt->sumGroup3;
-			dbg("Sum","Inside the receiveSumGroup123Task(): New sum 1 = %u sum 2 = %u sum 3 = %u \n", agg_sum_array[1], agg_sum_array[2], agg_sum_array[3]);
+			dbg("Sum","Inside the receiveSumGroup123Task(): New sum 1 = %u sum 2 = %u sum 3 = %u \n", agg_sum_array[0], agg_sum_array[1], agg_sum_array[2]);
 		}
 	}
 
@@ -2690,7 +2690,7 @@ implementation
 			if(agg_min_array[1] > mpkt->minGroup2){
 				agg_min_array[1] += mpkt->minGroup2;
 			}
-			dbg("Min","Inside the receiveMinGroup12Task(): New Min 1 = %u Min 2 = %u \n", agg_min_array[1], agg_min_array[2]);
+			dbg("Min","Inside the receiveMinGroup12Task(): New Min 1 = %u Min 2 = %u \n", agg_min_array[0], agg_min_array[1]);
 		}
 	}
 
@@ -2716,7 +2716,7 @@ implementation
 			if(agg_min_array[2] >  mpkt->minGroup3){
 				agg_min_array[2] += mpkt->minGroup3;
 			}
-			dbg("Min","Inside the receiveMinGroup13Task(): New Min 1 = %u Min 3 = %u \n", agg_min_array[1], agg_min_array[3]);
+			dbg("Min","Inside the receiveMinGroup13Task(): New Min 1 = %u Min 3 = %u \n", agg_min_array[0], agg_min_array[2]);
 		}
 	}
 
@@ -2742,7 +2742,7 @@ implementation
 			if(agg_min_array[2] >  mpkt->minGroup3){
 				agg_min_array[2] += mpkt->minGroup3;
 			}
-			dbg("Min","Inside the receiveMinGroup23Task(): New Min 2 = %u Min 3 = %u \n", agg_min_array[2], agg_min_array[3]);
+			dbg("Min","Inside the receiveMinGroup23Task(): New Min 2 = %u Min 3 = %u \n", agg_min_array[1], agg_min_array[2]);
 		}
 	}
 
@@ -2765,7 +2765,7 @@ implementation
 			agg_min_array[0] += mpkt->minGroup1;
 			agg_min_array[1] += mpkt->minGroup2;
 			agg_min_array[2] += mpkt->minGroup3;
-			dbg("Min","Inside the receiveMinGroup123Task(): New Min 1 = %u Min 2 = %u Min 3 = %u \n", agg_min_array[1], agg_min_array[2], agg_min_array[3]);
+			dbg("Min","Inside the receiveMinGroup123Task(): New Min 1 = %u Min 2 = %u Min 3 = %u \n", agg_min_array[0], agg_min_array[1], agg_min_array[2]);
 		}
 	}
 }
