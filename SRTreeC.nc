@@ -473,7 +473,7 @@ implementation
 			dbg("Routing", "#####################################\n");
 			//ADDED
 			//aggType= (call Random.rand16() %5) +1; // 1=MIN,2=SUM,3=AVG
-			aggType=5; // for testing only MIN
+			aggType=4; // for testing only MIN
 			epochCounter=0;
 			agg_count=0;
 			agg_sum=0;
