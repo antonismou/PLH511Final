@@ -1816,7 +1816,7 @@ implementation
 			id = (msource % 3);
 			dbg("Min","receiveMinGroupTask(): Min receive= %u, for group = %u \n", mpkt->minVal , id+1);
 			if(mpkt->minVal<agg_min_array[id]){
-				agg_min_array[id] += mpkt->minVal;
+				agg_min_array[id] = mpkt->minVal;
 			}else{
 				dbg("Min","Packet value is bigger");
 			}
@@ -2691,10 +2691,10 @@ implementation
 			}
 			dbg("Min","receiveMinGroup12Task(): Min group1= %u, Min group2= %u \n", mpkt->minGroup1, mpkt->minGroup1);
 			if(agg_min_array[0] >  mpkt->minGroup1){
-				agg_min_array[0] += mpkt->minGroup1;
+				agg_min_array[0] = mpkt->minGroup1;
 			}
 			if(agg_min_array[1] > mpkt->minGroup2){
-				agg_min_array[1] += mpkt->minGroup2;
+				agg_min_array[1] = mpkt->minGroup2;
 			}
 			dbg("Min","Inside the receiveMinGroup12Task(): New Min 1 = %u Min 2 = %u \n", agg_min_array[0], agg_min_array[1]);
 		}
@@ -2717,10 +2717,10 @@ implementation
 			}
 			dbg("Min","receiveMinGroup13Task(): Min group1= %u, Min group3= %u \n", mpkt->minGroup1, mpkt->minGroup3);
 			if(agg_min_array[0] >  mpkt->minGroup1){
-				agg_min_array[0] += mpkt->minGroup1;
+				agg_min_array[0] = mpkt->minGroup1;
 			}
 			if(agg_min_array[2] >  mpkt->minGroup3){
-				agg_min_array[2] += mpkt->minGroup3;
+				agg_min_array[2] = mpkt->minGroup3;
 			}
 			dbg("Min","Inside the receiveMinGroup13Task(): New Min 1 = %u Min 3 = %u \n", agg_min_array[0], agg_min_array[2]);
 		}
@@ -2743,10 +2743,10 @@ implementation
 			}
 			dbg("Min","receiveMinGroup23Task(): Min group2= %u, Min group3= %u \n", mpkt->minGroup2, mpkt->minGroup3);
 			if(agg_min_array[1] >  mpkt->minGroup2){
-				agg_min_array[1] += mpkt->minGroup2;
+				agg_min_array[1] = mpkt->minGroup2;
 			}
 			if(agg_min_array[2] >  mpkt->minGroup3){
-				agg_min_array[2] += mpkt->minGroup3;
+				agg_min_array[2] = mpkt->minGroup3;
 			}
 			dbg("Min","Inside the receiveMinGroup23Task(): New Min 2 = %u Min 3 = %u \n", agg_min_array[1], agg_min_array[2]);
 		}
@@ -2768,9 +2768,15 @@ implementation
 				return;
 			}
 			dbg("Min","receiveMinGroup123Task(): Min group1= %u, Min group2= %u, Min group3= %u \n", mpkt->minGroup1, mpkt->minGroup2, mpkt->minGroup3);
-			agg_min_array[0] += mpkt->minGroup1;
-			agg_min_array[1] += mpkt->minGroup2;
-			agg_min_array[2] += mpkt->minGroup3;
+			if(agg_min_array[0] >  mpkt->minGroup1){
+				agg_min_array[0] = mpkt->minGroup1;
+			}
+			if(agg_min_array[1] >  mpkt->minGroup2){
+				agg_min_array[1] = mpkt->minGroup2;
+			}
+			if(agg_min_array[2] >  mpkt->minGroup3){
+				agg_min_array[2] = mpkt->minGroup3;
+			}
 			dbg("Min","Inside the receiveMinGroup123Task(): New Min 1 = %u Min 2 = %u Min 3 = %u \n", agg_min_array[0], agg_min_array[1], agg_min_array[2]);
 		}
 	}
