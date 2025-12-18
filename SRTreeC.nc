@@ -1358,7 +1358,7 @@ implementation
 				uint8_t i;
 				dbg("Results","***////////||||||\\\\\\***\n");
 				for(i=0; i<3; i++) {
-					dbg("Results","AGG RESULT epoch%u Group %u MIN%u\n", epochCounter, i+1, agg_min_array[i]);
+					dbg("Results","AGG RESULT epoch %u Group %u MIN %u\n", epochCounter, i+1, agg_min_array[i]);
 				}
 				dbg("Results","***\\\\\\\\||||||//////***\n");
 			} else {
@@ -1382,7 +1382,7 @@ implementation
 					msgMin123->minGroup2 = agg_min_array[1];
 					msgMin123->minGroup3 = agg_min_array[2];
 					}
-					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u, Group3%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1], agg_min_array[2]);
+					dbg("Min","NodeID %d AggregationMin Group1 %u, Group2 %u, Group3 %u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1], agg_min_array[2]);
 					call AggMinAMPacketGroup123.setDestination(&tmp, parentID);
 					call AggMinPacketGroup123.setPayloadLength(&tmp, sizeof(Min3Group));
 					enqueueDone = call QueueSendGroupMin3.enqueue(tmp);
@@ -1408,7 +1408,7 @@ implementation
 					msgMin12->minGroup1 = agg_min_array[0];
 					msgMin12->minGroup2 = agg_min_array[1];
 					}
-					dbg("Min","NodeID %d AggregationMin Group1%u, Group2%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1]);
+					dbg("Min","NodeID %d AggregationMin Group1 %u, Group2 %u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[1]);
 					call AggMinAMPacketGroup12.setDestination(&tmp, parentID);
 					call AggMinPacketGroup12.setPayloadLength(&tmp, sizeof(Min12Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
@@ -1434,7 +1434,7 @@ implementation
 					msgMin13->minGroup1 = agg_min_array[0];
 					msgMin13->minGroup3 = agg_min_array[2];
 					}
-					dbg("Min","NodeID %d AggregationMin Group1%u, Group3%u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[2]);
+					dbg("Min","NodeID %d AggregationMin Group1 %u, Group3 %u\n", TOS_NODE_ID, agg_min_array[0], agg_min_array[2]);
 					call AggMinAMPacketGroup13.setDestination(&tmp, parentID);
 					call AggMinPacketGroup13.setPayloadLength(&tmp, sizeof(Min13Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
@@ -1460,7 +1460,7 @@ implementation
 					msgMin23->minGroup2 = agg_min_array[1];
 					msgMin23->minGroup3 = agg_min_array[2];
 					}
-					dbg("Min","NodeID %d AggregationMin Group2%u, Group3%u\n", TOS_NODE_ID, agg_min_array[1], agg_min_array[2]);
+					dbg("Min","NodeID %d AggregationMin Group2 %u, Group3 %u\n", TOS_NODE_ID, agg_min_array[1], agg_min_array[2]);
 					call AggMinAMPacketGroup23.setDestination(&tmp, parentID);
 					call AggMinPacketGroup23.setPayloadLength(&tmp, sizeof(Min23Group));
 					enqueueDone = call QueueSendGroupMin2.enqueue(tmp);
