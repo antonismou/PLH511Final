@@ -1815,12 +1815,12 @@ implementation
 			}
 			id = (msource % 3);
 			dbg("Min","receiveMinGroupTask(): Min receive= %u, for group = %u \n", mpkt->minVal , id+1);
-			if(mpkt->minVal<agg_min_array[id]){
+			if(mpkt->minVal < agg_min_array[id]){
 				agg_min_array[id] = mpkt->minVal;
 			}else{
 				dbg("Min","Packet value is bigger");
 			}
-			dbg("Min","Inside the receiveMinGroupTask(): New Min for this group = %u\n", agg_sum_array[id]);
+			dbg("Min","Inside the receiveMinGroupTask(): New Min for this group = %u\n", agg_min_array[id]);
 		}
 	}
 
