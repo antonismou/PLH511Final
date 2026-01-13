@@ -1,0 +1,2292 @@
+﻿TicksPerSecond :  10000000000
+
+
+  0   1   -50.0
+  1   0   -50.0
+  0   2   -50.0
+  2   0   -50.0
+  0   3   -50.0
+  3   0   -50.0
+  1   4   -50.0
+  4   1   -50.0
+  1   7   -50.0
+  7   1   -50.0
+  1   2   -50.0
+  2   1   -50.0
+  2   4   -50.0
+  4   2   -50.0
+  2   5   -50.0
+  5   2   -50.0
+  2   3   -50.0
+  3   2   -50.0
+  3   5   -50.0
+  5   3   -50.0
+  3   6   -50.0
+  6   3   -50.0
+  4   7   -50.0
+  7   4   -50.0
+  4   5   -50.0
+  5   4   -50.0
+  5   6   -50.0
+  6   5   -50.0
+  5   8   -50.0
+  8   5   -50.0
+  6   8   -50.0
+  8   6   -50.0
+  7   8   -50.0
+  8   7   -50.0
+0:0:10.202499377 DEBUG (3): NodeID 3: parentID= 0 , curdepth= 1 , aggType= 1
+0:0:10.202499377 DEBUG (1): NodeID 1: parentID= 0 , curdepth= 1 , aggType= 1
+0:0:10.202499377 DEBUG (2): NodeID 2: parentID= 0 , curdepth= 1 , aggType= 1
+0:0:10.406524635 DEBUG (7): NodeID 7: parentID= 1 , curdepth= 2 , aggType= 1
+0:0:10.406524635 DEBUG (4): NodeID 4: parentID= 1 , curdepth= 2 , aggType= 1
+0:0:10.406570411 DEBUG (6): NodeID 6: parentID= 3 , curdepth= 2 , aggType= 1
+0:0:10.406570411 DEBUG (5): NodeID 5: parentID= 3 , curdepth= 2 , aggType= 1
+0:0:10.606796264 DEBUG (8): NodeID 8: parentID= 6 , curdepth= 3 , aggType= 1
+
+
+
+
+
+
+
+
+0:0:29.304687510 DEBUG (8): NodeID= 8 : AggregationMin sample= 20 , agg_min= 255
+0:0:29.304687510 DEBUG (8): NodeID= 8 : AggregationMin value= 20
+0:0:29.304687510 DEBUG (8): SendAggMinTask() posted!!
+0:0:29.304687510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.304687520 DEBUG (8): SendAggMinTask(): Starting....
+0:0:29.304687520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:0:29.306533823 DEBUG (6): ### AggMinReceive.receive() start #####
+0:0:29.306533823 DEBUG (6): Something received!!!  from 8
+0:0:29.306533823 DEBUG (6): posting receiveAggMinTask()!!!!
+0:0:29.306533833 DEBUG (6): ReceiveAggMinTask():received msg...
+0:0:29.306533833 DEBUG (6): ReceiveAggMinTask(): len=1
+0:0:29.306533833 DEBUG (6): receiveAggMinTask(): minVal= 20
+0:0:29.306533833 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 20
+0:0:29.306701669 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:0:29.306701669 DEBUG (8): A AggregationMin package sent... True
+
+
+
+
+
+
+
+
+
+
+0:0:29.375000010 DEBUG (4): NodeID= 4 : AggregationMin sample= 38 , agg_min= 255
+0:0:29.375000010 DEBUG (4): NodeID= 4 : AggregationMin value= 38
+0:0:29.375000010 DEBUG (4): SendAggMinTask() posted!!
+0:0:29.375000010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.375000020 DEBUG (4): SendAggMinTask(): Starting....
+0:0:29.375000020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:0:29.376953135 DEBUG (5): NodeID= 5 : AggregationMin sample= 19 , agg_min= 255
+0:0:29.376953135 DEBUG (5): NodeID= 5 : AggregationMin value= 19
+0:0:29.376953135 DEBUG (5): SendAggMinTask() posted!!
+0:0:29.376953135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.376953145 DEBUG (5): SendAggMinTask(): Starting....
+0:0:29.376953145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:0:29.378906260 DEBUG (6): NodeID= 6 : AggregationMin sample= 59 , agg_min= 20
+0:0:29.378906260 DEBUG (6): NodeID= 6 : AggregationMin value= 20
+0:0:29.378906260 DEBUG (6): SendAggMinTask() posted!!
+0:0:29.378906260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.378906270 DEBUG (6): SendAggMinTask(): Starting....
+0:0:29.378906270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:0:29.380859385 DEBUG (7): NodeID= 7 : AggregationMin sample= 40 , agg_min= 255
+0:0:29.380859385 DEBUG (7): NodeID= 7 : AggregationMin value= 40
+0:0:29.380859385 DEBUG (7): SendAggMinTask() posted!!
+0:0:29.380859385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.380859395 DEBUG (7): SendAggMinTask(): Starting....
+0:0:29.380859395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+
+
+
+
+
+
+
+
+
+
+
+
+0:0:29.381500238 DEBUG (3): ### AggMinReceive.receive() start #####
+0:0:29.381500238 DEBUG (3): Something received!!!  from 5
+0:0:29.381500238 DEBUG (3): posting receiveAggMinTask()!!!!
+0:0:29.381500248 DEBUG (3): ReceiveAggMinTask():received msg...
+0:0:29.381500248 DEBUG (3): ReceiveAggMinTask(): len=1
+0:0:29.381500248 DEBUG (3): receiveAggMinTask(): minVal= 19
+0:0:29.381500248 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 19
+0:0:29.381668083 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:0:29.381668083 DEBUG (5): A AggregationMin package sent... True
+0:0:29.384857140 DEBUG (1): ### AggMinReceive.receive() start #####
+0:0:29.384857140 DEBUG (1): Something received!!!  from 4
+0:0:29.384857140 DEBUG (1): posting receiveAggMinTask()!!!!
+0:0:29.384857150 DEBUG (1): ReceiveAggMinTask():received msg...
+0:0:29.384857150 DEBUG (1): ReceiveAggMinTask(): len=1
+0:0:29.384857150 DEBUG (1): receiveAggMinTask(): minVal= 38
+0:0:29.384857150 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 38
+0:0:29.385024986 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:0:29.385024986 DEBUG (4): A AggregationMin package sent... True
+0:0:29.385635357 DEBUG (3): ### AggMinReceive.receive() start #####
+0:0:29.385635357 DEBUG (3): Something received!!!  from 6
+0:0:29.385635357 DEBUG (3): posting receiveAggMinTask()!!!!
+0:0:29.385635367 DEBUG (3): ReceiveAggMinTask():received msg...
+0:0:29.385635367 DEBUG (3): ReceiveAggMinTask(): len=1
+0:0:29.385635367 DEBUG (3): receiveAggMinTask(): minVal= 20
+0:0:29.385803203 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:0:29.385803203 DEBUG (6): A AggregationMin package sent... True
+0:0:29.386840806 DEBUG (1): ### AggMinReceive.receive() start #####
+0:0:29.386840806 DEBUG (1): Something received!!!  from 7
+0:0:29.386840806 DEBUG (1): posting receiveAggMinTask()!!!!
+0:0:29.386840816 DEBUG (1): ReceiveAggMinTask():received msg...
+0:0:29.386840816 DEBUG (1): ReceiveAggMinTask(): len=1
+0:0:29.386840816 DEBUG (1): receiveAggMinTask(): minVal= 40
+0:0:29.387008651 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:0:29.387008651 DEBUG (7): A AggregationMin package sent... True
+0:0:29.456054697 DEBUG (2): NodeID= 2 : AggregationMin sample= 46 , agg_min= 255
+0:0:29.456054697 DEBUG (2): NodeID= 2 : AggregationMin value= 46
+0:0:29.456054697 DEBUG (2): SendAggMinTask() posted!!
+0:0:29.456054697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.456054707 DEBUG (2): SendAggMinTask(): Starting....
+0:0:29.456054707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+
+
+
+
+
+
+0:0:29.457992562 DEBUG (0): ### AggMinReceive.receive() start #####
+0:0:29.457992562 DEBUG (0): Something received!!!  from 2
+0:0:29.457992562 DEBUG (0): posting receiveAggMinTask()!!!!
+0:0:29.457992572 DEBUG (0): ReceiveAggMinTask():received msg...
+0:0:29.457992572 DEBUG (0): ReceiveAggMinTask(): len=1
+0:0:29.457992572 DEBUG (0): receiveAggMinTask(): minVal= 46
+0:0:29.457992572 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 46
+0:0:29.458160408 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:0:29.458160408 DEBUG (2): A AggregationMin package sent... True
+0:0:29.459960947 DEBUG (1): NodeID= 1 : AggregationMin sample= 7 , agg_min= 38
+0:0:29.459960947 DEBUG (1): NodeID= 1 : AggregationMin value= 7
+0:0:29.459960947 DEBUG (1): SendAggMinTask() posted!!
+0:0:29.459960947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.459960957 DEBUG (1): SendAggMinTask(): Starting....
+0:0:29.459960957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:0:29.461914072 DEBUG (3): NodeID= 3 : AggregationMin sample= 27 , agg_min= 19
+0:0:29.461914072 DEBUG (3): NodeID= 3 : AggregationMin value= 19
+0:0:29.461914072 DEBUG (3): SendAggMinTask() posted!!
+0:0:29.461914072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:29.461914082 DEBUG (3): SendAggMinTask(): Starting....
+0:0:29.461914082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:0:29.469131436 DEBUG (0): ### AggMinReceive.receive() start #####
+0:0:29.469131436 DEBUG (0): Something received!!!  from 1
+0:0:29.469131436 DEBUG (0): posting receiveAggMinTask()!!!!
+0:0:29.469131446 DEBUG (0): ReceiveAggMinTask():received msg...
+0:0:29.469131446 DEBUG (0): ReceiveAggMinTask(): len=1
+0:0:29.469131446 DEBUG (0): receiveAggMinTask(): minVal= 7
+0:0:29.469131446 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 7
+0:0:29.469299282 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:0:29.469299282 DEBUG (1): A AggregationMin package sent... True
+0:0:29.471496546 DEBUG (0): ### AggMinReceive.receive() start #####
+0:0:29.471496546 DEBUG (0): Something received!!!  from 3
+0:0:29.471496546 DEBUG (0): posting receiveAggMinTask()!!!!
+0:0:29.471496556 DEBUG (0): ReceiveAggMinTask():received msg...
+0:0:29.471496556 DEBUG (0): ReceiveAggMinTask(): len=1
+0:0:29.471496556 DEBUG (0): receiveAggMinTask(): minVal= 19
+0:0:29.471664392 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:0:29.471664392 DEBUG (3): A AggregationMin package sent... True
+0:0:29.536132822 DEBUG (0): NodeID= 0 : AggregationMin sample= 4 , agg_min= 7
+0:0:29.536132822 DEBUG (0): ***////////||||||\\\***
+0:0:29.536132822 DEBUG (0): AGG RESULT epoch=1 MIN=4
+0:0:29.536132822 DEBUG (0): ***\\\\||||||//////***
+0:0:48.835937510 DEBUG (8): NodeID= 8 : AggregationMin sample= 22 , agg_min= 255
+0:0:48.835937510 DEBUG (8): NodeID= 8 : AggregationMin value= 22
+0:0:48.835937510 DEBUG (8): SendAggMinTask() posted!!
+0:0:48.835937510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.835937520 DEBUG (8): SendAggMinTask(): Starting....
+0:0:48.835937520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:0:48.841354359 DEBUG (6): ### AggMinReceive.receive() start #####
+0:0:48.841354359 DEBUG (6): Something received!!!  from 8
+0:0:48.841354359 DEBUG (6): posting receiveAggMinTask()!!!!
+0:0:48.841354369 DEBUG (6): ReceiveAggMinTask():received msg...
+0:0:48.841354369 DEBUG (6): ReceiveAggMinTask(): len=1
+0:0:48.841354369 DEBUG (6): receiveAggMinTask(): minVal= 22
+0:0:48.841354369 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 22
+0:0:48.841522205 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:0:48.841522205 DEBUG (8): A AggregationMin package sent... True
+0:0:48.906250010 DEBUG (4): NodeID= 4 : AggregationMin sample= 34 , agg_min= 255
+0:0:48.906250010 DEBUG (4): NodeID= 4 : AggregationMin value= 34
+0:0:48.906250010 DEBUG (4): SendAggMinTask() posted!!
+0:0:48.906250010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.906250020 DEBUG (4): SendAggMinTask(): Starting....
+0:0:48.906250020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:0:48.908203135 DEBUG (5): NodeID= 5 : AggregationMin sample= 15 , agg_min= 255
+0:0:48.908203135 DEBUG (5): NodeID= 5 : AggregationMin value= 15
+0:0:48.908203135 DEBUG (5): SendAggMinTask() posted!!
+0:0:48.908203135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.908203145 DEBUG (5): SendAggMinTask(): Starting....
+0:0:48.908203145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:0:48.910156260 DEBUG (6): NodeID= 6 : AggregationMin sample= 60 , agg_min= 22
+0:0:48.910156260 DEBUG (6): NodeID= 6 : AggregationMin value= 22
+0:0:48.910156260 DEBUG (6): SendAggMinTask() posted!!
+0:0:48.910156260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.910156270 DEBUG (6): SendAggMinTask(): Starting....
+0:0:48.910156270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:0:48.911361696 DEBUG (3): ### AggMinReceive.receive() start #####
+0:0:48.911361696 DEBUG (3): Something received!!!  from 5
+0:0:48.911361696 DEBUG (3): posting receiveAggMinTask()!!!!
+0:0:48.911361706 DEBUG (3): ReceiveAggMinTask():received msg...
+0:0:48.911361706 DEBUG (3): ReceiveAggMinTask(): len=1
+0:0:48.911361706 DEBUG (3): receiveAggMinTask(): minVal= 15
+0:0:48.911361706 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:0:48.911529542 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:0:48.911529542 DEBUG (5): A AggregationMin package sent... True
+0:0:48.912109385 DEBUG (7): NodeID= 7 : AggregationMin sample= 41 , agg_min= 255
+0:0:48.912109385 DEBUG (7): NodeID= 7 : AggregationMin value= 41
+0:0:48.912109385 DEBUG (7): SendAggMinTask() posted!!
+0:0:48.912109385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.912109395 DEBUG (7): SendAggMinTask(): Starting....
+0:0:48.912109395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:0:48.913589455 DEBUG (1): ### AggMinReceive.receive() start #####
+0:0:48.913589455 DEBUG (1): Something received!!!  from 4
+0:0:48.913589455 DEBUG (1): posting receiveAggMinTask()!!!!
+0:0:48.913589465 DEBUG (1): ReceiveAggMinTask():received msg...
+0:0:48.913589465 DEBUG (1): ReceiveAggMinTask(): len=1
+0:0:48.913589465 DEBUG (1): receiveAggMinTask(): minVal= 34
+0:0:48.913589465 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 34
+0:0:48.913757300 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:0:48.913757300 DEBUG (4): A AggregationMin package sent... True
+0:0:48.916732770 DEBUG (3): ### AggMinReceive.receive() start #####
+0:0:48.916732770 DEBUG (3): Something received!!!  from 6
+0:0:48.916732770 DEBUG (3): posting receiveAggMinTask()!!!!
+0:0:48.916732780 DEBUG (3): ReceiveAggMinTask():received msg...
+0:0:48.916732780 DEBUG (3): ReceiveAggMinTask(): len=1
+0:0:48.916732780 DEBUG (3): receiveAggMinTask(): minVal= 22
+0:0:48.916900616 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:0:48.916900616 DEBUG (6): A AggregationMin package sent... True
+0:0:48.922866779 DEBUG (1): ### AggMinReceive.receive() start #####
+0:0:48.922866779 DEBUG (1): Something received!!!  from 7
+0:0:48.922866779 DEBUG (1): posting receiveAggMinTask()!!!!
+0:0:48.922866789 DEBUG (1): ReceiveAggMinTask():received msg...
+0:0:48.922866789 DEBUG (1): ReceiveAggMinTask(): len=1
+0:0:48.922866789 DEBUG (1): receiveAggMinTask(): minVal= 41
+0:0:48.923034624 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:0:48.923034624 DEBUG (7): A AggregationMin package sent... True
+0:0:48.987304697 DEBUG (2): NodeID= 2 : AggregationMin sample= 40 , agg_min= 255
+0:0:48.987304697 DEBUG (2): NodeID= 2 : AggregationMin value= 40
+0:0:48.987304697 DEBUG (2): SendAggMinTask() posted!!
+0:0:48.987304697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.987304707 DEBUG (2): SendAggMinTask(): Starting....
+0:0:48.987304707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:0:48.991210947 DEBUG (1): NodeID= 1 : AggregationMin sample= 6 , agg_min= 34
+0:0:48.991210947 DEBUG (1): NodeID= 1 : AggregationMin value= 6
+0:0:48.991210947 DEBUG (1): SendAggMinTask() posted!!
+0:0:48.991210947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.991210957 DEBUG (1): SendAggMinTask(): Starting....
+0:0:48.991210957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:0:48.993164072 DEBUG (3): NodeID= 3 : AggregationMin sample= 25 , agg_min= 15
+0:0:48.993164072 DEBUG (3): NodeID= 3 : AggregationMin value= 15
+0:0:48.993164072 DEBUG (3): SendAggMinTask() posted!!
+0:0:48.993164072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:0:48.993164082 DEBUG (3): SendAggMinTask(): Starting....
+0:0:48.993164082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:0:48.993972782 DEBUG (0): ### AggMinReceive.receive() start #####
+0:0:48.993972782 DEBUG (0): Something received!!!  from 1
+0:0:48.993972782 DEBUG (0): posting receiveAggMinTask()!!!!
+0:0:48.993972792 DEBUG (0): ReceiveAggMinTask():received msg...
+0:0:48.993972792 DEBUG (0): ReceiveAggMinTask(): len=1
+0:0:48.993972792 DEBUG (0): receiveAggMinTask(): minVal= 6
+0:0:48.993972792 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 6
+0:0:48.994140628 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:0:48.994140628 DEBUG (1): A AggregationMin package sent... True
+0:0:48.995330818 DEBUG (0): ### AggMinReceive.receive() start #####
+0:0:48.995330818 DEBUG (0): Something received!!!  from 3
+0:0:48.995330818 DEBUG (0): posting receiveAggMinTask()!!!!
+0:0:48.995330828 DEBUG (0): ReceiveAggMinTask():received msg...
+0:0:48.995330828 DEBUG (0): ReceiveAggMinTask(): len=1
+0:0:48.995330828 DEBUG (0): receiveAggMinTask(): minVal= 15
+0:0:48.995498663 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:0:48.995498663 DEBUG (3): A AggregationMin package sent... True
+0:0:48.997421225 DEBUG (0): ### AggMinReceive.receive() start #####
+0:0:48.997421225 DEBUG (0): Something received!!!  from 2
+0:0:48.997421225 DEBUG (0): posting receiveAggMinTask()!!!!
+0:0:48.997421235 DEBUG (0): ReceiveAggMinTask():received msg...
+0:0:48.997421235 DEBUG (0): ReceiveAggMinTask(): len=1
+0:0:48.997421235 DEBUG (0): receiveAggMinTask(): minVal= 40
+0:0:48.997589071 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:0:48.997589071 DEBUG (2): A AggregationMin package sent... True
+0:0:49.067382822 DEBUG (0): NodeID= 0 : AggregationMin sample= 3 , agg_min= 6
+0:0:49.067382822 DEBUG (0): ***////////||||||\\\***
+0:0:49.067382822 DEBUG (0): AGG RESULT epoch=2 MIN=3
+0:0:49.067382822 DEBUG (0): ***\\\\||||||//////***
+0:1:8.367187510 DEBUG (8): NodeID= 8 : AggregationMin sample= 24 , agg_min= 255
+0:1:8.367187510 DEBUG (8): NodeID= 8 : AggregationMin value= 24
+0:1:8.367187510 DEBUG (8): SendAggMinTask() posted!!
+0:1:8.367187510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.367187520 DEBUG (8): SendAggMinTask(): Starting....
+0:1:8.367187520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:1:8.371658319 DEBUG (6): ### AggMinReceive.receive() start #####
+0:1:8.371658319 DEBUG (6): Something received!!!  from 8
+0:1:8.371658319 DEBUG (6): posting receiveAggMinTask()!!!!
+0:1:8.371658329 DEBUG (6): ReceiveAggMinTask():received msg...
+0:1:8.371658329 DEBUG (6): ReceiveAggMinTask(): len=1
+0:1:8.371658329 DEBUG (6): receiveAggMinTask(): minVal= 24
+0:1:8.371658329 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 24
+0:1:8.371826165 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:1:8.371826165 DEBUG (8): A AggregationMin package sent... True
+0:1:8.437500010 DEBUG (4): NodeID= 4 : AggregationMin sample= 32 , agg_min= 255
+0:1:8.437500010 DEBUG (4): NodeID= 4 : AggregationMin value= 32
+0:1:8.437500010 DEBUG (4): SendAggMinTask() posted!!
+0:1:8.437500010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.437500020 DEBUG (4): SendAggMinTask(): Starting....
+0:1:8.437500020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:1:8.439453135 DEBUG (5): NodeID= 5 : AggregationMin sample= 16 , agg_min= 255
+0:1:8.439453135 DEBUG (5): NodeID= 5 : AggregationMin value= 16
+0:1:8.439453135 DEBUG (5): SendAggMinTask() posted!!
+0:1:8.439453135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.439453145 DEBUG (5): SendAggMinTask(): Starting....
+0:1:8.439453145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:1:8.441406260 DEBUG (6): NodeID= 6 : AggregationMin sample= 54 , agg_min= 24
+0:1:8.441406260 DEBUG (6): NodeID= 6 : AggregationMin value= 24
+0:1:8.441406260 DEBUG (6): SendAggMinTask() posted!!
+0:1:8.441406260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.441406270 DEBUG (6): SendAggMinTask(): Starting....
+0:1:8.441406270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:1:8.443359385 DEBUG (7): NodeID= 7 : AggregationMin sample= 44 , agg_min= 255
+0:1:8.443359385 DEBUG (7): NodeID= 7 : AggregationMin value= 44
+0:1:8.443359385 DEBUG (7): SendAggMinTask() posted!!
+0:1:8.443359385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.443359395 DEBUG (7): SendAggMinTask(): Starting....
+0:1:8.443359395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:1:8.444915748 DEBUG (1): ### AggMinReceive.receive() start #####
+0:1:8.444915748 DEBUG (1): Something received!!!  from 4
+0:1:8.444915748 DEBUG (1): posting receiveAggMinTask()!!!!
+0:1:8.444915758 DEBUG (1): ReceiveAggMinTask():received msg...
+0:1:8.444915758 DEBUG (1): ReceiveAggMinTask(): len=1
+0:1:8.444915758 DEBUG (1): receiveAggMinTask(): minVal= 32
+0:1:8.444915758 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 32
+0:1:8.445083594 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:1:8.445083594 DEBUG (4): A AggregationMin package sent... True
+0:1:8.445343015 DEBUG (3): ### AggMinReceive.receive() start #####
+0:1:8.445343015 DEBUG (3): Something received!!!  from 6
+0:1:8.445343015 DEBUG (3): posting receiveAggMinTask()!!!!
+0:1:8.445343025 DEBUG (3): ReceiveAggMinTask():received msg...
+0:1:8.445343025 DEBUG (3): ReceiveAggMinTask(): len=1
+0:1:8.445343025 DEBUG (3): receiveAggMinTask(): minVal= 24
+0:1:8.445343025 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 24
+0:1:8.445510860 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:1:8.445510860 DEBUG (6): A AggregationMin package sent... True
+0:1:8.448959338 DEBUG (1): ### AggMinReceive.receive() start #####
+0:1:8.448959338 DEBUG (1): Something received!!!  from 7
+0:1:8.448959338 DEBUG (1): posting receiveAggMinTask()!!!!
+0:1:8.448959348 DEBUG (1): ReceiveAggMinTask():received msg...
+0:1:8.448959348 DEBUG (1): ReceiveAggMinTask(): len=1
+0:1:8.448959348 DEBUG (1): receiveAggMinTask(): minVal= 44
+0:1:8.449005091 DEBUG (3): ### AggMinReceive.receive() start #####
+0:1:8.449005091 DEBUG (3): Something received!!!  from 5
+0:1:8.449005091 DEBUG (3): posting receiveAggMinTask()!!!!
+0:1:8.449005101 DEBUG (3): ReceiveAggMinTask():received msg...
+0:1:8.449005101 DEBUG (3): ReceiveAggMinTask(): len=1
+0:1:8.449005101 DEBUG (3): receiveAggMinTask(): minVal= 16
+0:1:8.449005101 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 16
+0:1:8.449127184 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:1:8.449127184 DEBUG (7): A AggregationMin package sent... True
+0:1:8.449172937 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:1:8.449172937 DEBUG (5): A AggregationMin package sent... True
+0:1:8.518554697 DEBUG (2): NodeID= 2 : AggregationMin sample= 37 , agg_min= 255
+0:1:8.518554697 DEBUG (2): NodeID= 2 : AggregationMin value= 37
+0:1:8.518554697 DEBUG (2): SendAggMinTask() posted!!
+0:1:8.518554697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.518554707 DEBUG (2): SendAggMinTask(): Starting....
+0:1:8.518554707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:1:8.520370493 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:8.520370493 DEBUG (0): Something received!!!  from 2
+0:1:8.520370493 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:8.520370503 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:8.520370503 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:8.520370503 DEBUG (0): receiveAggMinTask(): minVal= 37
+0:1:8.520370503 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 37
+0:1:8.520538338 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:1:8.520538338 DEBUG (2): A AggregationMin package sent... True
+0:1:8.522460947 DEBUG (1): NodeID= 1 : AggregationMin sample= 6 , agg_min= 32
+0:1:8.522460947 DEBUG (1): NodeID= 1 : AggregationMin value= 6
+0:1:8.522460947 DEBUG (1): SendAggMinTask() posted!!
+0:1:8.522460947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.522460957 DEBUG (1): SendAggMinTask(): Starting....
+0:1:8.522460957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:1:8.524414072 DEBUG (3): NodeID= 3 : AggregationMin sample= 27 , agg_min= 16
+0:1:8.524414072 DEBUG (3): NodeID= 3 : AggregationMin value= 16
+0:1:8.524414072 DEBUG (3): SendAggMinTask() posted!!
+0:1:8.524414072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:8.524414082 DEBUG (3): SendAggMinTask(): Starting....
+0:1:8.524414082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:1:8.531845069 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:8.531845069 DEBUG (0): Something received!!!  from 3
+0:1:8.531845069 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:8.531845079 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:8.531845079 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:8.531845079 DEBUG (0): receiveAggMinTask(): minVal= 16
+0:1:8.531845079 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 16
+0:1:8.532012915 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:1:8.532012915 DEBUG (3): A AggregationMin package sent... True
+0:1:8.533019978 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:8.533019978 DEBUG (0): Something received!!!  from 1
+0:1:8.533019978 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:8.533019988 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:8.533019988 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:8.533019988 DEBUG (0): receiveAggMinTask(): minVal= 6
+0:1:8.533019988 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 6
+0:1:8.533187823 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:1:8.533187823 DEBUG (1): A AggregationMin package sent... True
+0:1:8.598632822 DEBUG (0): NodeID= 0 : AggregationMin sample= 3 , agg_min= 6
+0:1:8.598632822 DEBUG (0): ***////////||||||\\\***
+0:1:8.598632822 DEBUG (0): AGG RESULT epoch=3 MIN=3
+0:1:8.598632822 DEBUG (0): ***\\\\||||||//////***
+0:1:27.898437510 DEBUG (8): NodeID= 8 : AggregationMin sample= 24 , agg_min= 255
+0:1:27.898437510 DEBUG (8): NodeID= 8 : AggregationMin value= 24
+0:1:27.898437510 DEBUG (8): SendAggMinTask() posted!!
+0:1:27.898437510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:27.898437520 DEBUG (8): SendAggMinTask(): Starting....
+0:1:27.898437520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:1:27.900405893 DEBUG (6): ### AggMinReceive.receive() start #####
+0:1:27.900405893 DEBUG (6): Something received!!!  from 8
+0:1:27.900405893 DEBUG (6): posting receiveAggMinTask()!!!!
+0:1:27.900405903 DEBUG (6): ReceiveAggMinTask():received msg...
+0:1:27.900405903 DEBUG (6): ReceiveAggMinTask(): len=1
+0:1:27.900405903 DEBUG (6): receiveAggMinTask(): minVal= 24
+0:1:27.900405903 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 24
+0:1:27.900573738 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:1:27.900573738 DEBUG (8): A AggregationMin package sent... True
+0:1:27.968750010 DEBUG (4): NodeID= 4 : AggregationMin sample= 37 , agg_min= 255
+0:1:27.968750010 DEBUG (4): NodeID= 4 : AggregationMin value= 37
+0:1:27.968750010 DEBUG (4): SendAggMinTask() posted!!
+0:1:27.968750010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:27.968750020 DEBUG (4): SendAggMinTask(): Starting....
+0:1:27.968750020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:1:27.970703135 DEBUG (5): NodeID= 5 : AggregationMin sample= 16 , agg_min= 255
+0:1:27.970703135 DEBUG (5): NodeID= 5 : AggregationMin value= 16
+0:1:27.970703135 DEBUG (5): SendAggMinTask() posted!!
+0:1:27.970703135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:27.970703145 DEBUG (5): SendAggMinTask(): Starting....
+0:1:27.970703145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:1:27.972579965 DEBUG (3): ### AggMinReceive.receive() start #####
+0:1:27.972579965 DEBUG (3): Something received!!!  from 5
+0:1:27.972579965 DEBUG (3): posting receiveAggMinTask()!!!!
+0:1:27.972579975 DEBUG (3): ReceiveAggMinTask():received msg...
+0:1:27.972579975 DEBUG (3): ReceiveAggMinTask(): len=1
+0:1:27.972579975 DEBUG (3): receiveAggMinTask(): minVal= 16
+0:1:27.972579975 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 16
+0:1:27.972656260 DEBUG (6): NodeID= 6 : AggregationMin sample= 48 , agg_min= 24
+0:1:27.972656260 DEBUG (6): NodeID= 6 : AggregationMin value= 24
+0:1:27.972656260 DEBUG (6): SendAggMinTask() posted!!
+0:1:27.972656260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:27.972656270 DEBUG (6): SendAggMinTask(): Starting....
+0:1:27.972656270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:1:27.972747811 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:1:27.972747811 DEBUG (5): A AggregationMin package sent... True
+0:1:27.974609385 DEBUG (7): NodeID= 7 : AggregationMin sample= 50 , agg_min= 255
+0:1:27.974609385 DEBUG (7): NodeID= 7 : AggregationMin value= 50
+0:1:27.974609385 DEBUG (7): SendAggMinTask() posted!!
+0:1:27.974609385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:27.974609395 DEBUG (7): SendAggMinTask(): Starting....
+0:1:27.974609395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:1:27.975006087 DEBUG (1): ### AggMinReceive.receive() start #####
+0:1:27.975006087 DEBUG (1): Something received!!!  from 4
+0:1:27.975006087 DEBUG (1): posting receiveAggMinTask()!!!!
+0:1:27.975006097 DEBUG (1): ReceiveAggMinTask():received msg...
+0:1:27.975006097 DEBUG (1): ReceiveAggMinTask(): len=1
+0:1:27.975006097 DEBUG (1): receiveAggMinTask(): minVal= 37
+0:1:27.975006097 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 37
+0:1:27.975173933 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:1:27.975173933 DEBUG (4): A AggregationMin package sent... True
+0:1:27.976638802 DEBUG (1): ### AggMinReceive.receive() start #####
+0:1:27.976638802 DEBUG (1): Something received!!!  from 7
+0:1:27.976638802 DEBUG (1): posting receiveAggMinTask()!!!!
+0:1:27.976638812 DEBUG (1): ReceiveAggMinTask():received msg...
+0:1:27.976638812 DEBUG (1): ReceiveAggMinTask(): len=1
+0:1:27.976638812 DEBUG (1): receiveAggMinTask(): minVal= 50
+0:1:27.976806648 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:1:27.976806648 DEBUG (7): A AggregationMin package sent... True
+0:1:27.980514501 DEBUG (3): ### AggMinReceive.receive() start #####
+0:1:27.980514501 DEBUG (3): Something received!!!  from 6
+0:1:27.980514501 DEBUG (3): posting receiveAggMinTask()!!!!
+0:1:27.980514511 DEBUG (3): ReceiveAggMinTask():received msg...
+0:1:27.980514511 DEBUG (3): ReceiveAggMinTask(): len=1
+0:1:27.980514511 DEBUG (3): receiveAggMinTask(): minVal= 24
+0:1:27.980682346 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:1:27.980682346 DEBUG (6): A AggregationMin package sent... True
+0:1:28.049804697 DEBUG (2): NodeID= 2 : AggregationMin sample= 39 , agg_min= 255
+0:1:28.049804697 DEBUG (2): NodeID= 2 : AggregationMin value= 39
+0:1:28.049804697 DEBUG (2): SendAggMinTask() posted!!
+0:1:28.049804697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:28.049804707 DEBUG (2): SendAggMinTask(): Starting....
+0:1:28.049804707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:1:28.053710947 DEBUG (1): NodeID= 1 : AggregationMin sample= 6 , agg_min= 37
+0:1:28.053710947 DEBUG (1): NodeID= 1 : AggregationMin value= 6
+0:1:28.053710947 DEBUG (1): SendAggMinTask() posted!!
+0:1:28.053710947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:28.053710957 DEBUG (1): SendAggMinTask(): Starting....
+0:1:28.053710957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:1:28.055664072 DEBUG (3): NodeID= 3 : AggregationMin sample= 25 , agg_min= 16
+0:1:28.055664072 DEBUG (3): NodeID= 3 : AggregationMin value= 16
+0:1:28.055664072 DEBUG (3): SendAggMinTask() posted!!
+0:1:28.055664072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:28.055664082 DEBUG (3): SendAggMinTask(): Starting....
+0:1:28.055664082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:1:28.057617162 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:28.057617162 DEBUG (0): Something received!!!  from 2
+0:1:28.057617162 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:28.057617172 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:28.057617172 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:28.057617172 DEBUG (0): receiveAggMinTask(): minVal= 39
+0:1:28.057617172 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 39
+0:1:28.057785007 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:1:28.057785007 DEBUG (2): A AggregationMin package sent... True
+0:1:28.059204101 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:28.059204101 DEBUG (0): Something received!!!  from 3
+0:1:28.059204101 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:28.059204111 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:28.059204111 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:28.059204111 DEBUG (0): receiveAggMinTask(): minVal= 16
+0:1:28.059204111 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 16
+0:1:28.059371946 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:1:28.059371946 DEBUG (3): A AggregationMin package sent... True
+0:1:28.063903769 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:28.063903769 DEBUG (0): Something received!!!  from 1
+0:1:28.063903769 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:28.063903779 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:28.063903779 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:28.063903779 DEBUG (0): receiveAggMinTask(): minVal= 6
+0:1:28.063903779 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 6
+0:1:28.064071614 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:1:28.064071614 DEBUG (1): A AggregationMin package sent... True
+0:1:28.129882822 DEBUG (0): NodeID= 0 : AggregationMin sample= 2 , agg_min= 6
+0:1:28.129882822 DEBUG (0): ***////////||||||\\\***
+0:1:28.129882822 DEBUG (0): AGG RESULT epoch=4 MIN=2
+0:1:28.129882822 DEBUG (0): ***\\\\||||||//////***
+0:1:47.429687510 DEBUG (8): NodeID= 8 : AggregationMin sample= 26 , agg_min= 255
+0:1:47.429687510 DEBUG (8): NodeID= 8 : AggregationMin value= 26
+0:1:47.429687510 DEBUG (8): SendAggMinTask() posted!!
+0:1:47.429687510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.429687520 DEBUG (8): SendAggMinTask(): Starting....
+0:1:47.429687520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:1:47.438079805 DEBUG (6): ### AggMinReceive.receive() start #####
+0:1:47.438079805 DEBUG (6): Something received!!!  from 8
+0:1:47.438079805 DEBUG (6): posting receiveAggMinTask()!!!!
+0:1:47.438079815 DEBUG (6): ReceiveAggMinTask():received msg...
+0:1:47.438079815 DEBUG (6): ReceiveAggMinTask(): len=1
+0:1:47.438079815 DEBUG (6): receiveAggMinTask(): minVal= 26
+0:1:47.438079815 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 26
+0:1:47.438247651 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:1:47.438247651 DEBUG (8): A AggregationMin package sent... True
+0:1:47.500000010 DEBUG (4): NodeID= 4 : AggregationMin sample= 31 , agg_min= 255
+0:1:47.500000010 DEBUG (4): NodeID= 4 : AggregationMin value= 31
+0:1:47.500000010 DEBUG (4): SendAggMinTask() posted!!
+0:1:47.500000010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.500000020 DEBUG (4): SendAggMinTask(): Starting....
+0:1:47.500000020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:1:47.501953135 DEBUG (5): NodeID= 5 : AggregationMin sample= 15 , agg_min= 255
+0:1:47.501953135 DEBUG (5): NodeID= 5 : AggregationMin value= 15
+0:1:47.501953135 DEBUG (5): SendAggMinTask() posted!!
+0:1:47.501953135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.501953145 DEBUG (5): SendAggMinTask(): Starting....
+0:1:47.501953145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:1:47.503906260 DEBUG (6): NodeID= 6 : AggregationMin sample= 56 , agg_min= 26
+0:1:47.503906260 DEBUG (6): NodeID= 6 : AggregationMin value= 26
+0:1:47.503906260 DEBUG (6): SendAggMinTask() posted!!
+0:1:47.503906260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.503906270 DEBUG (6): SendAggMinTask(): Starting....
+0:1:47.503906270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:1:47.505859385 DEBUG (7): NodeID= 7 : AggregationMin sample= 43 , agg_min= 255
+0:1:47.505859385 DEBUG (7): NodeID= 7 : AggregationMin value= 43
+0:1:47.505859385 DEBUG (7): SendAggMinTask() posted!!
+0:1:47.505859385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.505859395 DEBUG (7): SendAggMinTask(): Starting....
+0:1:47.505859395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:1:47.508316046 DEBUG (1): ### AggMinReceive.receive() start #####
+0:1:47.508316046 DEBUG (1): Something received!!!  from 7
+0:1:47.508316046 DEBUG (1): posting receiveAggMinTask()!!!!
+0:1:47.508316056 DEBUG (1): ReceiveAggMinTask():received msg...
+0:1:47.508316056 DEBUG (1): ReceiveAggMinTask(): len=1
+0:1:47.508316056 DEBUG (1): receiveAggMinTask(): minVal= 43
+0:1:47.508316056 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 43
+0:1:47.508483892 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:1:47.508483892 DEBUG (7): A AggregationMin package sent... True
+0:1:47.509170510 DEBUG (3): ### AggMinReceive.receive() start #####
+0:1:47.509170510 DEBUG (3): Something received!!!  from 5
+0:1:47.509170510 DEBUG (3): posting receiveAggMinTask()!!!!
+0:1:47.509170520 DEBUG (3): ReceiveAggMinTask():received msg...
+0:1:47.509170520 DEBUG (3): ReceiveAggMinTask(): len=1
+0:1:47.509170520 DEBUG (3): receiveAggMinTask(): minVal= 15
+0:1:47.509170520 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:1:47.509338356 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:1:47.509338356 DEBUG (5): A AggregationMin package sent... True
+0:1:47.510620075 DEBUG (1): ### AggMinReceive.receive() start #####
+0:1:47.510620075 DEBUG (1): Something received!!!  from 4
+0:1:47.510620075 DEBUG (1): posting receiveAggMinTask()!!!!
+0:1:47.510620085 DEBUG (1): ReceiveAggMinTask():received msg...
+0:1:47.510620085 DEBUG (1): ReceiveAggMinTask(): len=1
+0:1:47.510620085 DEBUG (1): receiveAggMinTask(): minVal= 31
+0:1:47.510620085 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 31
+0:1:47.510787921 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:1:47.510787921 DEBUG (4): A AggregationMin package sent... True
+0:1:47.514236410 DEBUG (3): ### AggMinReceive.receive() start #####
+0:1:47.514236410 DEBUG (3): Something received!!!  from 6
+0:1:47.514236410 DEBUG (3): posting receiveAggMinTask()!!!!
+0:1:47.514236420 DEBUG (3): ReceiveAggMinTask():received msg...
+0:1:47.514236420 DEBUG (3): ReceiveAggMinTask(): len=1
+0:1:47.514236420 DEBUG (3): receiveAggMinTask(): minVal= 26
+0:1:47.514404256 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:1:47.514404256 DEBUG (6): A AggregationMin package sent... True
+0:1:47.581054697 DEBUG (2): NodeID= 2 : AggregationMin sample= 32 , agg_min= 255
+0:1:47.581054697 DEBUG (2): NodeID= 2 : AggregationMin value= 32
+0:1:47.581054697 DEBUG (2): SendAggMinTask() posted!!
+0:1:47.581054697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.581054707 DEBUG (2): SendAggMinTask(): Starting....
+0:1:47.581054707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:1:47.584533691 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:47.584533691 DEBUG (0): Something received!!!  from 2
+0:1:47.584533691 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:47.584533701 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:47.584533701 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:47.584533701 DEBUG (0): receiveAggMinTask(): minVal= 32
+0:1:47.584533701 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 32
+0:1:47.584701537 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:1:47.584701537 DEBUG (2): A AggregationMin package sent... True
+0:1:47.584960947 DEBUG (1): NodeID= 1 : AggregationMin sample= 6 , agg_min= 31
+0:1:47.584960947 DEBUG (1): NodeID= 1 : AggregationMin value= 6
+0:1:47.584960947 DEBUG (1): SendAggMinTask() posted!!
+0:1:47.584960947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.584960957 DEBUG (1): SendAggMinTask(): Starting....
+0:1:47.584960957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:1:47.586914072 DEBUG (3): NodeID= 3 : AggregationMin sample= 23 , agg_min= 15
+0:1:47.586914072 DEBUG (3): NodeID= 3 : AggregationMin value= 15
+0:1:47.586914072 DEBUG (3): SendAggMinTask() posted!!
+0:1:47.586914072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:1:47.586914082 DEBUG (3): SendAggMinTask(): Starting....
+0:1:47.586914082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:1:47.591140731 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:47.591140731 DEBUG (0): Something received!!!  from 1
+0:1:47.591140731 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:47.591140741 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:47.591140741 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:47.591140741 DEBUG (0): receiveAggMinTask(): minVal= 6
+0:1:47.591140741 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 6
+0:1:47.591308576 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:1:47.591308576 DEBUG (1): A AggregationMin package sent... True
+0:1:47.597167929 DEBUG (0): ### AggMinReceive.receive() start #####
+0:1:47.597167929 DEBUG (0): Something received!!!  from 3
+0:1:47.597167929 DEBUG (0): posting receiveAggMinTask()!!!!
+0:1:47.597167939 DEBUG (0): ReceiveAggMinTask():received msg...
+0:1:47.597167939 DEBUG (0): ReceiveAggMinTask(): len=1
+0:1:47.597167939 DEBUG (0): receiveAggMinTask(): minVal= 15
+0:1:47.597335774 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:1:47.597335774 DEBUG (3): A AggregationMin package sent... True
+0:1:47.661132822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 6
+0:1:47.661132822 DEBUG (0): ***////////||||||\\\***
+0:1:47.661132822 DEBUG (0): AGG RESULT epoch=5 MIN=1
+0:1:47.661132822 DEBUG (0): ***\\\\||||||//////***
+0:2:6.960937510 DEBUG (8): NodeID= 8 : AggregationMin sample= 24 , agg_min= 255
+0:2:6.960937510 DEBUG (8): NodeID= 8 : AggregationMin value= 24
+0:2:6.960937510 DEBUG (8): SendAggMinTask() posted!!
+0:2:6.960937510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:6.960937520 DEBUG (8): SendAggMinTask(): Starting....
+0:2:6.960937520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:2:6.968093851 DEBUG (6): ### AggMinReceive.receive() start #####
+0:2:6.968093851 DEBUG (6): Something received!!!  from 8
+0:2:6.968093851 DEBUG (6): posting receiveAggMinTask()!!!!
+0:2:6.968093861 DEBUG (6): ReceiveAggMinTask():received msg...
+0:2:6.968093861 DEBUG (6): ReceiveAggMinTask(): len=1
+0:2:6.968093861 DEBUG (6): receiveAggMinTask(): minVal= 24
+0:2:6.968093861 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 24
+0:2:6.968261696 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:2:6.968261696 DEBUG (8): A AggregationMin package sent... True
+0:2:7.031250010 DEBUG (4): NodeID= 4 : AggregationMin sample= 33 , agg_min= 255
+0:2:7.031250010 DEBUG (4): NodeID= 4 : AggregationMin value= 33
+0:2:7.031250010 DEBUG (4): SendAggMinTask() posted!!
+0:2:7.031250010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.031250020 DEBUG (4): SendAggMinTask(): Starting....
+0:2:7.031250020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:2:7.033203135 DEBUG (5): NodeID= 5 : AggregationMin sample= 13 , agg_min= 255
+0:2:7.033203135 DEBUG (5): NodeID= 5 : AggregationMin value= 13
+0:2:7.033203135 DEBUG (5): SendAggMinTask() posted!!
+0:2:7.033203135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.033203145 DEBUG (5): SendAggMinTask(): Starting....
+0:2:7.033203145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:2:7.035156260 DEBUG (6): NodeID= 6 : AggregationMin sample= 52 , agg_min= 24
+0:2:7.035156260 DEBUG (6): NodeID= 6 : AggregationMin value= 24
+0:2:7.035156260 DEBUG (6): SendAggMinTask() posted!!
+0:2:7.035156260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.035156270 DEBUG (6): SendAggMinTask(): Starting....
+0:2:7.035156270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:2:7.037109385 DEBUG (7): NodeID= 7 : AggregationMin sample= 39 , agg_min= 255
+0:2:7.037109385 DEBUG (7): NodeID= 7 : AggregationMin value= 39
+0:2:7.037109385 DEBUG (7): SendAggMinTask() posted!!
+0:2:7.037109385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.037109395 DEBUG (7): SendAggMinTask(): Starting....
+0:2:7.037109395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:2:7.038986192 DEBUG (3): ### AggMinReceive.receive() start #####
+0:2:7.038986192 DEBUG (3): Something received!!!  from 5
+0:2:7.038986192 DEBUG (3): posting receiveAggMinTask()!!!!
+0:2:7.038986202 DEBUG (3): ReceiveAggMinTask():received msg...
+0:2:7.038986202 DEBUG (3): ReceiveAggMinTask(): len=1
+0:2:7.038986202 DEBUG (3): receiveAggMinTask(): minVal= 13
+0:2:7.038986202 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 13
+0:2:7.039154038 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:2:7.039154038 DEBUG (5): A AggregationMin package sent... True
+0:2:7.041610677 DEBUG (1): ### AggMinReceive.receive() start #####
+0:2:7.041610677 DEBUG (1): Something received!!!  from 4
+0:2:7.041610677 DEBUG (1): posting receiveAggMinTask()!!!!
+0:2:7.041610687 DEBUG (1): ReceiveAggMinTask():received msg...
+0:2:7.041610687 DEBUG (1): ReceiveAggMinTask(): len=1
+0:2:7.041610687 DEBUG (1): receiveAggMinTask(): minVal= 33
+0:2:7.041610687 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 33
+0:2:7.041778523 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:2:7.041778523 DEBUG (4): A AggregationMin package sent... True
+0:2:7.042907690 DEBUG (3): ### AggMinReceive.receive() start #####
+0:2:7.042907690 DEBUG (3): Something received!!!  from 6
+0:2:7.042907690 DEBUG (3): posting receiveAggMinTask()!!!!
+0:2:7.042907700 DEBUG (3): ReceiveAggMinTask():received msg...
+0:2:7.042907700 DEBUG (3): ReceiveAggMinTask(): len=1
+0:2:7.042907700 DEBUG (3): receiveAggMinTask(): minVal= 24
+0:2:7.043075535 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:2:7.043075535 DEBUG (6): A AggregationMin package sent... True
+0:2:7.043243393 DEBUG (1): ### AggMinReceive.receive() start #####
+0:2:7.043243393 DEBUG (1): Something received!!!  from 7
+0:2:7.043243393 DEBUG (1): posting receiveAggMinTask()!!!!
+0:2:7.043243403 DEBUG (1): ReceiveAggMinTask():received msg...
+0:2:7.043243403 DEBUG (1): ReceiveAggMinTask(): len=1
+0:2:7.043243403 DEBUG (1): receiveAggMinTask(): minVal= 39
+0:2:7.043411238 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:2:7.043411238 DEBUG (7): A AggregationMin package sent... True
+0:2:7.112304697 DEBUG (2): NodeID= 2 : AggregationMin sample= 37 , agg_min= 255
+0:2:7.112304697 DEBUG (2): NodeID= 2 : AggregationMin value= 37
+0:2:7.112304697 DEBUG (2): SendAggMinTask() posted!!
+0:2:7.112304697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.112304707 DEBUG (2): SendAggMinTask(): Starting....
+0:2:7.112304707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:2:7.116210947 DEBUG (1): NodeID= 1 : AggregationMin sample= 6 , agg_min= 33
+0:2:7.116210947 DEBUG (1): NodeID= 1 : AggregationMin value= 6
+0:2:7.116210947 DEBUG (1): SendAggMinTask() posted!!
+0:2:7.116210947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.116210957 DEBUG (1): SendAggMinTask(): Starting....
+0:2:7.116210957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:2:7.117156974 DEBUG (0): ### AggMinReceive.receive() start #####
+0:2:7.117156974 DEBUG (0): Something received!!!  from 2
+0:2:7.117156974 DEBUG (0): posting receiveAggMinTask()!!!!
+0:2:7.117156984 DEBUG (0): ReceiveAggMinTask():received msg...
+0:2:7.117156984 DEBUG (0): ReceiveAggMinTask(): len=1
+0:2:7.117156984 DEBUG (0): receiveAggMinTask(): minVal= 37
+0:2:7.117156984 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 37
+0:2:7.117324820 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:2:7.117324820 DEBUG (2): A AggregationMin package sent... True
+0:2:7.118164072 DEBUG (3): NodeID= 3 : AggregationMin sample= 23 , agg_min= 13
+0:2:7.118164072 DEBUG (3): NodeID= 3 : AggregationMin value= 13
+0:2:7.118164072 DEBUG (3): SendAggMinTask() posted!!
+0:2:7.118164072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:7.118164082 DEBUG (3): SendAggMinTask(): Starting....
+0:2:7.118164082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:2:7.122879009 DEBUG (0): ### AggMinReceive.receive() start #####
+0:2:7.122879009 DEBUG (0): Something received!!!  from 1
+0:2:7.122879009 DEBUG (0): posting receiveAggMinTask()!!!!
+0:2:7.122879019 DEBUG (0): ReceiveAggMinTask():received msg...
+0:2:7.122879019 DEBUG (0): ReceiveAggMinTask(): len=1
+0:2:7.122879019 DEBUG (0): receiveAggMinTask(): minVal= 6
+0:2:7.122879019 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 6
+0:2:7.123046855 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:2:7.123046855 DEBUG (1): A AggregationMin package sent... True
+0:2:7.128234824 DEBUG (0): ### AggMinReceive.receive() start #####
+0:2:7.128234824 DEBUG (0): Something received!!!  from 3
+0:2:7.128234824 DEBUG (0): posting receiveAggMinTask()!!!!
+0:2:7.128234834 DEBUG (0): ReceiveAggMinTask():received msg...
+0:2:7.128234834 DEBUG (0): ReceiveAggMinTask(): len=1
+0:2:7.128234834 DEBUG (0): receiveAggMinTask(): minVal= 13
+0:2:7.128402670 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:2:7.128402670 DEBUG (3): A AggregationMin package sent... True
+0:2:7.192382822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 6
+0:2:7.192382822 DEBUG (0): ***////////||||||\\\***
+0:2:7.192382822 DEBUG (0): AGG RESULT epoch=6 MIN=1
+0:2:7.192382822 DEBUG (0): ***\\\\||||||//////***
+0:2:26.492187510 DEBUG (8): NodeID= 8 : AggregationMin sample= 20 , agg_min= 255
+0:2:26.492187510 DEBUG (8): NodeID= 8 : AggregationMin value= 20
+0:2:26.492187510 DEBUG (8): SendAggMinTask() posted!!
+0:2:26.492187510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.492187520 DEBUG (8): SendAggMinTask(): Starting....
+0:2:26.492187520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:2:26.499587990 DEBUG (6): ### AggMinReceive.receive() start #####
+0:2:26.499587990 DEBUG (6): Something received!!!  from 8
+0:2:26.499587990 DEBUG (6): posting receiveAggMinTask()!!!!
+0:2:26.499588000 DEBUG (6): ReceiveAggMinTask():received msg...
+0:2:26.499588000 DEBUG (6): ReceiveAggMinTask(): len=1
+0:2:26.499588000 DEBUG (6): receiveAggMinTask(): minVal= 20
+0:2:26.499588000 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 20
+0:2:26.499755836 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:2:26.499755836 DEBUG (8): A AggregationMin package sent... True
+0:2:26.562500010 DEBUG (4): NodeID= 4 : AggregationMin sample= 34 , agg_min= 255
+0:2:26.562500010 DEBUG (4): NodeID= 4 : AggregationMin value= 34
+0:2:26.562500010 DEBUG (4): SendAggMinTask() posted!!
+0:2:26.562500010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.562500020 DEBUG (4): SendAggMinTask(): Starting....
+0:2:26.562500020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:2:26.564453135 DEBUG (5): NodeID= 5 : AggregationMin sample= 13 , agg_min= 255
+0:2:26.564453135 DEBUG (5): NodeID= 5 : AggregationMin value= 13
+0:2:26.564453135 DEBUG (5): SendAggMinTask() posted!!
+0:2:26.564453135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.564453145 DEBUG (5): SendAggMinTask(): Starting....
+0:2:26.564453145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:2:26.566406260 DEBUG (6): NodeID= 6 : AggregationMin sample= 49 , agg_min= 20
+0:2:26.566406260 DEBUG (6): NodeID= 6 : AggregationMin value= 20
+0:2:26.566406260 DEBUG (6): SendAggMinTask() posted!!
+0:2:26.566406260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.566406270 DEBUG (6): SendAggMinTask(): Starting....
+0:2:26.566406270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:2:26.568359385 DEBUG (7): NodeID= 7 : AggregationMin sample= 35 , agg_min= 255
+0:2:26.568359385 DEBUG (7): NodeID= 7 : AggregationMin value= 35
+0:2:26.568359385 DEBUG (7): SendAggMinTask() posted!!
+0:2:26.568359385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.568359395 DEBUG (7): SendAggMinTask(): Starting....
+0:2:26.568359395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:2:26.572906453 DEBUG (1): ### AggMinReceive.receive() start #####
+0:2:26.572906453 DEBUG (1): Something received!!!  from 4
+0:2:26.572906453 DEBUG (1): posting receiveAggMinTask()!!!!
+0:2:26.572906463 DEBUG (1): ReceiveAggMinTask():received msg...
+0:2:26.572906463 DEBUG (1): ReceiveAggMinTask(): len=1
+0:2:26.572906463 DEBUG (1): receiveAggMinTask(): minVal= 34
+0:2:26.572906463 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 34
+0:2:26.573074299 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:2:26.573074299 DEBUG (4): A AggregationMin package sent... True
+0:2:26.573852516 DEBUG (3): ### AggMinReceive.receive() start #####
+0:2:26.573852516 DEBUG (3): Something received!!!  from 6
+0:2:26.573852516 DEBUG (3): posting receiveAggMinTask()!!!!
+0:2:26.573852526 DEBUG (3): ReceiveAggMinTask():received msg...
+0:2:26.573852526 DEBUG (3): ReceiveAggMinTask(): len=1
+0:2:26.573852526 DEBUG (3): receiveAggMinTask(): minVal= 20
+0:2:26.573852526 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 20
+0:2:26.574020361 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:2:26.574020361 DEBUG (6): A AggregationMin package sent... True
+0:2:26.576370213 DEBUG (1): ### AggMinReceive.receive() start #####
+0:2:26.576370213 DEBUG (1): Something received!!!  from 7
+0:2:26.576370213 DEBUG (1): posting receiveAggMinTask()!!!!
+0:2:26.576370223 DEBUG (1): ReceiveAggMinTask():received msg...
+0:2:26.576370223 DEBUG (1): ReceiveAggMinTask(): len=1
+0:2:26.576370223 DEBUG (1): receiveAggMinTask(): minVal= 35
+0:2:26.576538058 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:2:26.576538058 DEBUG (7): A AggregationMin package sent... True
+0:2:26.576568553 DEBUG (3): ### AggMinReceive.receive() start #####
+0:2:26.576568553 DEBUG (3): Something received!!!  from 5
+0:2:26.576568553 DEBUG (3): posting receiveAggMinTask()!!!!
+0:2:26.576568563 DEBUG (3): ReceiveAggMinTask():received msg...
+0:2:26.576568563 DEBUG (3): ReceiveAggMinTask(): len=1
+0:2:26.576568563 DEBUG (3): receiveAggMinTask(): minVal= 13
+0:2:26.576568563 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 13
+0:2:26.576736399 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:2:26.576736399 DEBUG (5): A AggregationMin package sent... True
+0:2:26.643554697 DEBUG (2): NodeID= 2 : AggregationMin sample= 33 , agg_min= 255
+0:2:26.643554697 DEBUG (2): NodeID= 2 : AggregationMin value= 33
+0:2:26.643554697 DEBUG (2): SendAggMinTask() posted!!
+0:2:26.643554697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.643554707 DEBUG (2): SendAggMinTask(): Starting....
+0:2:26.643554707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:2:26.647460947 DEBUG (1): NodeID= 1 : AggregationMin sample= 5 , agg_min= 34
+0:2:26.647460947 DEBUG (1): NodeID= 1 : AggregationMin value= 5
+0:2:26.647460947 DEBUG (1): SendAggMinTask() posted!!
+0:2:26.647460947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.647460957 DEBUG (1): SendAggMinTask(): Starting....
+0:2:26.647460957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:2:26.648742665 DEBUG (0): ### AggMinReceive.receive() start #####
+0:2:26.648742665 DEBUG (0): Something received!!!  from 2
+0:2:26.648742665 DEBUG (0): posting receiveAggMinTask()!!!!
+0:2:26.648742675 DEBUG (0): ReceiveAggMinTask():received msg...
+0:2:26.648742675 DEBUG (0): ReceiveAggMinTask(): len=1
+0:2:26.648742675 DEBUG (0): receiveAggMinTask(): minVal= 33
+0:2:26.648742675 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 33
+0:2:26.648910511 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:2:26.648910511 DEBUG (2): A AggregationMin package sent... True
+0:2:26.649414072 DEBUG (3): NodeID= 3 : AggregationMin sample= 19 , agg_min= 13
+0:2:26.649414072 DEBUG (3): NodeID= 3 : AggregationMin value= 13
+0:2:26.649414072 DEBUG (3): SendAggMinTask() posted!!
+0:2:26.649414072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:26.649414082 DEBUG (3): SendAggMinTask(): Starting....
+0:2:26.649414082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:2:26.655349717 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:2:26.655349717 DEBUG (3): A AggregationMin package sent... True
+0:2:26.655822725 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:2:26.655822725 DEBUG (1): A AggregationMin package sent... True
+0:2:26.723632822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 33
+0:2:26.723632822 DEBUG (0): ***////////||||||\\\***
+0:2:26.723632822 DEBUG (0): AGG RESULT epoch=7 MIN=1
+0:2:26.723632822 DEBUG (0): ***\\\\||||||//////***
+0:2:46.023437510 DEBUG (8): NodeID= 8 : AggregationMin sample= 19 , agg_min= 255
+0:2:46.023437510 DEBUG (8): NodeID= 8 : AggregationMin value= 19
+0:2:46.023437510 DEBUG (8): SendAggMinTask() posted!!
+0:2:46.023437510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.023437520 DEBUG (8): SendAggMinTask(): Starting....
+0:2:46.023437520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:2:46.029830916 DEBUG (6): ### AggMinReceive.receive() start #####
+0:2:46.029830916 DEBUG (6): Something received!!!  from 8
+0:2:46.029830916 DEBUG (6): posting receiveAggMinTask()!!!!
+0:2:46.029830926 DEBUG (6): ReceiveAggMinTask():received msg...
+0:2:46.029830926 DEBUG (6): ReceiveAggMinTask(): len=1
+0:2:46.029830926 DEBUG (6): receiveAggMinTask(): minVal= 19
+0:2:46.029830926 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 19
+0:2:46.029998761 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:2:46.029998761 DEBUG (8): A AggregationMin package sent... True
+0:2:46.093750010 DEBUG (4): NodeID= 4 : AggregationMin sample= 37 , agg_min= 255
+0:2:46.093750010 DEBUG (4): NodeID= 4 : AggregationMin value= 37
+0:2:46.093750010 DEBUG (4): SendAggMinTask() posted!!
+0:2:46.093750010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.093750020 DEBUG (4): SendAggMinTask(): Starting....
+0:2:46.093750020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:2:46.095703135 DEBUG (5): NodeID= 5 : AggregationMin sample= 12 , agg_min= 255
+0:2:46.095703135 DEBUG (5): NodeID= 5 : AggregationMin value= 12
+0:2:46.095703135 DEBUG (5): SendAggMinTask() posted!!
+0:2:46.095703135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.095703145 DEBUG (5): SendAggMinTask(): Starting....
+0:2:46.095703145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:2:46.097656260 DEBUG (6): NodeID= 6 : AggregationMin sample= 45 , agg_min= 19
+0:2:46.097656260 DEBUG (6): NodeID= 6 : AggregationMin value= 19
+0:2:46.097656260 DEBUG (6): SendAggMinTask() posted!!
+0:2:46.097656260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.097656270 DEBUG (6): SendAggMinTask(): Starting....
+0:2:46.097656270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:2:46.099609385 DEBUG (7): NodeID= 7 : AggregationMin sample= 39 , agg_min= 255
+0:2:46.099609385 DEBUG (7): NodeID= 7 : AggregationMin value= 39
+0:2:46.099609385 DEBUG (7): SendAggMinTask() posted!!
+0:2:46.099609385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.099609395 DEBUG (7): SendAggMinTask(): Starting....
+0:2:46.099609395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:2:46.100158685 DEBUG (3): ### AggMinReceive.receive() start #####
+0:2:46.100158685 DEBUG (3): Something received!!!  from 5
+0:2:46.100158685 DEBUG (3): posting receiveAggMinTask()!!!!
+0:2:46.100158695 DEBUG (3): ReceiveAggMinTask():received msg...
+0:2:46.100158695 DEBUG (3): ReceiveAggMinTask(): len=1
+0:2:46.100158695 DEBUG (3): receiveAggMinTask(): minVal= 12
+0:2:46.100158695 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 12
+0:2:46.100326531 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:2:46.100326531 DEBUG (5): A AggregationMin package sent... True
+0:2:46.101516721 DEBUG (3): ### AggMinReceive.receive() start #####
+0:2:46.101516721 DEBUG (3): Something received!!!  from 6
+0:2:46.101516721 DEBUG (3): posting receiveAggMinTask()!!!!
+0:2:46.101516731 DEBUG (3): ReceiveAggMinTask():received msg...
+0:2:46.101516731 DEBUG (3): ReceiveAggMinTask(): len=1
+0:2:46.101516731 DEBUG (3): receiveAggMinTask(): minVal= 19
+0:2:46.101684567 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:2:46.101684567 DEBUG (6): A AggregationMin package sent... True
+0:2:46.103515622 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:2:46.103515622 DEBUG (7): A AggregationMin package sent... True
+0:2:46.103607140 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:2:46.103607140 DEBUG (4): A AggregationMin package sent... True
+0:2:46.174804697 DEBUG (2): NodeID= 2 : AggregationMin sample= 35 , agg_min= 255
+0:2:46.174804697 DEBUG (2): NodeID= 2 : AggregationMin value= 35
+0:2:46.174804697 DEBUG (2): SendAggMinTask() posted!!
+0:2:46.174804697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.174804707 DEBUG (2): SendAggMinTask(): Starting....
+0:2:46.174804707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:2:46.177688602 DEBUG (0): ### AggMinReceive.receive() start #####
+0:2:46.177688602 DEBUG (0): Something received!!!  from 2
+0:2:46.177688602 DEBUG (0): posting receiveAggMinTask()!!!!
+0:2:46.177688612 DEBUG (0): ReceiveAggMinTask():received msg...
+0:2:46.177688612 DEBUG (0): ReceiveAggMinTask(): len=1
+0:2:46.177688612 DEBUG (0): receiveAggMinTask(): minVal= 35
+0:2:46.177688612 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 35
+0:2:46.177856447 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:2:46.177856447 DEBUG (2): A AggregationMin package sent... True
+0:2:46.178710947 DEBUG (1): NodeID= 1 : AggregationMin sample= 5 , agg_min= 255
+0:2:46.178710947 DEBUG (1): NodeID= 1 : AggregationMin value= 5
+0:2:46.178710947 DEBUG (1): SendAggMinTask() posted!!
+0:2:46.178710947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.178710957 DEBUG (1): SendAggMinTask(): Starting....
+0:2:46.178710957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:2:46.180664072 DEBUG (3): NodeID= 3 : AggregationMin sample= 20 , agg_min= 12
+0:2:46.180664072 DEBUG (3): NodeID= 3 : AggregationMin value= 12
+0:2:46.180664072 DEBUG (3): SendAggMinTask() posted!!
+0:2:46.180664072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:2:46.180664082 DEBUG (3): SendAggMinTask(): Starting....
+0:2:46.180664082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:2:46.185363762 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:2:46.185363762 DEBUG (3): A AggregationMin package sent... True
+0:2:46.185440044 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:2:46.185440044 DEBUG (1): A AggregationMin package sent... True
+0:2:46.254882822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 35
+0:2:46.254882822 DEBUG (0): ***////////||||||\\\***
+0:2:46.254882822 DEBUG (0): AGG RESULT epoch=8 MIN=1
+0:2:46.254882822 DEBUG (0): ***\\\\||||||//////***
+0:3:5.554687510 DEBUG (8): NodeID= 8 : AggregationMin sample= 19 , agg_min= 255
+0:3:5.554687510 DEBUG (8): NodeID= 8 : AggregationMin value= 19
+0:3:5.554687510 DEBUG (8): SendAggMinTask() posted!!
+0:3:5.554687510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.554687520 DEBUG (8): SendAggMinTask(): Starting....
+0:3:5.554687520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:3:5.558166504 DEBUG (6): ### AggMinReceive.receive() start #####
+0:3:5.558166504 DEBUG (6): Something received!!!  from 8
+0:3:5.558166504 DEBUG (6): posting receiveAggMinTask()!!!!
+0:3:5.558166514 DEBUG (6): ReceiveAggMinTask():received msg...
+0:3:5.558166514 DEBUG (6): ReceiveAggMinTask(): len=1
+0:3:5.558166514 DEBUG (6): receiveAggMinTask(): minVal= 19
+0:3:5.558166514 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 19
+0:3:5.558334350 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:3:5.558334350 DEBUG (8): A AggregationMin package sent... True
+0:3:5.625000010 DEBUG (4): NodeID= 4 : AggregationMin sample= 41 , agg_min= 255
+0:3:5.625000010 DEBUG (4): NodeID= 4 : AggregationMin value= 41
+0:3:5.625000010 DEBUG (4): SendAggMinTask() posted!!
+0:3:5.625000010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.625000020 DEBUG (4): SendAggMinTask(): Starting....
+0:3:5.625000020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:3:5.626953135 DEBUG (5): NodeID= 5 : AggregationMin sample= 14 , agg_min= 255
+0:3:5.626953135 DEBUG (5): NodeID= 5 : AggregationMin value= 14
+0:3:5.626953135 DEBUG (5): SendAggMinTask() posted!!
+0:3:5.626953135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.626953145 DEBUG (5): SendAggMinTask(): Starting....
+0:3:5.626953145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:3:5.628906260 DEBUG (6): NodeID= 6 : AggregationMin sample= 39 , agg_min= 19
+0:3:5.628906260 DEBUG (6): NodeID= 6 : AggregationMin value= 19
+0:3:5.628906260 DEBUG (6): SendAggMinTask() posted!!
+0:3:5.628906260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.628906270 DEBUG (6): SendAggMinTask(): Starting....
+0:3:5.628906270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:3:5.629013070 DEBUG (3): ### AggMinReceive.receive() start #####
+0:3:5.629013070 DEBUG (3): Something received!!!  from 5
+0:3:5.629013070 DEBUG (3): posting receiveAggMinTask()!!!!
+0:3:5.629013080 DEBUG (3): ReceiveAggMinTask():received msg...
+0:3:5.629013080 DEBUG (3): ReceiveAggMinTask(): len=1
+0:3:5.629013080 DEBUG (3): receiveAggMinTask(): minVal= 14
+0:3:5.629013080 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 14
+0:3:5.629180915 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:3:5.629180915 DEBUG (5): A AggregationMin package sent... True
+0:3:5.630538928 DEBUG (1): ### AggMinReceive.receive() start #####
+0:3:5.630538928 DEBUG (1): Something received!!!  from 4
+0:3:5.630538928 DEBUG (1): posting receiveAggMinTask()!!!!
+0:3:5.630538938 DEBUG (1): ReceiveAggMinTask():received msg...
+0:3:5.630538938 DEBUG (1): ReceiveAggMinTask(): len=1
+0:3:5.630538938 DEBUG (1): receiveAggMinTask(): minVal= 41
+0:3:5.630538938 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 41
+0:3:5.630706774 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:3:5.630706774 DEBUG (4): A AggregationMin package sent... True
+0:3:5.630859385 DEBUG (7): NodeID= 7 : AggregationMin sample= 37 , agg_min= 255
+0:3:5.630859385 DEBUG (7): NodeID= 7 : AggregationMin value= 37
+0:3:5.630859385 DEBUG (7): SendAggMinTask() posted!!
+0:3:5.630859385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.630859395 DEBUG (7): SendAggMinTask(): Starting....
+0:3:5.630859395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:3:5.638336147 DEBUG (3): ### AggMinReceive.receive() start #####
+0:3:5.638336147 DEBUG (3): Something received!!!  from 6
+0:3:5.638336147 DEBUG (3): posting receiveAggMinTask()!!!!
+0:3:5.638336157 DEBUG (3): ReceiveAggMinTask():received msg...
+0:3:5.638336157 DEBUG (3): ReceiveAggMinTask(): len=1
+0:3:5.638336157 DEBUG (3): receiveAggMinTask(): minVal= 19
+0:3:5.638503992 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:3:5.638503992 DEBUG (6): A AggregationMin package sent... True
+0:3:5.638717626 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:3:5.638717626 DEBUG (7): A AggregationMin package sent... True
+0:3:5.706054697 DEBUG (2): NodeID= 2 : AggregationMin sample= 41 , agg_min= 255
+0:3:5.706054697 DEBUG (2): NodeID= 2 : AggregationMin value= 41
+0:3:5.706054697 DEBUG (2): SendAggMinTask() posted!!
+0:3:5.706054697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.706054707 DEBUG (2): SendAggMinTask(): Starting....
+0:3:5.706054707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:3:5.709960947 DEBUG (1): NodeID= 1 : AggregationMin sample= 4 , agg_min= 41
+0:3:5.709960947 DEBUG (1): NodeID= 1 : AggregationMin value= 4
+0:3:5.709960947 DEBUG (1): SendAggMinTask() posted!!
+0:3:5.709960947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.709960957 DEBUG (1): SendAggMinTask(): Starting....
+0:3:5.709960957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:3:5.711914072 DEBUG (3): NodeID= 3 : AggregationMin sample= 17 , agg_min= 14
+0:3:5.711914072 DEBUG (3): NodeID= 3 : AggregationMin value= 14
+0:3:5.711914072 DEBUG (3): SendAggMinTask() posted!!
+0:3:5.711914072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:5.711914082 DEBUG (3): SendAggMinTask(): Starting....
+0:3:5.711914082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:3:5.712600690 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:5.712600690 DEBUG (0): Something received!!!  from 2
+0:3:5.712600690 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:5.712600700 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:5.712600700 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:5.712600700 DEBUG (0): receiveAggMinTask(): minVal= 41
+0:3:5.712600700 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 41
+0:3:5.712768535 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:3:5.712768535 DEBUG (2): A AggregationMin package sent... True
+0:3:5.714202876 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:5.714202876 DEBUG (0): Something received!!!  from 1
+0:3:5.714202876 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:5.714202886 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:5.714202886 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:5.714202886 DEBUG (0): receiveAggMinTask(): minVal= 4
+0:3:5.714202886 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 4
+0:3:5.714370721 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:3:5.714370721 DEBUG (1): A AggregationMin package sent... True
+0:3:5.720825163 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:5.720825163 DEBUG (0): Something received!!!  from 3
+0:3:5.720825163 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:5.720825173 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:5.720825173 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:5.720825173 DEBUG (0): receiveAggMinTask(): minVal= 14
+0:3:5.720993009 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:3:5.720993009 DEBUG (3): A AggregationMin package sent... True
+0:3:5.786132822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 4
+0:3:5.786132822 DEBUG (0): ***////////||||||\\\***
+0:3:5.786132822 DEBUG (0): AGG RESULT epoch=9 MIN=1
+0:3:5.786132822 DEBUG (0): ***\\\\||||||//////***
+0:3:25.085937510 DEBUG (8): NodeID= 8 : AggregationMin sample= 15 , agg_min= 255
+0:3:25.085937510 DEBUG (8): NodeID= 8 : AggregationMin value= 15
+0:3:25.085937510 DEBUG (8): SendAggMinTask() posted!!
+0:3:25.085937510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.085937520 DEBUG (8): SendAggMinTask(): Starting....
+0:3:25.085937520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:3:25.094390840 DEBUG (6): ### AggMinReceive.receive() start #####
+0:3:25.094390840 DEBUG (6): Something received!!!  from 8
+0:3:25.094390840 DEBUG (6): posting receiveAggMinTask()!!!!
+0:3:25.094390850 DEBUG (6): ReceiveAggMinTask():received msg...
+0:3:25.094390850 DEBUG (6): ReceiveAggMinTask(): len=1
+0:3:25.094390850 DEBUG (6): receiveAggMinTask(): minVal= 15
+0:3:25.094390850 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:3:25.094558686 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:3:25.094558686 DEBUG (8): A AggregationMin package sent... True
+0:3:25.156250010 DEBUG (4): NodeID= 4 : AggregationMin sample= 38 , agg_min= 255
+0:3:25.156250010 DEBUG (4): NodeID= 4 : AggregationMin value= 38
+0:3:25.156250010 DEBUG (4): SendAggMinTask() posted!!
+0:3:25.156250010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.156250020 DEBUG (4): SendAggMinTask(): Starting....
+0:3:25.156250020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:3:25.158203135 DEBUG (5): NodeID= 5 : AggregationMin sample= 14 , agg_min= 255
+0:3:25.158203135 DEBUG (5): NodeID= 5 : AggregationMin value= 14
+0:3:25.158203135 DEBUG (5): SendAggMinTask() posted!!
+0:3:25.158203135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.158203145 DEBUG (5): SendAggMinTask(): Starting....
+0:3:25.158203145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:3:25.158325203 DEBUG (1): ### AggMinReceive.receive() start #####
+0:3:25.158325203 DEBUG (1): Something received!!!  from 4
+0:3:25.158325203 DEBUG (1): posting receiveAggMinTask()!!!!
+0:3:25.158325213 DEBUG (1): ReceiveAggMinTask():received msg...
+0:3:25.158325213 DEBUG (1): ReceiveAggMinTask(): len=1
+0:3:25.158325213 DEBUG (1): receiveAggMinTask(): minVal= 38
+0:3:25.158325213 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 38
+0:3:25.158493049 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:3:25.158493049 DEBUG (4): A AggregationMin package sent... True
+0:3:25.160156260 DEBUG (6): NodeID= 6 : AggregationMin sample= 34 , agg_min= 15
+0:3:25.160156260 DEBUG (6): NodeID= 6 : AggregationMin value= 15
+0:3:25.160156260 DEBUG (6): SendAggMinTask() posted!!
+0:3:25.160156260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.160156270 DEBUG (6): SendAggMinTask(): Starting....
+0:3:25.160156270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:3:25.162109385 DEBUG (7): NodeID= 7 : AggregationMin sample= 42 , agg_min= 255
+0:3:25.162109385 DEBUG (7): NodeID= 7 : AggregationMin value= 42
+0:3:25.162109385 DEBUG (7): SendAggMinTask() posted!!
+0:3:25.162109385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.162109395 DEBUG (7): SendAggMinTask(): Starting....
+0:3:25.162109395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:3:25.166366573 DEBUG (1): ### AggMinReceive.receive() start #####
+0:3:25.166366573 DEBUG (1): Something received!!!  from 7
+0:3:25.166366573 DEBUG (1): posting receiveAggMinTask()!!!!
+0:3:25.166366583 DEBUG (1): ReceiveAggMinTask():received msg...
+0:3:25.166366583 DEBUG (1): ReceiveAggMinTask(): len=1
+0:3:25.166366583 DEBUG (1): receiveAggMinTask(): minVal= 42
+0:3:25.166534418 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:3:25.166534418 DEBUG (7): A AggregationMin package sent... True
+0:3:25.166610689 DEBUG (3): ### AggMinReceive.receive() start #####
+0:3:25.166610689 DEBUG (3): Something received!!!  from 5
+0:3:25.166610689 DEBUG (3): posting receiveAggMinTask()!!!!
+0:3:25.166610699 DEBUG (3): ReceiveAggMinTask():received msg...
+0:3:25.166610699 DEBUG (3): ReceiveAggMinTask(): len=1
+0:3:25.166610699 DEBUG (3): receiveAggMinTask(): minVal= 14
+0:3:25.166610699 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 14
+0:3:25.166778534 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:3:25.166778534 DEBUG (5): A AggregationMin package sent... True
+0:3:25.168289157 DEBUG (3): ### AggMinReceive.receive() start #####
+0:3:25.168289157 DEBUG (3): Something received!!!  from 6
+0:3:25.168289157 DEBUG (3): posting receiveAggMinTask()!!!!
+0:3:25.168289167 DEBUG (3): ReceiveAggMinTask():received msg...
+0:3:25.168289167 DEBUG (3): ReceiveAggMinTask(): len=1
+0:3:25.168289167 DEBUG (3): receiveAggMinTask(): minVal= 15
+0:3:25.168457003 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:3:25.168457003 DEBUG (6): A AggregationMin package sent... True
+0:3:25.237304697 DEBUG (2): NodeID= 2 : AggregationMin sample= 43 , agg_min= 255
+0:3:25.237304697 DEBUG (2): NodeID= 2 : AggregationMin value= 43
+0:3:25.237304697 DEBUG (2): SendAggMinTask() posted!!
+0:3:25.237304697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.237304707 DEBUG (2): SendAggMinTask(): Starting....
+0:3:25.237304707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:3:25.240112308 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:25.240112308 DEBUG (0): Something received!!!  from 2
+0:3:25.240112308 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:25.240112318 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:25.240112318 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:25.240112318 DEBUG (0): receiveAggMinTask(): minVal= 43
+0:3:25.240112318 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 43
+0:3:25.240280154 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:3:25.240280154 DEBUG (2): A AggregationMin package sent... True
+0:3:25.241210947 DEBUG (1): NodeID= 1 : AggregationMin sample= 3 , agg_min= 38
+0:3:25.241210947 DEBUG (1): NodeID= 1 : AggregationMin value= 3
+0:3:25.241210947 DEBUG (1): SendAggMinTask() posted!!
+0:3:25.241210947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.241210957 DEBUG (1): SendAggMinTask(): Starting....
+0:3:25.241210957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:3:25.243164072 DEBUG (3): NodeID= 3 : AggregationMin sample= 15 , agg_min= 14
+0:3:25.243164072 DEBUG (3): NodeID= 3 : AggregationMin value= 14
+0:3:25.243164072 DEBUG (3): SendAggMinTask() posted!!
+0:3:25.243164072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:25.243164082 DEBUG (3): SendAggMinTask(): Starting....
+0:3:25.243164082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:3:25.245147713 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:25.245147713 DEBUG (0): Something received!!!  from 3
+0:3:25.245147713 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:25.245147723 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:25.245147723 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:25.245147723 DEBUG (0): receiveAggMinTask(): minVal= 14
+0:3:25.245147723 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 14
+0:3:25.245315559 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:3:25.245315559 DEBUG (3): A AggregationMin package sent... True
+0:3:25.246353139 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:25.246353139 DEBUG (0): Something received!!!  from 1
+0:3:25.246353139 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:25.246353149 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:25.246353149 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:25.246353149 DEBUG (0): receiveAggMinTask(): minVal= 3
+0:3:25.246353149 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 3
+0:3:25.246520985 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:3:25.246520985 DEBUG (1): A AggregationMin package sent... True
+0:3:25.317382822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 3
+0:3:25.317382822 DEBUG (0): ***////////||||||\\\***
+0:3:25.317382822 DEBUG (0): AGG RESULT epoch=10 MIN=1
+0:3:25.317382822 DEBUG (0): ***\\\\||||||//////***
+0:3:44.617187510 DEBUG (8): NodeID= 8 : AggregationMin sample= 15 , agg_min= 255
+0:3:44.617187510 DEBUG (8): NodeID= 8 : AggregationMin value= 15
+0:3:44.617187510 DEBUG (8): SendAggMinTask() posted!!
+0:3:44.617187510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.617187520 DEBUG (8): SendAggMinTask(): Starting....
+0:3:44.617187520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:3:44.626800501 DEBUG (6): ### AggMinReceive.receive() start #####
+0:3:44.626800501 DEBUG (6): Something received!!!  from 8
+0:3:44.626800501 DEBUG (6): posting receiveAggMinTask()!!!!
+0:3:44.626800511 DEBUG (6): ReceiveAggMinTask():received msg...
+0:3:44.626800511 DEBUG (6): ReceiveAggMinTask(): len=1
+0:3:44.626800511 DEBUG (6): receiveAggMinTask(): minVal= 15
+0:3:44.626800511 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:3:44.626968347 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:3:44.626968347 DEBUG (8): A AggregationMin package sent... True
+0:3:44.687500010 DEBUG (4): NodeID= 4 : AggregationMin sample= 44 , agg_min= 255
+0:3:44.687500010 DEBUG (4): NodeID= 4 : AggregationMin value= 44
+0:3:44.687500010 DEBUG (4): SendAggMinTask() posted!!
+0:3:44.687500010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.687500020 DEBUG (4): SendAggMinTask(): Starting....
+0:3:44.687500020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:3:44.689453135 DEBUG (5): NodeID= 5 : AggregationMin sample= 11 , agg_min= 255
+0:3:44.689453135 DEBUG (5): NodeID= 5 : AggregationMin value= 11
+0:3:44.689453135 DEBUG (5): SendAggMinTask() posted!!
+0:3:44.689453135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.689453145 DEBUG (5): SendAggMinTask(): Starting....
+0:3:44.689453145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:3:44.691406260 DEBUG (6): NodeID= 6 : AggregationMin sample= 30 , agg_min= 15
+0:3:44.691406260 DEBUG (6): NodeID= 6 : AggregationMin value= 15
+0:3:44.691406260 DEBUG (6): SendAggMinTask() posted!!
+0:3:44.691406260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.691406270 DEBUG (6): SendAggMinTask(): Starting....
+0:3:44.691406270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:3:44.692413321 DEBUG (1): ### AggMinReceive.receive() start #####
+0:3:44.692413321 DEBUG (1): Something received!!!  from 4
+0:3:44.692413321 DEBUG (1): posting receiveAggMinTask()!!!!
+0:3:44.692413331 DEBUG (1): ReceiveAggMinTask():received msg...
+0:3:44.692413331 DEBUG (1): ReceiveAggMinTask(): len=1
+0:3:44.692413331 DEBUG (1): receiveAggMinTask(): minVal= 44
+0:3:44.692413331 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 44
+0:3:44.692581167 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:3:44.692581167 DEBUG (4): A AggregationMin package sent... True
+0:3:44.693359385 DEBUG (7): NodeID= 7 : AggregationMin sample= 40 , agg_min= 255
+0:3:44.693359385 DEBUG (7): NodeID= 7 : AggregationMin value= 40
+0:3:44.693359385 DEBUG (7): SendAggMinTask() posted!!
+0:3:44.693359385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.693359395 DEBUG (7): SendAggMinTask(): Starting....
+0:3:44.693359395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:3:44.694366458 DEBUG (3): ### AggMinReceive.receive() start #####
+0:3:44.694366458 DEBUG (3): Something received!!!  from 6
+0:3:44.694366458 DEBUG (3): posting receiveAggMinTask()!!!!
+0:3:44.694366468 DEBUG (3): ReceiveAggMinTask():received msg...
+0:3:44.694366468 DEBUG (3): ReceiveAggMinTask(): len=1
+0:3:44.694366468 DEBUG (3): receiveAggMinTask(): minVal= 15
+0:3:44.694366468 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:3:44.694534304 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:3:44.694534304 DEBUG (6): A AggregationMin package sent... True
+0:3:44.695754988 DEBUG (3): ### AggMinReceive.receive() start #####
+0:3:44.695754988 DEBUG (3): Something received!!!  from 5
+0:3:44.695754988 DEBUG (3): posting receiveAggMinTask()!!!!
+0:3:44.695754998 DEBUG (3): ReceiveAggMinTask():received msg...
+0:3:44.695754998 DEBUG (3): ReceiveAggMinTask(): len=1
+0:3:44.695754998 DEBUG (3): receiveAggMinTask(): minVal= 11
+0:3:44.695754998 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 11
+0:3:44.695922834 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:3:44.695922834 DEBUG (5): A AggregationMin package sent... True
+0:3:44.699539169 DEBUG (1): ### AggMinReceive.receive() start #####
+0:3:44.699539169 DEBUG (1): Something received!!!  from 7
+0:3:44.699539169 DEBUG (1): posting receiveAggMinTask()!!!!
+0:3:44.699539179 DEBUG (1): ReceiveAggMinTask():received msg...
+0:3:44.699539179 DEBUG (1): ReceiveAggMinTask(): len=1
+0:3:44.699539179 DEBUG (1): receiveAggMinTask(): minVal= 40
+0:3:44.699539179 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 40
+0:3:44.699707014 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:3:44.699707014 DEBUG (7): A AggregationMin package sent... True
+0:3:44.768554697 DEBUG (2): NodeID= 2 : AggregationMin sample= 48 , agg_min= 255
+0:3:44.768554697 DEBUG (2): NodeID= 2 : AggregationMin value= 48
+0:3:44.768554697 DEBUG (2): SendAggMinTask() posted!!
+0:3:44.768554697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.768554707 DEBUG (2): SendAggMinTask(): Starting....
+0:3:44.768554707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:3:44.772460947 DEBUG (1): NodeID= 1 : AggregationMin sample= 2 , agg_min= 40
+0:3:44.772460947 DEBUG (1): NodeID= 1 : AggregationMin value= 2
+0:3:44.772460947 DEBUG (1): SendAggMinTask() posted!!
+0:3:44.772460947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.772460957 DEBUG (1): SendAggMinTask(): Starting....
+0:3:44.772460957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:3:44.774414072 DEBUG (3): NodeID= 3 : AggregationMin sample= 17 , agg_min= 11
+0:3:44.774414072 DEBUG (3): NodeID= 3 : AggregationMin value= 11
+0:3:44.774414072 DEBUG (3): SendAggMinTask() posted!!
+0:3:44.774414072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:3:44.774414082 DEBUG (3): SendAggMinTask(): Starting....
+0:3:44.774414082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:3:44.776199316 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:44.776199316 DEBUG (0): Something received!!!  from 2
+0:3:44.776199316 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:44.776199326 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:44.776199326 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:44.776199326 DEBUG (0): receiveAggMinTask(): minVal= 48
+0:3:44.776199326 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 48
+0:3:44.776367162 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:3:44.776367162 DEBUG (2): A AggregationMin package sent... True
+0:3:44.781127899 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:44.781127899 DEBUG (0): Something received!!!  from 1
+0:3:44.781127899 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:44.781127909 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:44.781127909 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:44.781127909 DEBUG (0): receiveAggMinTask(): minVal= 2
+0:3:44.781127909 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 2
+0:3:44.781295744 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:3:44.781295744 DEBUG (1): A AggregationMin package sent... True
+0:3:44.785156207 DEBUG (0): ### AggMinReceive.receive() start #####
+0:3:44.785156207 DEBUG (0): Something received!!!  from 3
+0:3:44.785156207 DEBUG (0): posting receiveAggMinTask()!!!!
+0:3:44.785156217 DEBUG (0): ReceiveAggMinTask():received msg...
+0:3:44.785156217 DEBUG (0): ReceiveAggMinTask(): len=1
+0:3:44.785156217 DEBUG (0): receiveAggMinTask(): minVal= 11
+0:3:44.785324053 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:3:44.785324053 DEBUG (3): A AggregationMin package sent... True
+0:3:44.848632822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 2
+0:3:44.848632822 DEBUG (0): ***////////||||||\\\***
+0:3:44.848632822 DEBUG (0): AGG RESULT epoch=11 MIN=1
+0:3:44.848632822 DEBUG (0): ***\\\\||||||//////***
+0:4:4.148437510 DEBUG (8): NodeID= 8 : AggregationMin sample= 17 , agg_min= 255
+0:4:4.148437510 DEBUG (8): NodeID= 8 : AggregationMin value= 17
+0:4:4.148437510 DEBUG (8): SendAggMinTask() posted!!
+0:4:4.148437510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.148437520 DEBUG (8): SendAggMinTask(): Starting....
+0:4:4.148437520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:4:4.158309899 DEBUG (6): ### AggMinReceive.receive() start #####
+0:4:4.158309899 DEBUG (6): Something received!!!  from 8
+0:4:4.158309899 DEBUG (6): posting receiveAggMinTask()!!!!
+0:4:4.158309909 DEBUG (6): ReceiveAggMinTask():received msg...
+0:4:4.158309909 DEBUG (6): ReceiveAggMinTask(): len=1
+0:4:4.158309909 DEBUG (6): receiveAggMinTask(): minVal= 17
+0:4:4.158309909 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 17
+0:4:4.158477745 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:4:4.158477745 DEBUG (8): A AggregationMin package sent... True
+0:4:4.218750010 DEBUG (4): NodeID= 4 : AggregationMin sample= 48 , agg_min= 255
+0:4:4.218750010 DEBUG (4): NodeID= 4 : AggregationMin value= 48
+0:4:4.218750010 DEBUG (4): SendAggMinTask() posted!!
+0:4:4.218750010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.218750020 DEBUG (4): SendAggMinTask(): Starting....
+0:4:4.218750020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:4:4.220703135 DEBUG (5): NodeID= 5 : AggregationMin sample= 11 , agg_min= 255
+0:4:4.220703135 DEBUG (5): NodeID= 5 : AggregationMin value= 11
+0:4:4.220703135 DEBUG (5): SendAggMinTask() posted!!
+0:4:4.220703135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.220703145 DEBUG (5): SendAggMinTask(): Starting....
+0:4:4.220703145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:4:4.222656260 DEBUG (6): NodeID= 6 : AggregationMin sample= 30 , agg_min= 17
+0:4:4.222656260 DEBUG (6): NodeID= 6 : AggregationMin value= 17
+0:4:4.222656260 DEBUG (6): SendAggMinTask() posted!!
+0:4:4.222656260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.222656270 DEBUG (6): SendAggMinTask(): Starting....
+0:4:4.222656270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:4:4.224609385 DEBUG (7): NodeID= 7 : AggregationMin sample= 32 , agg_min= 255
+0:4:4.224609385 DEBUG (7): NodeID= 7 : AggregationMin value= 32
+0:4:4.224609385 DEBUG (7): SendAggMinTask() posted!!
+0:4:4.224609385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.224609395 DEBUG (7): SendAggMinTask(): Starting....
+0:4:4.224609395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:4:4.226547239 DEBUG (3): ### AggMinReceive.receive() start #####
+0:4:4.226547239 DEBUG (3): Something received!!!  from 6
+0:4:4.226547239 DEBUG (3): posting receiveAggMinTask()!!!!
+0:4:4.226547249 DEBUG (3): ReceiveAggMinTask():received msg...
+0:4:4.226547249 DEBUG (3): ReceiveAggMinTask(): len=1
+0:4:4.226547249 DEBUG (3): receiveAggMinTask(): minVal= 17
+0:4:4.226547249 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 17
+0:4:4.226715084 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:4:4.226715084 DEBUG (6): A AggregationMin package sent... True
+0:4:4.227828946 DEBUG (1): ### AggMinReceive.receive() start #####
+0:4:4.227828946 DEBUG (1): Something received!!!  from 4
+0:4:4.227828946 DEBUG (1): posting receiveAggMinTask()!!!!
+0:4:4.227828956 DEBUG (1): ReceiveAggMinTask():received msg...
+0:4:4.227828956 DEBUG (1): ReceiveAggMinTask(): len=1
+0:4:4.227828956 DEBUG (1): receiveAggMinTask(): minVal= 48
+0:4:4.227828956 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 48
+0:4:4.227996792 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:4:4.227996792 DEBUG (4): A AggregationMin package sent... True
+0:4:4.229415886 DEBUG (1): ### AggMinReceive.receive() start #####
+0:4:4.229415886 DEBUG (1): Something received!!!  from 7
+0:4:4.229415886 DEBUG (1): posting receiveAggMinTask()!!!!
+0:4:4.229415896 DEBUG (1): ReceiveAggMinTask():received msg...
+0:4:4.229415896 DEBUG (1): ReceiveAggMinTask(): len=1
+0:4:4.229415896 DEBUG (1): receiveAggMinTask(): minVal= 32
+0:4:4.229415896 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 32
+0:4:4.229583731 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:4:4.229583731 DEBUG (7): A AggregationMin package sent... True
+0:4:4.230956991 DEBUG (3): ### AggMinReceive.receive() start #####
+0:4:4.230956991 DEBUG (3): Something received!!!  from 5
+0:4:4.230956991 DEBUG (3): posting receiveAggMinTask()!!!!
+0:4:4.230957001 DEBUG (3): ReceiveAggMinTask():received msg...
+0:4:4.230957001 DEBUG (3): ReceiveAggMinTask(): len=1
+0:4:4.230957001 DEBUG (3): receiveAggMinTask(): minVal= 11
+0:4:4.230957001 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 11
+0:4:4.231124837 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:4:4.231124837 DEBUG (5): A AggregationMin package sent... True
+0:4:4.299804697 DEBUG (2): NodeID= 2 : AggregationMin sample= 40 , agg_min= 255
+0:4:4.299804697 DEBUG (2): NodeID= 2 : AggregationMin value= 40
+0:4:4.299804697 DEBUG (2): SendAggMinTask() posted!!
+0:4:4.299804697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.299804707 DEBUG (2): SendAggMinTask(): Starting....
+0:4:4.299804707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:4:4.303710947 DEBUG (1): NodeID= 1 : AggregationMin sample= 2 , agg_min= 32
+0:4:4.303710947 DEBUG (1): NodeID= 1 : AggregationMin value= 2
+0:4:4.303710947 DEBUG (1): SendAggMinTask() posted!!
+0:4:4.303710947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.303710957 DEBUG (1): SendAggMinTask(): Starting....
+0:4:4.303710957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:4:4.305664072 DEBUG (3): NodeID= 3 : AggregationMin sample= 13 , agg_min= 11
+0:4:4.305664072 DEBUG (3): NodeID= 3 : AggregationMin value= 11
+0:4:4.305664072 DEBUG (3): SendAggMinTask() posted!!
+0:4:4.305664072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:4.305664082 DEBUG (3): SendAggMinTask(): Starting....
+0:4:4.305664082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:4:4.307800289 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:4:4.307800289 DEBUG (1): A AggregationMin package sent... True
+0:4:4.308517459 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:4:4.308517459 DEBUG (3): A AggregationMin package sent... True
+0:4:4.311599682 DEBUG (0): ### AggMinReceive.receive() start #####
+0:4:4.311599682 DEBUG (0): Something received!!!  from 2
+0:4:4.311599682 DEBUG (0): posting receiveAggMinTask()!!!!
+0:4:4.311599692 DEBUG (0): ReceiveAggMinTask():received msg...
+0:4:4.311599692 DEBUG (0): ReceiveAggMinTask(): len=1
+0:4:4.311599692 DEBUG (0): receiveAggMinTask(): minVal= 40
+0:4:4.311599692 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 40
+0:4:4.311767528 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:4:4.311767528 DEBUG (2): A AggregationMin package sent... True
+0:4:4.379882822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 40
+0:4:4.379882822 DEBUG (0): ***////////||||||\\\***
+0:4:4.379882822 DEBUG (0): AGG RESULT epoch=12 MIN=1
+0:4:4.379882822 DEBUG (0): ***\\\\||||||//////***
+0:4:23.679687510 DEBUG (8): NodeID= 8 : AggregationMin sample= 19 , agg_min= 255
+0:4:23.679687510 DEBUG (8): NodeID= 8 : AggregationMin value= 19
+0:4:23.679687510 DEBUG (8): SendAggMinTask() posted!!
+0:4:23.679687510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.679687520 DEBUG (8): SendAggMinTask(): Starting....
+0:4:23.679687520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:4:23.687515233 DEBUG (6): ### AggMinReceive.receive() start #####
+0:4:23.687515233 DEBUG (6): Something received!!!  from 8
+0:4:23.687515233 DEBUG (6): posting receiveAggMinTask()!!!!
+0:4:23.687515243 DEBUG (6): ReceiveAggMinTask():received msg...
+0:4:23.687515243 DEBUG (6): ReceiveAggMinTask(): len=1
+0:4:23.687515243 DEBUG (6): receiveAggMinTask(): minVal= 19
+0:4:23.687515243 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 19
+0:4:23.687683079 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:4:23.687683079 DEBUG (8): A AggregationMin package sent... True
+0:4:23.750000010 DEBUG (4): NodeID= 4 : AggregationMin sample= 46 , agg_min= 255
+0:4:23.750000010 DEBUG (4): NodeID= 4 : AggregationMin value= 46
+0:4:23.750000010 DEBUG (4): SendAggMinTask() posted!!
+0:4:23.750000010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.750000020 DEBUG (4): SendAggMinTask(): Starting....
+0:4:23.750000020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:4:23.751953135 DEBUG (5): NodeID= 5 : AggregationMin sample= 12 , agg_min= 255
+0:4:23.751953135 DEBUG (5): NodeID= 5 : AggregationMin value= 12
+0:4:23.751953135 DEBUG (5): SendAggMinTask() posted!!
+0:4:23.751953135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.751953145 DEBUG (5): SendAggMinTask(): Starting....
+0:4:23.751953145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:4:23.752975466 DEBUG (1): ### AggMinReceive.receive() start #####
+0:4:23.752975466 DEBUG (1): Something received!!!  from 4
+0:4:23.752975466 DEBUG (1): posting receiveAggMinTask()!!!!
+0:4:23.752975476 DEBUG (1): ReceiveAggMinTask():received msg...
+0:4:23.752975476 DEBUG (1): ReceiveAggMinTask(): len=1
+0:4:23.752975476 DEBUG (1): receiveAggMinTask(): minVal= 46
+0:4:23.752975476 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 46
+0:4:23.753143312 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:4:23.753143312 DEBUG (4): A AggregationMin package sent... True
+0:4:23.753906260 DEBUG (6): NodeID= 6 : AggregationMin sample= 31 , agg_min= 19
+0:4:23.753906260 DEBUG (6): NodeID= 6 : AggregationMin value= 19
+0:4:23.753906260 DEBUG (6): SendAggMinTask() posted!!
+0:4:23.753906260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.753906270 DEBUG (6): SendAggMinTask(): Starting....
+0:4:23.753906270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:4:23.754852298 DEBUG (3): ### AggMinReceive.receive() start #####
+0:4:23.754852298 DEBUG (3): Something received!!!  from 5
+0:4:23.754852298 DEBUG (3): posting receiveAggMinTask()!!!!
+0:4:23.754852308 DEBUG (3): ReceiveAggMinTask():received msg...
+0:4:23.754852308 DEBUG (3): ReceiveAggMinTask(): len=1
+0:4:23.754852308 DEBUG (3): receiveAggMinTask(): minVal= 12
+0:4:23.754852308 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 12
+0:4:23.755020144 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:4:23.755020144 DEBUG (5): A AggregationMin package sent... True
+0:4:23.755859385 DEBUG (7): NodeID= 7 : AggregationMin sample= 30 , agg_min= 255
+0:4:23.755859385 DEBUG (7): NodeID= 7 : AggregationMin value= 30
+0:4:23.755859385 DEBUG (7): SendAggMinTask() posted!!
+0:4:23.755859385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.755859395 DEBUG (7): SendAggMinTask(): Starting....
+0:4:23.755859395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:4:23.756805423 DEBUG (3): ### AggMinReceive.receive() start #####
+0:4:23.756805423 DEBUG (3): Something received!!!  from 6
+0:4:23.756805423 DEBUG (3): posting receiveAggMinTask()!!!!
+0:4:23.756805433 DEBUG (3): ReceiveAggMinTask():received msg...
+0:4:23.756805433 DEBUG (3): ReceiveAggMinTask(): len=1
+0:4:23.756805433 DEBUG (3): receiveAggMinTask(): minVal= 19
+0:4:23.756973269 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:4:23.756973269 DEBUG (6): A AggregationMin package sent... True
+0:4:23.761077871 DEBUG (1): ### AggMinReceive.receive() start #####
+0:4:23.761077871 DEBUG (1): Something received!!!  from 7
+0:4:23.761077871 DEBUG (1): posting receiveAggMinTask()!!!!
+0:4:23.761077881 DEBUG (1): ReceiveAggMinTask():received msg...
+0:4:23.761077881 DEBUG (1): ReceiveAggMinTask(): len=1
+0:4:23.761077881 DEBUG (1): receiveAggMinTask(): minVal= 30
+0:4:23.761077881 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 30
+0:4:23.761245716 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:4:23.761245716 DEBUG (7): A AggregationMin package sent... True
+0:4:23.831054697 DEBUG (2): NodeID= 2 : AggregationMin sample= 32 , agg_min= 255
+0:4:23.831054697 DEBUG (2): NodeID= 2 : AggregationMin value= 32
+0:4:23.831054697 DEBUG (2): SendAggMinTask() posted!!
+0:4:23.831054697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.831054707 DEBUG (2): SendAggMinTask(): Starting....
+0:4:23.831054707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:4:23.834854124 DEBUG (0): ### AggMinReceive.receive() start #####
+0:4:23.834854124 DEBUG (0): Something received!!!  from 2
+0:4:23.834854124 DEBUG (0): posting receiveAggMinTask()!!!!
+0:4:23.834854134 DEBUG (0): ReceiveAggMinTask():received msg...
+0:4:23.834854134 DEBUG (0): ReceiveAggMinTask(): len=1
+0:4:23.834854134 DEBUG (0): receiveAggMinTask(): minVal= 32
+0:4:23.834854134 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 32
+0:4:23.834960947 DEBUG (1): NodeID= 1 : AggregationMin sample= 2 , agg_min= 30
+0:4:23.834960947 DEBUG (1): NodeID= 1 : AggregationMin value= 2
+0:4:23.834960947 DEBUG (1): SendAggMinTask() posted!!
+0:4:23.834960947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.834960957 DEBUG (1): SendAggMinTask(): Starting....
+0:4:23.834960957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:4:23.835021969 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:4:23.835021969 DEBUG (2): A AggregationMin package sent... True
+0:4:23.836914072 DEBUG (3): NodeID= 3 : AggregationMin sample= 12 , agg_min= 12
+0:4:23.836914072 DEBUG (3): NodeID= 3 : AggregationMin value= 12
+0:4:23.836914072 DEBUG (3): SendAggMinTask() posted!!
+0:4:23.836914072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:23.836914082 DEBUG (3): SendAggMinTask(): Starting....
+0:4:23.836914082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:4:23.838531505 DEBUG (0): ### AggMinReceive.receive() start #####
+0:4:23.838531505 DEBUG (0): Something received!!!  from 3
+0:4:23.838531505 DEBUG (0): posting receiveAggMinTask()!!!!
+0:4:23.838531515 DEBUG (0): ReceiveAggMinTask():received msg...
+0:4:23.838531515 DEBUG (0): ReceiveAggMinTask(): len=1
+0:4:23.838531515 DEBUG (0): receiveAggMinTask(): minVal= 12
+0:4:23.838531515 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 12
+0:4:23.838699350 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:4:23.838699350 DEBUG (3): A AggregationMin package sent... True
+0:4:23.844436610 DEBUG (0): ### AggMinReceive.receive() start #####
+0:4:23.844436610 DEBUG (0): Something received!!!  from 1
+0:4:23.844436610 DEBUG (0): posting receiveAggMinTask()!!!!
+0:4:23.844436620 DEBUG (0): ReceiveAggMinTask():received msg...
+0:4:23.844436620 DEBUG (0): ReceiveAggMinTask(): len=1
+0:4:23.844436620 DEBUG (0): receiveAggMinTask(): minVal= 2
+0:4:23.844436620 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 2
+0:4:23.844604456 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:4:23.844604456 DEBUG (1): A AggregationMin package sent... True
+0:4:23.911132822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 2
+0:4:23.911132822 DEBUG (0): ***////////||||||\\\***
+0:4:23.911132822 DEBUG (0): AGG RESULT epoch=13 MIN=1
+0:4:23.911132822 DEBUG (0): ***\\\\||||||//////***
+0:4:43.210937510 DEBUG (8): NodeID= 8 : AggregationMin sample= 20 , agg_min= 255
+0:4:43.210937510 DEBUG (8): NodeID= 8 : AggregationMin value= 20
+0:4:43.210937510 DEBUG (8): SendAggMinTask() posted!!
+0:4:43.210937510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.210937520 DEBUG (8): SendAggMinTask(): Starting....
+0:4:43.210937520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:4:43.212539684 DEBUG (6): ### AggMinReceive.receive() start #####
+0:4:43.212539684 DEBUG (6): Something received!!!  from 8
+0:4:43.212539684 DEBUG (6): posting receiveAggMinTask()!!!!
+0:4:43.212539694 DEBUG (6): ReceiveAggMinTask():received msg...
+0:4:43.212539694 DEBUG (6): ReceiveAggMinTask(): len=1
+0:4:43.212539694 DEBUG (6): receiveAggMinTask(): minVal= 20
+0:4:43.212539694 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 20
+0:4:43.212707530 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:4:43.212707530 DEBUG (8): A AggregationMin package sent... True
+0:4:43.281250010 DEBUG (4): NodeID= 4 : AggregationMin sample= 44 , agg_min= 255
+0:4:43.281250010 DEBUG (4): NodeID= 4 : AggregationMin value= 44
+0:4:43.281250010 DEBUG (4): SendAggMinTask() posted!!
+0:4:43.281250010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.281250020 DEBUG (4): SendAggMinTask(): Starting....
+0:4:43.281250020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:4:43.283203135 DEBUG (5): NodeID= 5 : AggregationMin sample= 11 , agg_min= 255
+0:4:43.283203135 DEBUG (5): NodeID= 5 : AggregationMin value= 11
+0:4:43.283203135 DEBUG (5): SendAggMinTask() posted!!
+0:4:43.283203135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.283203145 DEBUG (5): SendAggMinTask(): Starting....
+0:4:43.283203145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:4:43.285156260 DEBUG (6): NodeID= 6 : AggregationMin sample= 35 , agg_min= 20
+0:4:43.285156260 DEBUG (6): NodeID= 6 : AggregationMin value= 20
+0:4:43.285156260 DEBUG (6): SendAggMinTask() posted!!
+0:4:43.285156260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.285156270 DEBUG (6): SendAggMinTask(): Starting....
+0:4:43.285156270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:4:43.287109385 DEBUG (7): NodeID= 7 : AggregationMin sample= 33 , agg_min= 255
+0:4:43.287109385 DEBUG (7): NodeID= 7 : AggregationMin value= 33
+0:4:43.287109385 DEBUG (7): SendAggMinTask() posted!!
+0:4:43.287109385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.287109395 DEBUG (7): SendAggMinTask(): Starting....
+0:4:43.287109395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:4:43.290084807 DEBUG (1): ### AggMinReceive.receive() start #####
+0:4:43.290084807 DEBUG (1): Something received!!!  from 4
+0:4:43.290084807 DEBUG (1): posting receiveAggMinTask()!!!!
+0:4:43.290084817 DEBUG (1): ReceiveAggMinTask():received msg...
+0:4:43.290084817 DEBUG (1): ReceiveAggMinTask(): len=1
+0:4:43.290084817 DEBUG (1): receiveAggMinTask(): minVal= 44
+0:4:43.290084817 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 44
+0:4:43.290252653 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:4:43.290252653 DEBUG (4): A AggregationMin package sent... True
+0:4:43.291381831 DEBUG (1): ### AggMinReceive.receive() start #####
+0:4:43.291381831 DEBUG (1): Something received!!!  from 7
+0:4:43.291381831 DEBUG (1): posting receiveAggMinTask()!!!!
+0:4:43.291381841 DEBUG (1): ReceiveAggMinTask():received msg...
+0:4:43.291381841 DEBUG (1): ReceiveAggMinTask(): len=1
+0:4:43.291381841 DEBUG (1): receiveAggMinTask(): minVal= 33
+0:4:43.291381841 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 33
+0:4:43.291458102 DEBUG (3): ### AggMinReceive.receive() start #####
+0:4:43.291458102 DEBUG (3): Something received!!!  from 5
+0:4:43.291458102 DEBUG (3): posting receiveAggMinTask()!!!!
+0:4:43.291458112 DEBUG (3): ReceiveAggMinTask():received msg...
+0:4:43.291458112 DEBUG (3): ReceiveAggMinTask(): len=1
+0:4:43.291458112 DEBUG (3): receiveAggMinTask(): minVal= 11
+0:4:43.291458112 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 11
+0:4:43.291549677 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:4:43.291549677 DEBUG (7): A AggregationMin package sent... True
+0:4:43.291625947 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:4:43.291625947 DEBUG (5): A AggregationMin package sent... True
+0:4:43.293792694 DEBUG (3): ### AggMinReceive.receive() start #####
+0:4:43.293792694 DEBUG (3): Something received!!!  from 6
+0:4:43.293792694 DEBUG (3): posting receiveAggMinTask()!!!!
+0:4:43.293792704 DEBUG (3): ReceiveAggMinTask():received msg...
+0:4:43.293792704 DEBUG (3): ReceiveAggMinTask(): len=1
+0:4:43.293792704 DEBUG (3): receiveAggMinTask(): minVal= 20
+0:4:43.293960540 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:4:43.293960540 DEBUG (6): A AggregationMin package sent... True
+0:4:43.362304697 DEBUG (2): NodeID= 2 : AggregationMin sample= 37 , agg_min= 255
+0:4:43.362304697 DEBUG (2): NodeID= 2 : AggregationMin value= 37
+0:4:43.362304697 DEBUG (2): SendAggMinTask() posted!!
+0:4:43.362304697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.362304707 DEBUG (2): SendAggMinTask(): Starting....
+0:4:43.362304707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:4:43.366210947 DEBUG (1): NodeID= 1 : AggregationMin sample= 1 , agg_min= 33
+0:4:43.366210947 DEBUG (1): NodeID= 1 : AggregationMin value= 1
+0:4:43.366210947 DEBUG (1): SendAggMinTask() posted!!
+0:4:43.366210947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.366210957 DEBUG (1): SendAggMinTask(): Starting....
+0:4:43.366210957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:4:43.368164072 DEBUG (3): NodeID= 3 : AggregationMin sample= 11 , agg_min= 11
+0:4:43.368164072 DEBUG (3): NodeID= 3 : AggregationMin value= 11
+0:4:43.368164072 DEBUG (3): SendAggMinTask() posted!!
+0:4:43.368164072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:4:43.368164082 DEBUG (3): SendAggMinTask(): Starting....
+0:4:43.368164082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:4:43.370208714 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:4:43.370208714 DEBUG (2): A AggregationMin package sent... True
+0:4:43.371765136 DEBUG (0): ### AggMinReceive.receive() start #####
+0:4:43.371765136 DEBUG (0): Something received!!!  from 3
+0:4:43.371765136 DEBUG (0): posting receiveAggMinTask()!!!!
+0:4:43.371765146 DEBUG (0): ReceiveAggMinTask():received msg...
+0:4:43.371765146 DEBUG (0): ReceiveAggMinTask(): len=1
+0:4:43.371765146 DEBUG (0): receiveAggMinTask(): minVal= 11
+0:4:43.371765146 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 11
+0:4:43.371932981 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:4:43.371932981 DEBUG (3): A AggregationMin package sent... True
+0:4:43.373413064 DEBUG (0): ### AggMinReceive.receive() start #####
+0:4:43.373413064 DEBUG (0): Something received!!!  from 1
+0:4:43.373413064 DEBUG (0): posting receiveAggMinTask()!!!!
+0:4:43.373413074 DEBUG (0): ReceiveAggMinTask():received msg...
+0:4:43.373413074 DEBUG (0): ReceiveAggMinTask(): len=1
+0:4:43.373413074 DEBUG (0): receiveAggMinTask(): minVal= 1
+0:4:43.373413074 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 1
+0:4:43.373580909 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:4:43.373580909 DEBUG (1): A AggregationMin package sent... True
+0:4:43.442382822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 1
+0:4:43.442382822 DEBUG (0): ***////////||||||\\\***
+0:4:43.442382822 DEBUG (0): AGG RESULT epoch=14 MIN=1
+0:4:43.442382822 DEBUG (0): ***\\\\||||||//////***
+0:5:2.742187510 DEBUG (8): NodeID= 8 : AggregationMin sample= 20 , agg_min= 255
+0:5:2.742187510 DEBUG (8): NodeID= 8 : AggregationMin value= 20
+0:5:2.742187510 DEBUG (8): SendAggMinTask() posted!!
+0:5:2.742187510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.742187520 DEBUG (8): SendAggMinTask(): Starting....
+0:5:2.742187520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:5:2.751708949 DEBUG (6): ### AggMinReceive.receive() start #####
+0:5:2.751708949 DEBUG (6): Something received!!!  from 8
+0:5:2.751708949 DEBUG (6): posting receiveAggMinTask()!!!!
+0:5:2.751708959 DEBUG (6): ReceiveAggMinTask():received msg...
+0:5:2.751708959 DEBUG (6): ReceiveAggMinTask(): len=1
+0:5:2.751708959 DEBUG (6): receiveAggMinTask(): minVal= 20
+0:5:2.751708959 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 20
+0:5:2.751876795 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:5:2.751876795 DEBUG (8): A AggregationMin package sent... True
+0:5:2.812500010 DEBUG (4): NodeID= 4 : AggregationMin sample= 36 , agg_min= 255
+0:5:2.812500010 DEBUG (4): NodeID= 4 : AggregationMin value= 36
+0:5:2.812500010 DEBUG (4): SendAggMinTask() posted!!
+0:5:2.812500010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.812500020 DEBUG (4): SendAggMinTask(): Starting....
+0:5:2.812500020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:5:2.814453135 DEBUG (5): NodeID= 5 : AggregationMin sample= 9 , agg_min= 255
+0:5:2.814453135 DEBUG (5): NodeID= 5 : AggregationMin value= 9
+0:5:2.814453135 DEBUG (5): SendAggMinTask() posted!!
+0:5:2.814453135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.814453145 DEBUG (5): SendAggMinTask(): Starting....
+0:5:2.814453145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:5:2.816406260 DEBUG (6): NodeID= 6 : AggregationMin sample= 28 , agg_min= 20
+0:5:2.816406260 DEBUG (6): NodeID= 6 : AggregationMin value= 20
+0:5:2.816406260 DEBUG (6): SendAggMinTask() posted!!
+0:5:2.816406260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.816406270 DEBUG (6): SendAggMinTask(): Starting....
+0:5:2.816406270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:5:2.817169182 DEBUG (1): ### AggMinReceive.receive() start #####
+0:5:2.817169182 DEBUG (1): Something received!!!  from 4
+0:5:2.817169182 DEBUG (1): posting receiveAggMinTask()!!!!
+0:5:2.817169192 DEBUG (1): ReceiveAggMinTask():received msg...
+0:5:2.817169192 DEBUG (1): ReceiveAggMinTask(): len=1
+0:5:2.817169192 DEBUG (1): receiveAggMinTask(): minVal= 36
+0:5:2.817169192 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 36
+0:5:2.817337028 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:5:2.817337028 DEBUG (4): A AggregationMin package sent... True
+0:5:2.818359385 DEBUG (7): NodeID= 7 : AggregationMin sample= 36 , agg_min= 255
+0:5:2.818359385 DEBUG (7): NodeID= 7 : AggregationMin value= 36
+0:5:2.818359385 DEBUG (7): SendAggMinTask() posted!!
+0:5:2.818359385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.818359395 DEBUG (7): SendAggMinTask(): Starting....
+0:5:2.818359395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:5:2.819091801 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:5:2.819091801 DEBUG (6): A AggregationMin package sent... True
+0:5:2.822128271 DEBUG (3): ### AggMinReceive.receive() start #####
+0:5:2.822128271 DEBUG (3): Something received!!!  from 5
+0:5:2.822128271 DEBUG (3): posting receiveAggMinTask()!!!!
+0:5:2.822128281 DEBUG (3): ReceiveAggMinTask():received msg...
+0:5:2.822128281 DEBUG (3): ReceiveAggMinTask(): len=1
+0:5:2.822128281 DEBUG (3): receiveAggMinTask(): minVal= 9
+0:5:2.822128281 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 9
+0:5:2.822296117 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:5:2.822296117 DEBUG (5): A AggregationMin package sent... True
+0:5:2.822998040 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:5:2.822998040 DEBUG (7): A AggregationMin package sent... True
+0:5:2.893554697 DEBUG (2): NodeID= 2 : AggregationMin sample= 35 , agg_min= 255
+0:5:2.893554697 DEBUG (2): NodeID= 2 : AggregationMin value= 35
+0:5:2.893554697 DEBUG (2): SendAggMinTask() posted!!
+0:5:2.893554697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.893554707 DEBUG (2): SendAggMinTask(): Starting....
+0:5:2.893554707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:5:2.897460947 DEBUG (1): NodeID= 1 : AggregationMin sample= 1 , agg_min= 36
+0:5:2.897460947 DEBUG (1): NodeID= 1 : AggregationMin value= 1
+0:5:2.897460947 DEBUG (1): SendAggMinTask() posted!!
+0:5:2.897460947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.897460957 DEBUG (1): SendAggMinTask(): Starting....
+0:5:2.897460957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:5:2.899291978 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:2.899291978 DEBUG (0): Something received!!!  from 2
+0:5:2.899291978 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:2.899291988 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:2.899291988 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:2.899291988 DEBUG (0): receiveAggMinTask(): minVal= 35
+0:5:2.899291988 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 35
+0:5:2.899414072 DEBUG (3): NodeID= 3 : AggregationMin sample= 9 , agg_min= 9
+0:5:2.899414072 DEBUG (3): NodeID= 3 : AggregationMin value= 9
+0:5:2.899414072 DEBUG (3): SendAggMinTask() posted!!
+0:5:2.899414072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:2.899414082 DEBUG (3): SendAggMinTask(): Starting....
+0:5:2.899414082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:5:2.899459824 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:5:2.899459824 DEBUG (2): A AggregationMin package sent... True
+0:5:2.901321420 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:2.901321420 DEBUG (0): Something received!!!  from 3
+0:5:2.901321420 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:2.901321430 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:2.901321430 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:2.901321430 DEBUG (0): receiveAggMinTask(): minVal= 9
+0:5:2.901321430 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 9
+0:5:2.901489266 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:5:2.901489266 DEBUG (3): A AggregationMin package sent... True
+0:5:2.903198228 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:2.903198228 DEBUG (0): Something received!!!  from 1
+0:5:2.903198228 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:2.903198238 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:2.903198238 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:2.903198238 DEBUG (0): receiveAggMinTask(): minVal= 1
+0:5:2.903198238 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 1
+0:5:2.903366074 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:5:2.903366074 DEBUG (1): A AggregationMin package sent... True
+0:5:2.973632822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 1
+0:5:2.973632822 DEBUG (0): ***////////||||||\\\***
+0:5:2.973632822 DEBUG (0): AGG RESULT epoch=15 MIN=1
+0:5:2.973632822 DEBUG (0): ***\\\\||||||//////***
+0:5:22.273437510 DEBUG (8): NodeID= 8 : AggregationMin sample= 16 , agg_min= 255
+0:5:22.273437510 DEBUG (8): NodeID= 8 : AggregationMin value= 16
+0:5:22.273437510 DEBUG (8): SendAggMinTask() posted!!
+0:5:22.273437510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.273437520 DEBUG (8): SendAggMinTask(): Starting....
+0:5:22.273437520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:5:22.283248864 DEBUG (6): ### AggMinReceive.receive() start #####
+0:5:22.283248864 DEBUG (6): Something received!!!  from 8
+0:5:22.283248864 DEBUG (6): posting receiveAggMinTask()!!!!
+0:5:22.283248874 DEBUG (6): ReceiveAggMinTask():received msg...
+0:5:22.283248874 DEBUG (6): ReceiveAggMinTask(): len=1
+0:5:22.283248874 DEBUG (6): receiveAggMinTask(): minVal= 16
+0:5:22.283248874 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 16
+0:5:22.283416710 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:5:22.283416710 DEBUG (8): A AggregationMin package sent... True
+0:5:22.343750010 DEBUG (4): NodeID= 4 : AggregationMin sample= 34 , agg_min= 255
+0:5:22.343750010 DEBUG (4): NodeID= 4 : AggregationMin value= 34
+0:5:22.343750010 DEBUG (4): SendAggMinTask() posted!!
+0:5:22.343750010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.343750020 DEBUG (4): SendAggMinTask(): Starting....
+0:5:22.343750020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:5:22.345703135 DEBUG (5): NodeID= 5 : AggregationMin sample= 9 , agg_min= 255
+0:5:22.345703135 DEBUG (5): NodeID= 5 : AggregationMin value= 9
+0:5:22.345703135 DEBUG (5): SendAggMinTask() posted!!
+0:5:22.345703135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.345703145 DEBUG (5): SendAggMinTask(): Starting....
+0:5:22.345703145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:5:22.347656260 DEBUG (6): NodeID= 6 : AggregationMin sample= 30 , agg_min= 16
+0:5:22.347656260 DEBUG (6): NodeID= 6 : AggregationMin value= 16
+0:5:22.347656260 DEBUG (6): SendAggMinTask() posted!!
+0:5:22.347656260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.347656270 DEBUG (6): SendAggMinTask(): Starting....
+0:5:22.347656270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:5:22.349609385 DEBUG (7): NodeID= 7 : AggregationMin sample= 41 , agg_min= 255
+0:5:22.349609385 DEBUG (7): NodeID= 7 : AggregationMin value= 41
+0:5:22.349609385 DEBUG (7): SendAggMinTask() posted!!
+0:5:22.349609385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.349609395 DEBUG (7): SendAggMinTask(): Starting....
+0:5:22.349609395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:5:22.351928683 DEBUG (1): ### AggMinReceive.receive() start #####
+0:5:22.351928683 DEBUG (1): Something received!!!  from 4
+0:5:22.351928683 DEBUG (1): posting receiveAggMinTask()!!!!
+0:5:22.351928693 DEBUG (1): ReceiveAggMinTask():received msg...
+0:5:22.351928693 DEBUG (1): ReceiveAggMinTask(): len=1
+0:5:22.351928693 DEBUG (1): receiveAggMinTask(): minVal= 34
+0:5:22.351928693 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 34
+0:5:22.352096529 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:5:22.352096529 DEBUG (4): A AggregationMin package sent... True
+0:5:22.354766813 DEBUG (3): ### AggMinReceive.receive() start #####
+0:5:22.354766813 DEBUG (3): Something received!!!  from 5
+0:5:22.354766813 DEBUG (3): posting receiveAggMinTask()!!!!
+0:5:22.354766823 DEBUG (3): ReceiveAggMinTask():received msg...
+0:5:22.354766823 DEBUG (3): ReceiveAggMinTask(): len=1
+0:5:22.354766823 DEBUG (3): receiveAggMinTask(): minVal= 9
+0:5:22.354766823 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 9
+0:5:22.354934659 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:5:22.354934659 DEBUG (5): A AggregationMin package sent... True
+0:5:22.356475810 DEBUG (1): ### AggMinReceive.receive() start #####
+0:5:22.356475810 DEBUG (1): Something received!!!  from 7
+0:5:22.356475810 DEBUG (1): posting receiveAggMinTask()!!!!
+0:5:22.356475820 DEBUG (1): ReceiveAggMinTask():received msg...
+0:5:22.356475820 DEBUG (1): ReceiveAggMinTask(): len=1
+0:5:22.356475820 DEBUG (1): receiveAggMinTask(): minVal= 41
+0:5:22.356643656 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:5:22.356643656 DEBUG (7): A AggregationMin package sent... True
+0:5:22.357269251 DEBUG (3): ### AggMinReceive.receive() start #####
+0:5:22.357269251 DEBUG (3): Something received!!!  from 6
+0:5:22.357269251 DEBUG (3): posting receiveAggMinTask()!!!!
+0:5:22.357269261 DEBUG (3): ReceiveAggMinTask():received msg...
+0:5:22.357269261 DEBUG (3): ReceiveAggMinTask(): len=1
+0:5:22.357269261 DEBUG (3): receiveAggMinTask(): minVal= 16
+0:5:22.357437097 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:5:22.357437097 DEBUG (6): A AggregationMin package sent... True
+0:5:22.424804697 DEBUG (2): NodeID= 2 : AggregationMin sample= 34 , agg_min= 255
+0:5:22.424804697 DEBUG (2): NodeID= 2 : AggregationMin value= 34
+0:5:22.424804697 DEBUG (2): SendAggMinTask() posted!!
+0:5:22.424804697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.424804707 DEBUG (2): SendAggMinTask(): Starting....
+0:5:22.424804707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:5:22.428710947 DEBUG (1): NodeID= 1 : AggregationMin sample= 1 , agg_min= 34
+0:5:22.428710947 DEBUG (1): NodeID= 1 : AggregationMin value= 1
+0:5:22.428710947 DEBUG (1): SendAggMinTask() posted!!
+0:5:22.428710947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.428710957 DEBUG (1): SendAggMinTask(): Starting....
+0:5:22.428710957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:5:22.430664072 DEBUG (3): NodeID= 3 : AggregationMin sample= 9 , agg_min= 9
+0:5:22.430664072 DEBUG (3): NodeID= 3 : AggregationMin value= 9
+0:5:22.430664072 DEBUG (3): SendAggMinTask() posted!!
+0:5:22.430664072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:22.430664082 DEBUG (3): SendAggMinTask(): Starting....
+0:5:22.430664082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:5:22.432403540 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:22.432403540 DEBUG (0): Something received!!!  from 2
+0:5:22.432403540 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:22.432403550 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:22.432403550 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:22.432403550 DEBUG (0): receiveAggMinTask(): minVal= 34
+0:5:22.432403550 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 34
+0:5:22.432571386 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:5:22.432571386 DEBUG (2): A AggregationMin package sent... True
+0:5:22.437210053 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:5:22.437210053 DEBUG (1): A AggregationMin package sent... True
+0:5:22.437255841 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:5:22.437255841 DEBUG (3): A AggregationMin package sent... True
+0:5:22.504882822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 34
+0:5:22.504882822 DEBUG (0): ***////////||||||\\\***
+0:5:22.504882822 DEBUG (0): AGG RESULT epoch=16 MIN=1
+0:5:22.504882822 DEBUG (0): ***\\\\||||||//////***
+0:5:41.804687510 DEBUG (8): NodeID= 8 : AggregationMin sample= 18 , agg_min= 255
+0:5:41.804687510 DEBUG (8): NodeID= 8 : AggregationMin value= 18
+0:5:41.804687510 DEBUG (8): SendAggMinTask() posted!!
+0:5:41.804687510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.804687520 DEBUG (8): SendAggMinTask(): Starting....
+0:5:41.804687520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:5:41.806838997 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:5:41.806838997 DEBUG (8): A AggregationMin package sent... True
+0:5:41.875000010 DEBUG (4): NodeID= 4 : AggregationMin sample= 36 , agg_min= 255
+0:5:41.875000010 DEBUG (4): NodeID= 4 : AggregationMin value= 36
+0:5:41.875000010 DEBUG (4): SendAggMinTask() posted!!
+0:5:41.875000010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.875000020 DEBUG (4): SendAggMinTask(): Starting....
+0:5:41.875000020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:5:41.876953135 DEBUG (5): NodeID= 5 : AggregationMin sample= 10 , agg_min= 255
+0:5:41.876953135 DEBUG (5): NodeID= 5 : AggregationMin value= 10
+0:5:41.876953135 DEBUG (5): SendAggMinTask() posted!!
+0:5:41.876953135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.876953145 DEBUG (5): SendAggMinTask(): Starting....
+0:5:41.876953145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:5:41.878906260 DEBUG (6): NodeID= 6 : AggregationMin sample= 27 , agg_min= 255
+0:5:41.878906260 DEBUG (6): NodeID= 6 : AggregationMin value= 27
+0:5:41.878906260 DEBUG (6): SendAggMinTask() posted!!
+0:5:41.878906260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.878906270 DEBUG (6): SendAggMinTask(): Starting....
+0:5:41.878906270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:5:41.880859385 DEBUG (7): NodeID= 7 : AggregationMin sample= 41 , agg_min= 255
+0:5:41.880859385 DEBUG (7): NodeID= 7 : AggregationMin value= 41
+0:5:41.880859385 DEBUG (7): SendAggMinTask() posted!!
+0:5:41.880859385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.880859395 DEBUG (7): SendAggMinTask(): Starting....
+0:5:41.880859395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:5:41.881759624 DEBUG (1): ### AggMinReceive.receive() start #####
+0:5:41.881759624 DEBUG (1): Something received!!!  from 4
+0:5:41.881759624 DEBUG (1): posting receiveAggMinTask()!!!!
+0:5:41.881759634 DEBUG (1): ReceiveAggMinTask():received msg...
+0:5:41.881759634 DEBUG (1): ReceiveAggMinTask(): len=1
+0:5:41.881759634 DEBUG (1): receiveAggMinTask(): minVal= 36
+0:5:41.881759634 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 36
+0:5:41.881927470 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:5:41.881927470 DEBUG (4): A AggregationMin package sent... True
+0:5:41.883224471 DEBUG (3): ### AggMinReceive.receive() start #####
+0:5:41.883224471 DEBUG (3): Something received!!!  from 5
+0:5:41.883224471 DEBUG (3): posting receiveAggMinTask()!!!!
+0:5:41.883224481 DEBUG (3): ReceiveAggMinTask():received msg...
+0:5:41.883224481 DEBUG (3): ReceiveAggMinTask(): len=1
+0:5:41.883224481 DEBUG (3): receiveAggMinTask(): minVal= 10
+0:5:41.883224481 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 10
+0:5:41.883392316 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:5:41.883392316 DEBUG (5): A AggregationMin package sent... True
+0:5:41.886886582 DEBUG (1): ### AggMinReceive.receive() start #####
+0:5:41.886886582 DEBUG (1): Something received!!!  from 7
+0:5:41.886886582 DEBUG (1): posting receiveAggMinTask()!!!!
+0:5:41.886886592 DEBUG (1): ReceiveAggMinTask():received msg...
+0:5:41.886886592 DEBUG (1): ReceiveAggMinTask(): len=1
+0:5:41.886886592 DEBUG (1): receiveAggMinTask(): minVal= 41
+0:5:41.887054427 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:5:41.887054427 DEBUG (7): A AggregationMin package sent... True
+0:5:41.889114340 DEBUG (3): ### AggMinReceive.receive() start #####
+0:5:41.889114340 DEBUG (3): Something received!!!  from 6
+0:5:41.889114340 DEBUG (3): posting receiveAggMinTask()!!!!
+0:5:41.889114350 DEBUG (3): ReceiveAggMinTask():received msg...
+0:5:41.889114350 DEBUG (3): ReceiveAggMinTask(): len=1
+0:5:41.889114350 DEBUG (3): receiveAggMinTask(): minVal= 27
+0:5:41.889282186 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:5:41.889282186 DEBUG (6): A AggregationMin package sent... True
+0:5:41.956054697 DEBUG (2): NodeID= 2 : AggregationMin sample= 33 , agg_min= 255
+0:5:41.956054697 DEBUG (2): NodeID= 2 : AggregationMin value= 33
+0:5:41.956054697 DEBUG (2): SendAggMinTask() posted!!
+0:5:41.956054697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.956054707 DEBUG (2): SendAggMinTask(): Starting....
+0:5:41.956054707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:5:41.959732054 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:41.959732054 DEBUG (0): Something received!!!  from 2
+0:5:41.959732054 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:41.959732064 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:41.959732064 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:41.959732064 DEBUG (0): receiveAggMinTask(): minVal= 33
+0:5:41.959732064 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 33
+0:5:41.959899900 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:5:41.959899900 DEBUG (2): A AggregationMin package sent... True
+0:5:41.959960947 DEBUG (1): NodeID= 1 : AggregationMin sample= 1 , agg_min= 36
+0:5:41.959960947 DEBUG (1): NodeID= 1 : AggregationMin value= 1
+0:5:41.959960947 DEBUG (1): SendAggMinTask() posted!!
+0:5:41.959960947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.959960957 DEBUG (1): SendAggMinTask(): Starting....
+0:5:41.959960957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:5:41.961746225 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:41.961746225 DEBUG (0): Something received!!!  from 1
+0:5:41.961746225 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:41.961746235 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:41.961746235 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:41.961746235 DEBUG (0): receiveAggMinTask(): minVal= 1
+0:5:41.961746235 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 1
+0:5:41.961914071 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:5:41.961914071 DEBUG (1): A AggregationMin package sent... True
+0:5:41.961914072 DEBUG (3): NodeID= 3 : AggregationMin sample= 9 , agg_min= 10
+0:5:41.961914072 DEBUG (3): NodeID= 3 : AggregationMin value= 9
+0:5:41.961914072 DEBUG (3): SendAggMinTask() posted!!
+0:5:41.961914072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:5:41.961914082 DEBUG (3): SendAggMinTask(): Starting....
+0:5:41.961914082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:5:41.964904788 DEBUG (0): ### AggMinReceive.receive() start #####
+0:5:41.964904788 DEBUG (0): Something received!!!  from 3
+0:5:41.964904788 DEBUG (0): posting receiveAggMinTask()!!!!
+0:5:41.964904798 DEBUG (0): ReceiveAggMinTask():received msg...
+0:5:41.964904798 DEBUG (0): ReceiveAggMinTask(): len=1
+0:5:41.964904798 DEBUG (0): receiveAggMinTask(): minVal= 9
+0:5:41.965072633 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:5:41.965072633 DEBUG (3): A AggregationMin package sent... True
+0:5:42.036132822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 1
+0:5:42.036132822 DEBUG (0): ***////////||||||\\\***
+0:5:42.036132822 DEBUG (0): AGG RESULT epoch=17 MIN=1
+0:5:42.036132822 DEBUG (0): ***\\\\||||||//////***
+0:6:1.335937510 DEBUG (8): NodeID= 8 : AggregationMin sample= 19 , agg_min= 255
+0:6:1.335937510 DEBUG (8): NodeID= 8 : AggregationMin value= 19
+0:6:1.335937510 DEBUG (8): SendAggMinTask() posted!!
+0:6:1.335937510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.335937520 DEBUG (8): SendAggMinTask(): Starting....
+0:6:1.335937520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:6:1.341094961 DEBUG (6): ### AggMinReceive.receive() start #####
+0:6:1.341094961 DEBUG (6): Something received!!!  from 8
+0:6:1.341094961 DEBUG (6): posting receiveAggMinTask()!!!!
+0:6:1.341094971 DEBUG (6): ReceiveAggMinTask():received msg...
+0:6:1.341094971 DEBUG (6): ReceiveAggMinTask(): len=1
+0:6:1.341094971 DEBUG (6): receiveAggMinTask(): minVal= 19
+0:6:1.341094971 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 19
+0:6:1.341262807 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:6:1.341262807 DEBUG (8): A AggregationMin package sent... True
+0:6:1.406250010 DEBUG (4): NodeID= 4 : AggregationMin sample= 36 , agg_min= 255
+0:6:1.406250010 DEBUG (4): NodeID= 4 : AggregationMin value= 36
+0:6:1.406250010 DEBUG (4): SendAggMinTask() posted!!
+0:6:1.406250010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.406250020 DEBUG (4): SendAggMinTask(): Starting....
+0:6:1.406250020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:6:1.408203135 DEBUG (5): NodeID= 5 : AggregationMin sample= 10 , agg_min= 255
+0:6:1.408203135 DEBUG (5): NodeID= 5 : AggregationMin value= 10
+0:6:1.408203135 DEBUG (5): SendAggMinTask() posted!!
+0:6:1.408203135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.408203145 DEBUG (5): SendAggMinTask(): Starting....
+0:6:1.408203145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:6:1.410156260 DEBUG (6): NodeID= 6 : AggregationMin sample= 28 , agg_min= 19
+0:6:1.410156260 DEBUG (6): NodeID= 6 : AggregationMin value= 19
+0:6:1.410156260 DEBUG (6): SendAggMinTask() posted!!
+0:6:1.410156260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.410156270 DEBUG (6): SendAggMinTask(): Starting....
+0:6:1.410156270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:6:1.412109385 DEBUG (7): NodeID= 7 : AggregationMin sample= 43 , agg_min= 255
+0:6:1.412109385 DEBUG (7): NodeID= 7 : AggregationMin value= 43
+0:6:1.412109385 DEBUG (7): SendAggMinTask() posted!!
+0:6:1.412109385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.412109395 DEBUG (7): SendAggMinTask(): Starting....
+0:6:1.412109395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:6:1.414077745 DEBUG (3): ### AggMinReceive.receive() start #####
+0:6:1.414077745 DEBUG (3): Something received!!!  from 5
+0:6:1.414077745 DEBUG (3): posting receiveAggMinTask()!!!!
+0:6:1.414077755 DEBUG (3): ReceiveAggMinTask():received msg...
+0:6:1.414077755 DEBUG (3): ReceiveAggMinTask(): len=1
+0:6:1.414077755 DEBUG (3): receiveAggMinTask(): minVal= 10
+0:6:1.414077755 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 10
+0:6:1.414245590 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:6:1.414245590 DEBUG (5): A AggregationMin package sent... True
+0:6:1.415863035 DEBUG (1): ### AggMinReceive.receive() start #####
+0:6:1.415863035 DEBUG (1): Something received!!!  from 7
+0:6:1.415863035 DEBUG (1): posting receiveAggMinTask()!!!!
+0:6:1.415863045 DEBUG (1): ReceiveAggMinTask():received msg...
+0:6:1.415863045 DEBUG (1): ReceiveAggMinTask(): len=1
+0:6:1.415863045 DEBUG (1): receiveAggMinTask(): minVal= 43
+0:6:1.415863045 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 43
+0:6:1.416030881 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:6:1.416030881 DEBUG (7): A AggregationMin package sent... True
+0:6:1.417541458 DEBUG (1): ### AggMinReceive.receive() start #####
+0:6:1.417541458 DEBUG (1): Something received!!!  from 4
+0:6:1.417541458 DEBUG (1): posting receiveAggMinTask()!!!!
+0:6:1.417541468 DEBUG (1): ReceiveAggMinTask():received msg...
+0:6:1.417541468 DEBUG (1): ReceiveAggMinTask(): len=1
+0:6:1.417541468 DEBUG (1): receiveAggMinTask(): minVal= 36
+0:6:1.417541468 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 36
+0:6:1.417709304 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:6:1.417709304 DEBUG (4): A AggregationMin package sent... True
+0:6:1.420181236 DEBUG (3): ### AggMinReceive.receive() start #####
+0:6:1.420181236 DEBUG (3): Something received!!!  from 6
+0:6:1.420181236 DEBUG (3): posting receiveAggMinTask()!!!!
+0:6:1.420181246 DEBUG (3): ReceiveAggMinTask():received msg...
+0:6:1.420181246 DEBUG (3): ReceiveAggMinTask(): len=1
+0:6:1.420181246 DEBUG (3): receiveAggMinTask(): minVal= 19
+0:6:1.420349082 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:6:1.420349082 DEBUG (6): A AggregationMin package sent... True
+0:6:1.487304697 DEBUG (2): NodeID= 2 : AggregationMin sample= 37 , agg_min= 255
+0:6:1.487304697 DEBUG (2): NodeID= 2 : AggregationMin value= 37
+0:6:1.487304697 DEBUG (2): SendAggMinTask() posted!!
+0:6:1.487304697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.487304707 DEBUG (2): SendAggMinTask(): Starting....
+0:6:1.487304707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:6:1.489578254 DEBUG (0): ### AggMinReceive.receive() start #####
+0:6:1.489578254 DEBUG (0): Something received!!!  from 2
+0:6:1.489578254 DEBUG (0): posting receiveAggMinTask()!!!!
+0:6:1.489578264 DEBUG (0): ReceiveAggMinTask():received msg...
+0:6:1.489578264 DEBUG (0): ReceiveAggMinTask(): len=1
+0:6:1.489578264 DEBUG (0): receiveAggMinTask(): minVal= 37
+0:6:1.489578264 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 37
+0:6:1.489746099 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:6:1.489746099 DEBUG (2): A AggregationMin package sent... True
+0:6:1.491210947 DEBUG (1): NodeID= 1 : AggregationMin sample= 1 , agg_min= 36
+0:6:1.491210947 DEBUG (1): NodeID= 1 : AggregationMin value= 1
+0:6:1.491210947 DEBUG (1): SendAggMinTask() posted!!
+0:6:1.491210947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.491210957 DEBUG (1): SendAggMinTask(): Starting....
+0:6:1.491210957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:6:1.493164072 DEBUG (3): NodeID= 3 : AggregationMin sample= 10 , agg_min= 10
+0:6:1.493164072 DEBUG (3): NodeID= 3 : AggregationMin value= 10
+0:6:1.493164072 DEBUG (3): SendAggMinTask() posted!!
+0:6:1.493164072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:1.493164082 DEBUG (3): SendAggMinTask(): Starting....
+0:6:1.493164082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:6:1.498779272 DEBUG (0): ### AggMinReceive.receive() start #####
+0:6:1.498779272 DEBUG (0): Something received!!!  from 1
+0:6:1.498779272 DEBUG (0): posting receiveAggMinTask()!!!!
+0:6:1.498779282 DEBUG (0): ReceiveAggMinTask():received msg...
+0:6:1.498779282 DEBUG (0): ReceiveAggMinTask(): len=1
+0:6:1.498779282 DEBUG (0): receiveAggMinTask(): minVal= 1
+0:6:1.498779282 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 1
+0:6:1.498947118 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:6:1.498947118 DEBUG (1): A AggregationMin package sent... True
+0:6:1.500778174 DEBUG (0): ### AggMinReceive.receive() start #####
+0:6:1.500778174 DEBUG (0): Something received!!!  from 3
+0:6:1.500778174 DEBUG (0): posting receiveAggMinTask()!!!!
+0:6:1.500778184 DEBUG (0): ReceiveAggMinTask():received msg...
+0:6:1.500778184 DEBUG (0): ReceiveAggMinTask(): len=1
+0:6:1.500778184 DEBUG (0): receiveAggMinTask(): minVal= 10
+0:6:1.500946019 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:6:1.500946019 DEBUG (3): A AggregationMin package sent... True
+0:6:1.567382822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 1
+0:6:1.567382822 DEBUG (0): ***////////||||||\\\***
+0:6:1.567382822 DEBUG (0): AGG RESULT epoch=18 MIN=1
+0:6:1.567382822 DEBUG (0): ***\\\\||||||//////***
+0:6:20.867187510 DEBUG (8): NodeID= 8 : AggregationMin sample= 15 , agg_min= 255
+0:6:20.867187510 DEBUG (8): NodeID= 8 : AggregationMin value= 15
+0:6:20.867187510 DEBUG (8): SendAggMinTask() posted!!
+0:6:20.867187510 DEBUG (8): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:20.867187520 DEBUG (8): SendAggMinTask(): Starting....
+0:6:20.867187520 DEBUG (8): SendAggMinTask(): Send returned success!!!
+0:6:20.875061010 DEBUG (6): ### AggMinReceive.receive() start #####
+0:6:20.875061010 DEBUG (6): Something received!!!  from 8
+0:6:20.875061010 DEBUG (6): posting receiveAggMinTask()!!!!
+0:6:20.875061020 DEBUG (6): ReceiveAggMinTask():received msg...
+0:6:20.875061020 DEBUG (6): ReceiveAggMinTask(): len=1
+0:6:20.875061020 DEBUG (6): receiveAggMinTask(): minVal= 15
+0:6:20.875061020 DEBUG (6): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:6:20.875228855 DEBUG (8): Inside the AggMinAMSend.sendDone()
+0:6:20.875228855 DEBUG (8): A AggregationMin package sent... True
+0:6:20.937500010 DEBUG (4): NodeID= 4 : AggregationMin sample= 40 , agg_min= 255
+0:6:20.937500010 DEBUG (4): NodeID= 4 : AggregationMin value= 40
+0:6:20.937500010 DEBUG (4): SendAggMinTask() posted!!
+0:6:20.937500010 DEBUG (4): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:20.937500020 DEBUG (4): SendAggMinTask(): Starting....
+0:6:20.937500020 DEBUG (4): SendAggMinTask(): Send returned success!!!
+0:6:20.939453135 DEBUG (5): NodeID= 5 : AggregationMin sample= 10 , agg_min= 255
+0:6:20.939453135 DEBUG (5): NodeID= 5 : AggregationMin value= 10
+0:6:20.939453135 DEBUG (5): SendAggMinTask() posted!!
+0:6:20.939453135 DEBUG (5): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:20.939453145 DEBUG (5): SendAggMinTask(): Starting....
+0:6:20.939453145 DEBUG (5): SendAggMinTask(): Send returned success!!!
+0:6:20.939956671 DEBUG (1): ### AggMinReceive.receive() start #####
+0:6:20.939956671 DEBUG (1): Something received!!!  from 4
+0:6:20.939956671 DEBUG (1): posting receiveAggMinTask()!!!!
+0:6:20.939956681 DEBUG (1): ReceiveAggMinTask():received msg...
+0:6:20.939956681 DEBUG (1): ReceiveAggMinTask(): len=1
+0:6:20.939956681 DEBUG (1): receiveAggMinTask(): minVal= 40
+0:6:20.939956681 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 40
+0:6:20.940124516 DEBUG (4): Inside the AggMinAMSend.sendDone()
+0:6:20.940124516 DEBUG (4): A AggregationMin package sent... True
+0:6:20.941406260 DEBUG (6): NodeID= 6 : AggregationMin sample= 26 , agg_min= 15
+0:6:20.941406260 DEBUG (6): NodeID= 6 : AggregationMin value= 15
+0:6:20.941406260 DEBUG (6): SendAggMinTask() posted!!
+0:6:20.941406260 DEBUG (6): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:20.941406270 DEBUG (6): SendAggMinTask(): Starting....
+0:6:20.941406270 DEBUG (6): SendAggMinTask(): Send returned success!!!
+0:6:20.943359385 DEBUG (7): NodeID= 7 : AggregationMin sample= 38 , agg_min= 255
+0:6:20.943359385 DEBUG (7): NodeID= 7 : AggregationMin value= 38
+0:6:20.943359385 DEBUG (7): SendAggMinTask() posted!!
+0:6:20.943359385 DEBUG (7): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:20.943359395 DEBUG (7): SendAggMinTask(): Starting....
+0:6:20.943359395 DEBUG (7): SendAggMinTask(): Send returned success!!!
+0:6:20.947723372 DEBUG (3): ### AggMinReceive.receive() start #####
+0:6:20.947723372 DEBUG (3): Something received!!!  from 6
+0:6:20.947723372 DEBUG (3): posting receiveAggMinTask()!!!!
+0:6:20.947723382 DEBUG (3): ReceiveAggMinTask():received msg...
+0:6:20.947723382 DEBUG (3): ReceiveAggMinTask(): len=1
+0:6:20.947723382 DEBUG (3): receiveAggMinTask(): minVal= 15
+0:6:20.947723382 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 15
+0:6:20.947891218 DEBUG (6): Inside the AggMinAMSend.sendDone()
+0:6:20.947891218 DEBUG (6): A AggregationMin package sent... True
+0:6:20.949508628 DEBUG (3): ### AggMinReceive.receive() start #####
+0:6:20.949508628 DEBUG (3): Something received!!!  from 5
+0:6:20.949508628 DEBUG (3): posting receiveAggMinTask()!!!!
+0:6:20.949508638 DEBUG (3): ReceiveAggMinTask():received msg...
+0:6:20.949508638 DEBUG (3): ReceiveAggMinTask(): len=1
+0:6:20.949508638 DEBUG (3): receiveAggMinTask(): minVal= 10
+0:6:20.949508638 DEBUG (3): Inside the ReceiveAggMinTask(): New agg_min = 10
+0:6:20.949676474 DEBUG (5): Inside the AggMinAMSend.sendDone()
+0:6:20.949676474 DEBUG (5): A AggregationMin package sent... True
+0:6:20.952209441 DEBUG (1): ### AggMinReceive.receive() start #####
+0:6:20.952209441 DEBUG (1): Something received!!!  from 7
+0:6:20.952209441 DEBUG (1): posting receiveAggMinTask()!!!!
+0:6:20.952209451 DEBUG (1): ReceiveAggMinTask():received msg...
+0:6:20.952209451 DEBUG (1): ReceiveAggMinTask(): len=1
+0:6:20.952209451 DEBUG (1): receiveAggMinTask(): minVal= 38
+0:6:20.952209451 DEBUG (1): Inside the ReceiveAggMinTask(): New agg_min = 38
+0:6:20.952377287 DEBUG (7): Inside the AggMinAMSend.sendDone()
+0:6:20.952377287 DEBUG (7): A AggregationMin package sent... True
+0:6:21.018554697 DEBUG (2): NodeID= 2 : AggregationMin sample= 36 , agg_min= 255
+0:6:21.018554697 DEBUG (2): NodeID= 2 : AggregationMin value= 36
+0:6:21.018554697 DEBUG (2): SendAggMinTask() posted!!
+0:6:21.018554697 DEBUG (2): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:21.018554707 DEBUG (2): SendAggMinTask(): Starting....
+0:6:21.018554707 DEBUG (2): SendAggMinTask(): Send returned success!!!
+0:6:21.022460947 DEBUG (1): NodeID= 1 : AggregationMin sample= 1 , agg_min= 38
+0:6:21.022460947 DEBUG (1): NodeID= 1 : AggregationMin value= 1
+0:6:21.022460947 DEBUG (1): SendAggMinTask() posted!!
+0:6:21.022460947 DEBUG (1): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:21.022460957 DEBUG (1): SendAggMinTask(): Starting....
+0:6:21.022460957 DEBUG (1): SendAggMinTask(): Send returned success!!!
+0:6:21.024414072 DEBUG (3): NodeID= 3 : AggregationMin sample= 9 , agg_min= 10
+0:6:21.024414072 DEBUG (3): NodeID= 3 : AggregationMin value= 9
+0:6:21.024414072 DEBUG (3): SendAggMinTask() posted!!
+0:6:21.024414072 DEBUG (3): AggregationMin enqueued successfully in SendingQueue!!!
+0:6:21.024414082 DEBUG (3): SendAggMinTask(): Starting....
+0:6:21.024414082 DEBUG (3): SendAggMinTask(): Send returned success!!!
+0:6:21.026809664 DEBUG (0): ### AggMinReceive.receive() start #####
+0:6:21.026809664 DEBUG (0): Something received!!!  from 2
+0:6:21.026809664 DEBUG (0): posting receiveAggMinTask()!!!!
+0:6:21.026809674 DEBUG (0): ReceiveAggMinTask():received msg...
+0:6:21.026809674 DEBUG (0): ReceiveAggMinTask(): len=1
+0:6:21.026809674 DEBUG (0): receiveAggMinTask(): minVal= 36
+0:6:21.026809674 DEBUG (0): Inside the ReceiveAggMinTask(): New agg_min = 36
+0:6:21.026977510 DEBUG (2): Inside the AggMinAMSend.sendDone()
+0:6:21.026977510 DEBUG (2): A AggregationMin package sent... True
+0:6:21.028457626 DEBUG (1): Inside the AggMinAMSend.sendDone()
+0:6:21.028457626 DEBUG (1): A AggregationMin package sent... True
+0:6:21.029159538 DEBUG (3): Inside the AggMinAMSend.sendDone()
+0:6:21.029159538 DEBUG (3): A AggregationMin package sent... True
+0:6:21.098632822 DEBUG (0): NodeID= 0 : AggregationMin sample= 1 , agg_min= 36
+0:6:21.098632822 DEBUG (0): ***////////||||||\\\***
+0:6:21.098632822 DEBUG (0): AGG RESULT epoch=19 MIN=1
+0:6:21.098632822 DEBUG (0): ***\\\\||||||//////***
+Node 0 connected with node 1 True True
+Node 0 connected with node 2 True True
+Node 1 connected with node 7 True True
+Node 2 connected with node 3 True True
+Node 4 connected with node 8 False False

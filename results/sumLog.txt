@@ -1,0 +1,2458 @@
+﻿TicksPerSecond :  10000000000
+
+
+  0   1   -50.0
+  1   0   -50.0
+  0   2   -50.0
+  2   0   -50.0
+  0   3   -50.0
+  3   0   -50.0
+  1   4   -50.0
+  4   1   -50.0
+  1   7   -50.0
+  7   1   -50.0
+  1   2   -50.0
+  2   1   -50.0
+  2   4   -50.0
+  4   2   -50.0
+  2   5   -50.0
+  5   2   -50.0
+  2   3   -50.0
+  3   2   -50.0
+  3   5   -50.0
+  5   3   -50.0
+  3   6   -50.0
+  6   3   -50.0
+  4   7   -50.0
+  7   4   -50.0
+  4   5   -50.0
+  5   4   -50.0
+  5   6   -50.0
+  6   5   -50.0
+  5   8   -50.0
+  8   5   -50.0
+  6   8   -50.0
+  8   6   -50.0
+  7   8   -50.0
+  8   7   -50.0
+0:0:10.201019283 DEBUG (3): NodeID 3: parentID= 0 , curdepth= 1 , aggType= 2
+0:0:10.201019283 DEBUG (1): NodeID 1: parentID= 0 , curdepth= 1 , aggType= 2
+0:0:10.201019283 DEBUG (2): NodeID 2: parentID= 0 , curdepth= 1 , aggType= 2
+0:0:10.398376478 DEBUG (5): NodeID 5: parentID= 3 , curdepth= 2 , aggType= 2
+0:0:10.398376478 DEBUG (6): NodeID 6: parentID= 3 , curdepth= 2 , aggType= 2
+0:0:10.398635876 DEBUG (4): NodeID 4: parentID= 1 , curdepth= 2 , aggType= 2
+0:0:10.398635876 DEBUG (7): NodeID 7: parentID= 1 , curdepth= 2 , aggType= 2
+0:0:10.595764173 DEBUG (8): NodeID 8: parentID= 6 , curdepth= 3 , aggType= 2
+0:0:29.300781260 DEBUG (8): NodeID= 8 : AggregationSum sample= 20 , sumBefore= 0
+0:0:29.300781260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 20
+0:0:29.300781260 DEBUG (8): NodeID= 8 : AggregationSum value= 20
+0:0:29.300781260 DEBUG (8): SendAggSumTask() posted!!
+0:0:29.300781260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.300781270 DEBUG (8): SendAggSumTask(): Starting....
+0:0:29.300781270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:0:29.305664054 DEBUG (6): ### AggSumReceive.receive() start #####
+0:0:29.305664054 DEBUG (6): Something received!!!  from 8
+0:0:29.305664054 DEBUG (6): posting receiveAggSumTask()!!!!
+0:0:29.305664064 DEBUG (6): ReceiveAggSumTask():received msg...
+0:0:29.305664064 DEBUG (6): ReceiveAggSumTask(): len=2
+0:0:29.305664064 DEBUG (6): receiveAggSumTask(): sum= 20
+0:0:29.305664064 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 20
+0:0:29.305831900 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:0:29.305831900 DEBUG (8): A AggregationSum package sent... True
+0:0:29.375000010 DEBUG (6): NodeID= 6 : AggregationSum sample= 22 , sumBefore= 20
+0:0:29.375000010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 42
+0:0:29.375000010 DEBUG (6): NodeID= 6 : AggregationSum value= 42
+0:0:29.375000010 DEBUG (6): SendAggSumTask() posted!!
+0:0:29.375000010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.375000020 DEBUG (6): SendAggSumTask(): Starting....
+0:0:29.375000020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:0:29.376953135 DEBUG (4): NodeID= 4 : AggregationSum sample= 39 , sumBefore= 0
+0:0:29.376953135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 39
+0:0:29.376953135 DEBUG (4): NodeID= 4 : AggregationSum value= 39
+0:0:29.376953135 DEBUG (4): SendAggSumTask() posted!!
+0:0:29.376953135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.376953145 DEBUG (4): SendAggSumTask(): Starting....
+0:0:29.376953145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:0:29.377929698 DEBUG (5): NodeID= 5 : AggregationSum sample= 53 , sumBefore= 0
+0:0:29.377929698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 53
+0:0:29.377929698 DEBUG (5): NodeID= 5 : AggregationSum value= 53
+0:0:29.377929698 DEBUG (5): SendAggSumTask() posted!!
+0:0:29.377929698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.377929708 DEBUG (5): SendAggSumTask(): Starting....
+0:0:29.377929708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:0:29.380004891 DEBUG (3): ### AggSumReceive.receive() start #####
+0:0:29.380004891 DEBUG (3): Something received!!!  from 5
+0:0:29.380004891 DEBUG (3): posting receiveAggSumTask()!!!!
+0:0:29.380004901 DEBUG (3): ReceiveAggSumTask():received msg...
+0:0:29.380004901 DEBUG (3): ReceiveAggSumTask(): len=2
+0:0:29.380004901 DEBUG (3): receiveAggSumTask(): sum= 53
+0:0:29.380004901 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 53
+0:0:29.380172736 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:0:29.380172736 DEBUG (5): A AggregationSum package sent... True
+0:0:29.381805412 DEBUG (1): ### AggSumReceive.receive() start #####
+0:0:29.381805412 DEBUG (1): Something received!!!  from 4
+0:0:29.381805412 DEBUG (1): posting receiveAggSumTask()!!!!
+0:0:29.381805422 DEBUG (1): ReceiveAggSumTask():received msg...
+0:0:29.381805422 DEBUG (1): ReceiveAggSumTask(): len=2
+0:0:29.381805422 DEBUG (1): receiveAggSumTask(): sum= 39
+0:0:29.381805422 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 39
+0:0:29.381835948 DEBUG (7): NodeID= 7 : AggregationSum sample= 51 , sumBefore= 0
+0:0:29.381835948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 51
+0:0:29.381835948 DEBUG (7): NodeID= 7 : AggregationSum value= 51
+0:0:29.381835948 DEBUG (7): SendAggSumTask() posted!!
+0:0:29.381835948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.381835958 DEBUG (7): SendAggSumTask(): Starting....
+0:0:29.381835958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:0:29.381973257 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:0:29.381973257 DEBUG (4): A AggregationSum package sent... True
+0:0:29.383422823 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:0:29.383422823 DEBUG (6): A AggregationSum package sent... True
+0:0:29.384780887 DEBUG (1): ### AggSumReceive.receive() start #####
+0:0:29.384780887 DEBUG (1): Something received!!!  from 7
+0:0:29.384780887 DEBUG (1): posting receiveAggSumTask()!!!!
+0:0:29.384780897 DEBUG (1): ReceiveAggSumTask():received msg...
+0:0:29.384780897 DEBUG (1): ReceiveAggSumTask(): len=2
+0:0:29.384780897 DEBUG (1): receiveAggSumTask(): sum= 51
+0:0:29.384780897 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 90
+0:0:29.384948733 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:0:29.384948733 DEBUG (7): A AggregationSum package sent... True
+0:0:29.454101572 DEBUG (1): NodeID= 1 : AggregationSum sample= 12 , sumBefore= 90
+0:0:29.454101572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 102
+0:0:29.454101572 DEBUG (1): NodeID= 1 : AggregationSum value= 102
+0:0:29.454101572 DEBUG (1): SendAggSumTask() posted!!
+0:0:29.454101572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.454101582 DEBUG (1): SendAggSumTask(): Starting....
+0:0:29.454101582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:0:29.458007822 DEBUG (3): NodeID= 3 : AggregationSum sample= 10 , sumBefore= 53
+0:0:29.458007822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 63
+0:0:29.458007822 DEBUG (3): NodeID= 3 : AggregationSum value= 63
+0:0:29.458007822 DEBUG (3): SendAggSumTask() posted!!
+0:0:29.458007822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.458007832 DEBUG (3): SendAggSumTask(): Starting....
+0:0:29.458007832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:0:29.460479742 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:0:29.460479742 DEBUG (3): A AggregationSum package sent... True
+0:0:29.460937510 DEBUG (2): NodeID= 2 : AggregationSum sample= 41 , sumBefore= 0
+0:0:29.460937510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 41
+0:0:29.460937510 DEBUG (2): NodeID= 2 : AggregationSum value= 41
+0:0:29.460937510 DEBUG (2): SendAggSumTask() posted!!
+0:0:29.460937510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:29.460937520 DEBUG (2): SendAggSumTask(): Starting....
+0:0:29.460937520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:0:29.461379982 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:0:29.461379982 DEBUG (1): A AggregationSum package sent... True
+0:0:29.472183182 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:0:29.472183182 DEBUG (2): A AggregationSum package sent... True
+0:0:29.533203135 DEBUG (0): NodeID= 0 : AggregationSum sample= 9 , sumBefore= 0
+0:0:29.533203135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 9
+0:0:29.533203135 DEBUG (0): ***////////||||||\\\***
+0:0:29.533203135 DEBUG (0): AGG RESULT epoch=1 Sum=9
+0:0:29.533203135 DEBUG (0): ***\\\\||||||//////***
+0:0:48.832031260 DEBUG (8): NodeID= 8 : AggregationSum sample= 17 , sumBefore= 0
+0:0:48.832031260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 17
+0:0:48.832031260 DEBUG (8): NodeID= 8 : AggregationSum value= 17
+0:0:48.832031260 DEBUG (8): SendAggSumTask() posted!!
+0:0:48.832031260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.832031270 DEBUG (8): SendAggSumTask(): Starting....
+0:0:48.832031270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:0:48.837707507 DEBUG (6): ### AggSumReceive.receive() start #####
+0:0:48.837707507 DEBUG (6): Something received!!!  from 8
+0:0:48.837707507 DEBUG (6): posting receiveAggSumTask()!!!!
+0:0:48.837707517 DEBUG (6): ReceiveAggSumTask():received msg...
+0:0:48.837707517 DEBUG (6): ReceiveAggSumTask(): len=2
+0:0:48.837707517 DEBUG (6): receiveAggSumTask(): sum= 17
+0:0:48.837707517 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 17
+0:0:48.837875352 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:0:48.837875352 DEBUG (8): A AggregationSum package sent... True
+0:0:48.906250010 DEBUG (6): NodeID= 6 : AggregationSum sample= 18 , sumBefore= 17
+0:0:48.906250010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 35
+0:0:48.906250010 DEBUG (6): NodeID= 6 : AggregationSum value= 35
+0:0:48.906250010 DEBUG (6): SendAggSumTask() posted!!
+0:0:48.906250010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.906250020 DEBUG (6): SendAggSumTask(): Starting....
+0:0:48.906250020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:0:48.908203135 DEBUG (4): NodeID= 4 : AggregationSum sample= 46 , sumBefore= 0
+0:0:48.908203135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 46
+0:0:48.908203135 DEBUG (4): NodeID= 4 : AggregationSum value= 46
+0:0:48.908203135 DEBUG (4): SendAggSumTask() posted!!
+0:0:48.908203135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.908203145 DEBUG (4): SendAggSumTask(): Starting....
+0:0:48.908203145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:0:48.909179698 DEBUG (5): NodeID= 5 : AggregationSum sample= 46 , sumBefore= 0
+0:0:48.909179698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 46
+0:0:48.909179698 DEBUG (5): NodeID= 5 : AggregationSum value= 46
+0:0:48.909179698 DEBUG (5): SendAggSumTask() posted!!
+0:0:48.909179698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.909179708 DEBUG (5): SendAggSumTask(): Starting....
+0:0:48.909179708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:0:48.911514289 DEBUG (3): ### AggSumReceive.receive() start #####
+0:0:48.911514289 DEBUG (3): Something received!!!  from 5
+0:0:48.911514289 DEBUG (3): posting receiveAggSumTask()!!!!
+0:0:48.911514299 DEBUG (3): ReceiveAggSumTask():received msg...
+0:0:48.911514299 DEBUG (3): ReceiveAggSumTask(): len=2
+0:0:48.911514299 DEBUG (3): receiveAggSumTask(): sum= 46
+0:0:48.911514299 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 46
+0:0:48.911682134 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:0:48.911682134 DEBUG (5): A AggregationSum package sent... True
+0:0:48.912963859 DEBUG (1): ### AggSumReceive.receive() start #####
+0:0:48.912963859 DEBUG (1): Something received!!!  from 4
+0:0:48.912963859 DEBUG (1): posting receiveAggSumTask()!!!!
+0:0:48.912963869 DEBUG (1): ReceiveAggSumTask():received msg...
+0:0:48.912963869 DEBUG (1): ReceiveAggSumTask(): len=2
+0:0:48.912963869 DEBUG (1): receiveAggSumTask(): sum= 46
+0:0:48.912963869 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 46
+0:0:48.913085948 DEBUG (7): NodeID= 7 : AggregationSum sample= 59 , sumBefore= 0
+0:0:48.913085948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 59
+0:0:48.913085948 DEBUG (7): NodeID= 7 : AggregationSum value= 59
+0:0:48.913085948 DEBUG (7): SendAggSumTask() posted!!
+0:0:48.913085948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.913085958 DEBUG (7): SendAggSumTask(): Starting....
+0:0:48.913085958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:0:48.913131705 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:0:48.913131705 DEBUG (4): A AggregationSum package sent... True
+0:0:48.914596529 DEBUG (3): ### AggSumReceive.receive() start #####
+0:0:48.914596529 DEBUG (3): Something received!!!  from 6
+0:0:48.914596529 DEBUG (3): posting receiveAggSumTask()!!!!
+0:0:48.914596539 DEBUG (3): ReceiveAggSumTask():received msg...
+0:0:48.914596539 DEBUG (3): ReceiveAggSumTask(): len=2
+0:0:48.914596539 DEBUG (3): receiveAggSumTask(): sum= 35
+0:0:48.914596539 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 81
+0:0:48.914764375 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:0:48.914764375 DEBUG (6): A AggregationSum package sent... True
+0:0:48.917770379 DEBUG (1): ### AggSumReceive.receive() start #####
+0:0:48.917770379 DEBUG (1): Something received!!!  from 7
+0:0:48.917770379 DEBUG (1): posting receiveAggSumTask()!!!!
+0:0:48.917770389 DEBUG (1): ReceiveAggSumTask():received msg...
+0:0:48.917770389 DEBUG (1): ReceiveAggSumTask(): len=2
+0:0:48.917770389 DEBUG (1): receiveAggSumTask(): sum= 59
+0:0:48.917770389 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 105
+0:0:48.917938224 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:0:48.917938224 DEBUG (7): A AggregationSum package sent... True
+0:0:48.985351572 DEBUG (1): NodeID= 1 : AggregationSum sample= 9 , sumBefore= 105
+0:0:48.985351572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 114
+0:0:48.985351572 DEBUG (1): NodeID= 1 : AggregationSum value= 114
+0:0:48.985351572 DEBUG (1): SendAggSumTask() posted!!
+0:0:48.985351572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.985351582 DEBUG (1): SendAggSumTask(): Starting....
+0:0:48.985351582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:0:48.989257822 DEBUG (3): NodeID= 3 : AggregationSum sample= 8 , sumBefore= 81
+0:0:48.989257822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 89
+0:0:48.989257822 DEBUG (3): NodeID= 3 : AggregationSum value= 89
+0:0:48.989257822 DEBUG (3): SendAggSumTask() posted!!
+0:0:48.989257822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.989257832 DEBUG (3): SendAggSumTask(): Starting....
+0:0:48.989257832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:0:48.992187510 DEBUG (2): NodeID= 2 : AggregationSum sample= 37 , sumBefore= 0
+0:0:48.992187510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 37
+0:0:48.992187510 DEBUG (2): NodeID= 2 : AggregationSum value= 37
+0:0:48.992187510 DEBUG (2): SendAggSumTask() posted!!
+0:0:48.992187510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:0:48.992187520 DEBUG (2): SendAggSumTask(): Starting....
+0:0:48.992187520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:0:48.992629982 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:0:48.992629982 DEBUG (1): A AggregationSum package sent... True
+0:0:48.993347164 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:0:48.993347164 DEBUG (3): A AggregationSum package sent... True
+0:0:49.000717133 DEBUG (0): ### AggSumReceive.receive() start #####
+0:0:49.000717133 DEBUG (0): Something received!!!  from 2
+0:0:49.000717133 DEBUG (0): posting receiveAggSumTask()!!!!
+0:0:49.000717143 DEBUG (0): ReceiveAggSumTask():received msg...
+0:0:49.000717143 DEBUG (0): ReceiveAggSumTask(): len=2
+0:0:49.000717143 DEBUG (0): receiveAggSumTask(): sum= 37
+0:0:49.000717143 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 37
+0:0:49.000884979 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:0:49.000884979 DEBUG (2): A AggregationSum package sent... True
+0:0:49.064453135 DEBUG (0): NodeID= 0 : AggregationSum sample= 8 , sumBefore= 37
+0:0:49.064453135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 45
+0:0:49.064453135 DEBUG (0): ***////////||||||\\\***
+0:0:49.064453135 DEBUG (0): AGG RESULT epoch=2 Sum=45
+0:0:49.064453135 DEBUG (0): ***\\\\||||||//////***
+0:1:8.363281260 DEBUG (8): NodeID= 8 : AggregationSum sample= 14 , sumBefore= 0
+0:1:8.363281260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 14
+0:1:8.363281260 DEBUG (8): NodeID= 8 : AggregationSum value= 14
+0:1:8.363281260 DEBUG (8): SendAggSumTask() posted!!
+0:1:8.363281260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.363281270 DEBUG (8): SendAggSumTask(): Starting....
+0:1:8.363281270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:1:8.366500856 DEBUG (6): ### AggSumReceive.receive() start #####
+0:1:8.366500856 DEBUG (6): Something received!!!  from 8
+0:1:8.366500856 DEBUG (6): posting receiveAggSumTask()!!!!
+0:1:8.366500866 DEBUG (6): ReceiveAggSumTask():received msg...
+0:1:8.366500866 DEBUG (6): ReceiveAggSumTask(): len=2
+0:1:8.366500866 DEBUG (6): receiveAggSumTask(): sum= 14
+0:1:8.366500866 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 14
+0:1:8.366668702 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:1:8.366668702 DEBUG (8): A AggregationSum package sent... True
+0:1:8.437500010 DEBUG (6): NodeID= 6 : AggregationSum sample= 17 , sumBefore= 14
+0:1:8.437500010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 31
+0:1:8.437500010 DEBUG (6): NodeID= 6 : AggregationSum value= 31
+0:1:8.437500010 DEBUG (6): SendAggSumTask() posted!!
+0:1:8.437500010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.437500020 DEBUG (6): SendAggSumTask(): Starting....
+0:1:8.437500020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:1:8.439453135 DEBUG (4): NodeID= 4 : AggregationSum sample= 50 , sumBefore= 0
+0:1:8.439453135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 50
+0:1:8.439453135 DEBUG (4): NodeID= 4 : AggregationSum value= 50
+0:1:8.439453135 DEBUG (4): SendAggSumTask() posted!!
+0:1:8.439453135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.439453145 DEBUG (4): SendAggSumTask(): Starting....
+0:1:8.439453145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:1:8.440429698 DEBUG (5): NodeID= 5 : AggregationSum sample= 47 , sumBefore= 0
+0:1:8.440429698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 47
+0:1:8.440429698 DEBUG (5): NodeID= 5 : AggregationSum value= 47
+0:1:8.440429698 DEBUG (5): SendAggSumTask() posted!!
+0:1:8.440429698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.440429708 DEBUG (5): SendAggSumTask(): Starting....
+0:1:8.440429708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:1:8.444335948 DEBUG (7): NodeID= 7 : AggregationSum sample= 54 , sumBefore= 0
+0:1:8.444335948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 54
+0:1:8.444335948 DEBUG (7): NodeID= 7 : AggregationSum value= 54
+0:1:8.444335948 DEBUG (7): SendAggSumTask() posted!!
+0:1:8.444335948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.444335958 DEBUG (7): SendAggSumTask(): Starting....
+0:1:8.444335958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:1:8.444580057 DEBUG (3): ### AggSumReceive.receive() start #####
+0:1:8.444580057 DEBUG (3): Something received!!!  from 6
+0:1:8.444580057 DEBUG (3): posting receiveAggSumTask()!!!!
+0:1:8.444580067 DEBUG (3): ReceiveAggSumTask():received msg...
+0:1:8.444580067 DEBUG (3): ReceiveAggSumTask(): len=2
+0:1:8.444580067 DEBUG (3): receiveAggSumTask(): sum= 31
+0:1:8.444580067 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 31
+0:1:8.444747903 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:1:8.444747903 DEBUG (6): A AggregationSum package sent... True
+0:1:8.446029645 DEBUG (1): ### AggSumReceive.receive() start #####
+0:1:8.446029645 DEBUG (1): Something received!!!  from 4
+0:1:8.446029645 DEBUG (1): posting receiveAggSumTask()!!!!
+0:1:8.446029655 DEBUG (1): ReceiveAggSumTask():received msg...
+0:1:8.446029655 DEBUG (1): ReceiveAggSumTask(): len=2
+0:1:8.446029655 DEBUG (1): receiveAggSumTask(): sum= 50
+0:1:8.446029655 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 50
+0:1:8.446197490 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:1:8.446197490 DEBUG (4): A AggregationSum package sent... True
+0:1:8.448699923 DEBUG (3): ### AggSumReceive.receive() start #####
+0:1:8.448699923 DEBUG (3): Something received!!!  from 5
+0:1:8.448699923 DEBUG (3): posting receiveAggSumTask()!!!!
+0:1:8.448699933 DEBUG (3): ReceiveAggSumTask():received msg...
+0:1:8.448699933 DEBUG (3): ReceiveAggSumTask(): len=2
+0:1:8.448699933 DEBUG (3): receiveAggSumTask(): sum= 47
+0:1:8.448699933 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 78
+0:1:8.448867769 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:1:8.448867769 DEBUG (5): A AggregationSum package sent... True
+0:1:8.452362034 DEBUG (1): ### AggSumReceive.receive() start #####
+0:1:8.452362034 DEBUG (1): Something received!!!  from 7
+0:1:8.452362034 DEBUG (1): posting receiveAggSumTask()!!!!
+0:1:8.452362044 DEBUG (1): ReceiveAggSumTask():received msg...
+0:1:8.452362044 DEBUG (1): ReceiveAggSumTask(): len=2
+0:1:8.452362044 DEBUG (1): receiveAggSumTask(): sum= 54
+0:1:8.452362044 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 104
+0:1:8.452529880 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:1:8.452529880 DEBUG (7): A AggregationSum package sent... True
+0:1:8.516601572 DEBUG (1): NodeID= 1 : AggregationSum sample= 7 , sumBefore= 104
+0:1:8.516601572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 111
+0:1:8.516601572 DEBUG (1): NodeID= 1 : AggregationSum value= 111
+0:1:8.516601572 DEBUG (1): SendAggSumTask() posted!!
+0:1:8.516601572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.516601582 DEBUG (1): SendAggSumTask(): Starting....
+0:1:8.516601582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:1:8.520507822 DEBUG (3): NodeID= 3 : AggregationSum sample= 9 , sumBefore= 78
+0:1:8.520507822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 87
+0:1:8.520507822 DEBUG (3): NodeID= 3 : AggregationSum value= 87
+0:1:8.520507822 DEBUG (3): SendAggSumTask() posted!!
+0:1:8.520507822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.520507832 DEBUG (3): SendAggSumTask(): Starting....
+0:1:8.520507832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:1:8.522247324 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:8.522247324 DEBUG (0): Something received!!!  from 3
+0:1:8.522247324 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:8.522247334 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:8.522247334 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:8.522247334 DEBUG (0): receiveAggSumTask(): sum= 87
+0:1:8.522247334 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 87
+0:1:8.522415170 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:1:8.522415170 DEBUG (3): A AggregationSum package sent... True
+0:1:8.523437510 DEBUG (2): NodeID= 2 : AggregationSum sample= 29 , sumBefore= 0
+0:1:8.523437510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 29
+0:1:8.523437510 DEBUG (2): NodeID= 2 : AggregationSum value= 29
+0:1:8.523437510 DEBUG (2): SendAggSumTask() posted!!
+0:1:8.523437510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:8.523437520 DEBUG (2): SendAggSumTask(): Starting....
+0:1:8.523437520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:1:8.525924648 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:8.525924648 DEBUG (0): Something received!!!  from 1
+0:1:8.525924648 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:8.525924658 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:8.525924658 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:8.525924658 DEBUG (0): receiveAggSumTask(): sum= 111
+0:1:8.525924658 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 198
+0:1:8.526092494 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:1:8.526092494 DEBUG (1): A AggregationSum package sent... True
+0:1:8.527755732 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:8.527755732 DEBUG (0): Something received!!!  from 2
+0:1:8.527755732 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:8.527755742 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:8.527755742 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:8.527755742 DEBUG (0): receiveAggSumTask(): sum= 29
+0:1:8.527755742 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 227
+0:1:8.527923578 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:1:8.527923578 DEBUG (2): A AggregationSum package sent... True
+0:1:8.595703135 DEBUG (0): NodeID= 0 : AggregationSum sample= 9 , sumBefore= 227
+0:1:8.595703135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 236
+0:1:8.595703135 DEBUG (0): ***////////||||||\\\***
+0:1:8.595703135 DEBUG (0): AGG RESULT epoch=3 Sum=236
+0:1:8.595703135 DEBUG (0): ***\\\\||||||//////***
+0:1:27.894531260 DEBUG (8): NodeID= 8 : AggregationSum sample= 14 , sumBefore= 0
+0:1:27.894531260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 14
+0:1:27.894531260 DEBUG (8): NodeID= 8 : AggregationSum value= 14
+0:1:27.894531260 DEBUG (8): SendAggSumTask() posted!!
+0:1:27.894531260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:27.894531270 DEBUG (8): SendAggSumTask(): Starting....
+0:1:27.894531270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:1:27.900772079 DEBUG (6): ### AggSumReceive.receive() start #####
+0:1:27.900772079 DEBUG (6): Something received!!!  from 8
+0:1:27.900772079 DEBUG (6): posting receiveAggSumTask()!!!!
+0:1:27.900772089 DEBUG (6): ReceiveAggSumTask():received msg...
+0:1:27.900772089 DEBUG (6): ReceiveAggSumTask(): len=2
+0:1:27.900772089 DEBUG (6): receiveAggSumTask(): sum= 14
+0:1:27.900772089 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 14
+0:1:27.900939924 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:1:27.900939924 DEBUG (8): A AggregationSum package sent... True
+0:1:27.968750010 DEBUG (6): NodeID= 6 : AggregationSum sample= 13 , sumBefore= 14
+0:1:27.968750010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 27
+0:1:27.968750010 DEBUG (6): NodeID= 6 : AggregationSum value= 27
+0:1:27.968750010 DEBUG (6): SendAggSumTask() posted!!
+0:1:27.968750010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:27.968750020 DEBUG (6): SendAggSumTask(): Starting....
+0:1:27.968750020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:1:27.970703135 DEBUG (4): NodeID= 4 : AggregationSum sample= 49 , sumBefore= 0
+0:1:27.970703135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 49
+0:1:27.970703135 DEBUG (4): NodeID= 4 : AggregationSum value= 49
+0:1:27.970703135 DEBUG (4): SendAggSumTask() posted!!
+0:1:27.970703135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:27.970703145 DEBUG (4): SendAggSumTask(): Starting....
+0:1:27.970703145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:1:27.971679698 DEBUG (5): NodeID= 5 : AggregationSum sample= 55 , sumBefore= 0
+0:1:27.971679698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 55
+0:1:27.971679698 DEBUG (5): NodeID= 5 : AggregationSum value= 55
+0:1:27.971679698 DEBUG (5): SendAggSumTask() posted!!
+0:1:27.971679698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:27.971679708 DEBUG (5): SendAggSumTask(): Starting....
+0:1:27.971679708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:1:27.975585948 DEBUG (7): NodeID= 7 : AggregationSum sample= 44 , sumBefore= 0
+0:1:27.975585948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 44
+0:1:27.975585948 DEBUG (7): NodeID= 7 : AggregationSum value= 44
+0:1:27.975585948 DEBUG (7): SendAggSumTask() posted!!
+0:1:27.975585948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:27.975585958 DEBUG (7): SendAggSumTask(): Starting....
+0:1:27.975585958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:1:27.978713962 DEBUG (1): ### AggSumReceive.receive() start #####
+0:1:27.978713962 DEBUG (1): Something received!!!  from 4
+0:1:27.978713962 DEBUG (1): posting receiveAggSumTask()!!!!
+0:1:27.978713972 DEBUG (1): ReceiveAggSumTask():received msg...
+0:1:27.978713972 DEBUG (1): ReceiveAggSumTask(): len=2
+0:1:27.978713972 DEBUG (1): receiveAggSumTask(): sum= 49
+0:1:27.978713972 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 49
+0:1:27.978881808 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:1:27.978881808 DEBUG (4): A AggregationSum package sent... True
+0:1:27.979476886 DEBUG (3): ### AggSumReceive.receive() start #####
+0:1:27.979476886 DEBUG (3): Something received!!!  from 6
+0:1:27.979476886 DEBUG (3): posting receiveAggSumTask()!!!!
+0:1:27.979476896 DEBUG (3): ReceiveAggSumTask():received msg...
+0:1:27.979476896 DEBUG (3): ReceiveAggSumTask(): len=2
+0:1:27.979476896 DEBUG (3): receiveAggSumTask(): sum= 27
+0:1:27.979476896 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 27
+0:1:27.979644732 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:1:27.979644732 DEBUG (6): A AggregationSum package sent... True
+0:1:27.981216395 DEBUG (3): ### AggSumReceive.receive() start #####
+0:1:27.981216395 DEBUG (3): Something received!!!  from 5
+0:1:27.981216395 DEBUG (3): posting receiveAggSumTask()!!!!
+0:1:27.981216405 DEBUG (3): ReceiveAggSumTask():received msg...
+0:1:27.981216405 DEBUG (3): ReceiveAggSumTask(): len=2
+0:1:27.981216405 DEBUG (3): receiveAggSumTask(): sum= 55
+0:1:27.981216405 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 82
+0:1:27.981384241 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:1:27.981384241 DEBUG (5): A AggregationSum package sent... True
+0:1:27.984481780 DEBUG (1): ### AggSumReceive.receive() start #####
+0:1:27.984481780 DEBUG (1): Something received!!!  from 7
+0:1:27.984481780 DEBUG (1): posting receiveAggSumTask()!!!!
+0:1:27.984481790 DEBUG (1): ReceiveAggSumTask():received msg...
+0:1:27.984481790 DEBUG (1): ReceiveAggSumTask(): len=2
+0:1:27.984481790 DEBUG (1): receiveAggSumTask(): sum= 44
+0:1:27.984481790 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 93
+0:1:27.984649626 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:1:27.984649626 DEBUG (7): A AggregationSum package sent... True
+0:1:28.047851572 DEBUG (1): NodeID= 1 : AggregationSum sample= 6 , sumBefore= 93
+0:1:28.047851572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 99
+0:1:28.047851572 DEBUG (1): NodeID= 1 : AggregationSum value= 99
+0:1:28.047851572 DEBUG (1): SendAggSumTask() posted!!
+0:1:28.047851572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:28.047851582 DEBUG (1): SendAggSumTask(): Starting....
+0:1:28.047851582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:1:28.051757822 DEBUG (3): NodeID= 3 : AggregationSum sample= 8 , sumBefore= 82
+0:1:28.051757822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 90
+0:1:28.051757822 DEBUG (3): NodeID= 3 : AggregationSum value= 90
+0:1:28.051757822 DEBUG (3): SendAggSumTask() posted!!
+0:1:28.051757822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:28.051757832 DEBUG (3): SendAggSumTask(): Starting....
+0:1:28.051757832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:1:28.054687510 DEBUG (2): NodeID= 2 : AggregationSum sample= 27 , sumBefore= 0
+0:1:28.054687510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 27
+0:1:28.054687510 DEBUG (2): NodeID= 2 : AggregationSum value= 27
+0:1:28.054687510 DEBUG (2): SendAggSumTask() posted!!
+0:1:28.054687510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:28.054687520 DEBUG (2): SendAggSumTask(): Starting....
+0:1:28.054687520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:1:28.056167574 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:28.056167574 DEBUG (0): Something received!!!  from 1
+0:1:28.056167574 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:28.056167584 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:28.056167584 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:28.056167584 DEBUG (0): receiveAggSumTask(): sum= 99
+0:1:28.056167584 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 99
+0:1:28.056335419 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:1:28.056335419 DEBUG (1): A AggregationSum package sent... True
+0:1:28.058761593 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:28.058761593 DEBUG (0): Something received!!!  from 2
+0:1:28.058761593 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:28.058761603 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:28.058761603 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:28.058761603 DEBUG (0): receiveAggSumTask(): sum= 27
+0:1:28.058761603 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 126
+0:1:28.058929438 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:1:28.058929438 DEBUG (2): A AggregationSum package sent... True
+0:1:28.061813316 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:28.061813316 DEBUG (0): Something received!!!  from 3
+0:1:28.061813316 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:28.061813326 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:28.061813326 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:28.061813326 DEBUG (0): receiveAggSumTask(): sum= 90
+0:1:28.061813326 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 216
+0:1:28.061981161 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:1:28.061981161 DEBUG (3): A AggregationSum package sent... True
+0:1:28.126953135 DEBUG (0): NodeID= 0 : AggregationSum sample= 9 , sumBefore= 216
+0:1:28.126953135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 225
+0:1:28.126953135 DEBUG (0): ***////////||||||\\\***
+0:1:28.126953135 DEBUG (0): AGG RESULT epoch=4 Sum=225
+0:1:28.126953135 DEBUG (0): ***\\\\||||||//////***
+0:1:47.425781260 DEBUG (8): NodeID= 8 : AggregationSum sample= 14 , sumBefore= 0
+0:1:47.425781260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 14
+0:1:47.425781260 DEBUG (8): NodeID= 8 : AggregationSum value= 14
+0:1:47.425781260 DEBUG (8): SendAggSumTask() posted!!
+0:1:47.425781260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.425781270 DEBUG (8): SendAggSumTask(): Starting....
+0:1:47.425781270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:1:47.427810677 DEBUG (6): ### AggSumReceive.receive() start #####
+0:1:47.427810677 DEBUG (6): Something received!!!  from 8
+0:1:47.427810677 DEBUG (6): posting receiveAggSumTask()!!!!
+0:1:47.427810687 DEBUG (6): ReceiveAggSumTask():received msg...
+0:1:47.427810687 DEBUG (6): ReceiveAggSumTask(): len=2
+0:1:47.427810687 DEBUG (6): receiveAggSumTask(): sum= 14
+0:1:47.427810687 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 14
+0:1:47.427978523 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:1:47.427978523 DEBUG (8): A AggregationSum package sent... True
+0:1:47.500000010 DEBUG (6): NodeID= 6 : AggregationSum sample= 13 , sumBefore= 14
+0:1:47.500000010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 27
+0:1:47.500000010 DEBUG (6): NodeID= 6 : AggregationSum value= 27
+0:1:47.500000010 DEBUG (6): SendAggSumTask() posted!!
+0:1:47.500000010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.500000020 DEBUG (6): SendAggSumTask(): Starting....
+0:1:47.500000020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:1:47.501953135 DEBUG (4): NodeID= 4 : AggregationSum sample= 58 , sumBefore= 0
+0:1:47.501953135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 58
+0:1:47.501953135 DEBUG (4): NodeID= 4 : AggregationSum value= 58
+0:1:47.501953135 DEBUG (4): SendAggSumTask() posted!!
+0:1:47.501953135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.501953145 DEBUG (4): SendAggSumTask(): Starting....
+0:1:47.501953145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:1:47.502929698 DEBUG (5): NodeID= 5 : AggregationSum sample= 60 , sumBefore= 0
+0:1:47.502929698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 60
+0:1:47.502929698 DEBUG (5): NodeID= 5 : AggregationSum value= 60
+0:1:47.502929698 DEBUG (5): SendAggSumTask() posted!!
+0:1:47.502929698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.502929708 DEBUG (5): SendAggSumTask(): Starting....
+0:1:47.502929708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:1:47.503356934 DEBUG (3): ### AggSumReceive.receive() start #####
+0:1:47.503356934 DEBUG (3): Something received!!!  from 6
+0:1:47.503356934 DEBUG (3): posting receiveAggSumTask()!!!!
+0:1:47.503356944 DEBUG (3): ReceiveAggSumTask():received msg...
+0:1:47.503356944 DEBUG (3): ReceiveAggSumTask(): len=2
+0:1:47.503356944 DEBUG (3): receiveAggSumTask(): sum= 27
+0:1:47.503356944 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 27
+0:1:47.503524780 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:1:47.503524780 DEBUG (6): A AggregationSum package sent... True
+0:1:47.506835948 DEBUG (7): NodeID= 7 : AggregationSum sample= 48 , sumBefore= 0
+0:1:47.506835948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 48
+0:1:47.506835948 DEBUG (7): NodeID= 7 : AggregationSum value= 48
+0:1:47.506835948 DEBUG (7): SendAggSumTask() posted!!
+0:1:47.506835948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.506835958 DEBUG (7): SendAggSumTask(): Starting....
+0:1:47.506835958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:1:47.508285511 DEBUG (3): ### AggSumReceive.receive() start #####
+0:1:47.508285511 DEBUG (3): Something received!!!  from 5
+0:1:47.508285511 DEBUG (3): posting receiveAggSumTask()!!!!
+0:1:47.508285521 DEBUG (3): ReceiveAggSumTask():received msg...
+0:1:47.508285521 DEBUG (3): ReceiveAggSumTask(): len=2
+0:1:47.508285521 DEBUG (3): receiveAggSumTask(): sum= 60
+0:1:47.508285521 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 87
+0:1:47.508453357 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:1:47.508453357 DEBUG (5): A AggregationSum package sent... True
+0:1:47.511932364 DEBUG (1): ### AggSumReceive.receive() start #####
+0:1:47.511932364 DEBUG (1): Something received!!!  from 7
+0:1:47.511932364 DEBUG (1): posting receiveAggSumTask()!!!!
+0:1:47.511932374 DEBUG (1): ReceiveAggSumTask():received msg...
+0:1:47.511932374 DEBUG (1): ReceiveAggSumTask(): len=2
+0:1:47.511932374 DEBUG (1): receiveAggSumTask(): sum= 48
+0:1:47.511932374 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 48
+0:1:47.512100209 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:1:47.512100209 DEBUG (7): A AggregationSum package sent... True
+0:1:47.514205881 DEBUG (1): ### AggSumReceive.receive() start #####
+0:1:47.514205881 DEBUG (1): Something received!!!  from 4
+0:1:47.514205881 DEBUG (1): posting receiveAggSumTask()!!!!
+0:1:47.514205891 DEBUG (1): ReceiveAggSumTask():received msg...
+0:1:47.514205891 DEBUG (1): ReceiveAggSumTask(): len=2
+0:1:47.514205891 DEBUG (1): receiveAggSumTask(): sum= 58
+0:1:47.514205891 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 106
+0:1:47.514373727 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:1:47.514373727 DEBUG (4): A AggregationSum package sent... True
+0:1:47.579101572 DEBUG (1): NodeID= 1 : AggregationSum sample= 6 , sumBefore= 106
+0:1:47.579101572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 112
+0:1:47.579101572 DEBUG (1): NodeID= 1 : AggregationSum value= 112
+0:1:47.579101572 DEBUG (1): SendAggSumTask() posted!!
+0:1:47.579101572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.579101582 DEBUG (1): SendAggSumTask(): Starting....
+0:1:47.579101582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:1:47.583007822 DEBUG (3): NodeID= 3 : AggregationSum sample= 6 , sumBefore= 87
+0:1:47.583007822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 93
+0:1:47.583007822 DEBUG (3): NodeID= 3 : AggregationSum value= 93
+0:1:47.583007822 DEBUG (3): SendAggSumTask() posted!!
+0:1:47.583007822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.583007832 DEBUG (3): SendAggSumTask(): Starting....
+0:1:47.583007832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:1:47.585937510 DEBUG (2): NodeID= 2 : AggregationSum sample= 25 , sumBefore= 0
+0:1:47.585937510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 25
+0:1:47.585937510 DEBUG (2): NodeID= 2 : AggregationSum value= 25
+0:1:47.585937510 DEBUG (2): SendAggSumTask() posted!!
+0:1:47.585937510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:1:47.585937520 DEBUG (2): SendAggSumTask(): Starting....
+0:1:47.585937520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:1:47.586517333 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:47.586517333 DEBUG (0): Something received!!!  from 3
+0:1:47.586517333 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:47.586517343 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:47.586517343 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:47.586517343 DEBUG (0): receiveAggSumTask(): sum= 93
+0:1:47.586517343 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 93
+0:1:47.586685179 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:1:47.586685179 DEBUG (3): A AggregationSum package sent... True
+0:1:47.589645344 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:47.589645344 DEBUG (0): Something received!!!  from 1
+0:1:47.589645344 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:47.589645354 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:47.589645354 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:47.589645354 DEBUG (0): receiveAggSumTask(): sum= 112
+0:1:47.589645354 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 205
+0:1:47.589813190 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:1:47.589813190 DEBUG (1): A AggregationSum package sent... True
+0:1:47.591171254 DEBUG (0): ### AggSumReceive.receive() start #####
+0:1:47.591171254 DEBUG (0): Something received!!!  from 2
+0:1:47.591171254 DEBUG (0): posting receiveAggSumTask()!!!!
+0:1:47.591171264 DEBUG (0): ReceiveAggSumTask():received msg...
+0:1:47.591171264 DEBUG (0): ReceiveAggSumTask(): len=2
+0:1:47.591171264 DEBUG (0): receiveAggSumTask(): sum= 25
+0:1:47.591171264 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 230
+0:1:47.591339100 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:1:47.591339100 DEBUG (2): A AggregationSum package sent... True
+0:1:47.658203135 DEBUG (0): NodeID= 0 : AggregationSum sample= 7 , sumBefore= 230
+0:1:47.658203135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 237
+0:1:47.658203135 DEBUG (0): ***////////||||||\\\***
+0:1:47.658203135 DEBUG (0): AGG RESULT epoch=5 Sum=237
+0:1:47.658203135 DEBUG (0): ***\\\\||||||//////***
+0:2:6.957031260 DEBUG (8): NodeID= 8 : AggregationSum sample= 12 , sumBefore= 0
+0:2:6.957031260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 12
+0:2:6.957031260 DEBUG (8): NodeID= 8 : AggregationSum value= 12
+0:2:6.957031260 DEBUG (8): SendAggSumTask() posted!!
+0:2:6.957031260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:6.957031270 DEBUG (8): SendAggSumTask(): Starting....
+0:2:6.957031270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:2:6.968704176 DEBUG (6): ### AggSumReceive.receive() start #####
+0:2:6.968704176 DEBUG (6): Something received!!!  from 8
+0:2:6.968704176 DEBUG (6): posting receiveAggSumTask()!!!!
+0:2:6.968704186 DEBUG (6): ReceiveAggSumTask():received msg...
+0:2:6.968704186 DEBUG (6): ReceiveAggSumTask(): len=2
+0:2:6.968704186 DEBUG (6): receiveAggSumTask(): sum= 12
+0:2:6.968704186 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 12
+0:2:6.968872022 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:2:6.968872022 DEBUG (8): A AggregationSum package sent... True
+0:2:7.031250010 DEBUG (6): NodeID= 6 : AggregationSum sample= 11 , sumBefore= 12
+0:2:7.031250010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 23
+0:2:7.031250010 DEBUG (6): NodeID= 6 : AggregationSum value= 23
+0:2:7.031250010 DEBUG (6): SendAggSumTask() posted!!
+0:2:7.031250010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.031250020 DEBUG (6): SendAggSumTask(): Starting....
+0:2:7.031250020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:2:7.033203135 DEBUG (4): NodeID= 4 : AggregationSum sample= 51 , sumBefore= 0
+0:2:7.033203135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 51
+0:2:7.033203135 DEBUG (4): NodeID= 4 : AggregationSum value= 51
+0:2:7.033203135 DEBUG (4): SendAggSumTask() posted!!
+0:2:7.033203135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.033203145 DEBUG (4): SendAggSumTask(): Starting....
+0:2:7.033203145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:2:7.034179698 DEBUG (5): NodeID= 5 : AggregationSum sample= 57 , sumBefore= 0
+0:2:7.034179698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 57
+0:2:7.034179698 DEBUG (5): NodeID= 5 : AggregationSum value= 57
+0:2:7.034179698 DEBUG (5): SendAggSumTask() posted!!
+0:2:7.034179698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.034179708 DEBUG (5): SendAggSumTask(): Starting....
+0:2:7.034179708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:2:7.037857048 DEBUG (1): ### AggSumReceive.receive() start #####
+0:2:7.037857048 DEBUG (1): Something received!!!  from 4
+0:2:7.037857048 DEBUG (1): posting receiveAggSumTask()!!!!
+0:2:7.037857058 DEBUG (1): ReceiveAggSumTask():received msg...
+0:2:7.037857058 DEBUG (1): ReceiveAggSumTask(): len=2
+0:2:7.037857058 DEBUG (1): receiveAggSumTask(): sum= 51
+0:2:7.037857058 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 51
+0:2:7.038024894 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:2:7.038024894 DEBUG (4): A AggregationSum package sent... True
+0:2:7.038085948 DEBUG (7): NodeID= 7 : AggregationSum sample= 38 , sumBefore= 0
+0:2:7.038085948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 38
+0:2:7.038085948 DEBUG (7): NodeID= 7 : AggregationSum value= 38
+0:2:7.038085948 DEBUG (7): SendAggSumTask() posted!!
+0:2:7.038085948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.038085958 DEBUG (7): SendAggSumTask(): Starting....
+0:2:7.038085958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:2:7.038970922 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:2:7.038970922 DEBUG (6): A AggregationSum package sent... True
+0:2:7.040420516 DEBUG (3): ### AggSumReceive.receive() start #####
+0:2:7.040420516 DEBUG (3): Something received!!!  from 5
+0:2:7.040420516 DEBUG (3): posting receiveAggSumTask()!!!!
+0:2:7.040420526 DEBUG (3): ReceiveAggSumTask():received msg...
+0:2:7.040420526 DEBUG (3): ReceiveAggSumTask(): len=2
+0:2:7.040420526 DEBUG (3): receiveAggSumTask(): sum= 57
+0:2:7.040420526 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 57
+0:2:7.040588362 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:2:7.040588362 DEBUG (5): A AggregationSum package sent... True
+0:2:7.048812824 DEBUG (1): ### AggSumReceive.receive() start #####
+0:2:7.048812824 DEBUG (1): Something received!!!  from 7
+0:2:7.048812824 DEBUG (1): posting receiveAggSumTask()!!!!
+0:2:7.048812834 DEBUG (1): ReceiveAggSumTask():received msg...
+0:2:7.048812834 DEBUG (1): ReceiveAggSumTask(): len=2
+0:2:7.048812834 DEBUG (1): receiveAggSumTask(): sum= 38
+0:2:7.048812834 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 89
+0:2:7.048980670 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:2:7.048980670 DEBUG (7): A AggregationSum package sent... True
+0:2:7.110351572 DEBUG (1): NodeID= 1 : AggregationSum sample= 5 , sumBefore= 89
+0:2:7.110351572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 94
+0:2:7.110351572 DEBUG (1): NodeID= 1 : AggregationSum value= 94
+0:2:7.110351572 DEBUG (1): SendAggSumTask() posted!!
+0:2:7.110351572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.110351582 DEBUG (1): SendAggSumTask(): Starting....
+0:2:7.110351582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:2:7.114257822 DEBUG (3): NodeID= 3 : AggregationSum sample= 5 , sumBefore= 57
+0:2:7.114257822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 62
+0:2:7.114257822 DEBUG (3): NodeID= 3 : AggregationSum value= 62
+0:2:7.114257822 DEBUG (3): SendAggSumTask() posted!!
+0:2:7.114257822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.114257832 DEBUG (3): SendAggSumTask(): Starting....
+0:2:7.114257832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:2:7.117187510 DEBUG (2): NodeID= 2 : AggregationSum sample= 22 , sumBefore= 0
+0:2:7.117187510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 22
+0:2:7.117187510 DEBUG (2): NodeID= 2 : AggregationSum value= 22
+0:2:7.117187510 DEBUG (2): SendAggSumTask() posted!!
+0:2:7.117187510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:7.117187520 DEBUG (2): SendAggSumTask(): Starting....
+0:2:7.117187520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:2:7.118469211 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:2:7.118469211 DEBUG (1): A AggregationSum package sent... True
+0:2:7.119506825 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:2:7.119506825 DEBUG (3): A AggregationSum package sent... True
+0:2:7.122055045 DEBUG (0): ### AggSumReceive.receive() start #####
+0:2:7.122055045 DEBUG (0): Something received!!!  from 2
+0:2:7.122055045 DEBUG (0): posting receiveAggSumTask()!!!!
+0:2:7.122055055 DEBUG (0): ReceiveAggSumTask():received msg...
+0:2:7.122055055 DEBUG (0): ReceiveAggSumTask(): len=2
+0:2:7.122055055 DEBUG (0): receiveAggSumTask(): sum= 22
+0:2:7.122055055 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 22
+0:2:7.122222891 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:2:7.122222891 DEBUG (2): A AggregationSum package sent... True
+0:2:7.189453135 DEBUG (0): NodeID= 0 : AggregationSum sample= 7 , sumBefore= 22
+0:2:7.189453135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 29
+0:2:7.189453135 DEBUG (0): ***////////||||||\\\***
+0:2:7.189453135 DEBUG (0): AGG RESULT epoch=6 Sum=29
+0:2:7.189453135 DEBUG (0): ***\\\\||||||//////***
+0:2:26.488281260 DEBUG (8): NodeID= 8 : AggregationSum sample= 13 , sumBefore= 0
+0:2:26.488281260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 13
+0:2:26.488281260 DEBUG (8): NodeID= 8 : AggregationSum value= 13
+0:2:26.488281260 DEBUG (8): SendAggSumTask() posted!!
+0:2:26.488281260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.488281270 DEBUG (8): SendAggSumTask(): Starting....
+0:2:26.488281270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:2:26.491989134 DEBUG (6): ### AggSumReceive.receive() start #####
+0:2:26.491989134 DEBUG (6): Something received!!!  from 8
+0:2:26.491989134 DEBUG (6): posting receiveAggSumTask()!!!!
+0:2:26.491989144 DEBUG (6): ReceiveAggSumTask():received msg...
+0:2:26.491989144 DEBUG (6): ReceiveAggSumTask(): len=2
+0:2:26.491989144 DEBUG (6): receiveAggSumTask(): sum= 13
+0:2:26.491989144 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 13
+0:2:26.492156980 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:2:26.492156980 DEBUG (8): A AggregationSum package sent... True
+0:2:26.562500010 DEBUG (6): NodeID= 6 : AggregationSum sample= 10 , sumBefore= 13
+0:2:26.562500010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 23
+0:2:26.562500010 DEBUG (6): NodeID= 6 : AggregationSum value= 23
+0:2:26.562500010 DEBUG (6): SendAggSumTask() posted!!
+0:2:26.562500010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.562500020 DEBUG (6): SendAggSumTask(): Starting....
+0:2:26.562500020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:2:26.564453135 DEBUG (4): NodeID= 4 : AggregationSum sample= 49 , sumBefore= 0
+0:2:26.564453135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 49
+0:2:26.564453135 DEBUG (4): NodeID= 4 : AggregationSum value= 49
+0:2:26.564453135 DEBUG (4): SendAggSumTask() posted!!
+0:2:26.564453135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.564453145 DEBUG (4): SendAggSumTask(): Starting....
+0:2:26.564453145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:2:26.565429698 DEBUG (5): NodeID= 5 : AggregationSum sample= 54 , sumBefore= 0
+0:2:26.565429698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 54
+0:2:26.565429698 DEBUG (5): NodeID= 5 : AggregationSum value= 54
+0:2:26.565429698 DEBUG (5): SendAggSumTask() posted!!
+0:2:26.565429698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.565429708 DEBUG (5): SendAggSumTask(): Starting....
+0:2:26.565429708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:2:26.568908685 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:2:26.568908685 DEBUG (4): A AggregationSum package sent... True
+0:2:26.569335948 DEBUG (7): NodeID= 7 : AggregationSum sample= 44 , sumBefore= 0
+0:2:26.569335948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 44
+0:2:26.569335948 DEBUG (7): NodeID= 7 : AggregationSum value= 44
+0:2:26.569335948 DEBUG (7): SendAggSumTask() posted!!
+0:2:26.569335948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.569335958 DEBUG (7): SendAggSumTask(): Starting....
+0:2:26.569335958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:2:26.571853643 DEBUG (1): ### AggSumReceive.receive() start #####
+0:2:26.571853643 DEBUG (1): Something received!!!  from 7
+0:2:26.571853643 DEBUG (1): posting receiveAggSumTask()!!!!
+0:2:26.571853653 DEBUG (1): ReceiveAggSumTask():received msg...
+0:2:26.571853653 DEBUG (1): ReceiveAggSumTask(): len=2
+0:2:26.571853653 DEBUG (1): receiveAggSumTask(): sum= 44
+0:2:26.571853653 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 44
+0:2:26.572021489 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:2:26.572021489 DEBUG (7): A AggregationSum package sent... True
+0:2:26.572158777 DEBUG (3): ### AggSumReceive.receive() start #####
+0:2:26.572158777 DEBUG (3): Something received!!!  from 6
+0:2:26.572158777 DEBUG (3): posting receiveAggSumTask()!!!!
+0:2:26.572158787 DEBUG (3): ReceiveAggSumTask():received msg...
+0:2:26.572158787 DEBUG (3): ReceiveAggSumTask(): len=2
+0:2:26.572158787 DEBUG (3): receiveAggSumTask(): sum= 23
+0:2:26.572158787 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 23
+0:2:26.572326623 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:2:26.572326623 DEBUG (6): A AggregationSum package sent... True
+0:2:26.573577853 DEBUG (3): ### AggSumReceive.receive() start #####
+0:2:26.573577853 DEBUG (3): Something received!!!  from 5
+0:2:26.573577853 DEBUG (3): posting receiveAggSumTask()!!!!
+0:2:26.573577863 DEBUG (3): ReceiveAggSumTask():received msg...
+0:2:26.573577863 DEBUG (3): ReceiveAggSumTask(): len=2
+0:2:26.573577863 DEBUG (3): receiveAggSumTask(): sum= 54
+0:2:26.573577863 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 77
+0:2:26.573745699 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:2:26.573745699 DEBUG (5): A AggregationSum package sent... True
+0:2:26.641601572 DEBUG (1): NodeID= 1 : AggregationSum sample= 5 , sumBefore= 44
+0:2:26.641601572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 49
+0:2:26.641601572 DEBUG (1): NodeID= 1 : AggregationSum value= 49
+0:2:26.641601572 DEBUG (1): SendAggSumTask() posted!!
+0:2:26.641601572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.641601582 DEBUG (1): SendAggSumTask(): Starting....
+0:2:26.641601582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:2:26.645507822 DEBUG (3): NodeID= 3 : AggregationSum sample= 4 , sumBefore= 77
+0:2:26.645507822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 81
+0:2:26.645507822 DEBUG (3): NodeID= 3 : AggregationSum value= 81
+0:2:26.645507822 DEBUG (3): SendAggSumTask() posted!!
+0:2:26.645507822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.645507832 DEBUG (3): SendAggSumTask(): Starting....
+0:2:26.645507832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:2:26.648437510 DEBUG (2): NodeID= 2 : AggregationSum sample= 22 , sumBefore= 0
+0:2:26.648437510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 22
+0:2:26.648437510 DEBUG (2): NodeID= 2 : AggregationSum value= 22
+0:2:26.648437510 DEBUG (2): SendAggSumTask() posted!!
+0:2:26.648437510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:26.648437520 DEBUG (2): SendAggSumTask(): Starting....
+0:2:26.648437520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:2:26.650985683 DEBUG (0): ### AggSumReceive.receive() start #####
+0:2:26.650985683 DEBUG (0): Something received!!!  from 1
+0:2:26.650985683 DEBUG (0): posting receiveAggSumTask()!!!!
+0:2:26.650985693 DEBUG (0): ReceiveAggSumTask():received msg...
+0:2:26.650985693 DEBUG (0): ReceiveAggSumTask(): len=2
+0:2:26.650985693 DEBUG (0): receiveAggSumTask(): sum= 49
+0:2:26.650985693 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 49
+0:2:26.651153528 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:2:26.651153528 DEBUG (1): A AggregationSum package sent... True
+0:2:26.653991670 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:2:26.653991670 DEBUG (3): A AggregationSum package sent... True
+0:2:26.656829805 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:2:26.656829805 DEBUG (2): A AggregationSum package sent... True
+0:2:26.720703135 DEBUG (0): NodeID= 0 : AggregationSum sample= 6 , sumBefore= 49
+0:2:26.720703135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 55
+0:2:26.720703135 DEBUG (0): ***////////||||||\\\***
+0:2:26.720703135 DEBUG (0): AGG RESULT epoch=7 Sum=55
+0:2:26.720703135 DEBUG (0): ***\\\\||||||//////***
+0:2:46.019531260 DEBUG (8): NodeID= 8 : AggregationSum sample= 10 , sumBefore= 0
+0:2:46.019531260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 10
+0:2:46.019531260 DEBUG (8): NodeID= 8 : AggregationSum value= 10
+0:2:46.019531260 DEBUG (8): SendAggSumTask() posted!!
+0:2:46.019531260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.019531270 DEBUG (8): SendAggSumTask(): Starting....
+0:2:46.019531270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:2:46.026840188 DEBUG (6): ### AggSumReceive.receive() start #####
+0:2:46.026840188 DEBUG (6): Something received!!!  from 8
+0:2:46.026840188 DEBUG (6): posting receiveAggSumTask()!!!!
+0:2:46.026840198 DEBUG (6): ReceiveAggSumTask():received msg...
+0:2:46.026840198 DEBUG (6): ReceiveAggSumTask(): len=2
+0:2:46.026840198 DEBUG (6): receiveAggSumTask(): sum= 10
+0:2:46.026840198 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 10
+0:2:46.027008033 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:2:46.027008033 DEBUG (8): A AggregationSum package sent... True
+0:2:46.093750010 DEBUG (6): NodeID= 6 : AggregationSum sample= 8 , sumBefore= 10
+0:2:46.093750010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 18
+0:2:46.093750010 DEBUG (6): NodeID= 6 : AggregationSum value= 18
+0:2:46.093750010 DEBUG (6): SendAggSumTask() posted!!
+0:2:46.093750010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.093750020 DEBUG (6): SendAggSumTask(): Starting....
+0:2:46.093750020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:2:46.095703135 DEBUG (4): NodeID= 4 : AggregationSum sample= 47 , sumBefore= 0
+0:2:46.095703135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 47
+0:2:46.095703135 DEBUG (4): NodeID= 4 : AggregationSum value= 47
+0:2:46.095703135 DEBUG (4): SendAggSumTask() posted!!
+0:2:46.095703135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.095703145 DEBUG (4): SendAggSumTask(): Starting....
+0:2:46.095703145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:2:46.096679698 DEBUG (5): NodeID= 5 : AggregationSum sample= 54 , sumBefore= 0
+0:2:46.096679698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 54
+0:2:46.096679698 DEBUG (5): NodeID= 5 : AggregationSum value= 54
+0:2:46.096679698 DEBUG (5): SendAggSumTask() posted!!
+0:2:46.096679698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.096679708 DEBUG (5): SendAggSumTask(): Starting....
+0:2:46.096679708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:2:46.096908571 DEBUG (3): ### AggSumReceive.receive() start #####
+0:2:46.096908571 DEBUG (3): Something received!!!  from 6
+0:2:46.096908571 DEBUG (3): posting receiveAggSumTask()!!!!
+0:2:46.096908581 DEBUG (3): ReceiveAggSumTask():received msg...
+0:2:46.096908581 DEBUG (3): ReceiveAggSumTask(): len=2
+0:2:46.096908581 DEBUG (3): receiveAggSumTask(): sum= 18
+0:2:46.096908581 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 18
+0:2:46.097076417 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:2:46.097076417 DEBUG (6): A AggregationSum package sent... True
+0:2:46.100585948 DEBUG (7): NodeID= 7 : AggregationSum sample= 44 , sumBefore= 0
+0:2:46.100585948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 44
+0:2:46.100585948 DEBUG (7): NodeID= 7 : AggregationSum value= 44
+0:2:46.100585948 DEBUG (7): SendAggSumTask() posted!!
+0:2:46.100585948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.100585958 DEBUG (7): SendAggSumTask(): Starting....
+0:2:46.100585958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:2:46.104248023 DEBUG (3): ### AggSumReceive.receive() start #####
+0:2:46.104248023 DEBUG (3): Something received!!!  from 5
+0:2:46.104248023 DEBUG (3): posting receiveAggSumTask()!!!!
+0:2:46.104248033 DEBUG (3): ReceiveAggSumTask():received msg...
+0:2:46.104248033 DEBUG (3): ReceiveAggSumTask(): len=2
+0:2:46.104248033 DEBUG (3): receiveAggSumTask(): sum= 54
+0:2:46.104248033 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 72
+0:2:46.104415868 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:2:46.104415868 DEBUG (5): A AggregationSum package sent... True
+0:2:46.105514518 DEBUG (1): ### AggSumReceive.receive() start #####
+0:2:46.105514518 DEBUG (1): Something received!!!  from 7
+0:2:46.105514518 DEBUG (1): posting receiveAggSumTask()!!!!
+0:2:46.105514528 DEBUG (1): ReceiveAggSumTask():received msg...
+0:2:46.105514528 DEBUG (1): ReceiveAggSumTask(): len=2
+0:2:46.105514528 DEBUG (1): receiveAggSumTask(): sum= 44
+0:2:46.105514528 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 44
+0:2:46.105682364 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:2:46.105682364 DEBUG (7): A AggregationSum package sent... True
+0:2:46.107482861 DEBUG (1): ### AggSumReceive.receive() start #####
+0:2:46.107482861 DEBUG (1): Something received!!!  from 4
+0:2:46.107482861 DEBUG (1): posting receiveAggSumTask()!!!!
+0:2:46.107482871 DEBUG (1): ReceiveAggSumTask():received msg...
+0:2:46.107482871 DEBUG (1): ReceiveAggSumTask(): len=2
+0:2:46.107482871 DEBUG (1): receiveAggSumTask(): sum= 47
+0:2:46.107482871 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 91
+0:2:46.107650707 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:2:46.107650707 DEBUG (4): A AggregationSum package sent... True
+0:2:46.172851572 DEBUG (1): NodeID= 1 : AggregationSum sample= 5 , sumBefore= 91
+0:2:46.172851572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 96
+0:2:46.172851572 DEBUG (1): NodeID= 1 : AggregationSum value= 96
+0:2:46.172851572 DEBUG (1): SendAggSumTask() posted!!
+0:2:46.172851572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.172851582 DEBUG (1): SendAggSumTask(): Starting....
+0:2:46.172851582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:2:46.175186163 DEBUG (0): ### AggSumReceive.receive() start #####
+0:2:46.175186163 DEBUG (0): Something received!!!  from 1
+0:2:46.175186163 DEBUG (0): posting receiveAggSumTask()!!!!
+0:2:46.175186173 DEBUG (0): ReceiveAggSumTask():received msg...
+0:2:46.175186173 DEBUG (0): ReceiveAggSumTask(): len=2
+0:2:46.175186173 DEBUG (0): receiveAggSumTask(): sum= 96
+0:2:46.175186173 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 96
+0:2:46.175354009 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:2:46.175354009 DEBUG (1): A AggregationSum package sent... True
+0:2:46.176757822 DEBUG (3): NodeID= 3 : AggregationSum sample= 4 , sumBefore= 72
+0:2:46.176757822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 76
+0:2:46.176757822 DEBUG (3): NodeID= 3 : AggregationSum value= 76
+0:2:46.176757822 DEBUG (3): SendAggSumTask() posted!!
+0:2:46.176757822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.176757832 DEBUG (3): SendAggSumTask(): Starting....
+0:2:46.176757832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:2:46.179183966 DEBUG (0): ### AggSumReceive.receive() start #####
+0:2:46.179183966 DEBUG (0): Something received!!!  from 3
+0:2:46.179183966 DEBUG (0): posting receiveAggSumTask()!!!!
+0:2:46.179183976 DEBUG (0): ReceiveAggSumTask():received msg...
+0:2:46.179183976 DEBUG (0): ReceiveAggSumTask(): len=2
+0:2:46.179183976 DEBUG (0): receiveAggSumTask(): sum= 76
+0:2:46.179183976 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 172
+0:2:46.179351811 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:2:46.179351811 DEBUG (3): A AggregationSum package sent... True
+0:2:46.179687510 DEBUG (2): NodeID= 2 : AggregationSum sample= 21 , sumBefore= 0
+0:2:46.179687510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 21
+0:2:46.179687510 DEBUG (2): NodeID= 2 : AggregationSum value= 21
+0:2:46.179687510 DEBUG (2): SendAggSumTask() posted!!
+0:2:46.179687510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:2:46.179687520 DEBUG (2): SendAggSumTask(): Starting....
+0:2:46.179687520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:2:46.186370830 DEBUG (0): ### AggSumReceive.receive() start #####
+0:2:46.186370830 DEBUG (0): Something received!!!  from 2
+0:2:46.186370830 DEBUG (0): posting receiveAggSumTask()!!!!
+0:2:46.186370840 DEBUG (0): ReceiveAggSumTask():received msg...
+0:2:46.186370840 DEBUG (0): ReceiveAggSumTask(): len=2
+0:2:46.186370840 DEBUG (0): receiveAggSumTask(): sum= 21
+0:2:46.186370840 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 193
+0:2:46.186538676 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:2:46.186538676 DEBUG (2): A AggregationSum package sent... True
+0:2:46.251953135 DEBUG (0): NodeID= 0 : AggregationSum sample= 4 , sumBefore= 193
+0:2:46.251953135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 197
+0:2:46.251953135 DEBUG (0): ***////////||||||\\\***
+0:2:46.251953135 DEBUG (0): AGG RESULT epoch=8 Sum=197
+0:2:46.251953135 DEBUG (0): ***\\\\||||||//////***
+0:3:5.550781260 DEBUG (8): NodeID= 8 : AggregationSum sample= 9 , sumBefore= 0
+0:3:5.550781260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 9
+0:3:5.550781260 DEBUG (8): NodeID= 8 : AggregationSum value= 9
+0:3:5.550781260 DEBUG (8): SendAggSumTask() posted!!
+0:3:5.550781260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.550781270 DEBUG (8): SendAggSumTask(): Starting....
+0:3:5.550781270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:3:5.556457507 DEBUG (6): ### AggSumReceive.receive() start #####
+0:3:5.556457507 DEBUG (6): Something received!!!  from 8
+0:3:5.556457507 DEBUG (6): posting receiveAggSumTask()!!!!
+0:3:5.556457517 DEBUG (6): ReceiveAggSumTask():received msg...
+0:3:5.556457517 DEBUG (6): ReceiveAggSumTask(): len=2
+0:3:5.556457517 DEBUG (6): receiveAggSumTask(): sum= 9
+0:3:5.556457517 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 9
+0:3:5.556625352 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:3:5.556625352 DEBUG (8): A AggregationSum package sent... True
+0:3:5.625000010 DEBUG (6): NodeID= 6 : AggregationSum sample= 7 , sumBefore= 9
+0:3:5.625000010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 16
+0:3:5.625000010 DEBUG (6): NodeID= 6 : AggregationSum value= 16
+0:3:5.625000010 DEBUG (6): SendAggSumTask() posted!!
+0:3:5.625000010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.625000020 DEBUG (6): SendAggSumTask(): Starting....
+0:3:5.625000020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:3:5.626953135 DEBUG (4): NodeID= 4 : AggregationSum sample= 41 , sumBefore= 0
+0:3:5.626953135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 41
+0:3:5.626953135 DEBUG (4): NodeID= 4 : AggregationSum value= 41
+0:3:5.626953135 DEBUG (4): SendAggSumTask() posted!!
+0:3:5.626953135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.626953145 DEBUG (4): SendAggSumTask(): Starting....
+0:3:5.626953145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:3:5.627593999 DEBUG (3): ### AggSumReceive.receive() start #####
+0:3:5.627593999 DEBUG (3): Something received!!!  from 6
+0:3:5.627593999 DEBUG (3): posting receiveAggSumTask()!!!!
+0:3:5.627594009 DEBUG (3): ReceiveAggSumTask():received msg...
+0:3:5.627594009 DEBUG (3): ReceiveAggSumTask(): len=2
+0:3:5.627594009 DEBUG (3): receiveAggSumTask(): sum= 16
+0:3:5.627594009 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 16
+0:3:5.627761845 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:3:5.627761845 DEBUG (6): A AggregationSum package sent... True
+0:3:5.627929698 DEBUG (5): NodeID= 5 : AggregationSum sample= 59 , sumBefore= 0
+0:3:5.627929698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 59
+0:3:5.627929698 DEBUG (5): NodeID= 5 : AggregationSum value= 59
+0:3:5.627929698 DEBUG (5): SendAggSumTask() posted!!
+0:3:5.627929698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.627929708 DEBUG (5): SendAggSumTask(): Starting....
+0:3:5.627929708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:3:5.628677378 DEBUG (1): ### AggSumReceive.receive() start #####
+0:3:5.628677378 DEBUG (1): Something received!!!  from 4
+0:3:5.628677378 DEBUG (1): posting receiveAggSumTask()!!!!
+0:3:5.628677388 DEBUG (1): ReceiveAggSumTask():received msg...
+0:3:5.628677388 DEBUG (1): ReceiveAggSumTask(): len=2
+0:3:5.628677388 DEBUG (1): receiveAggSumTask(): sum= 41
+0:3:5.628677388 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 41
+0:3:5.628845224 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:3:5.628845224 DEBUG (4): A AggregationSum package sent... True
+0:3:5.631835948 DEBUG (7): NodeID= 7 : AggregationSum sample= 50 , sumBefore= 0
+0:3:5.631835948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 50
+0:3:5.631835948 DEBUG (7): NodeID= 7 : AggregationSum value= 50
+0:3:5.631835948 DEBUG (7): SendAggSumTask() posted!!
+0:3:5.631835948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.631835958 DEBUG (7): SendAggSumTask(): Starting....
+0:3:5.631835958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:3:5.638412457 DEBUG (1): ### AggSumReceive.receive() start #####
+0:3:5.638412457 DEBUG (1): Something received!!!  from 7
+0:3:5.638412457 DEBUG (1): posting receiveAggSumTask()!!!!
+0:3:5.638412467 DEBUG (1): ReceiveAggSumTask():received msg...
+0:3:5.638412467 DEBUG (1): ReceiveAggSumTask(): len=2
+0:3:5.638412467 DEBUG (1): receiveAggSumTask(): sum= 50
+0:3:5.638412467 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 91
+0:3:5.638580303 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:3:5.638580303 DEBUG (7): A AggregationSum package sent... True
+0:3:5.638870195 DEBUG (3): ### AggSumReceive.receive() start #####
+0:3:5.638870195 DEBUG (3): Something received!!!  from 5
+0:3:5.638870195 DEBUG (3): posting receiveAggSumTask()!!!!
+0:3:5.638870205 DEBUG (3): ReceiveAggSumTask():received msg...
+0:3:5.638870205 DEBUG (3): ReceiveAggSumTask(): len=2
+0:3:5.638870205 DEBUG (3): receiveAggSumTask(): sum= 59
+0:3:5.638870205 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 75
+0:3:5.639038041 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:3:5.639038041 DEBUG (5): A AggregationSum package sent... True
+0:3:5.704101572 DEBUG (1): NodeID= 1 : AggregationSum sample= 5 , sumBefore= 91
+0:3:5.704101572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 96
+0:3:5.704101572 DEBUG (1): NodeID= 1 : AggregationSum value= 96
+0:3:5.704101572 DEBUG (1): SendAggSumTask() posted!!
+0:3:5.704101572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.704101582 DEBUG (1): SendAggSumTask(): Starting....
+0:3:5.704101582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:3:5.708007822 DEBUG (3): NodeID= 3 : AggregationSum sample= 4 , sumBefore= 75
+0:3:5.708007822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 79
+0:3:5.708007822 DEBUG (3): NodeID= 3 : AggregationSum value= 79
+0:3:5.708007822 DEBUG (3): SendAggSumTask() posted!!
+0:3:5.708007822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.708007832 DEBUG (3): SendAggSumTask(): Starting....
+0:3:5.708007832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:3:5.709030142 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:5.709030142 DEBUG (0): Something received!!!  from 1
+0:3:5.709030142 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:5.709030152 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:5.709030152 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:5.709030152 DEBUG (0): receiveAggSumTask(): sum= 96
+0:3:5.709030152 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 96
+0:3:5.709197988 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:3:5.709197988 DEBUG (1): A AggregationSum package sent... True
+0:3:5.710937510 DEBUG (2): NodeID= 2 : AggregationSum sample= 17 , sumBefore= 0
+0:3:5.710937510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 17
+0:3:5.710937510 DEBUG (2): NodeID= 2 : AggregationSum value= 17
+0:3:5.710937510 DEBUG (2): SendAggSumTask() posted!!
+0:3:5.710937510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:5.710937520 DEBUG (2): SendAggSumTask(): Starting....
+0:3:5.710937520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:3:5.715988132 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:5.715988132 DEBUG (0): Something received!!!  from 3
+0:3:5.715988132 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:5.715988142 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:5.715988142 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:5.715988142 DEBUG (0): receiveAggSumTask(): sum= 79
+0:3:5.715988142 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 175
+0:3:5.716155978 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:3:5.716155978 DEBUG (3): A AggregationSum package sent... True
+0:3:5.718780492 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:5.718780492 DEBUG (0): Something received!!!  from 2
+0:3:5.718780492 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:5.718780502 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:5.718780502 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:5.718780502 DEBUG (0): receiveAggSumTask(): sum= 17
+0:3:5.718780502 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 192
+0:3:5.718948337 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:3:5.718948337 DEBUG (2): A AggregationSum package sent... True
+0:3:5.783203135 DEBUG (0): NodeID= 0 : AggregationSum sample= 3 , sumBefore= 192
+0:3:5.783203135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 195
+0:3:5.783203135 DEBUG (0): ***////////||||||\\\***
+0:3:5.783203135 DEBUG (0): AGG RESULT epoch=9 Sum=195
+0:3:5.783203135 DEBUG (0): ***\\\\||||||//////***
+0:3:25.082031260 DEBUG (8): NodeID= 8 : AggregationSum sample= 8 , sumBefore= 0
+0:3:25.082031260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 8
+0:3:25.082031260 DEBUG (8): NodeID= 8 : AggregationSum value= 8
+0:3:25.082031260 DEBUG (8): SendAggSumTask() posted!!
+0:3:25.082031260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.082031270 DEBUG (8): SendAggSumTask(): Starting....
+0:3:25.082031270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:3:25.090072605 DEBUG (6): ### AggSumReceive.receive() start #####
+0:3:25.090072605 DEBUG (6): Something received!!!  from 8
+0:3:25.090072605 DEBUG (6): posting receiveAggSumTask()!!!!
+0:3:25.090072615 DEBUG (6): ReceiveAggSumTask():received msg...
+0:3:25.090072615 DEBUG (6): ReceiveAggSumTask(): len=2
+0:3:25.090072615 DEBUG (6): receiveAggSumTask(): sum= 8
+0:3:25.090072615 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 8
+0:3:25.090240451 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:3:25.090240451 DEBUG (8): A AggregationSum package sent... True
+0:3:25.156250010 DEBUG (6): NodeID= 6 : AggregationSum sample= 7 , sumBefore= 8
+0:3:25.156250010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 15
+0:3:25.156250010 DEBUG (6): NodeID= 6 : AggregationSum value= 15
+0:3:25.156250010 DEBUG (6): SendAggSumTask() posted!!
+0:3:25.156250010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.156250020 DEBUG (6): SendAggSumTask(): Starting....
+0:3:25.156250020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:3:25.158203135 DEBUG (4): NodeID= 4 : AggregationSum sample= 33 , sumBefore= 0
+0:3:25.158203135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 33
+0:3:25.158203135 DEBUG (4): NodeID= 4 : AggregationSum value= 33
+0:3:25.158203135 DEBUG (4): SendAggSumTask() posted!!
+0:3:25.158203135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.158203145 DEBUG (4): SendAggSumTask(): Starting....
+0:3:25.158203145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:3:25.159011845 DEBUG (3): ### AggSumReceive.receive() start #####
+0:3:25.159011845 DEBUG (3): Something received!!!  from 6
+0:3:25.159011845 DEBUG (3): posting receiveAggSumTask()!!!!
+0:3:25.159011855 DEBUG (3): ReceiveAggSumTask():received msg...
+0:3:25.159011855 DEBUG (3): ReceiveAggSumTask(): len=2
+0:3:25.159011855 DEBUG (3): receiveAggSumTask(): sum= 15
+0:3:25.159011855 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 15
+0:3:25.159179691 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:3:25.159179691 DEBUG (6): A AggregationSum package sent... True
+0:3:25.159179698 DEBUG (5): NodeID= 5 : AggregationSum sample= 53 , sumBefore= 0
+0:3:25.159179698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 53
+0:3:25.159179698 DEBUG (5): NodeID= 5 : AggregationSum value= 53
+0:3:25.159179698 DEBUG (5): SendAggSumTask() posted!!
+0:3:25.159179698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.159179708 DEBUG (5): SendAggSumTask(): Starting....
+0:3:25.159179708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:3:25.159896861 DEBUG (1): ### AggSumReceive.receive() start #####
+0:3:25.159896861 DEBUG (1): Something received!!!  from 4
+0:3:25.159896861 DEBUG (1): posting receiveAggSumTask()!!!!
+0:3:25.159896871 DEBUG (1): ReceiveAggSumTask():received msg...
+0:3:25.159896871 DEBUG (1): ReceiveAggSumTask(): len=2
+0:3:25.159896871 DEBUG (1): receiveAggSumTask(): sum= 33
+0:3:25.159896871 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 33
+0:3:25.160064706 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:3:25.160064706 DEBUG (4): A AggregationSum package sent... True
+0:3:25.163085948 DEBUG (7): NodeID= 7 : AggregationSum sample= 41 , sumBefore= 0
+0:3:25.163085948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 41
+0:3:25.163085948 DEBUG (7): NodeID= 7 : AggregationSum value= 41
+0:3:25.163085948 DEBUG (7): SendAggSumTask() posted!!
+0:3:25.163085948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.163085958 DEBUG (7): SendAggSumTask(): Starting....
+0:3:25.163085958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:3:25.166046146 DEBUG (1): ### AggSumReceive.receive() start #####
+0:3:25.166046146 DEBUG (1): Something received!!!  from 7
+0:3:25.166046146 DEBUG (1): posting receiveAggSumTask()!!!!
+0:3:25.166046156 DEBUG (1): ReceiveAggSumTask():received msg...
+0:3:25.166046156 DEBUG (1): ReceiveAggSumTask(): len=2
+0:3:25.166046156 DEBUG (1): receiveAggSumTask(): sum= 41
+0:3:25.166046156 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 74
+0:3:25.166213991 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:3:25.166213991 DEBUG (7): A AggregationSum package sent... True
+0:3:25.166275003 DEBUG (3): ### AggSumReceive.receive() start #####
+0:3:25.166275003 DEBUG (3): Something received!!!  from 5
+0:3:25.166275003 DEBUG (3): posting receiveAggSumTask()!!!!
+0:3:25.166275013 DEBUG (3): ReceiveAggSumTask():received msg...
+0:3:25.166275013 DEBUG (3): ReceiveAggSumTask(): len=2
+0:3:25.166275013 DEBUG (3): receiveAggSumTask(): sum= 53
+0:3:25.166275013 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 68
+0:3:25.166442849 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:3:25.166442849 DEBUG (5): A AggregationSum package sent... True
+0:3:25.235351572 DEBUG (1): NodeID= 1 : AggregationSum sample= 4 , sumBefore= 74
+0:3:25.235351572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 78
+0:3:25.235351572 DEBUG (1): NodeID= 1 : AggregationSum value= 78
+0:3:25.235351572 DEBUG (1): SendAggSumTask() posted!!
+0:3:25.235351572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.235351582 DEBUG (1): SendAggSumTask(): Starting....
+0:3:25.235351582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:3:25.239257822 DEBUG (3): NodeID= 3 : AggregationSum sample= 3 , sumBefore= 68
+0:3:25.239257822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 71
+0:3:25.239257822 DEBUG (3): NodeID= 3 : AggregationSum value= 71
+0:3:25.239257822 DEBUG (3): SendAggSumTask() posted!!
+0:3:25.239257822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.239257832 DEBUG (3): SendAggSumTask(): Starting....
+0:3:25.239257832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:3:25.242187510 DEBUG (2): NodeID= 2 : AggregationSum sample= 15 , sumBefore= 0
+0:3:25.242187510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 15
+0:3:25.242187510 DEBUG (2): NodeID= 2 : AggregationSum value= 15
+0:3:25.242187510 DEBUG (2): SendAggSumTask() posted!!
+0:3:25.242187510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:25.242187520 DEBUG (2): SendAggSumTask(): Starting....
+0:3:25.242187520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:3:25.243621798 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:25.243621798 DEBUG (0): Something received!!!  from 1
+0:3:25.243621798 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:25.243621808 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:25.243621808 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:25.243621808 DEBUG (0): receiveAggSumTask(): sum= 78
+0:3:25.243621808 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 78
+0:3:25.243789643 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:3:25.243789643 DEBUG (1): A AggregationSum package sent... True
+0:3:25.244796740 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:25.244796740 DEBUG (0): Something received!!!  from 3
+0:3:25.244796740 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:25.244796750 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:25.244796750 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:25.244796750 DEBUG (0): receiveAggSumTask(): sum= 71
+0:3:25.244796750 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 149
+0:3:25.244964586 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:3:25.244964586 DEBUG (3): A AggregationSum package sent... True
+0:3:25.248992900 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:25.248992900 DEBUG (0): Something received!!!  from 2
+0:3:25.248992900 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:25.248992910 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:25.248992910 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:25.248992910 DEBUG (0): receiveAggSumTask(): sum= 15
+0:3:25.248992910 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 164
+0:3:25.249160746 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:3:25.249160746 DEBUG (2): A AggregationSum package sent... True
+0:3:25.314453135 DEBUG (0): NodeID= 0 : AggregationSum sample= 2 , sumBefore= 164
+0:3:25.314453135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 166
+0:3:25.314453135 DEBUG (0): ***////////||||||\\\***
+0:3:25.314453135 DEBUG (0): AGG RESULT epoch=10 Sum=166
+0:3:25.314453135 DEBUG (0): ***\\\\||||||//////***
+0:3:44.613281260 DEBUG (8): NodeID= 8 : AggregationSum sample= 8 , sumBefore= 0
+0:3:44.613281260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 8
+0:3:44.613281260 DEBUG (8): NodeID= 8 : AggregationSum value= 8
+0:3:44.613281260 DEBUG (8): SendAggSumTask() posted!!
+0:3:44.613281260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.613281270 DEBUG (8): SendAggSumTask(): Starting....
+0:3:44.613281270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:3:44.622055023 DEBUG (6): ### AggSumReceive.receive() start #####
+0:3:44.622055023 DEBUG (6): Something received!!!  from 8
+0:3:44.622055023 DEBUG (6): posting receiveAggSumTask()!!!!
+0:3:44.622055033 DEBUG (6): ReceiveAggSumTask():received msg...
+0:3:44.622055033 DEBUG (6): ReceiveAggSumTask(): len=2
+0:3:44.622055033 DEBUG (6): receiveAggSumTask(): sum= 8
+0:3:44.622055033 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 8
+0:3:44.622222869 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:3:44.622222869 DEBUG (8): A AggregationSum package sent... True
+0:3:44.687500010 DEBUG (6): NodeID= 6 : AggregationSum sample= 6 , sumBefore= 8
+0:3:44.687500010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 14
+0:3:44.687500010 DEBUG (6): NodeID= 6 : AggregationSum value= 14
+0:3:44.687500010 DEBUG (6): SendAggSumTask() posted!!
+0:3:44.687500010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.687500020 DEBUG (6): SendAggSumTask(): Starting....
+0:3:44.687500020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:3:44.689453135 DEBUG (4): NodeID= 4 : AggregationSum sample= 28 , sumBefore= 0
+0:3:44.689453135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 28
+0:3:44.689453135 DEBUG (4): NodeID= 4 : AggregationSum value= 28
+0:3:44.689453135 DEBUG (4): SendAggSumTask() posted!!
+0:3:44.689453135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.689453145 DEBUG (4): SendAggSumTask(): Starting....
+0:3:44.689453145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:3:44.690429698 DEBUG (5): NodeID= 5 : AggregationSum sample= 49 , sumBefore= 0
+0:3:44.690429698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 49
+0:3:44.690429698 DEBUG (5): NodeID= 5 : AggregationSum value= 49
+0:3:44.690429698 DEBUG (5): SendAggSumTask() posted!!
+0:3:44.690429698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.690429708 DEBUG (5): SendAggSumTask(): Starting....
+0:3:44.690429708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:3:44.691589352 DEBUG (3): ### AggSumReceive.receive() start #####
+0:3:44.691589352 DEBUG (3): Something received!!!  from 6
+0:3:44.691589352 DEBUG (3): posting receiveAggSumTask()!!!!
+0:3:44.691589362 DEBUG (3): ReceiveAggSumTask():received msg...
+0:3:44.691589362 DEBUG (3): ReceiveAggSumTask(): len=2
+0:3:44.691589362 DEBUG (3): receiveAggSumTask(): sum= 14
+0:3:44.691589362 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 14
+0:3:44.691757197 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:3:44.691757197 DEBUG (6): A AggregationSum package sent... True
+0:3:44.693206785 DEBUG (1): ### AggSumReceive.receive() start #####
+0:3:44.693206785 DEBUG (1): Something received!!!  from 4
+0:3:44.693206785 DEBUG (1): posting receiveAggSumTask()!!!!
+0:3:44.693206795 DEBUG (1): ReceiveAggSumTask():received msg...
+0:3:44.693206795 DEBUG (1): ReceiveAggSumTask(): len=2
+0:3:44.693206795 DEBUG (1): receiveAggSumTask(): sum= 28
+0:3:44.693206795 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 28
+0:3:44.693374631 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:3:44.693374631 DEBUG (4): A AggregationSum package sent... True
+0:3:44.694335948 DEBUG (7): NodeID= 7 : AggregationSum sample= 42 , sumBefore= 0
+0:3:44.694335948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 42
+0:3:44.694335948 DEBUG (7): NodeID= 7 : AggregationSum value= 42
+0:3:44.694335948 DEBUG (7): SendAggSumTask() posted!!
+0:3:44.694335948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.694335958 DEBUG (7): SendAggSumTask(): Starting....
+0:3:44.694335958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:3:44.695175163 DEBUG (3): ### AggSumReceive.receive() start #####
+0:3:44.695175163 DEBUG (3): Something received!!!  from 5
+0:3:44.695175163 DEBUG (3): posting receiveAggSumTask()!!!!
+0:3:44.695175173 DEBUG (3): ReceiveAggSumTask():received msg...
+0:3:44.695175173 DEBUG (3): ReceiveAggSumTask(): len=2
+0:3:44.695175173 DEBUG (3): receiveAggSumTask(): sum= 49
+0:3:44.695175173 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 63
+0:3:44.695343009 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:3:44.695343009 DEBUG (5): A AggregationSum package sent... True
+0:3:44.703491178 DEBUG (1): ### AggSumReceive.receive() start #####
+0:3:44.703491178 DEBUG (1): Something received!!!  from 7
+0:3:44.703491178 DEBUG (1): posting receiveAggSumTask()!!!!
+0:3:44.703491188 DEBUG (1): ReceiveAggSumTask():received msg...
+0:3:44.703491188 DEBUG (1): ReceiveAggSumTask(): len=2
+0:3:44.703491188 DEBUG (1): receiveAggSumTask(): sum= 42
+0:3:44.703491188 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 70
+0:3:44.703659023 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:3:44.703659023 DEBUG (7): A AggregationSum package sent... True
+0:3:44.766601572 DEBUG (1): NodeID= 1 : AggregationSum sample= 3 , sumBefore= 70
+0:3:44.766601572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 73
+0:3:44.766601572 DEBUG (1): NodeID= 1 : AggregationSum value= 73
+0:3:44.766601572 DEBUG (1): SendAggSumTask() posted!!
+0:3:44.766601572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.766601582 DEBUG (1): SendAggSumTask(): Starting....
+0:3:44.766601582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:3:44.770507822 DEBUG (3): NodeID= 3 : AggregationSum sample= 2 , sumBefore= 63
+0:3:44.770507822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 65
+0:3:44.770507822 DEBUG (3): NodeID= 3 : AggregationSum value= 65
+0:3:44.770507822 DEBUG (3): SendAggSumTask() posted!!
+0:3:44.770507822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.770507832 DEBUG (3): SendAggSumTask(): Starting....
+0:3:44.770507832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:3:44.772232042 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:44.772232042 DEBUG (0): Something received!!!  from 1
+0:3:44.772232042 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:44.772232052 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:44.772232052 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:44.772232052 DEBUG (0): receiveAggSumTask(): sum= 73
+0:3:44.772232052 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 73
+0:3:44.772399888 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:3:44.772399888 DEBUG (1): A AggregationSum package sent... True
+0:3:44.773437510 DEBUG (2): NodeID= 2 : AggregationSum sample= 13 , sumBefore= 0
+0:3:44.773437510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 13
+0:3:44.773437510 DEBUG (2): NodeID= 2 : AggregationSum value= 13
+0:3:44.773437510 DEBUG (2): SendAggSumTask() posted!!
+0:3:44.773437510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:3:44.773437520 DEBUG (2): SendAggSumTask(): Starting....
+0:3:44.773437520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:3:44.781265216 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:44.781265216 DEBUG (0): Something received!!!  from 3
+0:3:44.781265216 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:44.781265226 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:44.781265226 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:44.781265226 DEBUG (0): receiveAggSumTask(): sum= 65
+0:3:44.781265226 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 138
+0:3:44.781433062 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:3:44.781433062 DEBUG (3): A AggregationSum package sent... True
+0:3:44.783386192 DEBUG (0): ### AggSumReceive.receive() start #####
+0:3:44.783386192 DEBUG (0): Something received!!!  from 2
+0:3:44.783386192 DEBUG (0): posting receiveAggSumTask()!!!!
+0:3:44.783386202 DEBUG (0): ReceiveAggSumTask():received msg...
+0:3:44.783386202 DEBUG (0): ReceiveAggSumTask(): len=2
+0:3:44.783386202 DEBUG (0): receiveAggSumTask(): sum= 13
+0:3:44.783386202 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 151
+0:3:44.783554038 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:3:44.783554038 DEBUG (2): A AggregationSum package sent... True
+0:3:44.845703135 DEBUG (0): NodeID= 0 : AggregationSum sample= 2 , sumBefore= 151
+0:3:44.845703135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 153
+0:3:44.845703135 DEBUG (0): ***////////||||||\\\***
+0:3:44.845703135 DEBUG (0): AGG RESULT epoch=11 Sum=153
+0:3:44.845703135 DEBUG (0): ***\\\\||||||//////***
+0:4:4.144531260 DEBUG (8): NodeID= 8 : AggregationSum sample= 7 , sumBefore= 0
+0:4:4.144531260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 7
+0:4:4.144531260 DEBUG (8): NodeID= 8 : AggregationSum value= 7
+0:4:4.144531260 DEBUG (8): SendAggSumTask() posted!!
+0:4:4.144531260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.144531270 DEBUG (8): SendAggSumTask(): Starting....
+0:4:4.144531270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:4:4.151687601 DEBUG (6): ### AggSumReceive.receive() start #####
+0:4:4.151687601 DEBUG (6): Something received!!!  from 8
+0:4:4.151687601 DEBUG (6): posting receiveAggSumTask()!!!!
+0:4:4.151687611 DEBUG (6): ReceiveAggSumTask():received msg...
+0:4:4.151687611 DEBUG (6): ReceiveAggSumTask(): len=2
+0:4:4.151687611 DEBUG (6): receiveAggSumTask(): sum= 7
+0:4:4.151687611 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 7
+0:4:4.151855446 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:4:4.151855446 DEBUG (8): A AggregationSum package sent... True
+0:4:4.218750010 DEBUG (6): NodeID= 6 : AggregationSum sample= 6 , sumBefore= 7
+0:4:4.218750010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 13
+0:4:4.218750010 DEBUG (6): NodeID= 6 : AggregationSum value= 13
+0:4:4.218750010 DEBUG (6): SendAggSumTask() posted!!
+0:4:4.218750010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.218750020 DEBUG (6): SendAggSumTask(): Starting....
+0:4:4.218750020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:4:4.220703135 DEBUG (4): NodeID= 4 : AggregationSum sample= 27 , sumBefore= 0
+0:4:4.220703135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 27
+0:4:4.220703135 DEBUG (4): NodeID= 4 : AggregationSum value= 27
+0:4:4.220703135 DEBUG (4): SendAggSumTask() posted!!
+0:4:4.220703135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.220703145 DEBUG (4): SendAggSumTask(): Starting....
+0:4:4.220703145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:4:4.221679698 DEBUG (5): NodeID= 5 : AggregationSum sample= 42 , sumBefore= 0
+0:4:4.221679698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 42
+0:4:4.221679698 DEBUG (5): NodeID= 5 : AggregationSum value= 42
+0:4:4.221679698 DEBUG (5): SendAggSumTask() posted!!
+0:4:4.221679698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.221679708 DEBUG (5): SendAggSumTask(): Starting....
+0:4:4.221679708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:4:4.225387572 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:4:4.225387572 DEBUG (5): A AggregationSum package sent... True
+0:4:4.225402813 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:4:4.225402813 DEBUG (6): A AggregationSum package sent... True
+0:4:4.225585948 DEBUG (7): NodeID= 7 : AggregationSum sample= 43 , sumBefore= 0
+0:4:4.225585948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 43
+0:4:4.225585948 DEBUG (7): NodeID= 7 : AggregationSum value= 43
+0:4:4.225585948 DEBUG (7): SendAggSumTask() posted!!
+0:4:4.225585948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.225585958 DEBUG (7): SendAggSumTask(): Starting....
+0:4:4.225585958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:4:4.226989729 DEBUG (1): ### AggSumReceive.receive() start #####
+0:4:4.226989729 DEBUG (1): Something received!!!  from 4
+0:4:4.226989729 DEBUG (1): posting receiveAggSumTask()!!!!
+0:4:4.226989739 DEBUG (1): ReceiveAggSumTask():received msg...
+0:4:4.226989739 DEBUG (1): ReceiveAggSumTask(): len=2
+0:4:4.226989739 DEBUG (1): receiveAggSumTask(): sum= 27
+0:4:4.226989739 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 27
+0:4:4.227157575 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:4:4.227157575 DEBUG (4): A AggregationSum package sent... True
+0:4:4.229293822 DEBUG (1): ### AggSumReceive.receive() start #####
+0:4:4.229293822 DEBUG (1): Something received!!!  from 7
+0:4:4.229293822 DEBUG (1): posting receiveAggSumTask()!!!!
+0:4:4.229293832 DEBUG (1): ReceiveAggSumTask():received msg...
+0:4:4.229293832 DEBUG (1): ReceiveAggSumTask(): len=2
+0:4:4.229293832 DEBUG (1): receiveAggSumTask(): sum= 43
+0:4:4.229293832 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 70
+0:4:4.229461668 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:4:4.229461668 DEBUG (7): A AggregationSum package sent... True
+0:4:4.297851572 DEBUG (1): NodeID= 1 : AggregationSum sample= 3 , sumBefore= 70
+0:4:4.297851572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 73
+0:4:4.297851572 DEBUG (1): NodeID= 1 : AggregationSum value= 73
+0:4:4.297851572 DEBUG (1): SendAggSumTask() posted!!
+0:4:4.297851572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.297851582 DEBUG (1): SendAggSumTask(): Starting....
+0:4:4.297851582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:4:4.301757822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 0
+0:4:4.301757822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 1
+0:4:4.301757822 DEBUG (3): NodeID= 3 : AggregationSum value= 1
+0:4:4.301757822 DEBUG (3): SendAggSumTask() posted!!
+0:4:4.301757822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.301757832 DEBUG (3): SendAggSumTask(): Starting....
+0:4:4.301757832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:4:4.304473881 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:4.304473881 DEBUG (0): Something received!!!  from 3
+0:4:4.304473881 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:4.304473891 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:4.304473891 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:4.304473891 DEBUG (0): receiveAggSumTask(): sum= 1
+0:4:4.304473891 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 1
+0:4:4.304641727 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:4:4.304641727 DEBUG (3): A AggregationSum package sent... True
+0:4:4.304687510 DEBUG (2): NodeID= 2 : AggregationSum sample= 12 , sumBefore= 0
+0:4:4.304687510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 12
+0:4:4.304687510 DEBUG (2): NodeID= 2 : AggregationSum value= 12
+0:4:4.304687510 DEBUG (2): SendAggSumTask() posted!!
+0:4:4.304687510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:4.304687520 DEBUG (2): SendAggSumTask(): Starting....
+0:4:4.304687520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:4:4.305725071 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:4.305725071 DEBUG (0): Something received!!!  from 1
+0:4:4.305725071 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:4.305725081 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:4.305725081 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:4.305725081 DEBUG (0): receiveAggSumTask(): sum= 73
+0:4:4.305725081 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 74
+0:4:4.305892917 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:4:4.305892917 DEBUG (1): A AggregationSum package sent... True
+0:4:4.315719560 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:4.315719560 DEBUG (0): Something received!!!  from 2
+0:4:4.315719560 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:4.315719570 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:4.315719570 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:4.315719570 DEBUG (0): receiveAggSumTask(): sum= 12
+0:4:4.315719570 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 86
+0:4:4.315887406 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:4:4.315887406 DEBUG (2): A AggregationSum package sent... True
+0:4:4.376953135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 86
+0:4:4.376953135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 87
+0:4:4.376953135 DEBUG (0): ***////////||||||\\\***
+0:4:4.376953135 DEBUG (0): AGG RESULT epoch=12 Sum=87
+0:4:4.376953135 DEBUG (0): ***\\\\||||||//////***
+0:4:23.675781260 DEBUG (8): NodeID= 8 : AggregationSum sample= 6 , sumBefore= 0
+0:4:23.675781260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 6
+0:4:23.675781260 DEBUG (8): NodeID= 8 : AggregationSum value= 6
+0:4:23.675781260 DEBUG (8): SendAggSumTask() posted!!
+0:4:23.675781260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.675781270 DEBUG (8): SendAggSumTask(): Starting....
+0:4:23.675781270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:4:23.677948006 DEBUG (6): ### AggSumReceive.receive() start #####
+0:4:23.677948006 DEBUG (6): Something received!!!  from 8
+0:4:23.677948006 DEBUG (6): posting receiveAggSumTask()!!!!
+0:4:23.677948016 DEBUG (6): ReceiveAggSumTask():received msg...
+0:4:23.677948016 DEBUG (6): ReceiveAggSumTask(): len=2
+0:4:23.677948016 DEBUG (6): receiveAggSumTask(): sum= 6
+0:4:23.677948016 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 6
+0:4:23.678115851 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:4:23.678115851 DEBUG (8): A AggregationSum package sent... True
+0:4:23.750000010 DEBUG (6): NodeID= 6 : AggregationSum sample= 6 , sumBefore= 6
+0:4:23.750000010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 12
+0:4:23.750000010 DEBUG (6): NodeID= 6 : AggregationSum value= 12
+0:4:23.750000010 DEBUG (6): SendAggSumTask() posted!!
+0:4:23.750000010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.750000020 DEBUG (6): SendAggSumTask(): Starting....
+0:4:23.750000020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:4:23.751953135 DEBUG (4): NodeID= 4 : AggregationSum sample= 27 , sumBefore= 0
+0:4:23.751953135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 27
+0:4:23.751953135 DEBUG (4): NodeID= 4 : AggregationSum value= 27
+0:4:23.751953135 DEBUG (4): SendAggSumTask() posted!!
+0:4:23.751953135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.751953145 DEBUG (4): SendAggSumTask(): Starting....
+0:4:23.751953145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:4:23.752929698 DEBUG (5): NodeID= 5 : AggregationSum sample= 39 , sumBefore= 0
+0:4:23.752929698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 39
+0:4:23.752929698 DEBUG (5): NodeID= 5 : AggregationSum value= 39
+0:4:23.752929698 DEBUG (5): SendAggSumTask() posted!!
+0:4:23.752929698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.752929708 DEBUG (5): SendAggSumTask(): Starting....
+0:4:23.752929708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:4:23.755630497 DEBUG (3): ### AggSumReceive.receive() start #####
+0:4:23.755630497 DEBUG (3): Something received!!!  from 5
+0:4:23.755630497 DEBUG (3): posting receiveAggSumTask()!!!!
+0:4:23.755630507 DEBUG (3): ReceiveAggSumTask():received msg...
+0:4:23.755630507 DEBUG (3): ReceiveAggSumTask(): len=2
+0:4:23.755630507 DEBUG (3): receiveAggSumTask(): sum= 39
+0:4:23.755630507 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 39
+0:4:23.755798343 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:4:23.755798343 DEBUG (5): A AggregationSum package sent... True
+0:4:23.756835948 DEBUG (7): NodeID= 7 : AggregationSum sample= 42 , sumBefore= 0
+0:4:23.756835948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 42
+0:4:23.756835948 DEBUG (7): NodeID= 7 : AggregationSum value= 42
+0:4:23.756835948 DEBUG (7): SendAggSumTask() posted!!
+0:4:23.756835948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.756835958 DEBUG (7): SendAggSumTask(): Starting....
+0:4:23.756835958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:4:23.757308949 DEBUG (1): ### AggSumReceive.receive() start #####
+0:4:23.757308949 DEBUG (1): Something received!!!  from 4
+0:4:23.757308949 DEBUG (1): posting receiveAggSumTask()!!!!
+0:4:23.757308959 DEBUG (1): ReceiveAggSumTask():received msg...
+0:4:23.757308959 DEBUG (1): ReceiveAggSumTask(): len=2
+0:4:23.757308959 DEBUG (1): receiveAggSumTask(): sum= 27
+0:4:23.757308959 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 27
+0:4:23.757476794 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:4:23.757476794 DEBUG (4): A AggregationSum package sent... True
+0:4:23.758605927 DEBUG (3): ### AggSumReceive.receive() start #####
+0:4:23.758605927 DEBUG (3): Something received!!!  from 6
+0:4:23.758605927 DEBUG (3): posting receiveAggSumTask()!!!!
+0:4:23.758605937 DEBUG (3): ReceiveAggSumTask():received msg...
+0:4:23.758605937 DEBUG (3): ReceiveAggSumTask(): len=2
+0:4:23.758605937 DEBUG (3): receiveAggSumTask(): sum= 12
+0:4:23.758605937 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 51
+0:4:23.758773773 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:4:23.758773773 DEBUG (6): A AggregationSum package sent... True
+0:4:23.762008657 DEBUG (1): ### AggSumReceive.receive() start #####
+0:4:23.762008657 DEBUG (1): Something received!!!  from 7
+0:4:23.762008657 DEBUG (1): posting receiveAggSumTask()!!!!
+0:4:23.762008667 DEBUG (1): ReceiveAggSumTask():received msg...
+0:4:23.762008667 DEBUG (1): ReceiveAggSumTask(): len=2
+0:4:23.762008667 DEBUG (1): receiveAggSumTask(): sum= 42
+0:4:23.762008667 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 69
+0:4:23.762176503 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:4:23.762176503 DEBUG (7): A AggregationSum package sent... True
+0:4:23.829101572 DEBUG (1): NodeID= 1 : AggregationSum sample= 3 , sumBefore= 69
+0:4:23.829101572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 72
+0:4:23.829101572 DEBUG (1): NodeID= 1 : AggregationSum value= 72
+0:4:23.829101572 DEBUG (1): SendAggSumTask() posted!!
+0:4:23.829101572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.829101582 DEBUG (1): SendAggSumTask(): Starting....
+0:4:23.829101582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:4:23.833007822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 51
+0:4:23.833007822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 52
+0:4:23.833007822 DEBUG (3): NodeID= 3 : AggregationSum value= 52
+0:4:23.833007822 DEBUG (3): SendAggSumTask() posted!!
+0:4:23.833007822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.833007832 DEBUG (3): SendAggSumTask(): Starting....
+0:4:23.833007832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:4:23.835937510 DEBUG (2): NodeID= 2 : AggregationSum sample= 13 , sumBefore= 0
+0:4:23.835937510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 13
+0:4:23.835937510 DEBUG (2): NodeID= 2 : AggregationSum value= 13
+0:4:23.835937510 DEBUG (2): SendAggSumTask() posted!!
+0:4:23.835937510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:23.835937520 DEBUG (2): SendAggSumTask(): Starting....
+0:4:23.835937520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:4:23.837631195 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:23.837631195 DEBUG (0): Something received!!!  from 1
+0:4:23.837631195 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:23.837631205 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:23.837631205 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:23.837631205 DEBUG (0): receiveAggSumTask(): sum= 72
+0:4:23.837631205 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 72
+0:4:23.837799041 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:4:23.837799041 DEBUG (1): A AggregationSum package sent... True
+0:4:23.839508039 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:23.839508039 DEBUG (0): Something received!!!  from 3
+0:4:23.839508039 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:23.839508049 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:23.839508049 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:23.839508049 DEBUG (0): receiveAggSumTask(): sum= 52
+0:4:23.839508049 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 124
+0:4:23.839675884 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:4:23.839675884 DEBUG (3): A AggregationSum package sent... True
+0:4:23.841995224 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:23.841995224 DEBUG (0): Something received!!!  from 2
+0:4:23.841995224 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:23.841995234 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:23.841995234 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:23.841995234 DEBUG (0): receiveAggSumTask(): sum= 13
+0:4:23.841995234 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 137
+0:4:23.842163069 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:4:23.842163069 DEBUG (2): A AggregationSum package sent... True
+0:4:23.908203135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 137
+0:4:23.908203135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 138
+0:4:23.908203135 DEBUG (0): ***////////||||||\\\***
+0:4:23.908203135 DEBUG (0): AGG RESULT epoch=13 Sum=138
+0:4:23.908203135 DEBUG (0): ***\\\\||||||//////***
+0:4:43.207031260 DEBUG (8): NodeID= 8 : AggregationSum sample= 5 , sumBefore= 0
+0:4:43.207031260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 5
+0:4:43.207031260 DEBUG (8): NodeID= 8 : AggregationSum value= 5
+0:4:43.207031260 DEBUG (8): SendAggSumTask() posted!!
+0:4:43.207031260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.207031270 DEBUG (8): SendAggSumTask(): Starting....
+0:4:43.207031270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:4:43.212188711 DEBUG (6): ### AggSumReceive.receive() start #####
+0:4:43.212188711 DEBUG (6): Something received!!!  from 8
+0:4:43.212188711 DEBUG (6): posting receiveAggSumTask()!!!!
+0:4:43.212188721 DEBUG (6): ReceiveAggSumTask():received msg...
+0:4:43.212188721 DEBUG (6): ReceiveAggSumTask(): len=2
+0:4:43.212188721 DEBUG (6): receiveAggSumTask(): sum= 5
+0:4:43.212188721 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 5
+0:4:43.212356557 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:4:43.212356557 DEBUG (8): A AggregationSum package sent... True
+0:4:43.281250010 DEBUG (6): NodeID= 6 : AggregationSum sample= 6 , sumBefore= 5
+0:4:43.281250010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 11
+0:4:43.281250010 DEBUG (6): NodeID= 6 : AggregationSum value= 11
+0:4:43.281250010 DEBUG (6): SendAggSumTask() posted!!
+0:4:43.281250010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.281250020 DEBUG (6): SendAggSumTask(): Starting....
+0:4:43.281250020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:4:43.283203135 DEBUG (4): NodeID= 4 : AggregationSum sample= 26 , sumBefore= 0
+0:4:43.283203135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 26
+0:4:43.283203135 DEBUG (4): NodeID= 4 : AggregationSum value= 26
+0:4:43.283203135 DEBUG (4): SendAggSumTask() posted!!
+0:4:43.283203135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.283203145 DEBUG (4): SendAggSumTask(): Starting....
+0:4:43.283203145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:4:43.283447273 DEBUG (3): ### AggSumReceive.receive() start #####
+0:4:43.283447273 DEBUG (3): Something received!!!  from 6
+0:4:43.283447273 DEBUG (3): posting receiveAggSumTask()!!!!
+0:4:43.283447283 DEBUG (3): ReceiveAggSumTask():received msg...
+0:4:43.283447283 DEBUG (3): ReceiveAggSumTask(): len=2
+0:4:43.283447283 DEBUG (3): receiveAggSumTask(): sum= 11
+0:4:43.283447283 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 11
+0:4:43.283615119 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:4:43.283615119 DEBUG (6): A AggregationSum package sent... True
+0:4:43.284179698 DEBUG (5): NodeID= 5 : AggregationSum sample= 35 , sumBefore= 0
+0:4:43.284179698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 35
+0:4:43.284179698 DEBUG (5): NodeID= 5 : AggregationSum value= 35
+0:4:43.284179698 DEBUG (5): SendAggSumTask() posted!!
+0:4:43.284179698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.284179708 DEBUG (5): SendAggSumTask(): Starting....
+0:4:43.284179708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:4:43.288085948 DEBUG (7): NodeID= 7 : AggregationSum sample= 41 , sumBefore= 0
+0:4:43.288085948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 41
+0:4:43.288085948 DEBUG (7): NodeID= 7 : AggregationSum value= 41
+0:4:43.288085948 DEBUG (7): SendAggSumTask() posted!!
+0:4:43.288085948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.288085958 DEBUG (7): SendAggSumTask(): Starting....
+0:4:43.288085958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:4:43.289245596 DEBUG (3): ### AggSumReceive.receive() start #####
+0:4:43.289245596 DEBUG (3): Something received!!!  from 5
+0:4:43.289245596 DEBUG (3): posting receiveAggSumTask()!!!!
+0:4:43.289245606 DEBUG (3): ReceiveAggSumTask():received msg...
+0:4:43.289245606 DEBUG (3): ReceiveAggSumTask(): len=2
+0:4:43.289245606 DEBUG (3): receiveAggSumTask(): sum= 35
+0:4:43.289245606 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 46
+0:4:43.289413442 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:4:43.289413442 DEBUG (5): A AggregationSum package sent... True
+0:4:43.290817236 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:4:43.290817236 DEBUG (4): A AggregationSum package sent... True
+0:4:43.292663568 DEBUG (1): ### AggSumReceive.receive() start #####
+0:4:43.292663568 DEBUG (1): Something received!!!  from 7
+0:4:43.292663568 DEBUG (1): posting receiveAggSumTask()!!!!
+0:4:43.292663578 DEBUG (1): ReceiveAggSumTask():received msg...
+0:4:43.292663578 DEBUG (1): ReceiveAggSumTask(): len=2
+0:4:43.292663578 DEBUG (1): receiveAggSumTask(): sum= 41
+0:4:43.292663578 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 41
+0:4:43.292831413 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:4:43.292831413 DEBUG (7): A AggregationSum package sent... True
+0:4:43.360351572 DEBUG (1): NodeID= 1 : AggregationSum sample= 3 , sumBefore= 41
+0:4:43.360351572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 44
+0:4:43.360351572 DEBUG (1): NodeID= 1 : AggregationSum value= 44
+0:4:43.360351572 DEBUG (1): SendAggSumTask() posted!!
+0:4:43.360351572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.360351582 DEBUG (1): SendAggSumTask(): Starting....
+0:4:43.360351582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:4:43.364257822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 46
+0:4:43.364257822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 47
+0:4:43.364257822 DEBUG (3): NodeID= 3 : AggregationSum value= 47
+0:4:43.364257822 DEBUG (3): SendAggSumTask() posted!!
+0:4:43.364257822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.364257832 DEBUG (3): SendAggSumTask(): Starting....
+0:4:43.364257832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:4:43.367187510 DEBUG (2): NodeID= 2 : AggregationSum sample= 13 , sumBefore= 0
+0:4:43.367187510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 13
+0:4:43.367187510 DEBUG (2): NodeID= 2 : AggregationSum value= 13
+0:4:43.367187510 DEBUG (2): SendAggSumTask() posted!!
+0:4:43.367187510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:4:43.367187520 DEBUG (2): SendAggSumTask(): Starting....
+0:4:43.367187520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:4:43.369155875 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:43.369155875 DEBUG (0): Something received!!!  from 3
+0:4:43.369155875 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:43.369155885 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:43.369155885 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:43.369155885 DEBUG (0): receiveAggSumTask(): sum= 47
+0:4:43.369155885 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 47
+0:4:43.369323721 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:4:43.369323721 DEBUG (3): A AggregationSum package sent... True
+0:4:43.371047931 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:43.371047931 DEBUG (0): Something received!!!  from 1
+0:4:43.371047931 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:43.371047941 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:43.371047941 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:43.371047941 DEBUG (0): receiveAggSumTask(): sum= 44
+0:4:43.371047941 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 91
+0:4:43.371215777 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:4:43.371215777 DEBUG (1): A AggregationSum package sent... True
+0:4:43.374038676 DEBUG (0): ### AggSumReceive.receive() start #####
+0:4:43.374038676 DEBUG (0): Something received!!!  from 2
+0:4:43.374038676 DEBUG (0): posting receiveAggSumTask()!!!!
+0:4:43.374038686 DEBUG (0): ReceiveAggSumTask():received msg...
+0:4:43.374038686 DEBUG (0): ReceiveAggSumTask(): len=2
+0:4:43.374038686 DEBUG (0): receiveAggSumTask(): sum= 13
+0:4:43.374038686 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 104
+0:4:43.374206522 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:4:43.374206522 DEBUG (2): A AggregationSum package sent... True
+0:4:43.439453135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 104
+0:4:43.439453135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 105
+0:4:43.439453135 DEBUG (0): ***////////||||||\\\***
+0:4:43.439453135 DEBUG (0): AGG RESULT epoch=14 Sum=105
+0:4:43.439453135 DEBUG (0): ***\\\\||||||//////***
+0:5:2.738281260 DEBUG (8): NodeID= 8 : AggregationSum sample= 5 , sumBefore= 0
+0:5:2.738281260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 5
+0:5:2.738281260 DEBUG (8): NodeID= 8 : AggregationSum value= 5
+0:5:2.738281260 DEBUG (8): SendAggSumTask() posted!!
+0:5:2.738281260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.738281270 DEBUG (8): SendAggSumTask(): Starting....
+0:5:2.738281270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:5:2.740707404 DEBUG (6): ### AggSumReceive.receive() start #####
+0:5:2.740707404 DEBUG (6): Something received!!!  from 8
+0:5:2.740707404 DEBUG (6): posting receiveAggSumTask()!!!!
+0:5:2.740707414 DEBUG (6): ReceiveAggSumTask():received msg...
+0:5:2.740707414 DEBUG (6): ReceiveAggSumTask(): len=2
+0:5:2.740707414 DEBUG (6): receiveAggSumTask(): sum= 5
+0:5:2.740707414 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 5
+0:5:2.740875249 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:5:2.740875249 DEBUG (8): A AggregationSum package sent... True
+0:5:2.812500010 DEBUG (6): NodeID= 6 : AggregationSum sample= 5 , sumBefore= 5
+0:5:2.812500010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 10
+0:5:2.812500010 DEBUG (6): NodeID= 6 : AggregationSum value= 10
+0:5:2.812500010 DEBUG (6): SendAggSumTask() posted!!
+0:5:2.812500010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.812500020 DEBUG (6): SendAggSumTask(): Starting....
+0:5:2.812500020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:5:2.814453135 DEBUG (4): NodeID= 4 : AggregationSum sample= 30 , sumBefore= 0
+0:5:2.814453135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 30
+0:5:2.814453135 DEBUG (4): NodeID= 4 : AggregationSum value= 30
+0:5:2.814453135 DEBUG (4): SendAggSumTask() posted!!
+0:5:2.814453135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.814453145 DEBUG (4): SendAggSumTask(): Starting....
+0:5:2.814453145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:5:2.815429698 DEBUG (5): NodeID= 5 : AggregationSum sample= 37 , sumBefore= 0
+0:5:2.815429698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 37
+0:5:2.815429698 DEBUG (5): NodeID= 5 : AggregationSum value= 37
+0:5:2.815429698 DEBUG (5): SendAggSumTask() posted!!
+0:5:2.815429698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.815429708 DEBUG (5): SendAggSumTask(): Starting....
+0:5:2.815429708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:5:2.815673830 DEBUG (3): ### AggSumReceive.receive() start #####
+0:5:2.815673830 DEBUG (3): Something received!!!  from 6
+0:5:2.815673830 DEBUG (3): posting receiveAggSumTask()!!!!
+0:5:2.815673840 DEBUG (3): ReceiveAggSumTask():received msg...
+0:5:2.815673840 DEBUG (3): ReceiveAggSumTask(): len=2
+0:5:2.815673840 DEBUG (3): receiveAggSumTask(): sum= 10
+0:5:2.815673840 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 10
+0:5:2.815841675 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:5:2.815841675 DEBUG (6): A AggregationSum package sent... True
+0:5:2.819335948 DEBUG (7): NodeID= 7 : AggregationSum sample= 46 , sumBefore= 0
+0:5:2.819335948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 46
+0:5:2.819335948 DEBUG (7): NodeID= 7 : AggregationSum value= 46
+0:5:2.819335948 DEBUG (7): SendAggSumTask() posted!!
+0:5:2.819335948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.819335958 DEBUG (7): SendAggSumTask(): Starting....
+0:5:2.819335958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:5:2.819396964 DEBUG (1): ### AggSumReceive.receive() start #####
+0:5:2.819396964 DEBUG (1): Something received!!!  from 4
+0:5:2.819396964 DEBUG (1): posting receiveAggSumTask()!!!!
+0:5:2.819396974 DEBUG (1): ReceiveAggSumTask():received msg...
+0:5:2.819396974 DEBUG (1): ReceiveAggSumTask(): len=2
+0:5:2.819396974 DEBUG (1): receiveAggSumTask(): sum= 30
+0:5:2.819396974 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 30
+0:5:2.819564809 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:5:2.819564809 DEBUG (4): A AggregationSum package sent... True
+0:5:2.821197496 DEBUG (3): ### AggSumReceive.receive() start #####
+0:5:2.821197496 DEBUG (3): Something received!!!  from 5
+0:5:2.821197496 DEBUG (3): posting receiveAggSumTask()!!!!
+0:5:2.821197506 DEBUG (3): ReceiveAggSumTask():received msg...
+0:5:2.821197506 DEBUG (3): ReceiveAggSumTask(): len=2
+0:5:2.821197506 DEBUG (3): receiveAggSumTask(): sum= 37
+0:5:2.821197506 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 47
+0:5:2.821365342 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:5:2.821365342 DEBUG (5): A AggregationSum package sent... True
+0:5:2.824172966 DEBUG (1): ### AggSumReceive.receive() start #####
+0:5:2.824172966 DEBUG (1): Something received!!!  from 7
+0:5:2.824172966 DEBUG (1): posting receiveAggSumTask()!!!!
+0:5:2.824172976 DEBUG (1): ReceiveAggSumTask():received msg...
+0:5:2.824172976 DEBUG (1): ReceiveAggSumTask(): len=2
+0:5:2.824172976 DEBUG (1): receiveAggSumTask(): sum= 46
+0:5:2.824172976 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 76
+0:5:2.824340811 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:5:2.824340811 DEBUG (7): A AggregationSum package sent... True
+0:5:2.891601572 DEBUG (1): NodeID= 1 : AggregationSum sample= 3 , sumBefore= 76
+0:5:2.891601572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 79
+0:5:2.891601572 DEBUG (1): NodeID= 1 : AggregationSum value= 79
+0:5:2.891601572 DEBUG (1): SendAggSumTask() posted!!
+0:5:2.891601572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.891601582 DEBUG (1): SendAggSumTask(): Starting....
+0:5:2.891601582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:5:2.895507822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 47
+0:5:2.895507822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 48
+0:5:2.895507822 DEBUG (3): NodeID= 3 : AggregationSum value= 48
+0:5:2.895507822 DEBUG (3): SendAggSumTask() posted!!
+0:5:2.895507822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.895507832 DEBUG (3): SendAggSumTask(): Starting....
+0:5:2.895507832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:5:2.898437510 DEBUG (2): NodeID= 2 : AggregationSum sample= 12 , sumBefore= 0
+0:5:2.898437510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 12
+0:5:2.898437510 DEBUG (2): NodeID= 2 : AggregationSum value= 12
+0:5:2.898437510 DEBUG (2): SendAggSumTask() posted!!
+0:5:2.898437510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:2.898437520 DEBUG (2): SendAggSumTask(): Starting....
+0:5:2.898437520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:5:2.899032569 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:2.899032569 DEBUG (0): Something received!!!  from 1
+0:5:2.899032569 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:2.899032579 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:2.899032579 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:2.899032579 DEBUG (0): receiveAggSumTask(): sum= 79
+0:5:2.899032579 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 79
+0:5:2.899200415 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:5:2.899200415 DEBUG (1): A AggregationSum package sent... True
+0:5:2.902450541 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:2.902450541 DEBUG (0): Something received!!!  from 3
+0:5:2.902450541 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:2.902450551 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:2.902450551 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:2.902450551 DEBUG (0): receiveAggSumTask(): sum= 48
+0:5:2.902450551 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 127
+0:5:2.902618387 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:5:2.902618387 DEBUG (3): A AggregationSum package sent... True
+0:5:2.904495224 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:2.904495224 DEBUG (0): Something received!!!  from 2
+0:5:2.904495224 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:2.904495234 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:2.904495234 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:2.904495234 DEBUG (0): receiveAggSumTask(): sum= 12
+0:5:2.904495234 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 139
+0:5:2.904663069 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:5:2.904663069 DEBUG (2): A AggregationSum package sent... True
+0:5:2.970703135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 139
+0:5:2.970703135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 140
+0:5:2.970703135 DEBUG (0): ***////////||||||\\\***
+0:5:2.970703135 DEBUG (0): AGG RESULT epoch=15 Sum=140
+0:5:2.970703135 DEBUG (0): ***\\\\||||||//////***
+0:5:22.269531260 DEBUG (8): NodeID= 8 : AggregationSum sample= 4 , sumBefore= 0
+0:5:22.269531260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 4
+0:5:22.269531260 DEBUG (8): NodeID= 8 : AggregationSum value= 4
+0:5:22.269531260 DEBUG (8): SendAggSumTask() posted!!
+0:5:22.269531260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.269531270 DEBUG (8): SendAggSumTask(): Starting....
+0:5:22.269531270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:5:22.279159510 DEBUG (6): ### AggSumReceive.receive() start #####
+0:5:22.279159510 DEBUG (6): Something received!!!  from 8
+0:5:22.279159510 DEBUG (6): posting receiveAggSumTask()!!!!
+0:5:22.279159520 DEBUG (6): ReceiveAggSumTask():received msg...
+0:5:22.279159520 DEBUG (6): ReceiveAggSumTask(): len=2
+0:5:22.279159520 DEBUG (6): receiveAggSumTask(): sum= 4
+0:5:22.279159520 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 4
+0:5:22.279327356 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:5:22.279327356 DEBUG (8): A AggregationSum package sent... True
+0:5:22.343750010 DEBUG (6): NodeID= 6 : AggregationSum sample= 4 , sumBefore= 4
+0:5:22.343750010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 8
+0:5:22.343750010 DEBUG (6): NodeID= 6 : AggregationSum value= 8
+0:5:22.343750010 DEBUG (6): SendAggSumTask() posted!!
+0:5:22.343750010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.343750020 DEBUG (6): SendAggSumTask(): Starting....
+0:5:22.343750020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:5:22.345703135 DEBUG (4): NodeID= 4 : AggregationSum sample= 27 , sumBefore= 0
+0:5:22.345703135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 27
+0:5:22.345703135 DEBUG (4): NodeID= 4 : AggregationSum value= 27
+0:5:22.345703135 DEBUG (4): SendAggSumTask() posted!!
+0:5:22.345703135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.345703145 DEBUG (4): SendAggSumTask(): Starting....
+0:5:22.345703145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:5:22.346679698 DEBUG (5): NodeID= 5 : AggregationSum sample= 39 , sumBefore= 0
+0:5:22.346679698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 39
+0:5:22.346679698 DEBUG (5): NodeID= 5 : AggregationSum value= 39
+0:5:22.346679698 DEBUG (5): SendAggSumTask() posted!!
+0:5:22.346679698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.346679708 DEBUG (5): SendAggSumTask(): Starting....
+0:5:22.346679708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:5:22.347503660 DEBUG (3): ### AggSumReceive.receive() start #####
+0:5:22.347503660 DEBUG (3): Something received!!!  from 6
+0:5:22.347503660 DEBUG (3): posting receiveAggSumTask()!!!!
+0:5:22.347503670 DEBUG (3): ReceiveAggSumTask():received msg...
+0:5:22.347503670 DEBUG (3): ReceiveAggSumTask(): len=2
+0:5:22.347503670 DEBUG (3): receiveAggSumTask(): sum= 8
+0:5:22.347503670 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 8
+0:5:22.347671506 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:5:22.347671506 DEBUG (6): A AggregationSum package sent... True
+0:5:22.350585948 DEBUG (7): NodeID= 7 : AggregationSum sample= 44 , sumBefore= 0
+0:5:22.350585948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 44
+0:5:22.350585948 DEBUG (7): NodeID= 7 : AggregationSum value= 44
+0:5:22.350585948 DEBUG (7): SendAggSumTask() posted!!
+0:5:22.350585948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.350585958 DEBUG (7): SendAggSumTask(): Starting....
+0:5:22.350585958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:5:22.351409905 DEBUG (3): ### AggSumReceive.receive() start #####
+0:5:22.351409905 DEBUG (3): Something received!!!  from 5
+0:5:22.351409905 DEBUG (3): posting receiveAggSumTask()!!!!
+0:5:22.351409915 DEBUG (3): ReceiveAggSumTask():received msg...
+0:5:22.351409915 DEBUG (3): ReceiveAggSumTask(): len=2
+0:5:22.351409915 DEBUG (3): receiveAggSumTask(): sum= 39
+0:5:22.351409915 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 47
+0:5:22.351577750 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:5:22.351577750 DEBUG (5): A AggregationSum package sent... True
+0:5:22.355773887 DEBUG (1): ### AggSumReceive.receive() start #####
+0:5:22.355773887 DEBUG (1): Something received!!!  from 4
+0:5:22.355773887 DEBUG (1): posting receiveAggSumTask()!!!!
+0:5:22.355773897 DEBUG (1): ReceiveAggSumTask():received msg...
+0:5:22.355773897 DEBUG (1): ReceiveAggSumTask(): len=2
+0:5:22.355773897 DEBUG (1): receiveAggSumTask(): sum= 27
+0:5:22.355773897 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 27
+0:5:22.355941733 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:5:22.355941733 DEBUG (4): A AggregationSum package sent... True
+0:5:22.359390228 DEBUG (1): ### AggSumReceive.receive() start #####
+0:5:22.359390228 DEBUG (1): Something received!!!  from 7
+0:5:22.359390228 DEBUG (1): posting receiveAggSumTask()!!!!
+0:5:22.359390238 DEBUG (1): ReceiveAggSumTask():received msg...
+0:5:22.359390238 DEBUG (1): ReceiveAggSumTask(): len=2
+0:5:22.359390238 DEBUG (1): receiveAggSumTask(): sum= 44
+0:5:22.359390238 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 71
+0:5:22.359558073 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:5:22.359558073 DEBUG (7): A AggregationSum package sent... True
+0:5:22.422851572 DEBUG (1): NodeID= 1 : AggregationSum sample= 2 , sumBefore= 71
+0:5:22.422851572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 73
+0:5:22.422851572 DEBUG (1): NodeID= 1 : AggregationSum value= 73
+0:5:22.422851572 DEBUG (1): SendAggSumTask() posted!!
+0:5:22.422851572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.422851582 DEBUG (1): SendAggSumTask(): Starting....
+0:5:22.422851582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:5:22.426757822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 47
+0:5:22.426757822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 48
+0:5:22.426757822 DEBUG (3): NodeID= 3 : AggregationSum value= 48
+0:5:22.426757822 DEBUG (3): SendAggSumTask() posted!!
+0:5:22.426757822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.426757832 DEBUG (3): SendAggSumTask(): Starting....
+0:5:22.426757832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:5:22.429687510 DEBUG (2): NodeID= 2 : AggregationSum sample= 13 , sumBefore= 0
+0:5:22.429687510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 13
+0:5:22.429687510 DEBUG (2): NodeID= 2 : AggregationSum value= 13
+0:5:22.429687510 DEBUG (2): SendAggSumTask() posted!!
+0:5:22.429687510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:22.429687520 DEBUG (2): SendAggSumTask(): Starting....
+0:5:22.429687520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:5:22.431060763 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:22.431060763 DEBUG (0): Something received!!!  from 1
+0:5:22.431060763 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:22.431060773 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:22.431060773 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:22.431060773 DEBUG (0): receiveAggSumTask(): sum= 73
+0:5:22.431060773 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 73
+0:5:22.431228608 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:5:22.431228608 DEBUG (1): A AggregationSum package sent... True
+0:5:22.433090210 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:22.433090210 DEBUG (0): Something received!!!  from 2
+0:5:22.433090210 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:22.433090220 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:22.433090220 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:22.433090220 DEBUG (0): receiveAggSumTask(): sum= 13
+0:5:22.433090220 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 86
+0:5:22.433258056 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:5:22.433258056 DEBUG (2): A AggregationSum package sent... True
+0:5:22.435546844 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:22.435546844 DEBUG (0): Something received!!!  from 3
+0:5:22.435546844 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:22.435546854 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:22.435546854 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:22.435546854 DEBUG (0): receiveAggSumTask(): sum= 48
+0:5:22.435546854 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 134
+0:5:22.435714689 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:5:22.435714689 DEBUG (3): A AggregationSum package sent... True
+0:5:22.501953135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 134
+0:5:22.501953135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 135
+0:5:22.501953135 DEBUG (0): ***////////||||||\\\***
+0:5:22.501953135 DEBUG (0): AGG RESULT epoch=16 Sum=135
+0:5:22.501953135 DEBUG (0): ***\\\\||||||//////***
+0:5:41.800781260 DEBUG (8): NodeID= 8 : AggregationSum sample= 3 , sumBefore= 0
+0:5:41.800781260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 3
+0:5:41.800781260 DEBUG (8): NodeID= 8 : AggregationSum value= 3
+0:5:41.800781260 DEBUG (8): SendAggSumTask() posted!!
+0:5:41.800781260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.800781270 DEBUG (8): SendAggSumTask(): Starting....
+0:5:41.800781270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:5:41.811645465 DEBUG (6): ### AggSumReceive.receive() start #####
+0:5:41.811645465 DEBUG (6): Something received!!!  from 8
+0:5:41.811645465 DEBUG (6): posting receiveAggSumTask()!!!!
+0:5:41.811645475 DEBUG (6): ReceiveAggSumTask():received msg...
+0:5:41.811645475 DEBUG (6): ReceiveAggSumTask(): len=2
+0:5:41.811645475 DEBUG (6): receiveAggSumTask(): sum= 3
+0:5:41.811645475 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 3
+0:5:41.811813310 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:5:41.811813310 DEBUG (8): A AggregationSum package sent... True
+0:5:41.875000010 DEBUG (6): NodeID= 6 : AggregationSum sample= 3 , sumBefore= 3
+0:5:41.875000010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 6
+0:5:41.875000010 DEBUG (6): NodeID= 6 : AggregationSum value= 6
+0:5:41.875000010 DEBUG (6): SendAggSumTask() posted!!
+0:5:41.875000010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.875000020 DEBUG (6): SendAggSumTask(): Starting....
+0:5:41.875000020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:5:41.876953135 DEBUG (4): NodeID= 4 : AggregationSum sample= 31 , sumBefore= 0
+0:5:41.876953135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 31
+0:5:41.876953135 DEBUG (4): NodeID= 4 : AggregationSum value= 31
+0:5:41.876953135 DEBUG (4): SendAggSumTask() posted!!
+0:5:41.876953135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.876953145 DEBUG (4): SendAggSumTask(): Starting....
+0:5:41.876953145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:5:41.877624517 DEBUG (3): ### AggSumReceive.receive() start #####
+0:5:41.877624517 DEBUG (3): Something received!!!  from 6
+0:5:41.877624517 DEBUG (3): posting receiveAggSumTask()!!!!
+0:5:41.877624527 DEBUG (3): ReceiveAggSumTask():received msg...
+0:5:41.877624527 DEBUG (3): ReceiveAggSumTask(): len=2
+0:5:41.877624527 DEBUG (3): receiveAggSumTask(): sum= 6
+0:5:41.877624527 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 6
+0:5:41.877792362 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:5:41.877792362 DEBUG (6): A AggregationSum package sent... True
+0:5:41.877929698 DEBUG (5): NodeID= 5 : AggregationSum sample= 46 , sumBefore= 0
+0:5:41.877929698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 46
+0:5:41.877929698 DEBUG (5): NodeID= 5 : AggregationSum value= 46
+0:5:41.877929698 DEBUG (5): SendAggSumTask() posted!!
+0:5:41.877929698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.877929708 DEBUG (5): SendAggSumTask(): Starting....
+0:5:41.877929708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:5:41.881835948 DEBUG (7): NodeID= 7 : AggregationSum sample= 50 , sumBefore= 0
+0:5:41.881835948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 50
+0:5:41.881835948 DEBUG (7): NodeID= 7 : AggregationSum value= 50
+0:5:41.881835948 DEBUG (7): SendAggSumTask() posted!!
+0:5:41.881835948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.881835958 DEBUG (7): SendAggSumTask(): Starting....
+0:5:41.881835958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:5:41.882232655 DEBUG (1): ### AggSumReceive.receive() start #####
+0:5:41.882232655 DEBUG (1): Something received!!!  from 4
+0:5:41.882232655 DEBUG (1): posting receiveAggSumTask()!!!!
+0:5:41.882232665 DEBUG (1): ReceiveAggSumTask():received msg...
+0:5:41.882232665 DEBUG (1): ReceiveAggSumTask(): len=2
+0:5:41.882232665 DEBUG (1): receiveAggSumTask(): sum= 31
+0:5:41.882232665 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 31
+0:5:41.882400501 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:5:41.882400501 DEBUG (4): A AggregationSum package sent... True
+0:5:41.885208107 DEBUG (3): ### AggSumReceive.receive() start #####
+0:5:41.885208107 DEBUG (3): Something received!!!  from 5
+0:5:41.885208107 DEBUG (3): posting receiveAggSumTask()!!!!
+0:5:41.885208117 DEBUG (3): ReceiveAggSumTask():received msg...
+0:5:41.885208117 DEBUG (3): ReceiveAggSumTask(): len=2
+0:5:41.885208117 DEBUG (3): receiveAggSumTask(): sum= 46
+0:5:41.885208117 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 52
+0:5:41.885375953 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:5:41.885375953 DEBUG (5): A AggregationSum package sent... True
+0:5:41.886077876 DEBUG (1): ### AggSumReceive.receive() start #####
+0:5:41.886077876 DEBUG (1): Something received!!!  from 7
+0:5:41.886077876 DEBUG (1): posting receiveAggSumTask()!!!!
+0:5:41.886077886 DEBUG (1): ReceiveAggSumTask():received msg...
+0:5:41.886077886 DEBUG (1): ReceiveAggSumTask(): len=2
+0:5:41.886077886 DEBUG (1): receiveAggSumTask(): sum= 50
+0:5:41.886077886 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 81
+0:5:41.886245722 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:5:41.886245722 DEBUG (7): A AggregationSum package sent... True
+0:5:41.954101572 DEBUG (1): NodeID= 1 : AggregationSum sample= 2 , sumBefore= 81
+0:5:41.954101572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 83
+0:5:41.954101572 DEBUG (1): NodeID= 1 : AggregationSum value= 83
+0:5:41.954101572 DEBUG (1): SendAggSumTask() posted!!
+0:5:41.954101572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.954101582 DEBUG (1): SendAggSumTask(): Starting....
+0:5:41.954101582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:5:41.957458496 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:41.957458496 DEBUG (0): Something received!!!  from 1
+0:5:41.957458496 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:41.957458506 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:41.957458506 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:41.957458506 DEBUG (0): receiveAggSumTask(): sum= 83
+0:5:41.957458506 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 83
+0:5:41.957626342 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:5:41.957626342 DEBUG (1): A AggregationSum package sent... True
+0:5:41.958007822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 52
+0:5:41.958007822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 53
+0:5:41.958007822 DEBUG (3): NodeID= 3 : AggregationSum value= 53
+0:5:41.958007822 DEBUG (3): SendAggSumTask() posted!!
+0:5:41.958007822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.958007832 DEBUG (3): SendAggSumTask(): Starting....
+0:5:41.958007832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:5:41.960937510 DEBUG (2): NodeID= 2 : AggregationSum sample= 10 , sumBefore= 0
+0:5:41.960937510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 10
+0:5:41.960937510 DEBUG (2): NodeID= 2 : AggregationSum value= 10
+0:5:41.960937510 DEBUG (2): SendAggSumTask() posted!!
+0:5:41.960937510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:5:41.960937520 DEBUG (2): SendAggSumTask(): Starting....
+0:5:41.960937520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:5:41.966537446 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:41.966537446 DEBUG (0): Something received!!!  from 3
+0:5:41.966537446 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:41.966537456 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:41.966537456 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:41.966537456 DEBUG (0): receiveAggSumTask(): sum= 53
+0:5:41.966537456 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 136
+0:5:41.966705291 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:5:41.966705291 DEBUG (3): A AggregationSum package sent... True
+0:5:41.969421357 DEBUG (0): ### AggSumReceive.receive() start #####
+0:5:41.969421357 DEBUG (0): Something received!!!  from 2
+0:5:41.969421357 DEBUG (0): posting receiveAggSumTask()!!!!
+0:5:41.969421367 DEBUG (0): ReceiveAggSumTask():received msg...
+0:5:41.969421367 DEBUG (0): ReceiveAggSumTask(): len=2
+0:5:41.969421367 DEBUG (0): receiveAggSumTask(): sum= 10
+0:5:41.969421367 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 146
+0:5:41.969589203 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:5:41.969589203 DEBUG (2): A AggregationSum package sent... True
+0:5:42.033203135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 146
+0:5:42.033203135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 147
+0:5:42.033203135 DEBUG (0): ***////////||||||\\\***
+0:5:42.033203135 DEBUG (0): AGG RESULT epoch=17 Sum=147
+0:5:42.033203135 DEBUG (0): ***\\\\||||||//////***
+0:6:1.332031260 DEBUG (8): NodeID= 8 : AggregationSum sample= 3 , sumBefore= 0
+0:6:1.332031260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 3
+0:6:1.332031260 DEBUG (8): NodeID= 8 : AggregationSum value= 3
+0:6:1.332031260 DEBUG (8): SendAggSumTask() posted!!
+0:6:1.332031260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.332031270 DEBUG (8): SendAggSumTask(): Starting....
+0:6:1.332031270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:6:1.339294412 DEBUG (6): ### AggSumReceive.receive() start #####
+0:6:1.339294412 DEBUG (6): Something received!!!  from 8
+0:6:1.339294412 DEBUG (6): posting receiveAggSumTask()!!!!
+0:6:1.339294422 DEBUG (6): ReceiveAggSumTask():received msg...
+0:6:1.339294422 DEBUG (6): ReceiveAggSumTask(): len=2
+0:6:1.339294422 DEBUG (6): receiveAggSumTask(): sum= 3
+0:6:1.339294422 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 3
+0:6:1.339462257 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:6:1.339462257 DEBUG (8): A AggregationSum package sent... True
+0:6:1.406250010 DEBUG (6): NodeID= 6 : AggregationSum sample= 3 , sumBefore= 3
+0:6:1.406250010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 6
+0:6:1.406250010 DEBUG (6): NodeID= 6 : AggregationSum value= 6
+0:6:1.406250010 DEBUG (6): SendAggSumTask() posted!!
+0:6:1.406250010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.406250020 DEBUG (6): SendAggSumTask(): Starting....
+0:6:1.406250020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:6:1.408203135 DEBUG (4): NodeID= 4 : AggregationSum sample= 26 , sumBefore= 0
+0:6:1.408203135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 26
+0:6:1.408203135 DEBUG (4): NodeID= 4 : AggregationSum value= 26
+0:6:1.408203135 DEBUG (4): SendAggSumTask() posted!!
+0:6:1.408203135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.408203145 DEBUG (4): SendAggSumTask(): Starting....
+0:6:1.408203145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:6:1.409179698 DEBUG (5): NodeID= 5 : AggregationSum sample= 47 , sumBefore= 0
+0:6:1.409179698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 47
+0:6:1.409179698 DEBUG (5): NodeID= 5 : AggregationSum value= 47
+0:6:1.409179698 DEBUG (5): SendAggSumTask() posted!!
+0:6:1.409179698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.409179708 DEBUG (5): SendAggSumTask(): Starting....
+0:6:1.409179708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:6:1.413085948 DEBUG (7): NodeID= 7 : AggregationSum sample= 48 , sumBefore= 0
+0:6:1.413085948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 48
+0:6:1.413085948 DEBUG (7): NodeID= 7 : AggregationSum value= 48
+0:6:1.413085948 DEBUG (7): SendAggSumTask() posted!!
+0:6:1.413085948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.413085958 DEBUG (7): SendAggSumTask(): Starting....
+0:6:1.413085958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:6:1.413848853 DEBUG (3): ### AggSumReceive.receive() start #####
+0:6:1.413848853 DEBUG (3): Something received!!!  from 6
+0:6:1.413848853 DEBUG (3): posting receiveAggSumTask()!!!!
+0:6:1.413848863 DEBUG (3): ReceiveAggSumTask():received msg...
+0:6:1.413848863 DEBUG (3): ReceiveAggSumTask(): len=2
+0:6:1.413848863 DEBUG (3): receiveAggSumTask(): sum= 6
+0:6:1.413848863 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 6
+0:6:1.414016698 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:6:1.414016698 DEBUG (6): A AggregationSum package sent... True
+0:6:1.417892419 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:6:1.417892419 DEBUG (4): A AggregationSum package sent... True
+0:6:1.417922966 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:6:1.417922966 DEBUG (7): A AggregationSum package sent... True
+0:6:1.419570882 DEBUG (3): ### AggSumReceive.receive() start #####
+0:6:1.419570882 DEBUG (3): Something received!!!  from 5
+0:6:1.419570882 DEBUG (3): posting receiveAggSumTask()!!!!
+0:6:1.419570892 DEBUG (3): ReceiveAggSumTask():received msg...
+0:6:1.419570892 DEBUG (3): ReceiveAggSumTask(): len=2
+0:6:1.419570892 DEBUG (3): receiveAggSumTask(): sum= 47
+0:6:1.419570892 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 53
+0:6:1.419738728 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:6:1.419738728 DEBUG (5): A AggregationSum package sent... True
+0:6:1.485351572 DEBUG (1): NodeID= 1 : AggregationSum sample= 2 , sumBefore= 0
+0:6:1.485351572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 2
+0:6:1.485351572 DEBUG (1): NodeID= 1 : AggregationSum value= 2
+0:6:1.485351572 DEBUG (1): SendAggSumTask() posted!!
+0:6:1.485351572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.485351582 DEBUG (1): SendAggSumTask(): Starting....
+0:6:1.485351582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:6:1.487396248 DEBUG (0): ### AggSumReceive.receive() start #####
+0:6:1.487396248 DEBUG (0): Something received!!!  from 1
+0:6:1.487396248 DEBUG (0): posting receiveAggSumTask()!!!!
+0:6:1.487396258 DEBUG (0): ReceiveAggSumTask():received msg...
+0:6:1.487396258 DEBUG (0): ReceiveAggSumTask(): len=2
+0:6:1.487396258 DEBUG (0): receiveAggSumTask(): sum= 2
+0:6:1.487396258 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 2
+0:6:1.487564094 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:6:1.487564094 DEBUG (1): A AggregationSum package sent... True
+0:6:1.489257822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 53
+0:6:1.489257822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 54
+0:6:1.489257822 DEBUG (3): NodeID= 3 : AggregationSum value= 54
+0:6:1.489257822 DEBUG (3): SendAggSumTask() posted!!
+0:6:1.489257822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.489257832 DEBUG (3): SendAggSumTask(): Starting....
+0:6:1.489257832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:6:1.492187510 DEBUG (2): NodeID= 2 : AggregationSum sample= 11 , sumBefore= 0
+0:6:1.492187510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 11
+0:6:1.492187510 DEBUG (2): NodeID= 2 : AggregationSum value= 11
+0:6:1.492187510 DEBUG (2): SendAggSumTask() posted!!
+0:6:1.492187510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:1.492187520 DEBUG (2): SendAggSumTask(): Starting....
+0:6:1.492187520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:6:1.493713373 DEBUG (0): ### AggSumReceive.receive() start #####
+0:6:1.493713373 DEBUG (0): Something received!!!  from 3
+0:6:1.493713373 DEBUG (0): posting receiveAggSumTask()!!!!
+0:6:1.493713383 DEBUG (0): ReceiveAggSumTask():received msg...
+0:6:1.493713383 DEBUG (0): ReceiveAggSumTask(): len=2
+0:6:1.493713383 DEBUG (0): receiveAggSumTask(): sum= 54
+0:6:1.493713383 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 56
+0:6:1.493881218 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:6:1.493881218 DEBUG (3): A AggregationSum package sent... True
+0:6:1.496719354 DEBUG (0): ### AggSumReceive.receive() start #####
+0:6:1.496719354 DEBUG (0): Something received!!!  from 2
+0:6:1.496719354 DEBUG (0): posting receiveAggSumTask()!!!!
+0:6:1.496719364 DEBUG (0): ReceiveAggSumTask():received msg...
+0:6:1.496719364 DEBUG (0): ReceiveAggSumTask(): len=2
+0:6:1.496719364 DEBUG (0): receiveAggSumTask(): sum= 11
+0:6:1.496719364 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 67
+0:6:1.496887199 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:6:1.496887199 DEBUG (2): A AggregationSum package sent... True
+0:6:1.564453135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 67
+0:6:1.564453135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 68
+0:6:1.564453135 DEBUG (0): ***////////||||||\\\***
+0:6:1.564453135 DEBUG (0): AGG RESULT epoch=18 Sum=68
+0:6:1.564453135 DEBUG (0): ***\\\\||||||//////***
+0:6:20.863281260 DEBUG (8): NodeID= 8 : AggregationSum sample= 2 , sumBefore= 0
+0:6:20.863281260 DEBUG (8): NodeID= 8 : AggregationSum sumAfter= 2
+0:6:20.863281260 DEBUG (8): NodeID= 8 : AggregationSum value= 2
+0:6:20.863281260 DEBUG (8): SendAggSumTask() posted!!
+0:6:20.863281260 DEBUG (8): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:20.863281270 DEBUG (8): SendAggSumTask(): Starting....
+0:6:20.863281270 DEBUG (8): SendAggSumTask(): Send returned success!!!
+0:6:20.871643038 DEBUG (6): ### AggSumReceive.receive() start #####
+0:6:20.871643038 DEBUG (6): Something received!!!  from 8
+0:6:20.871643038 DEBUG (6): posting receiveAggSumTask()!!!!
+0:6:20.871643048 DEBUG (6): ReceiveAggSumTask():received msg...
+0:6:20.871643048 DEBUG (6): ReceiveAggSumTask(): len=2
+0:6:20.871643048 DEBUG (6): receiveAggSumTask(): sum= 2
+0:6:20.871643048 DEBUG (6): Inside the ReceiveAggSumTask(): New agg_sum = 2
+0:6:20.871810884 DEBUG (8): Inside the AggSumAMSend.sendDone()
+0:6:20.871810884 DEBUG (8): A AggregationSum package sent... True
+0:6:20.937500010 DEBUG (6): NodeID= 6 : AggregationSum sample= 3 , sumBefore= 2
+0:6:20.937500010 DEBUG (6): NodeID= 6 : AggregationSum sumAfter= 5
+0:6:20.937500010 DEBUG (6): NodeID= 6 : AggregationSum value= 5
+0:6:20.937500010 DEBUG (6): SendAggSumTask() posted!!
+0:6:20.937500010 DEBUG (6): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:20.937500020 DEBUG (6): SendAggSumTask(): Starting....
+0:6:20.937500020 DEBUG (6): SendAggSumTask(): Send returned success!!!
+0:6:20.939453135 DEBUG (4): NodeID= 4 : AggregationSum sample= 26 , sumBefore= 0
+0:6:20.939453135 DEBUG (4): NodeID= 4 : AggregationSum sumAfter= 26
+0:6:20.939453135 DEBUG (4): NodeID= 4 : AggregationSum value= 26
+0:6:20.939453135 DEBUG (4): SendAggSumTask() posted!!
+0:6:20.939453135 DEBUG (4): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:20.939453145 DEBUG (4): SendAggSumTask(): Starting....
+0:6:20.939453145 DEBUG (4): SendAggSumTask(): Send returned success!!!
+0:6:20.940429698 DEBUG (5): NodeID= 5 : AggregationSum sample= 53 , sumBefore= 0
+0:6:20.940429698 DEBUG (5): NodeID= 5 : AggregationSum sumAfter= 53
+0:6:20.940429698 DEBUG (5): NodeID= 5 : AggregationSum value= 53
+0:6:20.940429698 DEBUG (5): SendAggSumTask() posted!!
+0:6:20.940429698 DEBUG (5): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:20.940429708 DEBUG (5): SendAggSumTask(): Starting....
+0:6:20.940429708 DEBUG (5): SendAggSumTask(): Send returned success!!!
+0:6:20.941986089 DEBUG (1): ### AggSumReceive.receive() start #####
+0:6:20.941986089 DEBUG (1): Something received!!!  from 4
+0:6:20.941986089 DEBUG (1): posting receiveAggSumTask()!!!!
+0:6:20.941986099 DEBUG (1): ReceiveAggSumTask():received msg...
+0:6:20.941986099 DEBUG (1): ReceiveAggSumTask(): len=2
+0:6:20.941986099 DEBUG (1): receiveAggSumTask(): sum= 26
+0:6:20.941986099 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 26
+0:6:20.942153935 DEBUG (4): Inside the AggSumAMSend.sendDone()
+0:6:20.942153935 DEBUG (4): A AggregationSum package sent... True
+0:6:20.943054187 DEBUG (3): ### AggSumReceive.receive() start #####
+0:6:20.943054187 DEBUG (3): Something received!!!  from 6
+0:6:20.943054187 DEBUG (3): posting receiveAggSumTask()!!!!
+0:6:20.943054197 DEBUG (3): ReceiveAggSumTask():received msg...
+0:6:20.943054197 DEBUG (3): ReceiveAggSumTask(): len=2
+0:6:20.943054197 DEBUG (3): receiveAggSumTask(): sum= 5
+0:6:20.943054197 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 5
+0:6:20.943222033 DEBUG (6): Inside the AggSumAMSend.sendDone()
+0:6:20.943222033 DEBUG (6): A AggregationSum package sent... True
+0:6:20.944335948 DEBUG (7): NodeID= 7 : AggregationSum sample= 39 , sumBefore= 0
+0:6:20.944335948 DEBUG (7): NodeID= 7 : AggregationSum sumAfter= 39
+0:6:20.944335948 DEBUG (7): NodeID= 7 : AggregationSum value= 39
+0:6:20.944335948 DEBUG (7): SendAggSumTask() posted!!
+0:6:20.944335948 DEBUG (7): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:20.944335958 DEBUG (7): SendAggSumTask(): Starting....
+0:6:20.944335958 DEBUG (7): SendAggSumTask(): Send returned success!!!
+0:6:20.945556631 DEBUG (3): ### AggSumReceive.receive() start #####
+0:6:20.945556631 DEBUG (3): Something received!!!  from 5
+0:6:20.945556631 DEBUG (3): posting receiveAggSumTask()!!!!
+0:6:20.945556641 DEBUG (3): ReceiveAggSumTask():received msg...
+0:6:20.945556641 DEBUG (3): ReceiveAggSumTask(): len=2
+0:6:20.945556641 DEBUG (3): receiveAggSumTask(): sum= 53
+0:6:20.945556641 DEBUG (3): Inside the ReceiveAggSumTask(): New agg_sum = 58
+0:6:20.945724476 DEBUG (5): Inside the AggSumAMSend.sendDone()
+0:6:20.945724476 DEBUG (5): A AggregationSum package sent... True
+0:6:20.954574545 DEBUG (1): ### AggSumReceive.receive() start #####
+0:6:20.954574545 DEBUG (1): Something received!!!  from 7
+0:6:20.954574545 DEBUG (1): posting receiveAggSumTask()!!!!
+0:6:20.954574555 DEBUG (1): ReceiveAggSumTask():received msg...
+0:6:20.954574555 DEBUG (1): ReceiveAggSumTask(): len=2
+0:6:20.954574555 DEBUG (1): receiveAggSumTask(): sum= 39
+0:6:20.954574555 DEBUG (1): Inside the ReceiveAggSumTask(): New agg_sum = 65
+0:6:20.954742391 DEBUG (7): Inside the AggSumAMSend.sendDone()
+0:6:20.954742391 DEBUG (7): A AggregationSum package sent... True
+0:6:21.016601572 DEBUG (1): NodeID= 1 : AggregationSum sample= 1 , sumBefore= 65
+0:6:21.016601572 DEBUG (1): NodeID= 1 : AggregationSum sumAfter= 66
+0:6:21.016601572 DEBUG (1): NodeID= 1 : AggregationSum value= 66
+0:6:21.016601572 DEBUG (1): SendAggSumTask() posted!!
+0:6:21.016601572 DEBUG (1): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:21.016601582 DEBUG (1): SendAggSumTask(): Starting....
+0:6:21.016601582 DEBUG (1): SendAggSumTask(): Send returned success!!!
+0:6:21.020507822 DEBUG (3): NodeID= 3 : AggregationSum sample= 1 , sumBefore= 58
+0:6:21.020507822 DEBUG (3): NodeID= 3 : AggregationSum sumAfter= 59
+0:6:21.020507822 DEBUG (3): NodeID= 3 : AggregationSum value= 59
+0:6:21.020507822 DEBUG (3): SendAggSumTask() posted!!
+0:6:21.020507822 DEBUG (3): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:21.020507832 DEBUG (3): SendAggSumTask(): Starting....
+0:6:21.020507832 DEBUG (3): SendAggSumTask(): Send returned success!!!
+0:6:21.022903425 DEBUG (0): ### AggSumReceive.receive() start #####
+0:6:21.022903425 DEBUG (0): Something received!!!  from 1
+0:6:21.022903425 DEBUG (0): posting receiveAggSumTask()!!!!
+0:6:21.022903435 DEBUG (0): ReceiveAggSumTask():received msg...
+0:6:21.022903435 DEBUG (0): ReceiveAggSumTask(): len=2
+0:6:21.022903435 DEBUG (0): receiveAggSumTask(): sum= 66
+0:6:21.022903435 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 66
+0:6:21.023071271 DEBUG (1): Inside the AggSumAMSend.sendDone()
+0:6:21.023071271 DEBUG (1): A AggregationSum package sent... True
+0:6:21.023437510 DEBUG (2): NodeID= 2 : AggregationSum sample= 10 , sumBefore= 0
+0:6:21.023437510 DEBUG (2): NodeID= 2 : AggregationSum sumAfter= 10
+0:6:21.023437510 DEBUG (2): NodeID= 2 : AggregationSum value= 10
+0:6:21.023437510 DEBUG (2): SendAggSumTask() posted!!
+0:6:21.023437510 DEBUG (2): AggregationSum enqueued successfully in SendingQueue!!!
+0:6:21.023437520 DEBUG (2): SendAggSumTask(): Starting....
+0:6:21.023437520 DEBUG (2): SendAggSumTask(): Send returned success!!!
+0:6:21.028747530 DEBUG (0): ### AggSumReceive.receive() start #####
+0:6:21.028747530 DEBUG (0): Something received!!!  from 3
+0:6:21.028747530 DEBUG (0): posting receiveAggSumTask()!!!!
+0:6:21.028747540 DEBUG (0): ReceiveAggSumTask():received msg...
+0:6:21.028747540 DEBUG (0): ReceiveAggSumTask(): len=2
+0:6:21.028747540 DEBUG (0): receiveAggSumTask(): sum= 59
+0:6:21.028747540 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 125
+0:6:21.028915376 DEBUG (3): Inside the AggSumAMSend.sendDone()
+0:6:21.028915376 DEBUG (3): A AggregationSum package sent... True
+0:6:21.034423784 DEBUG (0): ### AggSumReceive.receive() start #####
+0:6:21.034423784 DEBUG (0): Something received!!!  from 2
+0:6:21.034423784 DEBUG (0): posting receiveAggSumTask()!!!!
+0:6:21.034423794 DEBUG (0): ReceiveAggSumTask():received msg...
+0:6:21.034423794 DEBUG (0): ReceiveAggSumTask(): len=2
+0:6:21.034423794 DEBUG (0): receiveAggSumTask(): sum= 10
+0:6:21.034423794 DEBUG (0): Inside the ReceiveAggSumTask(): New agg_sum = 135
+0:6:21.034591629 DEBUG (2): Inside the AggSumAMSend.sendDone()
+0:6:21.034591629 DEBUG (2): A AggregationSum package sent... True
+0:6:21.095703135 DEBUG (0): NodeID= 0 : AggregationSum sample= 1 , sumBefore= 135
+0:6:21.095703135 DEBUG (0): NodeID= 0 : AggregationSum sumAfter= 136
+0:6:21.095703135 DEBUG (0): ***////////||||||\\\***
+0:6:21.095703135 DEBUG (0): AGG RESULT epoch=19 Sum=136
+0:6:21.095703135 DEBUG (0): ***\\\\||||||//////***
+Node 0 connected with node 1 True True
+Node 0 connected with node 2 True True
+Node 1 connected with node 7 True True
+Node 2 connected with node 3 True True
+Node 4 connected with node 8 False False
