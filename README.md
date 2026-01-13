@@ -13,7 +13,7 @@ This project implements a **Tiny Aggregation (TAG)** service for Wireless Sensor
 
 ### 1. Simple Routing Tree
 - **Dynamic Construction:** The network autonomously builds a routing tree rooted at Node 0.
-- **Self-Healing:** Nodes adapt to topology changes by selecting new parents based on depth.
+- **Parent Selection:** Nodes select the first available parent that provides a path to the root (First-Hearing).
 
 ### 2. In-Network Aggregation
 Instead of sending raw data to the root, nodes aggregate data from their children and themselves before forwarding.

@@ -21,13 +21,11 @@ implementation{
 	
 	components new AMSenderC(AM_ROUTINGMSG) as RoutingSenderC;
 	components new AMReceiverC(AM_ROUTINGMSG) as RoutingReceiverC;
-	//components new AMSenderC(AM_NOTIFYPARENTMSG) as NotifySenderC;
-	//components new AMReceiverC(AM_NOTIFYPARENTMSG) as NotifyReceiverC;
+
 
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as RoutingSendQueueC;
 	components new PacketQueueC(RECEIVER_QUEUE_SIZE) as RoutingReceiveQueueC;
-	//components new PacketQueueC(SENDER_QUEUE_SIZE) as NotifySendQueueC;
-	//components new PacketQueueC(RECEIVER_QUEUE_SIZE) as NotifyReceiveQueueC;
+
 	//ADDED
 	components new PacketQueueC(SENDER_QUEUE_SIZE) as AggMinSendQueueC;
     components new PacketQueueC(RECEIVER_QUEUE_SIZE) as AggMinReceiveQueueC;
@@ -92,25 +90,19 @@ implementation{
 	SRTreeC.Led1Timer-> Led1TimerC;
 	SRTreeC.Led2Timer-> Led2TimerC;
 	SRTreeC.RoutingMsgTimer->RoutingMsgTimerC;
-	//SRTreeC.LostTaskTimer->LostTaskTimerC;
+
 	
 	SRTreeC.RoutingPacket->RoutingSenderC.Packet;
 	SRTreeC.RoutingAMPacket->RoutingSenderC.AMPacket;
 	SRTreeC.RoutingAMSend->RoutingSenderC.AMSend;
 	SRTreeC.RoutingReceive->RoutingReceiverC.Receive;
-/* no tag
-	SRTreeC.NotifyPacket->NotifySenderC.Packet;
-	SRTreeC.NotifyAMPacket->NotifySenderC.AMPacket;
-	SRTreeC.NotifyAMSend->NotifySenderC.AMSend;
-	SRTreeC.NotifyReceive->NotifyReceiverC.Receive;
-*/
+
 #ifdef SERIAL_EN	
 	SRTreeC.SerialControl->SerialActiveMessageC;
 #endif
 	SRTreeC.RoutingSendQueue->RoutingSendQueueC;
 	SRTreeC.RoutingReceiveQueue->RoutingReceiveQueueC;
-	//SRTreeC.NotifySendQueue->NotifySendQueueC;
-	//SRTreeC.NotifyReceiveQueue->NotifyReceiveQueueC;
+
 	
 	//ADDED
 	SRTreeC.Random->RandomC;
